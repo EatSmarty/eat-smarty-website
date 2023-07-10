@@ -5,7 +5,7 @@ export default function Home() {
   const router = useRouter()
 
   return (
-    <main className="absolute bottom-0 right-0 left-0">
+    <nav className="absolute bottom-0 right-0 left-0">
       <div className="flex justify-evenly  bg-midnight rounded-sm ">
         <button className="p-5  rounded-lg m-5" type="button" onClick={() => router.push('/screens/home')}>
           <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -31,6 +31,6 @@ export default function Home() {
           </svg>
         </button>
       </div>
-    </main>
+    </nav>
   )
 }
