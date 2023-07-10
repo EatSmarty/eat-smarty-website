@@ -21,10 +21,10 @@ const page: FC<pageProps> = ({}) => {
             </a>
         </section>
       </header>
-      <main className='flex'>
+      <main className='flex justify-center items-center'>
         <div className=''>
-          <p className='font-light opacity-50 mt-10 ml-10'>What product are you looking for?</p>
-          <input className='w-full mt-3 ml-10 rounded-full bg-[#3C3D42] outline-none p-2' type="text" />
+          <p className='font-light opacity-50 mt-10 mr-10'>What product are you looking for?</p>
+          <input className='w-full mt-3  rounded-full bg-[#3C3D42] outline-none p-2' type="text" />
         </div>
       </main>
     </div>
