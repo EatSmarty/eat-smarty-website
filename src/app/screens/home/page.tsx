@@ -10,7 +10,7 @@ const page: FC<pageProps> = ({}) => {
     <div>
         <Home></Home>
         <header className='flex justify-center items-center mt-7'>
-        <section className='flex justify-between items-center'>
+        <section className='flex justify-between items-center '>
                 <div className='flex justify-center items-center mr-20'>
                     <img className='w-10 rounded-full mr-3' src='/avatar-2023.jpg' alt="avatar" />
                     <h4 className='mr-1'>Hey Hosein</h4>
