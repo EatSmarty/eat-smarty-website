@@ -1,3 +1,4 @@
+import Home from '@/app/page'
 import { FC } from 'react'
 
 interface pageProps {
@@ -5,7 +6,11 @@ interface pageProps {
 }
 
 const page: FC<pageProps> = ({}) => {
-  return <div>additives</div>
+  return (
+    <div>
+        <Home></Home>
+    </div>
+  )
 }
 
 export default page

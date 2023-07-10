@@ -11,7 +11,7 @@ interface layoutProps {
 }
 
 const layout: FC<layoutProps> = ({ children }) => {
-  return <div className='bg-red-200'>{children}</div>
+  return <div className="bg-red-200 {router.pathname == '/' ? 'active' : ''} ">{children}</div>
 }
 
 export default layout
