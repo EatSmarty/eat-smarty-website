@@ -46,3 +46,10 @@ body {
 }
 
 
+.scroll-section-outer{
+  overflow: hidden;
+}
+
+.category{
+  width: 298px;
+}
