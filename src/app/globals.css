@@ -49,6 +49,7 @@ body {
 .scroll-section-outer{
   overflow: hidden;
   overflow-x: scroll;
+  
 }
 
 .category{
@@ -59,4 +60,6 @@ body {
   height: 200px;
   overflow: hidden;
   overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: red;
 }
