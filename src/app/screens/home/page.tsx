@@ -1,5 +1,5 @@
 'use client'
-import { useSnapCarousel } from 'react-snap-carousel';
+
 import Home from '@/app/page'
 import { FC } from 'react'
 
@@ -8,8 +8,6 @@ interface pageProps {
 }
 
 const page: FC<pageProps> = ({}) => {
-  const { scrollRef, pages, activePageIndex, next, prev, goTo } =
-    useSnapCarousel();
   return( 
     <div className='home-screen'>
       <Home></Home>
@@ -32,15 +30,27 @@ const page: FC<pageProps> = ({}) => {
             <input className='placeholder-white placeholder-opacity-50 w-full mt-3  rounded-full bg-[#3C3D42] outline-none p-2 pl-5' type="text" placeholder='search...'/>
           </section>
           <section className='category'>
-            <p className='text-[#F6F8E2] mt-10'>category</p>
+            <p className='text-[#F6F8E2] mt-10 text-xl'>category</p>
             <div className='containers flex w-100 scroll-section-outer'>
-                <div className='scroll-section-inner flex relative'>
-                  <div className='item1 w-20 bg-red-200 h-20 m-2'></div>
-                  <div className='item2 w-20 bg-red-200 h-20 m-2'></div>
-                  <div className='item3 w-20 bg-red-200 h-20 m-2'></div>
-                  <div className='item4 w-20 bg-red-200 h-20 m-2'></div>
-                  <div className='item5 w-20 bg-red-200 h-20 m-2'></div>
-                  <div className='item6 w-20 bg-red-200 h-20 m-2'></div>
+                <div className='scroll-section-inner flex relative mt-5'>
+                  <div className='item1 w-16 m-2'>
+                    <img src="/fruit.png" alt="" />
+                  </div>
+                  <div className='item2 w-16 m-2'>
+                    <img src="/trick-or-treat.png" alt="" />
+                  </div>
+                  <div className='item3 w-16 m-2'>
+                    <img src="/frozen-food.png" alt="" />
+                  </div>
+                  <div className='item4 w-16 m-2'>
+                    <img src="/soft-drink.png" alt="" />
+                  </div>
+                  <div className='item5 w-16 m-2'>
+                    <img src="/bread.png" alt="" />
+                  </div>
+                  <div className='item6 w-16 m-2'>
+                    <img src="/begetable.png" alt="" />
+                  </div>
                 </div>
             </div>
           </section>
