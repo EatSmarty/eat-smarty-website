@@ -54,6 +54,16 @@ const page: FC<pageProps> = ({}) => {
                 </div>
             </div>
           </section>
+          <section className='history'>
+            <div className='mt-10'>
+              <p className='text-[#F6F8E2] text-xl'>last search</p>
+              <ul className='history-list mt-3'>
+                <li className='bg-red-500 mb-4 p-5'>item1</li>
+                <li className='bg-red-500 mb-4 p-5'>item2</li>
+                <li className='bg-red-500 mb-4 p-5'>item3</li>
+              </ul>
+            </div>
+          </section>
         </div>
       </main>
     </div>
