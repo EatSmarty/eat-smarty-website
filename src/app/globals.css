@@ -48,8 +48,15 @@ body {
 
 .scroll-section-outer{
   overflow: hidden;
+  overflow-x: scroll;
 }
 
 .category{
   width: 298px;
+}
+
+.history-list{
+  height: 200px;
+  overflow: hidden;
+  overflow-y: scroll;
 }

@@ -33,22 +33,22 @@ const page: FC<pageProps> = ({}) => {
             <p className='text-[#F6F8E2] mt-10 text-xl'>category</p>
             <div className='containers flex w-100 scroll-section-outer'>
                 <div className='scroll-section-inner flex relative mt-5'>
-                  <div className='item1 w-16 m-2'>
+                  <div className='item1 w-16 mr-10'>
                     <img src="/fruit.png" alt="" />
                   </div>
-                  <div className='item2 w-16 m-2'>
+                  <div className='item2 w-16 mr-10'>
                     <img src="/trick-or-treat.png" alt="" />
                   </div>
-                  <div className='item3 w-16 m-2'>
+                  <div className='item3 w-16 mr-10'>
                     <img src="/frozen-food.png" alt="" />
                   </div>
-                  <div className='item4 w-16 m-2'>
+                  <div className='item4 w-16 mr-10'>
                     <img src="/soft-drink.png" alt="" />
                   </div>
-                  <div className='item5 w-16 m-2'>
+                  <div className='item5 w-16 mr-10'>
                     <img src="/bread.png" alt="" />
                   </div>
-                  <div className='item6 w-16 m-2'>
+                  <div className='item6 w-16 mr-10'>
                     <img src="/begetable.png" alt="" />
                   </div>
                 </div>
@@ -60,6 +60,8 @@ const page: FC<pageProps> = ({}) => {
               <ul className='history-list mt-3'>
                 <li className='bg-red-500 mb-4 p-5'>item1</li>
                 <li className='bg-red-500 mb-4 p-5'>item2</li>
+                <li className='bg-red-500 mb-4 p-5'>item3</li>
+                <li className='bg-red-500 mb-4 p-5'>item3</li>
                 <li className='bg-red-500 mb-4 p-5'>item3</li>
               </ul>
             </div>
