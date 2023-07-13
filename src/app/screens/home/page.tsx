@@ -5,6 +5,8 @@ import headerSection from './header'
 import { FC } from 'react'
 import Header from './header'
 import Search from './search'
+import Category from './category'
+import History from './history'
 
 interface pageProps {
   
@@ -18,58 +20,8 @@ const page: FC<pageProps> = ({}) => {
       <main className='flex justify-center items-center'>
         <div>
           <Search></Search>
-          <section className='category'>
-            <p className='text-[#F6F8E2] mt-10 text-xl'>category</p>
-            <div className='containers flex w-100 scroll-section-outer'>
-                <div className='scroll-section-inner flex relative mt-5'>
-                  <div className='item1 w-16 mr-10'>
-                    <img src="/fruit.png" alt="" />
-                  </div>
-                  <div className='item2 w-16 mr-10'>
-                    <img src="/trick-or-treat.png" alt="" />
-                  </div>
-                  <div className='item3 w-16 mr-10'>
-                    <img src="/frozen-food.png" alt="" />
-                  </div>
-                  <div className='item4 w-16 mr-10'>
-                    <img src="/soft-drink.png" alt="" />
-                  </div>
-                  <div className='item5 w-16 mr-10'>
-                    <img src="/bread.png" alt="" />
-                  </div>
-                  <div className='item6 w-16 mr-10'>
-                    <img src="/begetable.png" alt="" />
-                  </div>
-                </div>
-            </div>
-          </section>
-          <section className='history'>
-            <div className='mt-10'>
-              <p className='text-[#F6F8E2] text-xl'>last search</p>
-              <ul className='history-list mt-3'>
-                <li className='history-item flex justify-between rounded-sm mb-4 p-5 text-[#3C3D42]'>
-                  <p className='w-40 text-sm'>Robinsons Double Concentrate No Added Sugar Orange Squash 1.75L</p>
-                  <img className='w-20 h-20 rounded-sm' src="/orange-juice.jpeg" alt="" />
-                </li>
-                <li className='history-item flex justify-between rounded-sm mb-4 p-5 text-[#3C3D42]'>
-                  <p className='w-40 text-sm'>Gogo Squeez Fruit Snack Apple Strawberry 4X90g</p>
-                  <img className='w-20 h-20 rounded-sm' src="/jelly.jpeg" alt="" />
-                </li>
-                <li className='history-item flex justify-between rounded-sm mb-4 p-5 text-[#3C3D42]'>
-                  <p className='w-40 text-sm'>Tesco Large Pork Shoulder Joint</p>
-                  <img className='w-20 h-20 rounded-sm' src="/porkmeat.jpeg" alt="" />
-                </li>
-                <li className='history-item flex justify-between rounded-sm mb-4 p-5 text-[#3C3D42]'>
-                  <p className='w-40 text-sm'>Magnum Classic Ice Cream Sticks 3 X 100Ml</p>
-                  <img className='w-20 h-20 rounded-sm' src="/icecream.jpeg" alt="" />
-                </li>
-                <li className='history-item flex justify-between rounded-sm mb-4 p-5 text-[#3C3D42]'>
-                  <p className='w-40 text-sm'>Warburtons Thin Bagels Plain 6 Pack</p>
-                  <img className='w-20 h-20 rounded-sm' src="/bread.jpeg" alt="" />
-                </li>
-              </ul>
-            </div>
-          </section>
+          <Category></Category>
+          <History></History>
         </div>
       </main>
     </div>
