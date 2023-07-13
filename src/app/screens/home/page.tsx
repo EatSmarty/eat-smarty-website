@@ -1,7 +1,6 @@
 'use client'
 
 import Home from '@/app/page'
-import headerSection from './header'
 import { FC } from 'react'
 import Header from './header'
 import Search from './search'

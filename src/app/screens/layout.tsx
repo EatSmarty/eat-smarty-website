@@ -12,7 +12,7 @@ interface layoutProps {
 
 const layout: FC<layoutProps> = ({ children }) => {
   return (
-    <div className=''>{children}</div>
+    <div>{children}</div>
   )
 }
 
