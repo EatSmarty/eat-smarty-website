@@ -1,7 +1,10 @@
 'use client'
 
 import Home from '@/app/page'
+import headerSection from './header'
 import { FC } from 'react'
+import Header from './header'
+import Search from './search'
 
 interface pageProps {
   
@@ -11,24 +14,10 @@ const page: FC<pageProps> = ({}) => {
   return( 
     <div className='home-screen'>
       <Home></Home>
-      <header className='home-header flex justify-center items-center mt-7'>
-        <section className='flex justify-between items-center '>
-          <div className='flex justify-center items-center mr-20'>
-            <img className='w-10 rounded-full mr-3' src='/avatar-2023.jpg' alt="avatar" />
-              <h4 className='text-[#F6F8E2] mr-1'>Hey Hosein</h4>
-                <div className='wave text-xl'>👋</div>
-          </div>
-            <a href='https://halalvar.com/' className="logo bg-[#9CCD62] text-black rounded-full p-2 text-[#3C3D42]">
-              Hal.
-            </a>
-        </section>
-      </header>
+      <Header></Header>
       <main className='flex justify-center items-center'>
         <div>
-          <section className='search-box'>
-            <p className='text-[#F6F8E2] font-light opacity-50 mt-10 mr-10'>What product are you looking for?</p>
-            <input className='placeholder-[#3C3D42] placeholder-opacity-50 w-full mt-3 rounded-sm bg-[#E0DDCA] text-[#3C3D42] outline-none p-2 pl-5' type="text" placeholder='search...'/>
-          </section>
+          <Search></Search>
           <section className='category'>
             <p className='text-[#F6F8E2] mt-10 text-xl'>category</p>
             <div className='containers flex w-100 scroll-section-outer'>
