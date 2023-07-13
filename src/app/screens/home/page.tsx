@@ -18,7 +18,7 @@ const page: FC<pageProps> = ({}) => {
               <h4 className='text-[#F6F8E2] mr-1'>Hey Hosein</h4>
                 <div className='wave text-xl'>👋</div>
           </div>
-            <a href='https://halalvar.com/' className="logo bg-[#9CCD62] text-black rounded-full p-2 text-[#F6F8E2]">
+            <a href='https://halalvar.com/' className="logo bg-[#9CCD62] text-black rounded-full p-2 text-[#3C3D42]">
               Hal.
             </a>
         </section>
@@ -58,11 +58,11 @@ const page: FC<pageProps> = ({}) => {
             <div className='mt-10'>
               <p className='text-[#F6F8E2] text-xl'>last search</p>
               <ul className='history-list mt-3'>
-                <li className='bg-red-500 mb-4 p-5'>item1</li>
-                <li className='bg-red-500 mb-4 p-5'>item2</li>
-                <li className='bg-red-500 mb-4 p-5'>item3</li>
-                <li className='bg-red-500 mb-4 p-5'>item3</li>
-                <li className='bg-red-500 mb-4 p-5'>item3</li>
+                <li className='history-item mb-4 p-5 text-[#3C3D42]'>item1</li>
+                <li className='history-item mb-4 p-5 text-[#3C3D42]'>item2</li>
+                <li className='history-item mb-4 p-5 text-[#3C3D42]'>item3</li>
+                <li className='history-item mb-4 p-5 text-[#3C3D42]'>item3</li>
+                <li className='history-item mb-4 p-5 text-[#3C3D42]'>item3</li>
               </ul>
             </div>
           </section>

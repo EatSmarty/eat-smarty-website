@@ -6,13 +6,14 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --element-color-rgb: 224, 221, 202;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb: 60, 61, 66;
+    --background-end-rgb: 60, 61, 66;
   }
 }
 
@@ -62,4 +63,13 @@ body {
   overflow-y: scroll;
   scrollbar-width: thin;
   scrollbar-color: red;
+}
+
+.navigation-bottom{
+  height: 90px;
+  background-color: rgb(var(--background-start-rgb));
+}
+
+.history-item{
+  background-color: rgb(var(--element-color-rgb));
 }
