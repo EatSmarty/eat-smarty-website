@@ -19,10 +19,23 @@ const page: FC<pageProps> = ({}) => {
                 </svg>
           </section>
         </header>
-        <main className='main-content flex justify-center items-center mt-4'>
-          <section className='filter-box'>
-            <div>
+        <main className='main-content flex justify-center items-center flex-col mt-4'>
+          <section className='search-box'>
               <input className='placeholder-[#3C3D42] placeholder-opacity-50 w-full mt-3 rounded-sm bg-[#E0DDCA] text-[#3C3D42] outline-none p-2 px-12 pl-5' type="text" placeholder='search...'/>
+          </section>
+          <section className='additives-list mt-10 w-full'>
+            <h4>Lists</h4>
+            <div className='item bg-[#E0DDCA] px-12 p-2 mt-3 rounded-sm pl-5 pr-5 text-[#3C3D42] flex justify-between items-center'>
+              <p className='title'>E101</p>
+              <div className='color-palete w-5 h-5 rounded-full bg-red-500'></div>
+            </div>
+            <div className='item bg-[#E0DDCA] px-12 p-2 mt-3 rounded-sm pl-5 pr-5 text-[#3C3D42] flex justify-between items-center'>
+              <p className='title'>E102</p>
+              <div className='color-palete w-5 h-5 rounded-full bg-red-500'></div>
+            </div>
+            <div className='item bg-[#E0DDCA] px-12 p-2 mt-3 rounded-sm pl-5 pr-5 text-[#3C3D42] flex justify-between items-center'>
+              <p className='title'>E103</p>
+              <div className='color-palete w-5 h-5 rounded-full bg-red-500'></div>
             </div>
           </section>
         </main>
