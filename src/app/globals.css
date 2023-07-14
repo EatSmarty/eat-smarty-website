@@ -74,12 +74,6 @@ body {
   background-color: rgb(var(--element-color-rgb));
 }
 
-.filter-box{
-  width: 298px;
-  overflow: hidden;
-  overflow-x: scroll;
-}
-
 .main-content{
   width: 298px;
 }
