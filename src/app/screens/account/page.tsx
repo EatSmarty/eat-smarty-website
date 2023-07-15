@@ -12,9 +12,9 @@ const page: FC<pageProps> = ({}) => {
         <header className='header text-[#F6F8E2] flex justify-center items-center mt-7'>
           <h4 className='Account'>Account</h4>
         </header>
-        <main className='flex justify-start items-center mt-10'>
+        <main className='main-content flex justify-center items-center mt-10'>
           <section className='common'>
-            <p className='text-[#F6F8E2] ml-10'>common</p>
+            <p className='text-[#F6F8E2]'>common</p>
             <div className='common-items text-[#F6F8E2] w-60'>
               <div className='language flex justify-between itmes-center bg-[#E0DDCA] text-[#3C3D42] px-12 p-2 mt-3 rounded-sm pl-5 pr-5'>
                 <div className='flex justify-center items-center'>
