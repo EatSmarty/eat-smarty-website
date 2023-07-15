@@ -10,7 +10,7 @@ const page: FC<pageProps> = ({}) => {
     <div>
         <Home></Home>
         <div className='container flex justify-center items-center min-h-screen'>
-          <a className='scan p-5 flex justify-center items-center'>tap to scan</a>
+          <a className='scan p-5 flex justify-center items-center text-[#F6F8E2]'>tap to scan</a>
         </div>
     </div>
   )
