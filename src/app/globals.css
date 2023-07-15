@@ -77,3 +77,27 @@ body {
 .main-content{
   width: 298px;
 }
+
+video {
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.scan{
+  width: 200px;
+  height: 150px;
+
+  background:
+    linear-gradient(to right, #F6F8E2 4px, transparent 4px) 0 0,
+    linear-gradient(to right, #F6F8E2 4px, transparent 4px) 0 100%,
+    linear-gradient(to left, #F6F8E2 4px, transparent 4px) 100% 0,
+    linear-gradient(to left, #F6F8E2 4px, transparent 4px) 100% 100%,
+    linear-gradient(to bottom, #F6F8E2 4px, transparent 4px) 0 0,
+    linear-gradient(to bottom, #F6F8E2 4px, transparent 4px) 100% 0,
+    linear-gradient(to top, #F6F8E2 4px, transparent 4px) 0 100%,
+    linear-gradient(to top, #F6F8E2 4px, transparent 4px) 100% 100%;
+
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
