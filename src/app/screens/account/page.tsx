@@ -7,15 +7,15 @@ interface pageProps {
 
 const page: FC<pageProps> = ({}) => {
   return (
-    <div className='account-screen'>
+    <div className='account-screen flex justify-center flex-col items-center'>
         <Home></Home>
         <header className='header text-[#F6F8E2] flex justify-center items-center mt-7'>
           <h4 className='Account'>Account</h4>
         </header>
         <main className='main-content flex justify-center items-center mt-10'>
-          <section className='common'>
+          <section className='common w-full'>
             <p className='text-[#F6F8E2]'>common</p>
-            <div className='common-items text-[#F6F8E2] w-60'>
+            <div className='common-items text-[#F6F8E2]'>
               <div className='language flex justify-between itmes-center bg-[#E0DDCA] text-[#3C3D42] px-12 p-2 mt-3 rounded-sm pl-5 pr-5'>
                 <div className='flex justify-center items-center'>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
