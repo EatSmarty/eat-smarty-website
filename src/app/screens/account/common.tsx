@@ -5,8 +5,7 @@ interface commonProps {
 }
 
 const Common: FC<commonProps> = ({}) => {
-  return <div>
-    <section className='common w-full'>
+  return <section className='common w-full'>
             <p className='text-[#F6F8E2]'>Common</p>
             <div className='common-items text-[#F6F8E2]'>
               <div className='language flex justify-between itmes-center bg-[#E0DDCA] text-[#3C3D42] px-12 p-2 mt-3 rounded-sm pl-5 pr-5'>
@@ -46,7 +45,6 @@ const Common: FC<commonProps> = ({}) => {
                 </div>
             </div>
           </section>
-  </div>
 }
 
 export default Common
