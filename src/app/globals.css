@@ -59,9 +59,6 @@ body {
 
 .history-list{
   height: 200px;
-  overflow: hidden;
-  overflow-y: scroll;
-  scrollbar-width: thin;
   scrollbar-color: red;
 }
 
@@ -76,6 +73,9 @@ body {
 
 .main-content{
   width: 298px;
+  overflow: hidden;
+  overflow-y: scroll;
+  margin-bottom: 100px;
 }
 
 video {
