@@ -1,5 +1,6 @@
 import Home from '@/app/page'
 import { FC } from 'react'
+import Header from './header'
 
 interface pageProps {
   
@@ -9,9 +10,7 @@ const page: FC<pageProps> = ({}) => {
   return (
     <div className='account-screen flex justify-center flex-col items-center'>
         <Home></Home>
-        <header className='header text-[#F6F8E2] flex justify-center items-center mt-7'>
-          <h4 className='Account'>Account</h4>
-        </header>
+        <Header></Header>
         <main className='main-content flex justify-center items-center mt-10 flex-col'>
           <section className='common w-full'>
             <p className='text-[#F6F8E2]'>Common</p>
