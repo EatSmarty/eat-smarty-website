@@ -11,6 +11,7 @@ interface pageProps {
   
 }
 
+
 const page: FC<pageProps> = ({}) => {
   return (
     <div className='additives-screen flex justify-center items-center flex-col'>
@@ -20,15 +21,17 @@ const page: FC<pageProps> = ({}) => {
           <SearchBox></SearchBox>
           <section className='additives-list mt-10 w-full'>
             <AdditivesList></AdditivesList>
-            <Desc></Desc>
           </section>
+            <div className='bg-red-500'>
+              <Desc></Desc>
+            </div>
         </main>
+        <div id='overlay'></div>
     </div>
   )
 }
 
 export default page
-
 
 {/* <div className='flex mr-5'>
               <p className='mr-1 title'>Colors</p>

@@ -1,4 +1,6 @@
 import { FC } from 'react'
+import DisplayDetails from '../dicsPage/displayDetails'
+
 
 interface additivesListProps {
   
@@ -7,7 +9,7 @@ interface additivesListProps {
 const AdditivesList: FC<additivesListProps> = ({}) => {
   return <div>
             <h4>Lists</h4>
-            <div className='item bg-[#E0DDCA] px-12 p-2 mt-3 rounded-sm pl-5 pr-5 text-[#3C3D42] flex justify-between items-center'>
+            <div onClick={DisplayDetails} className='item bg-[#E0DDCA] px-12 p-2 mt-3 rounded-sm pl-5 pr-5 text-[#3C3D42] flex justify-between items-center'>
               <p className='title'>E100</p>
               <div className='flex justify-center items-center'>
                 <div className='color-palete w-5 h-5 rounded-full bg-orange-500'></div>
