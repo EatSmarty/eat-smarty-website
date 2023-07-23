@@ -12,7 +12,7 @@ interface pageProps {
 }
 
 
-const page: FC<pageProps> = ({}) => {
+const Page: FC<pageProps> = ({}) => {
   return (
     <div className='additives-screen flex justify-center items-center flex-col'>
       <Home></Home>
@@ -31,4 +31,4 @@ const page: FC<pageProps> = ({}) => {
   )
 }
 
-export default page
+export default Page
