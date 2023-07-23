@@ -32,28 +32,3 @@ const page: FC<pageProps> = ({}) => {
 }
 
 export default page
-
-{/* <div className='flex mr-5'>
-              <p className='mr-1 title'>Colors</p>
-              <input type="checkbox" />
-            </div>
-            <div className='flex mr-5'>
-              <p className='mr-1 title'>Preservatives</p>
-              <input type="checkbox" />
-            </div>
-            <div className='flex mr-5'>
-              <p className='mr-1 title'>Anticidants</p>
-              <input type="checkbox" />
-            </div>
-            <div className='flex mr-5'>
-              <p className='mr-1 title'>Sweeteners</p>
-              <input type="checkbox" />
-            </div>
-            <div className='flex mr-5'>
-              <p className='mr-1 title'>Emulsitiers</p>
-              <input type="checkbox" />
-            </div>
-            <div className='flex mr-5'>
-              <p className='mr-1 title'>Others</p>
-              <input type="checkbox" />
-            </div> */}
