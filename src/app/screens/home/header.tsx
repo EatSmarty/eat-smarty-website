@@ -1,4 +1,5 @@
 import { FC } from 'react'
+import avatar from '../../../../public/avatar-2023.jpg'
 
 interface HeaderProps {
   
@@ -9,7 +10,7 @@ const Header: FC<HeaderProps> = ({}) => {
     <header className='home-header flex justify-center items-center mt-7'>
         <section className='flex justify-between items-center '>
           <div className='flex justify-center items-center mr-20'>
-            <img className='w-10 rounded-full mr-3' src='/avatar-2023.jpg' alt="avatar" />
+            <img className='w-10 rounded-full mr-3' src={'avatar'} alt="avatar" />
             <h4 className='text-[#F6F8E2] mr-1'>Hey Hosein</h4>
             <div className='wave text-xl'>👋</div>
           </div>

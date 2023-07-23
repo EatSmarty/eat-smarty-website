@@ -1,5 +1,6 @@
 'use client'
 import { useRouter } from 'next/navigation'
+// import { FC, useRef } from 'react'
 
 export default function Home() {
   const router = useRouter()
