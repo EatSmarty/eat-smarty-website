@@ -5,7 +5,6 @@ import { FC } from 'react'
 import Header from './header'
 import SearchBox from './searchBox'
 import AdditivesList from './additivesList'
-import Desc from './desc'
 
 interface pageProps {
   
@@ -22,11 +21,7 @@ const Page: FC<pageProps> = () => {
           <section className='additives-list mt-10 w-full'>
             <AdditivesList></AdditivesList>
           </section>
-            <div className='bg-red-500'>
-              <Desc></Desc>
-            </div>
         </main>
-        <div id='overlay'></div>
     </div>
   )
 }
