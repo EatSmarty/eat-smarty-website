@@ -3,9 +3,9 @@
 import Home from '@/app/page'
 import { FC } from 'react'
 import Header from './header'
-import SearchBox from './main/searchBox'
-import AdditivesList from './main/additivesList'
-import Desc from './dicsPage/desc'
+import SearchBox from './searchBox'
+import AdditivesList from './additivesList'
+import Desc from './desc'
 
 interface pageProps {
   

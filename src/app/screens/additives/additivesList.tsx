@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import DisplayDetails from '../dicsPage/displayDetails'
+import DisplayDetails from '../additives/displayDetails'
 
 
 interface additivesListProps {
