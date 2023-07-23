@@ -1,17 +1,14 @@
 'use client'
 
 import Home from '@/app/page'
-import { FC } from 'react'
+
 import Header from './header'
 import SearchBox from './searchBox'
 import AdditivesList from './additivesList'
 
-interface pageProps {
-  
-}
 
 
-const Page: FC<pageProps> = () => {
+ function Page(){
   return (
     <div className='additives-screen flex justify-center items-center flex-col'>
       <Home></Home>
