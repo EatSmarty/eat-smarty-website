@@ -121,12 +121,13 @@ body {
       transform: translateY(0px);
   }
 }
-
-.main-content{
-  width: 298px;
-  overflow: hidden;
-  overflow-y: scroll;
-  margin-bottom: 100px;
+.search-box{
+  width: 580px;
+}
+@media screen and (max-width: 800px) {
+  .search-box{
+    width: 270px;
+  }
 }
 
 video {
