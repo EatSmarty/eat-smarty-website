@@ -2,7 +2,7 @@
 
 import Home from '@/app/page'
 import { FC } from 'react'
-import Header from './header'
+import Header from '../header'
 import Search from './search'
 import Category from './category'
 import History from './history'
