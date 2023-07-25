@@ -1,10 +1,7 @@
 'use client'
 import Link from 'next/link'
-import { useRouter } from 'next/navigation'
-// import { FC, useRef } from 'react'
 
 export default function Home() {
-  const router = useRouter()
 
   return (
     <nav className="flex justify-evenly items-center navigation-bottom fixed bottom-0 right-0 left-0 bg-[#000]">
