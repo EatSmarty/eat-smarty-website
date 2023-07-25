@@ -65,8 +65,19 @@ body {
 .history-item{
   background-color: rgb(var(--element-color-rgb));
 }
+
 .btn-nav{
-  transform: scale(1.05);
+  padding: 2px;
+  margin: 3px;
+  font-weight: bold;
+  transition: .2s;
+}
+
+.active{
+  transform: scale(1.15);
+  background-color: #eee;
+  padding: 7px;
+  border-radius: 0.25rem;
 }
 
 .main-content{
