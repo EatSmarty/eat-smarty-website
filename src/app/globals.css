@@ -58,8 +58,15 @@ body {
 }
 
 .navigation-bottom{
-  height: 90px;
+  height: 50px;
+  width: 70%;
+  position: fixed;
+  left: 15%;
   background-color: transparent;
+  background-color: #fff;
+  margin-bottom: 1rem;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+  border-radius: .25rem;
 }
 
 .history-item{
@@ -72,12 +79,26 @@ body {
   font-weight: bold;
   transition: .2s;
 }
-
 .active{
   transform: scale(1.15);
-  background-color: #eee;
-  padding: 7px;
-  border-radius: 0.25rem;
+  background-color: #0069FE;
+  color: #fff;
+  padding: 3px;
+  border-radius: .25rem;
+  animation: moveInBottom .2s ease-out;
+  animation-fill-mode: backwards;
+  
+}
+@keyframes moveInBottom {
+  0% {
+      opacity: 0;
+      transform: translateY(100px);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translateY(0px);
+  }
 }
 
 .main-content{
