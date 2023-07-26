@@ -61,15 +61,11 @@ body {
     margin-right: 12.5%;
   }
 }
-
-.category{
+.container {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-}
-.container {
-  position: relative;
 }
 .image {
   display: block;
@@ -106,6 +102,13 @@ body {
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 50px;
+}
+.advertise{
+  border: 2px solid #0069FE;
+}
+.advertise:hover{
+  box-shadow: 0px 8px 10px -4px rgba(0,0,0,0.1);
+
 }
 
 .history-list{
