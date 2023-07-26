@@ -5,7 +5,7 @@ import { FC } from 'react'
 import Header from '../header'
 import Search from './search'
 import Category from './category'
-import History from './history'
+import Advertise from './advertise'
 
 interface pageProps {
   
@@ -20,7 +20,7 @@ const page: FC<pageProps> = ({}) => {
         <div>
           <Search></Search>
           <Category></Category>
-          <History></History>
+          <Advertise></Advertise>
         </div>
       </main>
     </div>
