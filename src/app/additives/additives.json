@@ -187,84 +187,84 @@
             "examples": "Used in soft drinks, gravy mix, brown bread, cakes, biscuits, malt vinegar, marmalade, and beef products"
         },
         {
-            "e-number": "E133",
-            "name": "Brilliant Blue FCF",
+            "e-number": "E150a",
+            "name": "Plain caramel",
             "description": [
-                "A synthetic coal tar dye, blue in colour",
-                "Often mixed with E102 to make green"
+                "Commonly used brown colour and flavouring agent made from the caramelisation or burning of sugar by heat or chemicals",
+                "No ammonium or sulphite reactants"
             ],
             "category": "Colourants",
-            "examples": "Bacon flavoured snacks"
+            "examples": "Used in soft drinks, gravy mix, brown bread, cakes, biscuits, malt vinegar, marmalade, and beef products"
         },
         {
-            "e-number": "E133",
-            "name": "Brilliant Blue FCF",
+            "e-number": "E150b",
+            "name": "Caustic sulphite caramel",
             "description": [
-                "A synthetic coal tar dye, blue in colour",
-                "Often mixed with E102 to make green"
+                "Colouring agent",
+                "With sulphite reactant, but no ammonium"
             ],
             "category": "Colourants",
-            "examples": "Bacon flavoured snacks"
+            "examples": "Used in tea, whiskey, and brandy"
         },
         {
-            "e-number": "E133",
-            "name": "Brilliant Blue FCF",
+            "e-number": "E150c",
+            "name": "Ammonia caramel",
             "description": [
-                "A synthetic coal tar dye, blue in colour",
-                "Often mixed with E102 to make green"
+                "Colouring agent",
+                "With ammonium reactant, but no sulphite"
             ],
             "category": "Colourants",
-            "examples": "Bacon flavoured snacks"
+            "examples": "Used to colour soy sauce and beer"
         },
         {
-            "e-number": "E133",
-            "name": "Brilliant Blue FCF",
+            "e-number": "E150d",
+            "name": "Sulphite ammonia caramel",
             "description": [
-                "A synthetic coal tar dye, blue in colour",
-                "Often mixed with E102 to make green"
+                "Colouring agent",
+                "With both sulphite and ammonia reactants"
             ],
             "category": "Colourants",
-            "examples": "Bacon flavoured snacks"
+            "examples": "Widely used for soft drinks"
         },
         {
-            "e-number": "E133",
-            "name": "Brilliant Blue FCF",
+            "e-number": "E151",
+            "name": "Brilliant Black BN, Black PN",
             "description": [
-                "A synthetic coal tar dye, blue in colour",
-                "Often mixed with E102 to make green"
+                "A synthetic coal tar dye, black in colour",
+                ""
             ],
             "category": "Colourants",
-            "examples": "Bacon flavoured snacks"
+            "examples": "Used to darken fruit sauces"
         },
         {
-            "e-number": "E133",
-            "name": "Brilliant Blue FCF",
+            "e-number": "E153",
+            "name": "Vegetable carbon",
             "description": [
-                "A synthetic coal tar dye, blue in colour",
-                "Often mixed with E102 to make green"
+                "Natural black colour obtained from burnt plant material, now often manufactured",
+                ""
             ],
             "category": "Colourants",
-            "examples": "Bacon flavoured snacks"
+            "examples": "Added to concentrated fruit juices, preserves, and jellies"
         },
         {
-            "e-number": "E133",
-            "name": "Brilliant Blue FCF",
+            "e-number": "E155",
+            "name": "Brown HT",
             "description": [
-                "A synthetic coal tar dye, blue in colour",
-                "Often mixed with E102 to make green"
+                "A synthetic coal tar dye, brown in colour",
+                ""
             ],
             "category": "Colourants",
-            "examples": "Bacon flavoured snacks"
+            "examples": "Various foods"
         },
         {
-            "e-number": "E133",
-            "name": "Brilliant Blue FCF",
+            "e-number": "E160",
+            "name": "Carotenoids",
             "description": [
-                "A synthetic coal tar dye, blue in colour",
-                "Often mixed with E102 to make green"
+                "Plant pigments derived from carrots, tomatoes, apricots, oranges, rosehip and green leafy vegetables",
+                "Now mostly manufactured"
             ],
             "category": "Colourants",
-            "examples": "Bacon flavoured snacks"
+            "examples": "Provide a range of colours from yellow to red"
         }
     ],
     "Preservatives" :[
