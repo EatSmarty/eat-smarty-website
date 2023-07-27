@@ -180,6 +180,21 @@ body {
     width: 270px;
   }
 }
+/* E-list */
+.e-food{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.e-food .title{
+  font-size: 18px;
+}
+.item:hover{
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+.color-palete{
+  font-size: 14px;
+}
 
 video {
   width: 500px;
