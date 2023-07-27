@@ -1,20 +1,17 @@
 import { FC } from 'react'
 
-interface headerProps {
+interface HeaderProps {
   
 }
 
-const Header: FC<headerProps> = ({}) => {
-  return <div>
-    <header className='flex justify-center items-center mt-7'>
-        <section className='search-box flex justify-between items-center'>
-            <p className='text-[#F6F8E2] mr-40'>Additives</p>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6 ml-10">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" />
-            </svg>
-        </section>
-    </header>
-  </div>
+const Header: FC<HeaderProps> = ({}) => {
+  return <header className='home-header flex justify-between items-center w-full fixed'>
+            <div className='header-l flex justify-center items-center mt-5'>
+              <h4 className='text-3xl font-bold text-[#0069FE] opacity-80'>Additives</h4>
+            </div>
+  </header>
 }
 
 export default Header
+
+
