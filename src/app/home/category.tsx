@@ -25,7 +25,7 @@ const Category: FC<categoryProps> = ({}) => {
                     <Image src="/drink-3d.jpg"
                         width={100}
                         height={100}
-                        alt="fruite"
+                        alt="drink"
                         className='image rounded'
                       />
                       <div className="overlay">
@@ -36,11 +36,44 @@ const Category: FC<categoryProps> = ({}) => {
                     <Image src="/vegetable-3d.jpg"
                         width={100}
                         height={100}
-                        alt="fruite"
+                        alt="vegetabls"
                         className='image rounded'
                       />
                       <div className="overlay">
                         <div className='text'>Vegetabls</div>
+                      </div>
+                  </div>
+                  <div className="container cursor-pointer">
+                    <Image src="/bread-3d.jpg"
+                        width={100}
+                        height={100}
+                        alt="bread"
+                        className='image rounded'
+                      />
+                      <div className="overlay">
+                        <div className='text'>Bread</div>
+                      </div>
+                  </div>
+                  <div className="container cursor-pointer">
+                    <Image src="/fresh-food-3d.jpg"
+                        width={100}
+                        height={100}
+                        alt="fresh food"
+                        className='image rounded'
+                      />
+                      <div className="overlay">
+                        <div className='text'>FreshFood</div>
+                      </div>
+                  </div>
+                  <div className="container cursor-pointer">
+                    <Image src="/ice-cream-3d.jpg"
+                        width={100}
+                        height={100}
+                        alt="ice cream"
+                        className='image rounded'
+                      />
+                      <div className="overlay">
+                        <div className='text'>Ice-cream</div>
                       </div>
                   </div>
             </div>
