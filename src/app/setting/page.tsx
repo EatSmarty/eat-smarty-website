@@ -5,6 +5,7 @@ import { FC } from 'react'
 import Header from './header'
 import Common from './common'
 import Search from '../home/search'
+import About from './about'
 
 interface pageProps {
   
@@ -19,6 +20,7 @@ const Page: FC<pageProps> = () => {
       <main className='flex justify-center items-center'>
         <div>
           <Common></Common>
+          <About></About>
         </div>
       </main>
     </div>
