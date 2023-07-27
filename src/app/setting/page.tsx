@@ -1,26 +1,28 @@
+'use client'
+
 import Home from '@/app/page'
 import { FC } from 'react'
 import Header from './header'
 import Common from './common'
-import Account from './account'
-import About from './about'
+import Search from '../home/search'
 
 interface pageProps {
   
 }
 
-const page: FC<pageProps> = ({}) => {
+
+const Page: FC<pageProps> = () => {
   return (
-    <div className='account-screen flex justify-center flex-col items-center'>
-        <Home></Home>
-        <Header></Header>
-        <main className='main-content flex justify-center items-center mt-10 flex-col'>
+    <div className='home-screen mb-20'>
+      <Home></Home>
+      <Header></Header>
+      <main className='flex justify-center items-center'>
+        <div>
           <Common></Common>
-          <Account></Account>
-          <About></About>
-        </main>
+        </div>
+      </main>
     </div>
   )
 }
 
-export default page
+export default Page

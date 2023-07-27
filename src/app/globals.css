@@ -220,6 +220,16 @@ video {
   background-size: 20px 20px;
 }
 
+.common{
+  width: 580px;
+}
+
+@media screen and (max-width: 850px) {
+  .common{
+    width: 360px;
+  }
+}
+
 /* toggle */
 .switch {
   position: relative;
@@ -259,11 +269,11 @@ video {
 }
 
 input:checked + .slider {
-  background-color: #9CCD62;
+  background-color: #0069FE;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #9CCD62;
+  box-shadow: 0 0 1px #0069FE;
 }
 
 input:checked + .slider:before {

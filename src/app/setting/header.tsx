@@ -1,15 +1,15 @@
 import { FC } from 'react'
 
-interface headerProps {
+interface HeaderProps {
   
 }
 
-const Header: FC<headerProps> = ({}) => {
-  return <div>
-    <header className='header text-[#F6F8E2] flex justify-center items-center mt-7'>
-          <h4 className='Account'>Account</h4>
-    </header>
-  </div>
+const Header: FC<HeaderProps> = ({}) => {
+  return <header className='home-header flex justify-between items-center w-full fixed'>
+            <div className='header-l flex justify-center items-center mt-5'>
+              <h4 className='text-3xl font-bold text-[#0069FE] opacity-80'>Setting</h4>
+            </div>
+  </header>
 }
 
 export default Header
