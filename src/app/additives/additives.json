@@ -1,3 +1,98 @@
 {
-    
-}
+    "Colour" :[
+        {
+            "e-number": "E100",
+            "name": "Curcumin",
+            "description": [
+                "Naturally occurring orange/yellow colour",
+                "Extracted from the spice turmeric"
+            ],
+            "category": "Colourants",
+            "examples": "Used in pastries, confectionery, sauces, and soups"
+        }
+    ],
+    "Preservatives" :[
+        {
+            "e-number": "E100",
+            "name": "Curcumin",
+            "description": [
+                "Naturally occurring orange/yellow colour",
+                "Extracted from the spice turmeric"
+            ],
+            "category": "Colourants",
+            "examples": "Used in pastries, confectionery, sauces, and soups"
+        }
+    ],
+    "Antioxidants" :[
+        {
+            "e-number": "E100",
+            "name": "Curcumin",
+            "description": [
+                "Naturally occurring orange/yellow colour",
+                "Extracted from the spice turmeric"
+            ],
+            "category": "Colourants",
+            "examples": "Used in pastries, confectionery, sauces, and soups"
+        }
+    ],
+    "Thickeners" :[
+        {
+            "e-number": "E100",
+            "name": "Curcumin",
+            "description": [
+                "Naturally occurring orange/yellow colour",
+                "Extracted from the spice turmeric"
+            ],
+            "category": "Colourants",
+            "examples": "Used in pastries, confectionery, sauces, and soups"
+        }
+    ],
+    "pH regulators" :[
+        {
+            "e-number": "E100",
+            "name": "Curcumin",
+            "description": [
+                "Naturally occurring orange/yellow colour",
+                "Extracted from the spice turmeric"
+            ],
+            "category": "Colourants",
+            "examples": "Used in pastries, confectionery, sauces, and soups"
+        }
+    ],
+    "Flavour enhancers" :[
+        {
+            "e-number": "E100",
+            "name": "Curcumin",
+            "description": [
+                "Naturally occurring orange/yellow colour",
+                "Extracted from the spice turmeric"
+            ],
+            "category": "Colourants",
+            "examples": "Used in pastries, confectionery, sauces, and soups"
+        }
+    ],
+    "Antibiotics" :[
+        {
+            "e-number": "E100",
+            "name": "Curcumin",
+            "description": [
+                "Naturally occurring orange/yellow colour",
+                "Extracted from the spice turmeric"
+            ],
+            "category": "Colourants",
+            "examples": "Used in pastries, confectionery, sauces, and soups"
+        }
+    ],
+    "sweeteners" :[
+        {
+            "e-number": "E100",
+            "name": "Curcumin",
+            "description": [
+                "Naturally occurring orange/yellow colour",
+                "Extracted from the spice turmeric"
+            ],
+            "category": "Colourants",
+            "examples": "Used in pastries, confectionery, sauces, and soups"
+        }
+    ]
+}    
