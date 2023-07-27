@@ -9,7 +9,7 @@
             ],
             "category": "Colourants",
             "examples": "Used in pastries, confectionery, sauces, and soups",
-            "badge": ""
+            "badge": "MUSHBOOH"
         },
         {
             "e-number": "E101",
@@ -20,7 +20,7 @@
             ],
             "category": "Colourants",
             "examples": "Added to processed cheese as yellow/orange colour",
-            "badge": ""
+            "badge": "MUSHBOOH"
         },
         {
             "e-number": "E102",
@@ -31,7 +31,7 @@
             ],
             "category": "Colourants",
             "examples": "Found in soft drinks, cakes, biscuits, puddings, meat products, sauces, tinned and packet convenience foods and confectionery",
-            "badge": ""
+            "badge": "HALAL"
         },
         {
             "e-number": "E104",
@@ -42,7 +42,7 @@
             ],
             "category": "Colourants",
             "examples": "Used with other yellow colours, especially in smoked fish",
-            "badge": ""
+            "badge": "HALAL"
         },
         {
             "e-number": "E110",
@@ -53,7 +53,7 @@
             ],
             "category": "Colourants",
             "examples": "Found in soft drinks, cakes, biscuits, puddings, meat products, sauces, tinned and packet convenience foods and confectionery",
-            "badge": ""
+            "badge": "MUSHBOOH"
         },
         {
             "e-number": "E120",
@@ -64,14 +64,14 @@
             ],
             "category": "Colourants",
             "examples": "Red colour in foods",
-            "badge": ""
+            "badge": "HARAM"
         },
         {
             "e-number": "E122",
             "name": "Azorubine, Carmoisine",
             "description": [
                 "A synthetic coal tar dye, red/purple in colour",
-                ""
+                "MUSHBOOH"
             ],
             "category": "Colourants",
             "examples": "Often added to raspberry and chocolate flavoured desserts, marzipan, jam, cherryade, bottled sauce, and breaded products"
@@ -81,7 +81,7 @@
             "name": "Amaranth",
             "description": [
                 "A synthetic coal tar dye, red in colour",
-                ""
+                "MUSHBOOH"
             ],
             "category": "Colourants",
             "examples": "Sometimes used in gravy mixes, meat patties, and blackcurrant drinks"
@@ -94,7 +94,8 @@
                 ""
             ],
             "category": "Colourants",
-            "examples": "added to strawberry jam, jelly and ice cream, tomato soup, savoury rice, cheesecake mix, and some meat products"
+            "examples": "added to strawberry jam, jelly and ice cream, tomato soup, savoury rice, cheesecake mix, and some meat products",
+            "badge": "HALAL"
         },
         {
             "e-number": "E127",
@@ -104,7 +105,8 @@
                 "Rich in mineral iodine"
             ],
             "category": "Colourants",
-            "examples": "Regular component of glace cherries, peach melba yogurt, vacuum-packed ham and pork, tinned strawberries, and certain flavours of chips and potato-based snacks"
+            "examples": "Regular component of glace cherries, peach melba yogurt, vacuum-packed ham and pork, tinned strawberries, and certain flavours of chips and potato-based snacks",
+            "badge": "MUSHBOOH"
         },
         {
             "e-number": "E128",
@@ -114,7 +116,8 @@
                 "Extracted from the spice turmeric"
             ],
             "category": "Colourants",
-            "examples": "Used in pastries, confectionery, sauces, and soups"
+            "examples": "Used in pastries, confectionery, sauces, and soups",
+            "badge": "MUSHBOOH"
         },
         {
             "e-number": "E129",
