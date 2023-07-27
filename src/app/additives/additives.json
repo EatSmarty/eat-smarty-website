@@ -345,6 +345,86 @@
             ],
             "category": "Colourants",
             "examples": "May be added to oxtail soup"
+        },
+        {
+            "e-number": "E163",
+            "name": "Anthocyanins",
+            "description": [
+                "Plant pigments with colours ranging from red to blue",
+                "Naturally present in red cabbage and grapes"
+            ],
+            "category": "Colourants",
+            "examples": "Used in producing purple-colored beverages, confectionaries, and jams"
+        },
+        {
+            "e-number": "E170",
+            "name": "Calcium carbonate (chalk)",
+            "description": [
+                "Naturally occurring mineral",
+                ""
+            ],
+            "category": "Colourants",
+            "examples": "Frequently an ingredient in bread and baked products"
+        },
+        {
+            "e-number": "E171",
+            "name": "Titanium dioxide",
+            "description": [
+                "Colouring agent",
+                ""
+            ],
+            "category": "Colourants",
+            "examples": "Use no longer permitted in the EU and in Northern Ireland as of Feb 2022"
+        },
+        {
+            "e-number": "E172",
+            "name": "Iron oxides and hydroxides",
+            "description": [
+                "Naturally occurring mineral",
+                ""
+            ],
+            "category": "Colourants",
+            "examples": "Added to flour and breakfast cereals"
+        },
+        {
+            "e-number": "E173",
+            "name": "Aluminium",
+            "description": [
+                "Colouring agent (silver/grey)",
+                ""
+            ],
+            "category": "Colourants",
+            "examples": "Surface coating (eg, for cake decoration or confectionary)"
+        },
+        {
+            "e-number": "E174",
+            "name": "Silver",
+            "description": [
+                "Colouring agent",
+                ""
+            ],
+            "category": "Colourants",
+            "examples": "May be used for silver surface coating"
+        },
+        {
+            "e-number": "E175",
+            "name": "Gold",
+            "description": [
+                "Colouring agent",
+                ""
+            ],
+            "category": "Colourants",
+            "examples": "May be used for gold surface coating"
+        },
+        {
+            "e-number": "E180",
+            "name": "Lithol rubine BK",
+            "description": [
+                "Colouring agent (red)",
+                ""
+            ],
+            "category": "Colourants",
+            "examples": "Used for colouring cheese rind"
         }
     ],
     "Preservatives" :[
