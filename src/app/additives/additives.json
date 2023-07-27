@@ -265,6 +265,86 @@
             ],
             "category": "Colourants",
             "examples": "Provide a range of colours from yellow to red"
+        },
+        {
+            "e-number": "E160a",
+            "name": "Alpha-, beta, and gamma-carotenes",
+            "description": [
+                "Beta-carotene is a well-known substance that is converted by the body to Vitamin A",
+                "Orange in colour"
+            ],
+            "category": "Colourants",
+            "examples": "Added to biscuits, cakes, margarine, creamed rice, cheese products, and certain soups"
+        },
+        {
+            "e-number": "E160b",
+            "name": "Annatto",
+            "description": [
+                "Orange/peach pigment naturally present in butter and cheese",
+                ""
+            ],
+            "category": "Colourants",
+            "examples": "Used to give creamy colour to creamed rice, coffee creamer, pastry, cheese, and cheese products"
+        },
+        {
+            "e-number": "E160c",
+            "name": "Paprika extract, Capsanthian, Capsorubin",
+            "description": [
+                "Colouring agent (red)",
+                ""
+            ],
+            "category": "Colourants",
+            "examples": "Can be used to add colour and flavour to various food products"
+        },
+        {
+            "e-number": "E160d",
+            "name": "Lycopene",
+            "description": [
+                "Colouring agent (red)",
+                "Carotenoid"
+            ],
+            "category": "Colourants",
+            "examples": "May be used in processed foods, beverages, and ketchup"
+        },
+        {
+            "e-number": "E160e",
+            "name": "Beta-apo-8'-carotenal (C30) apocarotenal",
+            "description": [
+                "Colouring agent (orange/red)",
+                "Carotenoid"
+            ],
+            "category": "Colourants",
+            "examples": "Sometimes used in processed cheese"
+        },
+        {
+            "e-number": "E161b",
+            "name": "Lutein",
+            "description": [
+                "Colouring agent (yellow/orange)",
+                "Carotenoid"
+            ],
+            "category": "Colourants",
+            "examples": "Has been used as a chicken feed additive to promote yellow colouring of egg yolks"
+        },
+        {
+            "e-number": "E161g",
+            "name": "Canthaxanthin",
+            "description": [
+                "Colouring agent (reddish/orange)",
+                "Carotenoid"
+            ],
+            "category": "Colourants",
+            "examples": "May be present in food and self-tanning products"
+        },
+        {
+            "e-number": "E162",
+            "name": "Betanin (Beetroot Red)",
+            "description": [
+                "Naturally occurring red/purple colour in beetroots",
+                ""
+            ],
+            "category": "Colourants",
+            "examples": "May be added to oxtail soup"
         }
     ],
     "Preservatives" :[
