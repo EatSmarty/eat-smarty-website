@@ -147,14 +147,124 @@
             "examples": "Added to gravy mix and certain meat products"
         },
         {
-            "e-number": "E100",
-            "name": "Curcumin",
+            "e-number": "E133",
+            "name": "Brilliant Blue FCF",
             "description": [
-                "Naturally occurring orange/yellow colour",
-                "Extracted from the spice turmeric"
+                "A synthetic coal tar dye, blue in colour",
+                "Often mixed with E102 to make green"
             ],
             "category": "Colourants",
-            "examples": "Used in pastries, confectionery, sauces, and soups"
+            "examples": "Bacon flavoured snacks"
+        },
+        {
+            "e-number": "E140",
+            "name": "Chlorophyll and chlorophyllins",
+            "description": [
+                "Naturally occurring green pigment found plant leaves and stems",
+                "Also manufactured"
+            ],
+            "category": "Colourants",
+            "examples": "Added to green vegetables to enhance their colour"
+        },
+        {
+            "e-number": "E141",
+            "name": "Copper complexes of chlorophyll and chlorophyllins",
+            "description": [
+                "A more stable colour obtained by a reaction between copper and manufactured chlorophyll",
+                ""
+            ],
+            "category": "Colourants",
+            "examples": "Used to heighten the green colour of products such as cucumber relish"
+        },
+        {
+            "e-number": "E142",
+            "name": "Green S",
+            "description": [
+                "Commonly used brown colour and flavouring agent made from the caramelisation or burning of sugar by heat or chemicals",
+                "No ammonium or sulphite reactants"
+            ],
+            "category": "Colourants",
+            "examples": "Used in soft drinks, gravy mix, brown bread, cakes, biscuits, malt vinegar, marmalade, and beef products"
+        },
+        {
+            "e-number": "E133",
+            "name": "Brilliant Blue FCF",
+            "description": [
+                "A synthetic coal tar dye, blue in colour",
+                "Often mixed with E102 to make green"
+            ],
+            "category": "Colourants",
+            "examples": "Bacon flavoured snacks"
+        },
+        {
+            "e-number": "E133",
+            "name": "Brilliant Blue FCF",
+            "description": [
+                "A synthetic coal tar dye, blue in colour",
+                "Often mixed with E102 to make green"
+            ],
+            "category": "Colourants",
+            "examples": "Bacon flavoured snacks"
+        },
+        {
+            "e-number": "E133",
+            "name": "Brilliant Blue FCF",
+            "description": [
+                "A synthetic coal tar dye, blue in colour",
+                "Often mixed with E102 to make green"
+            ],
+            "category": "Colourants",
+            "examples": "Bacon flavoured snacks"
+        },
+        {
+            "e-number": "E133",
+            "name": "Brilliant Blue FCF",
+            "description": [
+                "A synthetic coal tar dye, blue in colour",
+                "Often mixed with E102 to make green"
+            ],
+            "category": "Colourants",
+            "examples": "Bacon flavoured snacks"
+        },
+        {
+            "e-number": "E133",
+            "name": "Brilliant Blue FCF",
+            "description": [
+                "A synthetic coal tar dye, blue in colour",
+                "Often mixed with E102 to make green"
+            ],
+            "category": "Colourants",
+            "examples": "Bacon flavoured snacks"
+        },
+        {
+            "e-number": "E133",
+            "name": "Brilliant Blue FCF",
+            "description": [
+                "A synthetic coal tar dye, blue in colour",
+                "Often mixed with E102 to make green"
+            ],
+            "category": "Colourants",
+            "examples": "Bacon flavoured snacks"
+        },
+        {
+            "e-number": "E133",
+            "name": "Brilliant Blue FCF",
+            "description": [
+                "A synthetic coal tar dye, blue in colour",
+                "Often mixed with E102 to make green"
+            ],
+            "category": "Colourants",
+            "examples": "Bacon flavoured snacks"
+        },
+        {
+            "e-number": "E133",
+            "name": "Brilliant Blue FCF",
+            "description": [
+                "A synthetic coal tar dye, blue in colour",
+                "Often mixed with E102 to make green"
+            ],
+            "category": "Colourants",
+            "examples": "Bacon flavoured snacks"
         }
     ],
     "Preservatives" :[
