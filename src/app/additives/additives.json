@@ -8,7 +8,8 @@
                 "Extracted from the spice turmeric"
             ],
             "category": "Colourants",
-            "examples": "Used in pastries, confectionery, sauces, and soups"
+            "examples": "Used in pastries, confectionery, sauces, and soups",
+            "badge": ""
         },
         {
             "e-number": "E101",
@@ -18,7 +19,8 @@
                 "Usually obtained from yeast or produced synthetically"
             ],
             "category": "Colourants",
-            "examples": "Added to processed cheese as yellow/orange colour"
+            "examples": "Added to processed cheese as yellow/orange colour",
+            "badge": ""
         },
         {
             "e-number": "E102",
@@ -28,7 +30,8 @@
                 ""
             ],
             "category": "Colourants",
-            "examples": "Found in soft drinks, cakes, biscuits, puddings, meat products, sauces, tinned and packet convenience foods and confectionery"
+            "examples": "Found in soft drinks, cakes, biscuits, puddings, meat products, sauces, tinned and packet convenience foods and confectionery",
+            "badge": ""
         },
         {
             "e-number": "E104",
@@ -38,20 +41,73 @@
                 ""
             ],
             "category": "Colourants",
-            "examples": "Used with other yellow colours, especially in smoked fish"
+            "examples": "Used with other yellow colours, especially in smoked fish",
+            "badge": ""
         },
         {
             "e-number": "E110",
-            "name": "Sunset Yellow FCF; Orange Yellow S",
+            "name": "Sunset Yellow FCF, Orange Yellow S",
             "description": [
                 "A synthetic coal tar dye, yellow in colour, used with E102",
                 ""
             ],
             "category": "Colourants",
-            "examples": "Found in soft drinks, cakes, biscuits, puddings, meat products, sauces, tinned and packet convenience foods and confectionery"
+            "examples": "Found in soft drinks, cakes, biscuits, puddings, meat products, sauces, tinned and packet convenience foods and confectionery",
+            "badge": ""
         },
         {
-            "e-number": "E100",
+            "e-number": "E120",
+            "name": "Cochineal, Carminic acid, Carmines",
+            "description": [
+                "Natural red colour obtained from egg yolk and dried insects",
+                "Can be manufactured"
+            ],
+            "category": "Colourants",
+            "examples": "Red colour in foods",
+            "badge": ""
+        },
+        {
+            "e-number": "E122",
+            "name": "Azorubine, Carmoisine",
+            "description": [
+                "A synthetic coal tar dye, red/purple in colour",
+                ""
+            ],
+            "category": "Colourants",
+            "examples": "Often added to raspberry and chocolate flavoured desserts, marzipan, jam, cherryade, bottled sauce, and breaded products"
+        },
+        {
+            "e-number": "E123",
+            "name": "Amaranth",
+            "description": [
+                "A synthetic coal tar dye, red in colour",
+                ""
+            ],
+            "category": "Colourants",
+            "examples": "Sometimes used in gravy mixes, meat patties, and blackcurrant drinks"
+        },
+        {
+            "e-number": "E124",
+            "name": "Ponceau 4R, Cochineal Red A",
+            "description": [
+                "A synthetic coal tar dye, red in colour",
+                ""
+            ],
+            "category": "Colourants",
+            "examples": "added to strawberry jam, jelly and ice cream, tomato soup, savoury rice, cheesecake mix, and some meat products"
+        },
+        {
+            "e-number": "E127",
+            "name": "Erythrosine",
+            "description": [
+                "A synthetic coal tar dye, red in colour",
+                "Rich in mineral iodine"
+            ],
+            "category": "Colourants",
+            "examples": "Regular component of glace cherries, peach melba yogurt, vacuum-packed ham and pork, tinned strawberries, and certain flavours of chips and potato-based snacks"
+        },
+        {
+            "e-number": "E128",
             "name": "Curcumin",
             "description": [
                 "Naturally occurring orange/yellow colour",
@@ -61,84 +117,34 @@
             "examples": "Used in pastries, confectionery, sauces, and soups"
         },
         {
-            "e-number": "E100",
-            "name": "Curcumin",
+            "e-number": "E129",
+            "name": "Allura Red AC",
             "description": [
-                "Naturally occurring orange/yellow colour",
-                "Extracted from the spice turmeric"
+                "Colouring agent",
+                ""
             ],
             "category": "Colourants",
-            "examples": "Used in pastries, confectionery, sauces, and soups"
+            "examples": "Used in drinks, baked goods, meat products, and sweets"
         },
         {
-            "e-number": "E100",
-            "name": "Curcumin",
+            "e-number": "E131",
+            "name": "Patent Blue V",
             "description": [
-                "Naturally occurring orange/yellow colour",
-                "Extracted from the spice turmeric"
+                "Colouring agent",
+                ""
             ],
             "category": "Colourants",
-            "examples": "Used in pastries, confectionery, sauces, and soups"
+            "examples": "Used in some meat products"
         },
         {
-            "e-number": "E100",
-            "name": "Curcumin",
+            "e-number": "E132",
+            "name": "lndigotine, Indigo Carmine",
             "description": [
-                "Naturally occurring orange/yellow colour",
-                "Extracted from the spice turmeric"
+                "A synthetic coal tar dye, blue in colour",
+                ""
             ],
             "category": "Colourants",
-            "examples": "Used in pastries, confectionery, sauces, and soups"
-        },
-        {
-            "e-number": "E100",
-            "name": "Curcumin",
-            "description": [
-                "Naturally occurring orange/yellow colour",
-                "Extracted from the spice turmeric"
-            ],
-            "category": "Colourants",
-            "examples": "Used in pastries, confectionery, sauces, and soups"
-        },
-        {
-            "e-number": "E100",
-            "name": "Curcumin",
-            "description": [
-                "Naturally occurring orange/yellow colour",
-                "Extracted from the spice turmeric"
-            ],
-            "category": "Colourants",
-            "examples": "Used in pastries, confectionery, sauces, and soups"
-        },
-        {
-            "e-number": "E100",
-            "name": "Curcumin",
-            "description": [
-                "Naturally occurring orange/yellow colour",
-                "Extracted from the spice turmeric"
-            ],
-            "category": "Colourants",
-            "examples": "Used in pastries, confectionery, sauces, and soups"
-        },
-        {
-            "e-number": "E100",
-            "name": "Curcumin",
-            "description": [
-                "Naturally occurring orange/yellow colour",
-                "Extracted from the spice turmeric"
-            ],
-            "category": "Colourants",
-            "examples": "Used in pastries, confectionery, sauces, and soups"
-        },
-        {
-            "e-number": "E100",
-            "name": "Curcumin",
-            "description": [
-                "Naturally occurring orange/yellow colour",
-                "Extracted from the spice turmeric"
-            ],
-            "category": "Colourants",
-            "examples": "Used in pastries, confectionery, sauces, and soups"
+            "examples": "Added to gravy mix and certain meat products"
         },
         {
             "e-number": "E100",
