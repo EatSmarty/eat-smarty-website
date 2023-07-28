@@ -432,14 +432,344 @@
     ],
     "Preservatives" :[
         {
-            "e-number": "E100",
-            "name": "Curcumin",
+            "e-number": "E200",
+            "name": "Sorbic acid",
             "description": [
-                "Naturally occurring orange/yellow colour",
-                "Extracted from the spice turmeric"
+                "Naturally occurring in some fruit but generally manufactured synthetically for use as a food preservative",
+                ""
             ],
-            "category": "Colourants",
-            "examples": "Used in pastries, confectionery, sauces, and soups"
+            "category": " Preservatives",
+            "examples": "Commonly added to soft drinks, cheese spread, frozen pizza, and cakes"
+        },
+        {
+            "e-number": "E202",
+            "name": "Potassium sorbate",
+            "description": [
+                "Salt of sorbic acid",
+                ""
+            ],
+            "category": " Preservatives",
+            "examples": "Used to preserve glace cherries"
+        },
+        {
+            "e-number": "E210",
+            "name": "Benzoic acid",
+            "description": [
+                "Occurs naturally in cherry bark, raspberries, tea, anise, and cassia bark, but largely prepared synthetically for commercial use",
+                ""
+            ],
+            "category": " Preservatives",
+            "examples": "Acts as a preservative and antioxidant most frequently in fruit products, soft drinks, pickled produce, and salad dressings"
+        },
+        {
+            "e-number": "E211",
+            "name": "Sodium benzoate",
+            "description": [
+                "Salt of benzoic acid",
+                ""
+            ],
+            "category": " Preservatives",
+            "examples": "In bottled sauces"
+        },
+        {
+            "e-number": "E212",
+            "name": "Sorbic acid",
+            "description": [
+                "Potassium benzoate",
+                ""
+            ],
+            "category": " Preservatives",
+            "examples": "As per benzoic acid (E210)"
+        },
+        {
+            "e-number": "E213",
+            "name": "Calcium benzoate",
+            "description": [
+                "Salt of benzoic acid",
+                ""
+            ],
+            "category": " Preservatives",
+            "examples": "As per benzoic acid (E210)"
+        },
+        {
+            "e-number": "E214",
+            "name": "Ethyl p-hydroxybenzoate",
+            "description": [
+                "Preservative",
+                "Salt of benzoic acid"
+            ],
+            "category": " Preservatives",
+            "examples": "As per benzoic acid (E210)"
+        },
+        {
+            "e-number": "E215",
+            "name": "Sodium ethyl p-hydroxybenzoate",
+            "description": [
+                "Preservative",
+                "Salt of benzoic acid"
+            ],
+            "category": " Preservatives",
+            "examples": "As per benzoic acid (E210)"
+        },
+        {
+            "e-number": "E218",
+            "name": "Methyl p-hydroxybenzoate",
+            "description": [
+                "Preservative",
+                "Salt of benzoic acid"
+            ],
+            "category": " Preservatives",
+            "examples": "As per benzoic acid (E210)"
+        },
+        {
+            "e-number": "E219",
+            "name": "Sodium methyl p-hydroxybenzoate",
+            "description": [
+                "Preservative",
+                "Salt of benzoic acid"
+            ],
+            "category": " Preservatives",
+            "examples": "As per benzoic acid (E210)"
+        },
+        {
+            "e-number": "E220",
+            "name": "Sulfur dioxide",
+            "description": [
+                "Gas prepared chemically for use as a food preservative, flour improver, bleaching agent, and Vitamin C stabiliser",
+                ""
+            ],
+            "category": " Preservatives",
+            "examples": "Found in carbonated drinks, marmalade, glace cherries, mixed peel, cakes, fruit based products, and meat products"
+        },
+        {
+            "e-number": "E221",
+            "name": "Sodium sulphite",
+            "description": [
+                "Preservative",
+                ""
+            ],
+            "category": " Preservatives",
+            "examples": "May be used to prevent discolouration in dried fruit"
+        },
+        {
+            "e-number": "E222",
+            "name": "Sodium hydrogen sulphite",
+            "description": [
+                "Synthetic preservative and bleaching agent",
+                ""
+            ],
+            "category": " Preservatives",
+            "examples": "Often added to wine and beer"
+        },
+        {
+            "e-number": "E223",
+            "name": "Sodium metabisulphite",
+            "description": [
+                "Synthetic preservative",
+                ""
+            ],
+            "category": " Preservatives",
+            "examples": "Added to sausages and some bottled sauces"
+        },
+        {
+            "e-number": "E224",
+            "name": "Potassium metabisulphite",
+            "description": [
+                "Preservative",
+                ""
+            ],
+            "category": " Preservatives",
+            "examples": "Sometimes used to preserve beer, wine, and other fermented beverages"
+        },
+        {
+            "e-number": "E226",
+            "name": "Calcium sulphite",
+            "description": [
+                "Preservative",
+                ""
+            ],
+            "category": " Preservatives",
+            "examples": "Banned in Australia"
+        },
+        {
+            "e-number": "E227",
+            "name": "Calcium hydrogen sulphite",
+            "description": [
+                "Preservative",
+                ""
+            ],
+            "category": " Preservatives",
+            "examples": "May be used in canned fruit and beer products"
+        },
+        {
+            "e-number": "E228",
+            "name": "Potassium hydrogen sulphite",
+            "description": [
+                "Preservative",
+                ""
+            ],
+            "category": " Preservatives",
+            "examples": "May be used in alcoholic beverages"
+        },
+        {
+            "e-number": "E234",
+            "name": "Nisin",
+            "description": [
+                "Preservative",
+                ""
+            ],
+            "category": " Preservatives",
+            "examples": "Cheese and dairy products"
+        },
+        {
+            "e-number": "E235",
+            "name": "Natamycin",
+            "description": [
+                "Preservative",
+                ""
+            ],
+            "category": " Preservatives",
+            "examples": "Cheese and sausages"
+        },
+        {
+            "e-number": "E239",
+            "name": "Hexamethylene tetramine",
+            "description": [
+                "Preservative",
+                ""
+            ],
+            "category": " Preservatives",
+            "examples": "Cheese and fish products"
+        },
+        {
+            "e-number": "E242",
+            "name": "Dimethyl dicarbonate",
+            "description": [
+                "Preservative",
+                ""
+            ],
+            "category": " Preservatives",
+            "examples": "Beverages"
+        },
+        {
+            "e-number": "E243",
+            "name": "Ethyl lauroyl arginate",
+            "description": [
+                "Preservative",
+                ""
+            ],
+            "category": " Preservatives",
+            "examples": "Heat treated meat products"
+        },
+        {
+            "e-number": "E249",
+            "name": "Potassium nitrite",
+            "description": [
+                "Naturally occurring mineral used as a preservative and colour fixative",
+                ""
+            ],
+            "category": " Preservatives",
+            "examples": "Used in cooked meats, sausages, and cured meats"
+        },
+        {
+            "e-number": "E250",
+            "name": "Sodium nitrite",
+            "description": [
+                "Derived from sodium nitrate by chemical or bacterial action",
+                "Acts as a preservative and colour fixative"
+            ],
+            "category": " Preservatives",
+            "examples": "Acts as a preservative and colour fixative"
+        },
+        {
+            "e-number": "E251",
+            "name": "Sodium nitrate",
+            "description": [
+                "Naturally occurring mineral, usually manufactured synthetically for use as a food preservative and colour fixative",
+                ""
+            ],
+            "category": " Preservatives",
+            "examples": "In cooked meats, bacon, ham, and cheese"
+        },
+        {
+            "e-number": "E252",
+            "name": "Potassium nitrate",
+            "description": [
+                "Naturally occurring but more usually produced artificially from animal waste and vegetable material",
+                "One of the oldest and most effective preservatives for meat"
+            ],
+            "category": " Preservatives",
+            "examples": "Found in cured and cooked meats, and sausages"
+        },
+        {
+            "e-number": "E280",
+            "name": "Propionic acid",
+            "description": [
+                "Fatty acid produced by animals in the process of digestion, but generally manufactured synthetically",
+                ""
+            ],
+            "category": " Preservatives",
+            "examples": "Added to baked goods, Functions as a preservative"
+        },
+        {
+            "e-number": "E281",
+            "name": "Sodium propionate",
+            "description": [
+                "Salt of propionic acid",
+                ""
+            ],
+            "category": " Preservatives",
+            "examples": "Added to baked goods"
+        },
+        {
+            "e-number": "E282",
+            "name": "Calcium propionate",
+            "description": [
+                "Salt of propionic acid",
+                "Found naturally in Swiss cheese"
+            ],
+            "category": " Preservatives",
+            "examples": "Added to baked goods"
+        },
+        {
+            "e-number": "E283",
+            "name": "Potassium propionate",
+            "description": [
+                "Salt of propionic acid",
+                ""
+            ],
+            "category": " Preservatives",
+            "examples": "Added to baked goods"
+        },
+        {
+            "e-number": "E284",
+            "name": "Boric acid",
+            "description": [
+                "Preservative and acidity regulator",
+                ""
+            ],
+            "category": " Preservatives",
+            "examples": "Sometimes used in meat, fish, and dairy products, Other uses include antiseptic and insecticide"
+        },
+        {
+            "e-number": "E285",
+            "name": "Sodium tetraborate; borax",
+            "description": [
+                "Preservative",
+                "Sodium salt of boric acid (see E284)"
+            ],
+            "category": " Preservatives",
+            "examples": "Sometimes used as caviar preservative, Banned in some countries including the United States"
+        },
+        {
+            "e-number": "E1105",
+            "name": "Lysozyme",
+            "description": [
+                "Preservative, Natural enzyme found in tears, saliva, blood, sweat, and breast milk",
+                "Commercially purified from egg whites"
+            ],
+            "category": " Preservatives",
+            "examples": "Infant nutrition products, Cheese products"
         }
     ],
     "Antioxidants" :[
