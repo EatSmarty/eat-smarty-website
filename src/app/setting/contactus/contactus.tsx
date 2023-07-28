@@ -16,6 +16,7 @@ const Contactus: FC<contactusProps> = ({}) => {
             Hi! We're happy to hear from you. If you have any questions or comments about our project, please contact us. You can contact us via github issue. We're always looking for ways to improve our project,
             So if you want to work with us, please let us know! Thank you for your support.
             </p>
+            <a className='github-link bg-[#0069FE] text-[#fff] p-1.5 rounded mb-5' href="https://github.com/Halalvar/halalvar/issues" target='_blank'>Github Issues</a>
         </div>
     </section>
 </div>
