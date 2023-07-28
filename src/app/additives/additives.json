@@ -1,7 +1,7 @@
 {
     "Colour" :[
         {
-            "e-number": "E100",
+            "enumber": "E100",
             "name": "Curcumin",
             "description": [
                 "Naturally occurring orange/yellow colour",
@@ -12,7 +12,7 @@
             "badge": "MUSHBOOH"
         },
         {
-            "e-number": "E101",
+            "enumber": "E101",
             "name": "Riboflavin or lactoflavin (Vitamin B2)",
             "description": [
                 "Naturally occurring B-group vitamin",
@@ -23,7 +23,7 @@
             "badge": "MUSHBOOH"
         },
         {
-            "e-number": "E102",
+            "enumber": "E102",
             "name": "Quinoline Yellow",
             "description": [
                 "Widely used yellow/orange colour",
@@ -34,7 +34,7 @@
             "badge": "HALAL"
         },
         {
-            "e-number": "E104",
+            "enumber": "E104",
             "name": "Quinoline Yellow",
             "description": [
                 "A synthetic coal tar dye, greenish yellow in colour",
@@ -45,7 +45,7 @@
             "badge": "HALAL"
         },
         {
-            "e-number": "E110",
+            "enumber": "E110",
             "name": "Sunset Yellow FCF, Orange Yellow S",
             "description": [
                 "A synthetic coal tar dye, yellow in colour, used with E102",
@@ -56,7 +56,7 @@
             "badge": "MUSHBOOH"
         },
         {
-            "e-number": "E120",
+            "enumber": "E120",
             "name": "Cochineal, Carminic acid, Carmines",
             "description": [
                 "Natural red colour obtained from egg yolk and dried insects",
@@ -67,7 +67,7 @@
             "badge": "HARAM"
         },
         {
-            "e-number": "E122",
+            "enumber": "E122",
             "name": "Azorubine, Carmoisine",
             "description": [
                 "A synthetic coal tar dye, red/purple in colour",
@@ -77,7 +77,7 @@
             "examples": "Often added to raspberry and chocolate flavoured desserts, marzipan, jam, cherryade, bottled sauce, and breaded products"
         },
         {
-            "e-number": "E123",
+            "enumber": "E123",
             "name": "Amaranth",
             "description": [
                 "A synthetic coal tar dye, red in colour",
@@ -87,7 +87,7 @@
             "examples": "Sometimes used in gravy mixes, meat patties, and blackcurrant drinks"
         },
         {
-            "e-number": "E124",
+            "enumber": "E124",
             "name": "Ponceau 4R, Cochineal Red A",
             "description": [
                 "A synthetic coal tar dye, red in colour",
@@ -98,7 +98,7 @@
             "badge": "HALAL"
         },
         {
-            "e-number": "E127",
+            "enumber": "E127",
             "name": "Erythrosine",
             "description": [
                 "A synthetic coal tar dye, red in colour",
@@ -109,7 +109,7 @@
             "badge": "MUSHBOOH"
         },
         {
-            "e-number": "E128",
+            "enumber": "E128",
             "name": "Curcumin",
             "description": [
                 "Naturally occurring orange/yellow colour",
@@ -120,7 +120,7 @@
             "badge": "MUSHBOOH"
         },
         {
-            "e-number": "E129",
+            "enumber": "E129",
             "name": "Allura Red AC",
             "description": [
                 "Colouring agent",
@@ -130,7 +130,7 @@
             "examples": "Used in drinks, baked goods, meat products, and sweets"
         },
         {
-            "e-number": "E131",
+            "enumber": "E131",
             "name": "Patent Blue V",
             "description": [
                 "Colouring agent",
@@ -140,7 +140,7 @@
             "examples": "Used in some meat products"
         },
         {
-            "e-number": "E132",
+            "enumber": "E132",
             "name": "lndigotine, Indigo Carmine",
             "description": [
                 "A synthetic coal tar dye, blue in colour",
@@ -150,7 +150,7 @@
             "examples": "Added to gravy mix and certain meat products"
         },
         {
-            "e-number": "E133",
+            "enumber": "E133",
             "name": "Brilliant Blue FCF",
             "description": [
                 "A synthetic coal tar dye, blue in colour",
@@ -160,7 +160,7 @@
             "examples": "Bacon flavoured snacks"
         },
         {
-            "e-number": "E140",
+            "enumber": "E140",
             "name": "Chlorophyll and chlorophyllins",
             "description": [
                 "Naturally occurring green pigment found plant leaves and stems",
@@ -170,7 +170,7 @@
             "examples": "Added to green vegetables to enhance their colour"
         },
         {
-            "e-number": "E141",
+            "enumber": "E141",
             "name": "Copper complexes of chlorophyll and chlorophyllins",
             "description": [
                 "A more stable colour obtained by a reaction between copper and manufactured chlorophyll",
@@ -180,7 +180,7 @@
             "examples": "Used to heighten the green colour of products such as cucumber relish"
         },
         {
-            "e-number": "E142",
+            "enumber": "E142",
             "name": "Green S",
             "description": [
                 "Commonly used brown colour and flavouring agent made from the caramelisation or burning of sugar by heat or chemicals",
@@ -190,7 +190,7 @@
             "examples": "Used in soft drinks, gravy mix, brown bread, cakes, biscuits, malt vinegar, marmalade, and beef products"
         },
         {
-            "e-number": "E150a",
+            "enumber": "E150a",
             "name": "Plain caramel",
             "description": [
                 "Commonly used brown colour and flavouring agent made from the caramelisation or burning of sugar by heat or chemicals",
@@ -200,7 +200,7 @@
             "examples": "Used in soft drinks, gravy mix, brown bread, cakes, biscuits, malt vinegar, marmalade, and beef products"
         },
         {
-            "e-number": "E150b",
+            "enumber": "E150b",
             "name": "Caustic sulphite caramel",
             "description": [
                 "Colouring agent",
@@ -210,7 +210,7 @@
             "examples": "Used in tea, whiskey, and brandy"
         },
         {
-            "e-number": "E150c",
+            "enumber": "E150c",
             "name": "Ammonia caramel",
             "description": [
                 "Colouring agent",
@@ -220,7 +220,7 @@
             "examples": "Used to colour soy sauce and beer"
         },
         {
-            "e-number": "E150d",
+            "enumber": "E150d",
             "name": "Sulphite ammonia caramel",
             "description": [
                 "Colouring agent",
@@ -230,7 +230,7 @@
             "examples": "Widely used for soft drinks"
         },
         {
-            "e-number": "E151",
+            "enumber": "E151",
             "name": "Brilliant Black BN, Black PN",
             "description": [
                 "A synthetic coal tar dye, black in colour",
@@ -240,7 +240,7 @@
             "examples": "Used to darken fruit sauces"
         },
         {
-            "e-number": "E153",
+            "enumber": "E153",
             "name": "Vegetable carbon",
             "description": [
                 "Natural black colour obtained from burnt plant material, now often manufactured",
@@ -250,7 +250,7 @@
             "examples": "Added to concentrated fruit juices, preserves, and jellies"
         },
         {
-            "e-number": "E155",
+            "enumber": "E155",
             "name": "Brown HT",
             "description": [
                 "A synthetic coal tar dye, brown in colour",
@@ -260,7 +260,7 @@
             "examples": "Various foods"
         },
         {
-            "e-number": "E160",
+            "enumber": "E160",
             "name": "Carotenoids",
             "description": [
                 "Plant pigments derived from carrots, tomatoes, apricots, oranges, rosehip and green leafy vegetables",
@@ -270,7 +270,7 @@
             "examples": "Provide a range of colours from yellow to red"
         },
         {
-            "e-number": "E160a",
+            "enumber": "E160a",
             "name": "Alpha-, beta, and gamma-carotenes",
             "description": [
                 "Beta-carotene is a well-known substance that is converted by the body to Vitamin A",
@@ -280,7 +280,7 @@
             "examples": "Added to biscuits, cakes, margarine, creamed rice, cheese products, and certain soups"
         },
         {
-            "e-number": "E160b",
+            "enumber": "E160b",
             "name": "Annatto",
             "description": [
                 "Orange/peach pigment naturally present in butter and cheese",
@@ -290,7 +290,7 @@
             "examples": "Used to give creamy colour to creamed rice, coffee creamer, pastry, cheese, and cheese products"
         },
         {
-            "e-number": "E160c",
+            "enumber": "E160c",
             "name": "Paprika extract, Capsanthian, Capsorubin",
             "description": [
                 "Colouring agent (red)",
@@ -300,7 +300,7 @@
             "examples": "Can be used to add colour and flavour to various food products"
         },
         {
-            "e-number": "E160d",
+            "enumber": "E160d",
             "name": "Lycopene",
             "description": [
                 "Colouring agent (red)",
@@ -310,7 +310,7 @@
             "examples": "May be used in processed foods, beverages, and ketchup"
         },
         {
-            "e-number": "E160e",
+            "enumber": "E160e",
             "name": "Beta-apo-8'-carotenal (C30) apocarotenal",
             "description": [
                 "Colouring agent (orange/red)",
@@ -320,7 +320,7 @@
             "examples": "Sometimes used in processed cheese"
         },
         {
-            "e-number": "E161b",
+            "enumber": "E161b",
             "name": "Lutein",
             "description": [
                 "Colouring agent (yellow/orange)",
@@ -330,7 +330,7 @@
             "examples": "Has been used as a chicken feed additive to promote yellow colouring of egg yolks"
         },
         {
-            "e-number": "E161g",
+            "enumber": "E161g",
             "name": "Canthaxanthin",
             "description": [
                 "Colouring agent (reddish/orange)",
@@ -340,7 +340,7 @@
             "examples": "May be present in food and self-tanning products"
         },
         {
-            "e-number": "E162",
+            "enumber": "E162",
             "name": "Betanin (Beetroot Red)",
             "description": [
                 "Naturally occurring red/purple colour in beetroots",
@@ -350,7 +350,7 @@
             "examples": "May be added to oxtail soup"
         },
         {
-            "e-number": "E163",
+            "enumber": "E163",
             "name": "Anthocyanins",
             "description": [
                 "Plant pigments with colours ranging from red to blue",
@@ -360,7 +360,7 @@
             "examples": "Used in producing purple-colored beverages, confectionaries, and jams"
         },
         {
-            "e-number": "E170",
+            "enumber": "E170",
             "name": "Calcium carbonate (chalk)",
             "description": [
                 "Naturally occurring mineral",
@@ -370,7 +370,7 @@
             "examples": "Frequently an ingredient in bread and baked products"
         },
         {
-            "e-number": "E171",
+            "enumber": "E171",
             "name": "Titanium dioxide",
             "description": [
                 "Colouring agent",
@@ -380,7 +380,7 @@
             "examples": "Use no longer permitted in the EU and in Northern Ireland as of Feb 2022"
         },
         {
-            "e-number": "E172",
+            "enumber": "E172",
             "name": "Iron oxides and hydroxides",
             "description": [
                 "Naturally occurring mineral",
@@ -390,7 +390,7 @@
             "examples": "Added to flour and breakfast cereals"
         },
         {
-            "e-number": "E173",
+            "enumber": "E173",
             "name": "Aluminium",
             "description": [
                 "Colouring agent (silver/grey)",
@@ -400,7 +400,7 @@
             "examples": "Surface coating (eg, for cake decoration or confectionary)"
         },
         {
-            "e-number": "E174",
+            "enumber": "E174",
             "name": "Silver",
             "description": [
                 "Colouring agent",
@@ -410,7 +410,7 @@
             "examples": "May be used for silver surface coating"
         },
         {
-            "e-number": "E175",
+            "enumber": "E175",
             "name": "Gold",
             "description": [
                 "Colouring agent",
@@ -420,7 +420,7 @@
             "examples": "May be used for gold surface coating"
         },
         {
-            "e-number": "E180",
+            "enumber": "E180",
             "name": "Lithol rubine BK",
             "description": [
                 "Colouring agent (red)",
@@ -432,7 +432,7 @@
     ],
     "Preservatives" :[
         {
-            "e-number": "E200",
+            "enumber": "E200",
             "name": "Sorbic acid",
             "description": [
                 "Naturally occurring in some fruit but generally manufactured synthetically for use as a food preservative",
@@ -442,7 +442,7 @@
             "examples": "Commonly added to soft drinks, cheese spread, frozen pizza, and cakes"
         },
         {
-            "e-number": "E202",
+            "enumber": "E202",
             "name": "Potassium sorbate",
             "description": [
                 "Salt of sorbic acid",
@@ -452,7 +452,7 @@
             "examples": "Used to preserve glace cherries"
         },
         {
-            "e-number": "E210",
+            "enumber": "E210",
             "name": "Benzoic acid",
             "description": [
                 "Occurs naturally in cherry bark, raspberries, tea, anise, and cassia bark, but largely prepared synthetically for commercial use",
@@ -462,7 +462,7 @@
             "examples": "Acts as a preservative and antioxidant most frequently in fruit products, soft drinks, pickled produce, and salad dressings"
         },
         {
-            "e-number": "E211",
+            "enumber": "E211",
             "name": "Sodium benzoate",
             "description": [
                 "Salt of benzoic acid",
@@ -472,7 +472,7 @@
             "examples": "In bottled sauces"
         },
         {
-            "e-number": "E212",
+            "enumber": "E212",
             "name": "Sorbic acid",
             "description": [
                 "Potassium benzoate",
@@ -482,7 +482,7 @@
             "examples": "As per benzoic acid (E210)"
         },
         {
-            "e-number": "E213",
+            "enumber": "E213",
             "name": "Calcium benzoate",
             "description": [
                 "Salt of benzoic acid",
@@ -492,7 +492,7 @@
             "examples": "As per benzoic acid (E210)"
         },
         {
-            "e-number": "E214",
+            "enumber": "E214",
             "name": "Ethyl p-hydroxybenzoate",
             "description": [
                 "Preservative",
@@ -502,7 +502,7 @@
             "examples": "As per benzoic acid (E210)"
         },
         {
-            "e-number": "E215",
+            "enumber": "E215",
             "name": "Sodium ethyl p-hydroxybenzoate",
             "description": [
                 "Preservative",
@@ -512,7 +512,7 @@
             "examples": "As per benzoic acid (E210)"
         },
         {
-            "e-number": "E218",
+            "enumber": "E218",
             "name": "Methyl p-hydroxybenzoate",
             "description": [
                 "Preservative",
@@ -522,7 +522,7 @@
             "examples": "As per benzoic acid (E210)"
         },
         {
-            "e-number": "E219",
+            "enumber": "E219",
             "name": "Sodium methyl p-hydroxybenzoate",
             "description": [
                 "Preservative",
@@ -532,7 +532,7 @@
             "examples": "As per benzoic acid (E210)"
         },
         {
-            "e-number": "E220",
+            "enumber": "E220",
             "name": "Sulfur dioxide",
             "description": [
                 "Gas prepared chemically for use as a food preservative, flour improver, bleaching agent, and Vitamin C stabiliser",
@@ -542,7 +542,7 @@
             "examples": "Found in carbonated drinks, marmalade, glace cherries, mixed peel, cakes, fruit based products, and meat products"
         },
         {
-            "e-number": "E221",
+            "enumber": "E221",
             "name": "Sodium sulphite",
             "description": [
                 "Preservative",
@@ -552,7 +552,7 @@
             "examples": "May be used to prevent discolouration in dried fruit"
         },
         {
-            "e-number": "E222",
+            "enumber": "E222",
             "name": "Sodium hydrogen sulphite",
             "description": [
                 "Synthetic preservative and bleaching agent",
@@ -562,7 +562,7 @@
             "examples": "Often added to wine and beer"
         },
         {
-            "e-number": "E223",
+            "enumber": "E223",
             "name": "Sodium metabisulphite",
             "description": [
                 "Synthetic preservative",
@@ -572,7 +572,7 @@
             "examples": "Added to sausages and some bottled sauces"
         },
         {
-            "e-number": "E224",
+            "enumber": "E224",
             "name": "Potassium metabisulphite",
             "description": [
                 "Preservative",
@@ -582,7 +582,7 @@
             "examples": "Sometimes used to preserve beer, wine, and other fermented beverages"
         },
         {
-            "e-number": "E226",
+            "enumber": "E226",
             "name": "Calcium sulphite",
             "description": [
                 "Preservative",
@@ -592,7 +592,7 @@
             "examples": "Banned in Australia"
         },
         {
-            "e-number": "E227",
+            "enumber": "E227",
             "name": "Calcium hydrogen sulphite",
             "description": [
                 "Preservative",
@@ -602,7 +602,7 @@
             "examples": "May be used in canned fruit and beer products"
         },
         {
-            "e-number": "E228",
+            "enumber": "E228",
             "name": "Potassium hydrogen sulphite",
             "description": [
                 "Preservative",
@@ -612,7 +612,7 @@
             "examples": "May be used in alcoholic beverages"
         },
         {
-            "e-number": "E234",
+            "enumber": "E234",
             "name": "Nisin",
             "description": [
                 "Preservative",
@@ -622,7 +622,7 @@
             "examples": "Cheese and dairy products"
         },
         {
-            "e-number": "E235",
+            "enumber": "E235",
             "name": "Natamycin",
             "description": [
                 "Preservative",
@@ -632,7 +632,7 @@
             "examples": "Cheese and sausages"
         },
         {
-            "e-number": "E239",
+            "enumber": "E239",
             "name": "Hexamethylene tetramine",
             "description": [
                 "Preservative",
@@ -642,7 +642,7 @@
             "examples": "Cheese and fish products"
         },
         {
-            "e-number": "E242",
+            "enumber": "E242",
             "name": "Dimethyl dicarbonate",
             "description": [
                 "Preservative",
@@ -652,7 +652,7 @@
             "examples": "Beverages"
         },
         {
-            "e-number": "E243",
+            "enumber": "E243",
             "name": "Ethyl lauroyl arginate",
             "description": [
                 "Preservative",
@@ -662,7 +662,7 @@
             "examples": "Heat treated meat products"
         },
         {
-            "e-number": "E249",
+            "enumber": "E249",
             "name": "Potassium nitrite",
             "description": [
                 "Naturally occurring mineral used as a preservative and colour fixative",
@@ -672,7 +672,7 @@
             "examples": "Used in cooked meats, sausages, and cured meats"
         },
         {
-            "e-number": "E250",
+            "enumber": "E250",
             "name": "Sodium nitrite",
             "description": [
                 "Derived from sodium nitrate by chemical or bacterial action",
@@ -682,7 +682,7 @@
             "examples": "Acts as a preservative and colour fixative"
         },
         {
-            "e-number": "E251",
+            "enumber": "E251",
             "name": "Sodium nitrate",
             "description": [
                 "Naturally occurring mineral, usually manufactured synthetically for use as a food preservative and colour fixative",
@@ -692,7 +692,7 @@
             "examples": "In cooked meats, bacon, ham, and cheese"
         },
         {
-            "e-number": "E252",
+            "enumber": "E252",
             "name": "Potassium nitrate",
             "description": [
                 "Naturally occurring but more usually produced artificially from animal waste and vegetable material",
@@ -702,7 +702,7 @@
             "examples": "Found in cured and cooked meats, and sausages"
         },
         {
-            "e-number": "E280",
+            "enumber": "E280",
             "name": "Propionic acid",
             "description": [
                 "Fatty acid produced by animals in the process of digestion, but generally manufactured synthetically",
@@ -712,7 +712,7 @@
             "examples": "Added to baked goods, Functions as a preservative"
         },
         {
-            "e-number": "E281",
+            "enumber": "E281",
             "name": "Sodium propionate",
             "description": [
                 "Salt of propionic acid",
@@ -722,7 +722,7 @@
             "examples": "Added to baked goods"
         },
         {
-            "e-number": "E282",
+            "enumber": "E282",
             "name": "Calcium propionate",
             "description": [
                 "Salt of propionic acid",
@@ -732,7 +732,7 @@
             "examples": "Added to baked goods"
         },
         {
-            "e-number": "E283",
+            "enumber": "E283",
             "name": "Potassium propionate",
             "description": [
                 "Salt of propionic acid",
@@ -742,7 +742,7 @@
             "examples": "Added to baked goods"
         },
         {
-            "e-number": "E284",
+            "enumber": "E284",
             "name": "Boric acid",
             "description": [
                 "Preservative and acidity regulator",
@@ -752,7 +752,7 @@
             "examples": "Sometimes used in meat, fish, and dairy products, Other uses include antiseptic and insecticide"
         },
         {
-            "e-number": "E285",
+            "enumber": "E285",
             "name": "Sodium tetraborate; borax",
             "description": [
                 "Preservative",
@@ -762,7 +762,7 @@
             "examples": "Sometimes used as caviar preservative, Banned in some countries including the United States"
         },
         {
-            "e-number": "E1105",
+            "enumber": "E1105",
             "name": "Lysozyme",
             "description": [
                 "Preservative, Natural enzyme found in tears, saliva, blood, sweat, and breast milk",
@@ -774,7 +774,7 @@
     ],
     "Antioxidants" :[
         {
-            "e-number": "E100",
+            "enumber": "E100",
             "name": "Curcumin",
             "description": [
                 "Naturally occurring orange/yellow colour",
@@ -786,7 +786,7 @@
     ],
     "Thickeners" :[
         {
-            "e-number": "E100",
+            "enumber": "E100",
             "name": "Curcumin",
             "description": [
                 "Naturally occurring orange/yellow colour",
@@ -798,7 +798,7 @@
     ],
     "pH regulators" :[
         {
-            "e-number": "E100",
+            "enumber": "E100",
             "name": "Curcumin",
             "description": [
                 "Naturally occurring orange/yellow colour",
@@ -810,7 +810,7 @@
     ],
     "Flavour enhancers" :[
         {
-            "e-number": "E100",
+            "enumber": "E100",
             "name": "Curcumin",
             "description": [
                 "Naturally occurring orange/yellow colour",
@@ -822,7 +822,7 @@
     ],
     "Antibiotics" :[
         {
-            "e-number": "E100",
+            "enumber": "E100",
             "name": "Curcumin",
             "description": [
                 "Naturally occurring orange/yellow colour",
@@ -834,7 +834,7 @@
     ],
     "sweeteners" :[
         {
-            "e-number": "E100",
+            "enumber": "E100",
             "name": "Curcumin",
             "description": [
                 "Naturally occurring orange/yellow colour",
