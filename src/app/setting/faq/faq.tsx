@@ -26,7 +26,7 @@ const Faq: FC<faqProps> = ({}) => {
       <div className='contact-box rounded flex justify-center items-center flex-col'>
           {accordionData.map((data, index) => {
             // eslint-disable-next-line react/jsx-key
-            return <Accordion></Accordion>
+            return <Accordion open={undefined} toggle={undefined} title={undefined} desc={undefined}></Accordion>
           })}
       </div>
   </section>
