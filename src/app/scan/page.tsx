@@ -1,17 +1,23 @@
-import Home from '@/app/page'
+'use client'
+
 import { FC } from 'react'
+import Header from './header'
+import Home from '../page'
 
 interface pageProps {
   
 }
 
 const page: FC<pageProps> = ({}) => {
-  return (
-    <div>
+  return( 
+      <div className='home-screen'>
         <Home></Home>
-        <div className='container flex justify-center items-center min-h-screen'>
-          <a className='scan p-5 flex justify-center items-center text-[#F6F8E2]'>tap to scan</a>
+        <Header></Header>
+      <main className='flex justify-center items-center'>
+        <div>
+          
         </div>
+      </main>
     </div>
   )
 }
