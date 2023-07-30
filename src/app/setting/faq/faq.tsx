@@ -1,7 +1,7 @@
 
 
 function Faq() {
-    const accordionData = [
+    const data = [
         {
             title: "test1?",
             desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt laborum vel corrupti neque consequuntur reprehenderit ut, porro omnis quidem fugit officiis, eaque enim tempora laboriosam praesentium? Provident pariatur ducimus repellat.",
@@ -21,7 +21,7 @@ function Faq() {
       <div className='contact-box rounded flex justify-center items-center flex-col'>
       
       <div className='faq-container mb-20'>
-      {accordionData.map((data) => {
+      {data.map((data) => {
             // eslint-disable-next-line react/jsx-key
             return <div className="container flex justify-center items-center flex-col px-10 py-5 text-base text-gray-500 text-center">
                 <div className="title mb-10 text-2xl">{data.title}</div>
