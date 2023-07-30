@@ -11,7 +11,7 @@ const Category: FC<categoryProps> = ({}) => {
             <p className='mt-10 text-2xl'>category</p>
             <div className='category-items'>
                   <div className="container cursor-pointer">
-                    <Image src="/fruit-3d.jpg"
+                    <Image src="https://halalvar.github.io/halalvar/fruit-3d.jpg"
                         width={100}
                         height={100}
                         alt="fruite"
@@ -22,7 +22,7 @@ const Category: FC<categoryProps> = ({}) => {
                       </div>
                   </div>
                   <div className="container cursor-pointer">
-                    <Image src="/drink-3d.jpg"
+                    <Image src="https://halalvar.github.io/halalvar/drink-3d.jpg"
                         width={100}
                         height={100}
                         alt="drink"
@@ -33,7 +33,7 @@ const Category: FC<categoryProps> = ({}) => {
                       </div>
                   </div>
                   <div className="container cursor-pointer">
-                    <Image src="/vegetable-3d.jpg"
+                    <Image src="https://halalvar.github.io/halalvar/vegetable-3d.jpg"
                         width={100}
                         height={100}
                         alt="vegetabls"
@@ -44,7 +44,7 @@ const Category: FC<categoryProps> = ({}) => {
                       </div>
                   </div>
                   <div className="container cursor-pointer">
-                    <Image src="/bread-3d.jpg"
+                    <Image src="https://halalvar.github.io/halalvar/bread-3d.jpg"
                         width={100}
                         height={100}
                         alt="bread"
@@ -55,7 +55,7 @@ const Category: FC<categoryProps> = ({}) => {
                       </div>
                   </div>
                   <div className="container cursor-pointer">
-                    <Image src="/fresh-food-3d.jpg"
+                    <Image src="https://halalvar.github.io/halalvar/fresh-food-3d.jpg"
                         width={100}
                         height={100}
                         alt="fresh food"
@@ -66,7 +66,7 @@ const Category: FC<categoryProps> = ({}) => {
                       </div>
                   </div>
                   <div className="container cursor-pointer">
-                    <Image src="/ice-cream-3d.jpg"
+                    <Image src="https://halalvar.github.io/halalvar/ice-cream-3d.jpg"
                         width={100}
                         height={100}
                         alt="ice cream"
