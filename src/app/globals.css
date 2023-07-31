@@ -147,6 +147,7 @@ body {
 }
 .search-box{
   position: relative;
+  /* width: 400px; */
 }
 .search-input{
   transition: 0.2s;
