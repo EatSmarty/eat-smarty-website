@@ -9,15 +9,34 @@ let colour = additivesJson.Colour
 
 const AdditivesList: FC<additivesListProps> = ({}) => {
 
-  return <div className='e-food mx-10'>
+  return <div className='e-food mt-20'>
             <Link href={"additives/desc"}>
-              <div className='item px-12 p-2 mt-3 rounded pl-5 pr-5 flex flex-col justify-between items-center w-32 h-32'>
+              <div className='item mt-3 rounded flex flex-col justify-center items-center w-28 h-28'>
                 <p className='title'>{colour[0].enumber}</p>
                 <div className='flex justify-center items-center'>
                   <div className='color-palete bg-orange-400 text-[#fff] p-1 rounded'>{colour[0].badge}</div>
                 </div>
               </div>
             </Link>
+            <Link href={"additives/desc"}>
+              <div className='item mt-3 rounded flex flex-col justify-center items-center w-28 h-28'>
+                <p className='title'>{colour[0].enumber}</p>
+                <div className='flex justify-center items-center'>
+                  <div className='color-palete bg-orange-400 text-[#fff] p-1 rounded'>{colour[0].badge}</div>
+                </div>
+              </div>
+            </Link>
+            <Link href={"additives/desc"}>
+              <div className='item mt-3 rounded flex flex-col justify-center items-center w-28 h-28'>
+                <p className='title'>{colour[0].enumber}</p>
+                <div className='flex justify-center items-center'>
+                  <div className='color-palete bg-orange-400 text-[#fff] p-1 rounded'>{colour[0].badge}</div>
+                </div>
+              </div>
+            </Link>
+            
+
+
             {/* <div className='item px-12 p-2 mt-3 rounded pl-5 pr-5 flex flex-col justify-between items-center w-32 h-32'>
               <p className='title'>{colour[1]['e-number']}</p>
               <div className='flex justify-center items-center'>
