@@ -20,17 +20,17 @@ const AdditivesList: FC<additivesListProps> = ({}) => {
             </Link>
             <Link href={"additives/desc"}>
               <div className='item mt-3 rounded flex flex-col justify-center items-center w-28 h-28'>
-                <p className='title'>{colour[0].enumber}</p>
+                <p className='title'>{colour[1].enumber}</p>
                 <div className='flex justify-center items-center'>
-                  <div className='color-palete bg-orange-400 text-[#fff] p-1 rounded'>{colour[0].badge}</div>
+                  <div className='color-palete bg-orange-400 text-[#fff] p-1 rounded'>{colour[1].badge}</div>
                 </div>
               </div>
             </Link>
             <Link href={"additives/desc"}>
               <div className='item mt-3 rounded flex flex-col justify-center items-center w-28 h-28'>
-                <p className='title'>{colour[0].enumber}</p>
+                <p className='title'>{colour[2].enumber}</p>
                 <div className='flex justify-center items-center'>
-                  <div className='color-palete bg-orange-400 text-[#fff] p-1 rounded'>{colour[0].badge}</div>
+                  <div className='color-palete bg-green-400 text-[#fff] p-1 rounded'>{colour[2].badge}</div>
                 </div>
               </div>
             </Link>
