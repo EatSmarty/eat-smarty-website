@@ -1,6 +1,6 @@
 'use client'
 
-import Home from '@/app/page'
+import Navigation from '@/app/page'
 import { FC } from 'react'
 import Header from './header'
 import SearchBox from './searchBox'
@@ -14,7 +14,7 @@ interface pageProps {
 const Page: FC<pageProps> = () => {
   return (
     <div className='home-screen mb-20'>
-      <Home></Home>
+      <Navigation></Navigation>
       <Header></Header>
       <main className='flex justify-center items-center'>
         <div>
