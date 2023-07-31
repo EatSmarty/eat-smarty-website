@@ -2,7 +2,7 @@
 
 import { FC } from 'react'
 import Header from './header'
-import Home from '../page'
+import Navigation from '../page'
 import BarcodeScanner from './barcodeScanner'
 
 interface pageProps {
@@ -12,7 +12,7 @@ interface pageProps {
 const page: FC<pageProps> = ({}) => {
   return( 
       <div className='home-screen'>
-        <Home></Home>
+        <Navigation></Navigation>
         <Header></Header>
       <main className='flex justify-center items-center'>
         <div>
