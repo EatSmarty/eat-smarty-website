@@ -146,12 +146,10 @@ body {
   }
 }
 .search-box{
-  width: 580px;
   position: relative;
 }
 .search-input{
   transition: 0.2s;
-  padding: 1rem;
 }
 .search-input input{
   transition: .1s;
@@ -161,11 +159,6 @@ body {
 }
 .search-input svg{
   right: 20px;
-}
-@media screen and (max-width: 800px) {
-  .search-box{
-    width: 270px;
-  }
 }
 /* E-list */
 .e-food{
