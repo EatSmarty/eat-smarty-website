@@ -311,3 +311,14 @@ input:checked + .slider:before {
   box-shadow: 0px 8px 10px -4px rgba(0,0,0,0.1);
 
 }
+@media screen and (max-width: 500px) {
+  .title{
+    font-size: 30px;
+  }
+  .sub-title{
+    font-size: 20px;
+  }
+  .home-header{
+    justify-content: space-between;
+  }
+}
