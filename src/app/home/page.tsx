@@ -3,9 +3,10 @@
 import Navigation from '@/app/page'
 import { FC } from 'react'
 import Header from '../header'
-import Search from './search'
 import Category from './category'
 import Advertise from './advertise'
+import Banner from './banner'
+import Slogan from './slogan'
 
 interface pageProps {
   
@@ -18,7 +19,8 @@ const page: FC<pageProps> = ({}) => {
       <Header></Header>
       <main className='flex justify-center items-center'>
         <div>
-          <Search></Search>
+          <Banner></Banner>
+          <Slogan></Slogan>
           <Category></Category>
           <Advertise></Advertise>
         </div>
