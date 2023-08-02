@@ -10,8 +10,7 @@ const Why: FC<whyProps> = ({}) => {
             <div className='w-1/2'>
                 <h1 className='text-5xl mb-4 text-gray-500'>Why Halalvar?</h1>
                 <p>
-                    Halal & Healthy provides information about ingredients and the origin of food additives (E-Code) by a simple scan. 
-                    If a product is suspicious, the user will get an alternative list of Halal products.
+                We specialize in seamlessly identifying halal food for you by simply scanning the products barcode, ensuring your dietary preferences are met with absolute ease and confidence
                 </p>
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="why-s-icon w-20 h-20 text-[#0069FE]">
