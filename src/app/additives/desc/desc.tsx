@@ -8,8 +8,8 @@ const Desc: FC<descProps> = ({}) => {
   return <div>
     <section className='contactus mt-40 text-2xl flex flex-col justify-center items-center'>
         <div className='flex justify-center items-center'>
-            <p className='title text-5xl text-gray-500 mb-10 mr-2 mt-10'>E100 |</p>
-            <div className='color-palete halal text-[#fff] p-1 rounded'></div>
+            <p className='title text-4xl text-gray-500 mb-10 mr-2 mt-10'>E100 |</p>
+            <p className='halal text-[#fff] rounded text-2xl p-1'>Halal</p>
         </div>
         <div className='details p-10 rounded text-center w-96'>
             <div className='mb-10'>
