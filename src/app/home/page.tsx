@@ -9,6 +9,7 @@ import Banner from './banner'
 import Slogan from './slogan'
 import Features from './features'
 import Footer from './footer'
+import Why from './why'
 
 interface pageProps {
   
@@ -23,9 +24,10 @@ const page: FC<pageProps> = ({}) => {
         <div>
           <Banner></Banner>
           <Slogan></Slogan>
+          <Why></Why>
           <Features></Features>
           <Category></Category>
-          <Advertise></Advertise>
+          {/* <Advertise></Advertise> */}
           <Footer></Footer>
         </div>
       </main>
