@@ -76,6 +76,17 @@ const Category: FC<categoryProps> = ({}) => {
                         <div className='text'>Ice-cream</div>
                       </div>
                   </div>
+                  <div className="container cursor-pointer">
+                    <Image src="https://halalvar.github.io/halalvar/ice-cream-3d.jpg"
+                        width={100}
+                        height={100}
+                        alt="ice cream"
+                        className='image rounded'
+                      />
+                      <div className="overlay">
+                        <div className='text'>Ice-cream</div>
+                      </div>
+                  </div>
             </div>
         </section>
   </div>
