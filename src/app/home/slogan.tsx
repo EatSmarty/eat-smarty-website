@@ -5,7 +5,7 @@ interface bannerProps {
 }
 
 const Slogan: FC<bannerProps> = ({}) => {
-  return <section className='slogan mt-10 text-base w-full text-center text-gray-500'>
+  return <section className='slogan mt-5 text-base w-full text-center text-gray-500'>
         <p className='mb-1'>
         Our startup identifies halal food instantly via barcode scanning,
         </p>
