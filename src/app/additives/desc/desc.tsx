@@ -6,20 +6,23 @@ interface descProps {
 
 const Desc: FC<descProps> = ({}) => {
   return <div>
-    <section className='contactus mt-20 text-2xl flex justefy-center items-center flex-col'>
-        <p>Curcumina</p>
+    <section className='contactus mt-40 text-2xl flex flex-col justify-center items-center'>
         <div className='flex justify-center items-center'>
-            <p className='title text-bold mb-10 mr-2 mt-10'>E100</p>
-            <div className='color-palete bg-orange-400 text-[#fff] p-1 rounded'>MASHBOOH</div>
+            <p className='title text-5xl text-gray-500 mb-10 mr-2 mt-10'>E100 |</p>
+            <div className='color-palete halal text-[#fff] p-1 rounded'></div>
         </div>
-        <div className='details flex justify-center items-center flex-col w-3/5 p-10 rounded'>
-            <div className='desc'>
-                <h3>Description</h3>
-                <p className='desc text-xl'>Naturally occurring orange/yellow colour, Extracted from the spice turmeric</p>
+        <div className='details p-10 rounded text-center w-96'>
+            <div className='mb-10'>
+                <span className='text-gray-500 font-bold mr-5'>name</span>
+                <span>Curcumina</span>
             </div>
-            <div className='example mt-10'>
-                <h3>Example</h3>
-                <p className='text-xl'>Used in pastries, confectionery, sauces, and soups</p>
+            <div className='desc mb-10'>
+                <span className='text-gray-500 font-bold mr-5'>description</span>
+                <span className='desc text-xl'>Naturally occurring orange/yellow colour, Extracted from the spice turmeric</span>
+            </div>
+            <div className='example mb-10'>
+                <span className='text-gray-500 font-bold mr-5'>Example</span>
+                <span className='text-xl'>Used in pastries, confectionery, sauces, and soups</span>
             </div>
         </div>
     </section>
