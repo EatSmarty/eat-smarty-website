@@ -45,6 +45,7 @@ body {
 .home-header{
   background-color: #fff;
   z-index: 2;
+  height: 120px;
 }
 .header-l, .header-r{
   margin-left: 10px;
@@ -302,7 +303,10 @@ input:checked + .slider:before {
   box-shadow: 0px 8px 10px -4px rgba(0,0,0,0.1);
 
 }
-@media screen and (max-width: 500px) {
+.why-section{
+  width: 900px;
+}
+@media screen and (max-width: 1000px) {
   .title{
     font-size: 30px;
   }
@@ -311,5 +315,21 @@ input:checked + .slider:before {
   }
   .home-header{
     justify-content: space-between;
+  }
+  .why-section{
+    width: 700px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .why-section{
+    width: 400px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .why-s-icon{
+    display: none;
+  }
+  .why-section{
+        justify-content: center;
   }
 }
