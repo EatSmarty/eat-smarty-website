@@ -7,8 +7,8 @@ interface categoryProps {
 
 const Category: FC<categoryProps> = ({}) => {
   return <div>
-    <section className='category'>
-            <p className='mt-10 text-2xl'>category</p>
+    <section className='category mt-20'>
+            {/* <p className='mt-10 text-2xl'>category</p> */}
             <div className='category-items'>
                   <div className="container cursor-pointer">
                     <Image src="https://halalvar.github.io/halalvar/fruit-3d.jpg"
