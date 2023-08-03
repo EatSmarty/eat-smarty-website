@@ -5,7 +5,7 @@ interface featuresProps {
 }
 
 const Features: FC<featuresProps> = ({}) => {
-  return <section className='features mt-20 text-xl w-full grid grid-cols-2 gap-y-10 gap-x-20'>
+  return <section className='features mt-20 text-base w-full grid grid-cols-2 gap-y-5 gap-x-5'>
         <div className="feature flex flex-col justfy-center items-center">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-10 h-10 duration-200 hover:text-[#0069FE] text-gray-500">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 010 3.75H5.625a1.875 1.875 0 010-3.75z" />
