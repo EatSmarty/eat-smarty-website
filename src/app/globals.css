@@ -45,7 +45,7 @@ body {
 .home-header{
   background-color: #fff;
   z-index: 2;
-  height: 120px;
+  height: 80px;
 }
 .header-l, .header-r{
   margin-left: 10px;
@@ -157,7 +157,9 @@ body {
   transition: .1s;
 }
 .search-input input:focus{
-  border-bottom: 2px solid #0069FE;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+  padding: 10px;
+  border-radius: 4px;
 }
 .search-input svg{
   right: 20px;
@@ -323,6 +325,9 @@ input:checked + .slider:before {
   .e-food{
     width: 700px;
   }
+  .contactus{
+    width: 700px;
+  }
 }
 @media screen and (max-width: 700px) {
   .why-section{
@@ -330,6 +335,9 @@ input:checked + .slider:before {
   }
   .e-food{
     width: 500px;
+  }
+  .contactus{
+    width: 400px;
   }
 }
 @media screen and (max-width: 450px) {
@@ -341,6 +349,9 @@ input:checked + .slider:before {
   }
   .e-food{
     width: 350px;
+  }
+  .contactus{
+    width: 370px;
   }
 }
 .halal{
