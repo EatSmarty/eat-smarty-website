@@ -7,7 +7,7 @@ interface categoryProps {
 
 const Category: FC<categoryProps> = ({}) => {
   return <div>
-    <section className='category mt-20'>
+    <section className='category mt-20 mx-5'>
             {/* <p className='mt-10 text-2xl'>category</p> */}
             <div className='category-items'>
                   <div className="container cursor-pointer">
