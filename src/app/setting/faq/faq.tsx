@@ -1,4 +1,5 @@
-
+import React from "react";
+import {Accordion, AccordionItem} from "@nextui-org/accordion";
 
 function Faq() {
     const faqData = [
@@ -39,21 +40,54 @@ function Faq() {
             desc: "We offer both free and premium subscription options. The free version includes basic features, while our premium subscription unlocks additional benefits and advanced functionalities for a seamless experience.",
         }
       ]
-  return <div>
-  <section className='faq flex justefy-center items-center flex-col'>
-      <div className='contact-box rounded flex justify-center items-center flex-col'>
-        <div className='faq-container mb-10 mt-16'>
-            {faqData.map((data) => {
-                    // eslint-disable-next-line react/jsx-key
-                    return <div className="container flex justify-center items-center flex-col px-5 py-5 text-base text-gray-500 text-left ">
-                        <div className="font-bold text-center mb-2">{data.title}</div>
-                        <div className="desc">{data.desc}</div>
-                    </div> 
-                })}
-        </div>
-      </div>
-  </section>
-</div>
+  return <Accordion className="accordion mt-20 text-gray-500" isCompact variant="splitted" defaultExpandedKeys={["1"]} hideIndicator
+    motionProps={{
+        variants: {
+        enter: {
+            y: 0,
+            opacity: 1,
+            height: "auto",
+            transition: {
+            height: {
+                type: "spring",
+                stiffness: 500,
+                damping: 30,
+                duration: 1,
+            },
+            opacity: {
+                easings: "ease",
+                duration: 1,
+            },
+            },
+        },
+        exit: {
+            y: -10,
+            opacity: 0,
+            height: 0,
+            transition: {
+            height: {
+                easings: "ease",
+                duration: 0.25,
+            },
+            opacity: {
+                easings: "ease",
+                duration: 0.3,
+            },
+            },
+        },
+        },
+    }}
+  >
+  <AccordionItem className="accordion-item text-xl m-5" key="1" aria-label={faqData[0].title} title={faqData[0].title}>
+      <p className="desc text-base">{faqData[0].desc}</p>
+  </AccordionItem>
+  <AccordionItem className="accordion-item text-xl m-5" key="2" aria-label={faqData[1].title} title={faqData[1].title}>
+      <p className="desc text-base">{faqData[1].desc}</p>
+  </AccordionItem>
+  <AccordionItem className="accordion-item text-xl m-5" key="3" aria-label={faqData[2].title} title={faqData[2].title}>
+      <p className="desc text-base">{faqData[2].desc}</p>
+  </AccordionItem>
+</Accordion>
 }
 
 export default Faq
