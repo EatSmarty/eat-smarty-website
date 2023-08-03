@@ -7,7 +7,7 @@ interface barcodeScannerProps {
 const BarcodeScanner: FC<barcodeScannerProps> = ({}) => {
     
     return <div>
-  <section className='scan-sec mt-40 '>
+  <section className='scan-sec mt-40 mx-5'>
           <div className='scan-notif flex justify-center items-center flex-col bg-[#eee] py-10 px-5 rounded'>
             <p className='text-xl'>Scan QR Code</p>
             <p className='text-base text-gray-500 text-center mt-4'>Scanning the barcode of the product to detect the solvent</p>
