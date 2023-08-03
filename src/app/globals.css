@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,16 +18,17 @@
   }
 }
 
+
 body {
-  /* color: rgb(var(--foreground-rgb)); */
   background-color: #fff;
+  font-family: 'Satisfy', cursive;
 }
 
 .wave {
-  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
-  animation-duration: 1.5s;        /* Change to speed up or slow down */
-  animation-iteration-count: infinite;  /* Never stop waving :) */
-  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  animation-name: wave-animation;  
+  animation-duration: 1.5s;        
+  animation-iteration-count: infinite;  
+  transform-origin: 70% 70%;       
   display: inline-block;
 }
 
