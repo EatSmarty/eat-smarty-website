@@ -7,7 +7,7 @@ interface whyProps {
 
 const Why: FC<whyProps> = ({}) => {
   return <div className='why-section flex justify-between items-center my-40'>
-            <div className='w-1/2'>
+            <div className='w-3/4'>
                 <h1 className='text-5xl mb-4 text-gray-500'>Why Halalvar?</h1>
                 <p>
                 We specialize in seamlessly identifying halal food for you by simply scanning the products barcode, ensuring your dietary preferences are met with absolute ease and confidence

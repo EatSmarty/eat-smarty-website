@@ -40,7 +40,7 @@ function Faq() {
             desc: "We offer both free and premium subscription options. The free version includes basic features, while our premium subscription unlocks additional benefits and advanced functionalities for a seamless experience.",
         }
       ]
-  return <Accordion className="accordion mt-20 text-gray-500" isCompact variant="splitted" defaultExpandedKeys={["1"]} hideIndicator
+  return <Accordion className="accordion mt-20 mb-40 text-gray-500" isCompact variant="splitted" defaultExpandedKeys={["1"]} hideIndicator
     motionProps={{
         variants: {
         enter: {
@@ -78,7 +78,7 @@ function Faq() {
         },
     }}
   >
-  <AccordionItem className="accordion-item text-xl m-5" key="1" aria-label={faqData[0].title} title={faqData[0].title}>
+  <AccordionItem className="accordion-item text-xl m-5 text-left" key="1" aria-label={faqData[0].title} title={faqData[0].title}>
       <p className="desc text-base">{faqData[0].desc}</p>
   </AccordionItem>
   <AccordionItem className="accordion-item text-xl m-5" key="2" aria-label={faqData[1].title} title={faqData[1].title}>
@@ -86,6 +86,24 @@ function Faq() {
   </AccordionItem>
   <AccordionItem className="accordion-item text-xl m-5" key="3" aria-label={faqData[2].title} title={faqData[2].title}>
       <p className="desc text-base">{faqData[2].desc}</p>
+  </AccordionItem>
+  <AccordionItem className="accordion-item text-xl m-5" key="4" aria-label={faqData[3].title} title={faqData[3].title}>
+      <p className="desc text-base">{faqData[3].desc}</p>
+  </AccordionItem>
+  <AccordionItem className="accordion-item text-xl m-5" key="5" aria-label={faqData[4].title} title={faqData[4].title}>
+      <p className="desc text-base">{faqData[4].desc}</p>
+  </AccordionItem>
+  <AccordionItem className="accordion-item text-xl m-5" key="6" aria-label={faqData[5].title} title={faqData[5].title}>
+      <p className="desc text-base">{faqData[5].desc}</p>
+  </AccordionItem>
+  <AccordionItem className="accordion-item text-xl m-5" key="7" aria-label={faqData[6].title} title={faqData[6].title}>
+      <p className="desc text-base">{faqData[6].desc}</p>
+  </AccordionItem>
+  <AccordionItem className="accordion-item text-xl m-5" key="8" aria-label={faqData[7].title} title={faqData[7].title}>
+      <p className="desc text-base">{faqData[7].desc}</p>
+  </AccordionItem>
+  <AccordionItem className="accordion-item text-xl m-5" key="9" aria-label={faqData[8].title} title={faqData[8].title}>
+      <p className="desc text-base">{faqData[8].desc}</p>
   </AccordionItem>
 </Accordion>
 }
