@@ -353,6 +353,9 @@ input:checked + .slider:before {
   .contactus{
     width: 370px;
   }
+  .accordion{
+    width: 350px;
+  }
 }
 .halal{
   background-color: rgb(74 222 128);
@@ -364,5 +367,5 @@ input:checked + .slider:before {
   background-color: rgb(251 146 60);
 }
 .accordion{
-  width: 700px;
+  width: fit-content;
 }
