@@ -5,7 +5,7 @@ interface footerProps {
 }
 
 const Footer: FC<footerProps> = ({}) => {
-  return <div className='border-t-2 mt-10'>
+  return <div className='border-t-2 mt-10 mx-5'>
     <div className='footer-content flex justify-between items-center mx-3 mt-5'>
         <p className='text-gray-500'>© Halalvar 2023 | All Rights Reserved.</p>
         <a href="https://github.com/Halalvar" className='' target='_blank'>
