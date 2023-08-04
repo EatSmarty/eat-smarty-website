@@ -1,3 +1,63 @@
 {
-    "css.lint.unknownAtRules": "ignore"
+    "files.exclude": {
+        "**/node_modules": true,
+        "**/coverage": true,
+        "**/dist": true,
+        "**/build": true,
+        "**/.next": true,
+        "**/storybook-static": true,
+        "**/vendor": true
+    },
+    "editor.rulers": [
+        80,
+        100,
+        120
+    ],
+    // remove trailing whitespace
+    "files.trimTrailingWhitespace": true,
+    // set eslint as the default formatter
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    // required
+    "editor.formatOnPaste": false,
+    // required
+    "editor.formatOnType": false,
+    // optional
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.formatDocument": true,
+        "source.fixAll.eslint": true
+    },
+    // required to format on save
+    "editor.formatOnSaveMode": "file",
+    "eslint.format.enable": true,
+    // optional but recommended
+    "files.autoSave": "onFocusChange",
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "[markdown]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+    },
+    "[json]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml",
+        "editor.tabSize": 4,
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
 }
