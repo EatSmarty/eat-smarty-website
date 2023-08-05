@@ -12,14 +12,14 @@ import Footer from './footer'
 import Why from './why'
 
 interface pageProps {
-  
+
 }
 
-const page: FC<pageProps> = ({}) => {
-  return( 
+const page: FC<pageProps> = ({ }) => {
+  return (
     <div className='home-screen mb-20'>
       <Navigation></Navigation>
-      <Header></Header>
+      <Header title="home" ></Header>
       <main className='flex justify-center items-center'>
         <div>
           <Banner></Banner>
@@ -27,11 +27,10 @@ const page: FC<pageProps> = ({}) => {
           <Why></Why>
           <Features></Features>
           <Category></Category>
-          {/* <Advertise></Advertise> */}
           <Footer></Footer>
         </div>
       </main>
-    </div>
+    </div >
   )
 }
 
