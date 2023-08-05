@@ -13,11 +13,11 @@ interface pageProps {
 
 const Page: FC<pageProps> = () => {
   return (
-    <div className='home-screen mb-20'>
+    <div className='home-screen'>
       <Navigation></Navigation>
       <Header title="additives"></Header>
       <main className='flex justify-center items-center'>
-        <div>
+        <div className='mt-20'>
           <SearchBox></SearchBox>
           <AdditivesList></AdditivesList>
         </div>
