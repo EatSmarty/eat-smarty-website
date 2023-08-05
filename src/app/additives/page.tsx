@@ -2,12 +2,12 @@
 
 import Navigation from '@/app/page'
 import { FC } from 'react'
-import Header from './header'
 import SearchBox from './searchBox'
 import AdditivesList from './additivesList'
+import Header from '../header'
 
 interface pageProps {
-  
+
 }
 
 
@@ -15,7 +15,7 @@ const Page: FC<pageProps> = () => {
   return (
     <div className='home-screen mb-20'>
       <Navigation></Navigation>
-      <Header></Header>
+      <Header title="additives"></Header>
       <main className='flex justify-center items-center'>
         <div>
           <SearchBox></SearchBox>
