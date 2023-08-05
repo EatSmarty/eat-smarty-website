@@ -1,19 +1,19 @@
 'use client'
 
 import { FC } from 'react'
-import Header from './header'
+import Header from '../header'
 import Navigation from '../page'
 import BarcodeScanner from './barcodeScanner'
 
 interface pageProps {
-  
+
 }
 
-const page: FC<pageProps> = ({}) => {
-  return( 
-      <div className='home-screen'>
-        <Navigation></Navigation>
-        <Header></Header>
+const page: FC<pageProps> = ({ }) => {
+  return (
+    <div className='home-screen'>
+      <Navigation></Navigation>
+      <Header title="Scan"></Header>
       <main className='flex justify-center items-center'>
         <div>
           <BarcodeScanner></BarcodeScanner>
