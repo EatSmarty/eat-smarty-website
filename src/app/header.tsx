@@ -13,23 +13,21 @@ export default function Home({ title }: Props) {
 
   return (
     <header className={clsx(
-      "flex justify-around items-center",
+      "flex justify-between items-center",
       "w-full",
       "fixed",
-      "pt-5",
       "bg-[#fff]",
-      "border-b"
+      "border-b",
     )}>
-      <div className='header-l flex justify-center items-center'>
-        <h1 className='text-3xl font-bold text-[#0069FE] opacity-80'>{title}</h1>
-      </div>
+      <h1 className='text-xl font-bold ml-5'>{title}</h1>
       <Image
         src="https://github.com/Halalvar/halalvar/blob/main/public/logo.png?raw=true"
         width={70}
         height={70}
         alt='logo'
         className={clsx(
-          'logo',
+          "logo",
+          "mr-5"
         )}
       />
     </header>
