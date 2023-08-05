@@ -21,7 +21,7 @@ const Page: FC<pageProps> = () => {
         "main-content",
         "flex justify-center items-center flex-col"
       )}>
-        <div className='mt-20'>
+        <div>
           <SearchBox></SearchBox>
           <AdditivesList></AdditivesList>
         </div>
