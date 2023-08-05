@@ -205,6 +205,10 @@ video {
   background-size: 20px 20px;
 }
 
+.main-content{
+  overflow: hidden;
+}
+
 .common{
   width: 580px;
 }

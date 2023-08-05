@@ -15,7 +15,7 @@ export default function page() {
     <div className='home-screen'>
       <Navigation></Navigation>
       <Header title="home"></Header>
-      <main className='flex justify-center items-center flex-col'>
+      <main className='main-content flex justify-center items-center flex-col'>
         <Banner></Banner>
         <Slogan></Slogan>
         <Why></Why>
