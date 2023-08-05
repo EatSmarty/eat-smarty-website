@@ -6,19 +6,20 @@ export default function SearchBox({ }) {
     <section className={clsx(
       "search-box",
       "mt-20",
-      "w-full"
+      "w-full",
+      "border",
+      "rounded"
     )}>
       <div className={clsx(
         "search-input",
         "flex items-center justify-between",
-        "rounded"
       )}>
         <input className={clsx(
           "placeholder-[#3C3D42] placeholder-opacity-50",
           "w-full",
           "rounded",
           "outline-none",
-          "px-2 mt-3",
+          "p-2",
           "text-sm"
         )} type="text" placeholder='Search...' />
         <svg xmlns="http://www.w3.org/2000/svg" fill="none"
