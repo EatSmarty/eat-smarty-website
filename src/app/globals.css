@@ -354,6 +354,9 @@ input:checked + .slider:before {
   .accordion{
     width: 350px;
   }
+  .features{
+    width: 75%;
+  }
 }
 .halal{
   background-color: rgb(74 222 128);
