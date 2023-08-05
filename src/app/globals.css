@@ -311,6 +311,9 @@ input:checked + .slider:before {
 .why-section{
   width: 900px;
 }
+.list-container{
+  width: 900px;
+}
 @media screen and (max-width: 1000px) {
   .title{
     font-size: 30px;
@@ -330,6 +333,9 @@ input:checked + .slider:before {
   .contactus{
     width: 700px;
   }
+  .list-container{
+    width: 700px;
+  }
 }
 @media screen and (max-width: 700px) {
   .why-section{
@@ -340,6 +346,9 @@ input:checked + .slider:before {
   }
   .contactus{
     width: 400px;
+  }
+  .list-container{
+    width: 450px;
   }
 }
 @media screen and (max-width: 450px) {
@@ -360,6 +369,9 @@ input:checked + .slider:before {
   }
   .features{
     width: 75%;
+  }
+  .list-container{
+    width: 350px;
   }
 }
 .halal{
