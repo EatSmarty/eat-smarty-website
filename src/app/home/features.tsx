@@ -31,7 +31,7 @@ const Features: FC<featuresProps> = ({ }) => {
             <p className={clsx(
                 "desc-feature",
                 "font-bold text-gray-500",
-                "w-44",
+                "w-34",
                 "mt-5 text-center"
             )}>Additives List</p>
         </div>
@@ -57,7 +57,7 @@ const Features: FC<featuresProps> = ({ }) => {
             <p className={clsx(
                 "desc-feature",
                 "font-bold text-gray-500",
-                "w-44 mt-5 text-center"
+                "w-34 mt-5 text-center"
             )}>Independent Database</p>
         </div>
         <div className={clsx(
@@ -88,7 +88,7 @@ const Features: FC<featuresProps> = ({ }) => {
             <p className={clsx(
                 "desc-feature",
                 "font-bold text-gray-500",
-                "w-44",
+                "w-34",
                 "mt-5 text-center"
             )}>Halal Food Detect</p>
         </div>
@@ -110,7 +110,7 @@ const Features: FC<featuresProps> = ({ }) => {
             <p className={clsx(
                 "desc-feature",
                 "font-bold text-gray-500",
-                "w-44",
+                "w-34",
                 "mt-5 text-center"
             )}>Comprehensive Information</p>
         </div>
