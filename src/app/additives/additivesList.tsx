@@ -2,18 +2,22 @@ import Image from 'next/image'
 import clsx from 'clsx';
 import Link from 'next/link';
 import additives from './additives.json'
+import GaugeChart from 'react-gauge-chart'
 
 export default function Home() {
-
+  const chartStyle = {
+    // height: 60,
+    // width: 60,
+  }
   return (
     <div className={clsx(
       "list-container",
       "w-full",
       "bg-green-100",
-      "mt-5 p-4",
+      "mt-5 p-2",
       "flex justify-between items-center",
       "rounded",
-      ""
+      "cursor-pointer"
     )}>
       <h3 className={clsx(
 
@@ -22,8 +26,19 @@ export default function Home() {
         ""
       )}>Curcumin</p>
       <div className={clsx(
-        "flex justify-center items-center"
+        "flex justify-between items-center"
       )}>
+        <div className={clsx(
+          "mr-3 ",
+          "w-1/3",
+        )}>
+          <GaugeChart id="gauge-chart1"
+            nrOfLevels={20}
+            percent={0.4}
+            arcWidth={0.2}
+            cornerRadius={1}
+          />
+        </div>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none"
           viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
           className={clsx(

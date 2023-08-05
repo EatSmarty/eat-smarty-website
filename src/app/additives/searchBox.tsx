@@ -1,6 +1,5 @@
 import clsx from 'clsx'
 
-
 export default function SearchBox({ }) {
   return (
     <section className={clsx(
