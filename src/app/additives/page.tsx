@@ -5,6 +5,7 @@ import { FC } from 'react'
 import SearchBox from './searchBox'
 import AdditivesList from './additivesList'
 import Header from '../header'
+import clsx from 'clsx'
 
 interface pageProps {
 
@@ -16,7 +17,10 @@ const Page: FC<pageProps> = () => {
     <div className='home-screen'>
       <Navigation></Navigation>
       <Header title="additives"></Header>
-      <main className='flex justify-center items-center'>
+      <main className={clsx(
+        "main-content",
+        "flex justify-center items-center flex-col"
+      )}>
         <div className='mt-20'>
           <SearchBox></SearchBox>
           <AdditivesList></AdditivesList>

@@ -6,6 +6,7 @@ import Header from '../header'
 import Common from './common'
 import Search from '../home/search'
 import About from './about'
+import clsx from 'clsx'
 
 interface pageProps {
 
@@ -17,7 +18,10 @@ const Page: FC<pageProps> = () => {
     <div className='home-screen mb-20'>
       <Navigation></Navigation>
       <Header title="Setting"></Header>
-      <main className='flex justify-center items-center'>
+      <main className={clsx(
+        "main-content",
+        "flex justify-center items-center flex-col"
+      )}>
         <div>
           <Common></Common>
           <About></About>
