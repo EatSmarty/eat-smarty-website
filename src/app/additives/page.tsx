@@ -16,7 +16,7 @@ const Page: FC<pageProps> = () => {
   return (
     <div className='home-screen'>
       <Navigation></Navigation>
-      <Header title="additives"></Header>
+      <Header title="Additives"></Header>
       <main className={clsx(
         "main-content",
         "flex justify-center items-center flex-col"

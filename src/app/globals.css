@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -356,7 +355,7 @@ input:checked + .slider:before {
     display: none;
   }
   .why-section{
-        justify-content: center;
+      justify-content: center;
   }
   .e-food{
     width: 350px;
@@ -368,7 +367,7 @@ input:checked + .slider:before {
     width: 350px;
   }
   .features{
-    width: 75%;
+    width: 80%;
   }
   .list-container{
     width: 350px;
@@ -385,4 +384,10 @@ input:checked + .slider:before {
 }
 .accordion{
   width: fit-content;
+}
+.leaf-header{
+  height: 71px;
+}
+.home-screen{
+  overflow: hidden;
 }
