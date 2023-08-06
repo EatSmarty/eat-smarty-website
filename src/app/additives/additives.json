@@ -6,7 +6,7 @@
         "category": "colours",
         "subCategory": "yellows",
         "danger": 1,
-        "source": "plant",
+        "source": "plant origin",
         "otherNames": [
             "E 100",
             "Curcumin",
@@ -44,7 +44,7 @@
         "category": "colours",
         "subCategory": "yellows",
         "danger": 1,
-        "source": "plant",
+        "source": "plant origin",
         "otherNames": [
             "E 100(i)",
             "E-100(i)",
@@ -52,5 +52,57 @@
             "E100i"
         ],
         "isHalal": true
+    },
+    {
+        "code": 100,
+        "eNumber": "E100ii",
+        "name": "Turmeric",
+        "category": "colours",
+        "subCategory": "yellows",
+        "danger": 1,
+        "source": "plant origin",
+        "otherNames": [
+            "E 100(ii)",
+            "E-100ii",
+            "Turmeric"
+        ],
+        "isHalal": true
+    },
+    {
+        "code": 101,
+        "eNumber": "E101",
+        "name": "Riboflavins",
+        "category": "colours",
+        "subCategory": "yellows",
+        "danger": 1,
+        "source": "plant origin",
+        "otherNames": [
+            "B2",
+            "E 101",
+            "Vitamin B2",
+            "Riboflavin",
+            "E-101"
+        ],
+        "isHalal": true,
+        "isVegan": true,
+        "isVegetrian": true,
+        "isKosher": true,
+        "isJecfa": true,
+        "isPregnant": true,
+        "isChildren": true,
+        "isAllergey": false,
+        "isCarcinogenic": false,
+        "origin": "The E101 additive can be obtained by chemical synthesis from 3,4-dimethylaniline and ribose, as well as by microbiological method from the fungus Eremothecium gossypii or by genetically modified bacteria Bacillus subtilis.",
+        "function": "Food colour, whose colour ranges from yellow to red, depending on pH (acidity). It is not very soluble in water.",
+        "products": "Many different products.",
+        "sideEffect": "No side effects known in the concentrations used in foods.",
+        "Dietary restrictions": "None; E100 can be consumed by all religious groups, vegans and vegetarians.",
+        "approval": {
+            "usa": true,
+            "eur": true,
+            "australia": false
+        },
+        "exampleUse": "Used in pastries, confectionery, sauces, and soups",
+        "description": "Naturally occurring in some fruit but generally manufactured synthetically for use as a food preservative"
     }
 ]
