@@ -1,4 +1,10 @@
+import { Metadata } from "next"
 import Header from "../header"
+
+
+export const metadata: Metadata = {
+    title: "Home"
+}
 
 export default function DashboardLayout({
     children,
