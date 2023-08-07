@@ -12,7 +12,8 @@ export const metadata: Metadata = {
     default: 'Halalvar',
     template: "%s | Halalvar"
   },
-  description: 'ensuring your dietary preferences are met with absolute ease and confidence',
+  description: 'ensuring your dietary preferences are met' +
+    'with absolute ease and confidence',
   keywords: ['halal',
     'haram',
     'mushbooh',
@@ -24,7 +25,8 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Halalvar',
-    description: 'We specialize in seamlessly identifying halal food for you by simply scanning the products barcode',
+    description: 'We specialize in seamlessly identifying halal food for you' +
+      'by simply scanning the products barcode',
     url: 'https://halalvar.com/',
     siteName: 'halalvar',
     images: [
