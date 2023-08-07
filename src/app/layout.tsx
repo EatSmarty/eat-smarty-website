@@ -21,7 +21,29 @@ export const metadata: Metadata = {
     'scan',
     'scan halal',
     'scan halal food'
-  ]
+  ],
+  openGraph: {
+    title: 'Halalvar',
+    description: 'We specialize in seamlessly identifying halal food for you by simply scanning the products barcode',
+    url: 'https://halalvar.com/',
+    siteName: 'halalvar',
+    images: [
+      {
+        url: '',
+        width: 800,
+        height: 600,
+        alt: 'halalvar banner'
+      },
+      {
+        url: '',
+        width: 1800,
+        height: 1600,
+        alt: 'halalvar banner',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  }
 }
 
 interface Props {
