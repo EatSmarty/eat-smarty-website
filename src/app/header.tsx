@@ -9,7 +9,7 @@ interface Props {
 }
 
 
-export default function Home({ title }: Props) {
+export default function Header({ title }: Props) {
 
   return (
     <header className={clsx(
