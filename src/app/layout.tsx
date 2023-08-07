@@ -13,6 +13,15 @@ export const metadata: Metadata = {
     template: "%s | Halalvar"
   },
   description: 'ensuring your dietary preferences are met with absolute ease and confidence',
+  keywords: ['halal',
+    'haram',
+    'mushbooh',
+    'detect halal food',
+    'additives list',
+    'scan',
+    'scan halal',
+    'scan halal food'
+  ]
 }
 
 interface Props {
