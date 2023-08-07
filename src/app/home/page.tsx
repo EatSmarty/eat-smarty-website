@@ -13,8 +13,6 @@ import clsx from 'clsx'
 export default function page() {
   return (
     <div className='home-screen'>
-      <Navigation></Navigation>
-      <Header title="home"></Header>
       <main className={clsx(
         "main-content",
         "flex justify-center items-center flex-col"

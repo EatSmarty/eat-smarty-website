@@ -30,9 +30,9 @@ export default function Home() {
             "w-1/3",
           )}>
             <GaugeChart id="gauge-chart1"
-              nrOfLevels={20}
-              percent={0.1}
-              arcWidth={0.2}
+              nrOfLevels={5}
+              percent={0.3}
+              arcWidth={0.3}
               cornerRadius={1}
             />
           </div>
