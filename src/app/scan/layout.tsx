@@ -1,4 +1,9 @@
+import { Metadata } from "next"
 import Header from "../header"
+
+export const metadata: Metadata = {
+    title: "Scan"
+}
 
 export default function DashboardLayout({
     children,
