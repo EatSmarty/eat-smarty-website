@@ -1,11 +1,10 @@
 'use client'
 
-import Navigation from '@/app/page'
 import { FC } from 'react'
 import SearchBox from './searchBox'
-import AdditivesList from './additivesList'
 import Header from '../header'
 import clsx from 'clsx'
+import AdditiveCart from './additivesCart'
 
 interface pageProps {
 
@@ -21,7 +20,7 @@ const Page: FC<pageProps> = () => {
       )}>
         <div>
           <SearchBox></SearchBox>
-          <AdditivesList></AdditivesList>
+          <AdditiveCart></AdditiveCart>
         </div>
       </main>
     </div>

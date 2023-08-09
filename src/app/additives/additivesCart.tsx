@@ -4,13 +4,13 @@ import Link from 'next/link';
 import additives from './additives.json'
 import GaugeChart from 'react-gauge-chart'
 
-export default function Home() {
+export default function AdditiveCart() {
   return (
     <Link href={"/additives/e-number"}>
       <div className={clsx(
         "list-container",
         "w-full",
-        "bg-green-100",
+        "bg-green-50",
         "mt-5 p-2",
         "flex justify-between items-center",
         "rounded",
@@ -34,6 +34,7 @@ export default function Home() {
               percent={0.3}
               arcWidth={0.3}
               cornerRadius={1}
+              animate={false}
             />
           </div>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none"
