@@ -100,25 +100,3 @@ export default function AdditiveCart({ enumber, name, badge, danger, source }) {
     </Link>
   )
 }
-
-// additives.map((data, index) =>
-//         (<span>
-//           {data.eNumber[index]}
-//         </span>))
-
-
-// {jsonData.map((index) => (
-//   <p>
-//     {index.eNumber || 'not define'}
-//   </p>
-// ))}
-
-
-
-// {jsonData.map((enumber) => {
-//   return (
-//     <p>
-//       {enumber.eNumber}
-//     </p>
-//   )
-// })}
