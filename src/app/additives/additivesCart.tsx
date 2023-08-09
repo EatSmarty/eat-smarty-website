@@ -12,11 +12,13 @@ export default function AdditiveCart({ enumber, name, badge, danger, source }) {
       <div className={clsx(
         "list-container",
         "w-full",
-        "bg-green-50",
         "mt-5 p-2",
         "flex justify-between items-center",
         "rounded",
-        "cursor-pointer"
+        "cursor-pointer",
+        badge == true ? "bg-green-50" : undefined ||
+          badge == false ? "bg-red-50" : undefined ||
+            badge == null ? "bg-orange-50" : undefined,
       )}>
         <div className={clsx(
           "enumber"
