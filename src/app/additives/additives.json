@@ -6,7 +6,7 @@
         "category": "colours",
         "subCategory": "yellows",
         "danger": 0.1,
-        "source": "plant origin",
+        "source": "plant",
         "otherNames": [
             "E 100",
             "Curcumin",
@@ -44,7 +44,7 @@
         "category": "colours",
         "subCategory": "yellows",
         "danger": 0.1,
-        "source": "plant origin",
+        "source": "plant",
         "otherNames": [
             "E 100(i)",
             "E-100(i)",
@@ -60,7 +60,7 @@
         "category": "colours",
         "subCategory": "yellows",
         "danger": 0.3,
-        "source": "plant origin",
+        "source": "plant",
         "otherNames": [
             "E 100(ii)",
             "E-100ii",
@@ -75,7 +75,7 @@
         "category": "colours",
         "subCategory": "yellows",
         "danger": 0.1,
-        "source": "plant origin",
+        "source": "plant",
         "otherNames": [
             "B2",
             "E 101",
@@ -112,7 +112,7 @@
         "category": "colours",
         "subCategory": "yellows",
         "danger": 0.1,
-        "source": "Synthetic origin",
+        "source": "synthetic",
         "otherNames": [
             "E 102",
             "Tartrazine ",
