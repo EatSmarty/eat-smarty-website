@@ -1,12 +1,11 @@
-'user client'
-
-import Image from 'next/image'
+import { useState } from 'react'
 import clsx from 'clsx';
 import Link from 'next/link';
 import additives from './additives.json'
 import GaugeChart from 'react-gauge-chart'
 
-export default async function AdditiveCart() {
+export default function AdditiveCart() {
+  const [jsonData] = useState(additives)
 
   return (
     <Link href={"/additives/e-number"}>
@@ -19,12 +18,15 @@ export default async function AdditiveCart() {
         "rounded",
         "cursor-pointer"
       )}>
-        <h3 className={clsx(
+        <div className={clsx(
 
-        )}>E100</h3>
+        )}> {jsonData[0].eNumber}
+        </div>
         <p className={clsx(
           ""
-        )}>Curcumin</p>
+        )}>
+          {jsonData[0].name}
+        </p>
         <div className={clsx(
           "flex justify-between items-center"
         )}>
@@ -65,3 +67,10 @@ export default async function AdditiveCart() {
 //         (<span>
 //           {data.eNumber[index]}
 //         </span>))
+
+
+// {jsonData.map((index) => (
+//   <p>
+//     {index.eNumber || 'not define'}
+//   </p>
+// ))}
