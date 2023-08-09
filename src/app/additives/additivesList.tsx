@@ -16,6 +16,7 @@ export default function AdditiveList() {
                             enumber={index.eNumber}
                             badge={index.isHalal}
                             danger={index.danger}
+                            source={index.source}
                         />
                     </div>
                 )
