@@ -13,6 +13,7 @@ export default function Header({ title }: Props) {
 
   return (
     <header className={clsx(
+      "header",
       "flex justify-between items-center",
       "w-full",
       "fixed",
