@@ -46,8 +46,11 @@ export const metadata: Metadata = {
     locale: 'en_US',
     type: 'website',
   },
+  themeColor: [
+    { media: '(default-color-scheme: light)', color: 'white' }
+  ],
   icons: {
-    icon: '/icon.png',
+    icon: '/favicon/icon.ico',
     shortcut: '/shortcut-icon.png',
     apple: '/apple-icon.png',
     other: {
@@ -55,9 +58,6 @@ export const metadata: Metadata = {
       url: '/apple-touch-icon-precomposed.png',
     }
   },
-  themeColor: [
-    { media: '(default-color-scheme: light)', color: 'white' }
-  ]
 }
 
 interface Props {
