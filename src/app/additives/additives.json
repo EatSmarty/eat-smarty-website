@@ -5,7 +5,7 @@
         "name": "Curcumin",
         "category": "colours",
         "subCategory": "yellows",
-        "danger": 1,
+        "danger": 0.1,
         "source": "plant origin",
         "otherNames": [
             "E 100",
@@ -43,7 +43,7 @@
         "name": "Curcumin",
         "category": "colours",
         "subCategory": "yellows",
-        "danger": 1,
+        "danger": 0.1,
         "source": "plant origin",
         "otherNames": [
             "E 100(i)",
@@ -59,7 +59,7 @@
         "name": "Turmeric",
         "category": "colours",
         "subCategory": "yellows",
-        "danger": 1,
+        "danger": 0.3,
         "source": "plant origin",
         "otherNames": [
             "E 100(ii)",
@@ -74,7 +74,7 @@
         "name": "Riboflavins",
         "category": "colours",
         "subCategory": "yellows",
-        "danger": 1,
+        "danger": 0.1,
         "source": "plant origin",
         "otherNames": [
             "B2",
@@ -111,7 +111,7 @@
         "name": "Tartrazine",
         "category": "colours",
         "subCategory": "yellows",
-        "danger": 3,
+        "danger": 0.1,
         "source": "Synthetic origin",
         "otherNames": [
             "E 102",
