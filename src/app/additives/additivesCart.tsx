@@ -4,8 +4,7 @@ import Link from 'next/link';
 import additives from './additives.json'
 import GaugeChart from 'react-gauge-chart'
 
-export default function AdditiveCart() {
-  const [jsonData] = useState(additives)
+export default function AdditiveCart({ enumber, name, badge, danger }) {
 
   return (
     <Link href={"/additives/e-number"}>
@@ -19,13 +18,14 @@ export default function AdditiveCart() {
         "cursor-pointer"
       )}>
         <div className={clsx(
-
-        )}> {jsonData[0].eNumber}
+          "enumber"
+        )}>
+          {enumber}
         </div>
         <p className={clsx(
-          ""
+          "name"
         )}>
-          {jsonData[0].name}
+          {name}
         </p>
         <div className={clsx(
           "flex justify-between items-center"
@@ -36,7 +36,7 @@ export default function AdditiveCart() {
           )}>
             <GaugeChart id="gauge-chart1"
               nrOfLevels={5}
-              percent={0.3}
+              percent={danger}
               arcWidth={0.3}
               cornerRadius={1}
               animate={false}
@@ -53,9 +53,9 @@ export default function AdditiveCart() {
           </svg>
           <p className={clsx(
             "badge"
-          )}>{additives[0].isHalal == true ? "Halal" : undefined ||
-            additives[0].isHalal == false ? "Haram" : undefined ||
-              additives[0].isHalal == null ? "Mushbooh" : undefined}
+          )}>{badge == true ? "Halal" : undefined ||
+            badge == false ? "Haram" : undefined ||
+              badge == null ? "Mushbooh" : undefined}
           </p>
         </div>
       </div>
@@ -74,3 +74,13 @@ export default function AdditiveCart() {
 //     {index.eNumber || 'not define'}
 //   </p>
 // ))}
+
+
+
+// {jsonData.map((enumber) => {
+//   return (
+//     <p>
+//       {enumber.eNumber}
+//     </p>
+//   )
+// })}
