@@ -3,8 +3,9 @@ import clsx from 'clsx';
 import Link from 'next/link';
 import additives from './additives.json'
 import GaugeChart from 'react-gauge-chart'
+import Image from 'next/image';
 
-export default function AdditiveCart({ enumber, name, badge, danger }) {
+export default function AdditiveCart({ enumber, name, badge, danger, source }) {
 
   return (
     <Link href={"/additives/e-number"}>
@@ -42,15 +43,50 @@ export default function AdditiveCart({ enumber, name, badge, danger }) {
               animate={false}
             />
           </div>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            className={clsx(
-              "w-6 h-6",
-              "mr-2"
-            )}>
-            <path d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9
-          3.75h.008v.008H12v-.008z" />
-          </svg>
+          <div>
+            {
+              // plant cond
+              source == "plant" ?
+                <Image
+                  src={"./plant.png"}
+                  width={30} height={30}
+                  alt={"plant icon"}
+                />
+                : "not define source" &&
+                  // chemistry cond
+                  source == "pig" ?
+                  <Image
+                    src={"./pig.png"}
+                    width={30} height={30}
+                    alt={"pig icon"}
+                  />
+                  : "not define source" &&
+                    // pig meat cond
+                    source == "chemistry" ?
+                    <Image
+                      src={"./chemistry.png"}
+                      width={30} height={30}
+                      alt={"chemistry icon"}
+                    />
+                    : "not define source" &&
+                      // synthetic cond
+                      source == "synthetic" ?
+                      <Image
+                        src={"./synthetic.png"}
+                        width={30} height={30}
+                        alt={"synthetic icon"}
+                      />
+                      : "not define source" &&
+                        // insec cond
+                        source == "insec" ?
+                        <Image
+                          src={"./insec.png"}
+                          width={30} height={30}
+                          alt={"synthetic icon"}
+                        />
+                        : "not define source"
+            }
+          </div>
           <p className={clsx(
             "badge"
           )}>{badge == true ? "Halal" : undefined ||
