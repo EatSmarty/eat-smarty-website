@@ -1,10 +1,13 @@
+'user client'
+
 import Image from 'next/image'
 import clsx from 'clsx';
 import Link from 'next/link';
 import additives from './additives.json'
 import GaugeChart from 'react-gauge-chart'
 
-export default function AdditiveCart() {
+export default async function AdditiveCart() {
+
   return (
     <Link href={"/additives/e-number"}>
       <div className={clsx(
@@ -48,9 +51,17 @@ export default function AdditiveCart() {
           </svg>
           <p className={clsx(
             "badge"
-          )}>Halal</p>
+          )}>{additives[0].isHalal == true ? "Halal" : undefined ||
+            additives[0].isHalal == false ? "Haram" : undefined ||
+              additives[0].isHalal == null ? "Mushbooh" : undefined}
+          </p>
         </div>
       </div>
     </Link>
   )
 }
+
+// additives.map((data, index) =>
+//         (<span>
+//           {data.eNumber[index]}
+//         </span>))
