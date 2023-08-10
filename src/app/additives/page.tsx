@@ -1,10 +1,10 @@
 'use client'
 
-import { FC } from 'react'
-import SearchBox from './searchBox'
-import Header from '../header'
-import clsx from 'clsx'
-import AdditiveList from './additivesList'
+import clsx from "clsx"
+import { FC } from "react"
+import SearchBox from "./search/searchBox"
+import AdditiveList from "./additivesList"
+
 
 interface pageProps {
 
