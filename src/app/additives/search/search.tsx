@@ -13,7 +13,7 @@ const itemList = [
   "Tomato"
 ];
 
-export default function SearchBox({ }) {
+export default function Search({ }) {
 
   return (
     <section className={clsx(

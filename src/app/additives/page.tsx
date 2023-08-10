@@ -1,17 +1,11 @@
 'use client'
 
 import clsx from "clsx"
-import { FC } from "react"
-import SearchBox from "./search/searchBox"
 import AdditiveList from "./additivesList"
+import Search from "./search/search"
 
 
-interface pageProps {
-
-}
-
-
-const Page: FC<pageProps> = () => {
+export default function Page() {
   return (
     <div className={clsx(
       "home-screen",
@@ -22,12 +16,10 @@ const Page: FC<pageProps> = () => {
         "flex justify-center items-center flex-col"
       )}>
         <div>
-          <SearchBox></SearchBox>
+          <Search></Search>
           <AdditiveList></AdditiveList>
         </div>
       </main>
     </div>
   )
 }
-
-export default Page
