@@ -1,6 +1,20 @@
 import clsx from 'clsx'
+import additives from '../additives.json'
+import { useState } from 'react'
+
+const itemList = [
+  "Apple",
+  "Orange",
+  "Banana",
+  "Cherry",
+  "Milk",
+  "Peanuts",
+  "Butter",
+  "Tomato"
+];
 
 export default function SearchBox({ }) {
+
   return (
     <section className={clsx(
       "search-box",
