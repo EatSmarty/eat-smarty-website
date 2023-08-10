@@ -28,7 +28,7 @@ export default function AdditiveList() {
     const [jsonData] = useState(additives)
 
     return (
-        jsonData.map((index, item) => {
+        jsonData.map((index) => {
             return (
                 <AdditiveCart
                     name={index.name}
