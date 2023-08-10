@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     { media: '(default-color-scheme: light)', color: 'white' }
   ],
   icons: {
-    icon: '/favicon/icon.ico',
+    icon: '/icon.ico',
     shortcut: '/shortcut-icon.png',
     apple: '/apple-icon.png',
     other: {
