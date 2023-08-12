@@ -1,9 +1,6 @@
 'use client'
 
-import Navigation from '@/app/page'
 import { FC } from 'react'
-import Header from '../header'
-import Search from '../../../components/home/search'
 import About from './about'
 import clsx from 'clsx'
 
