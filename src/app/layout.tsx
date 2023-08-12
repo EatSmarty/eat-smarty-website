@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import clsx from 'clsx'
+import Navigation from '../../components/navigation'
 import Header from './header'
-import Navigation from './page'
 
 const inter = Inter({ subsets: ['latin'] })
+const siteTitle = "Halalvar"
 
 export const metadata: Metadata = {
   title: {
@@ -70,15 +70,13 @@ export default function RootLayout({
   children,
 }: {
   children: React.ReactNode,
-  title: Props,
 }) {
   return (
     <html lang="en">
       <body className={inter.className}>
+        <Header title={"home"} />
         {children}
-        <footer>
-          <Navigation></Navigation>
-        </footer>
+        <Navigation />
       </body>
     </html>
   )
