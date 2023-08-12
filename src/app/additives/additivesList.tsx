@@ -1,14 +1,8 @@
 import { useState } from 'react'
 import additives from './additives.json'
-import GaugeChart from 'react-gauge-chart'
-import Link from 'next/link'
-import clsx from 'clsx'
 import AdditiveCart from './additivesCart'
 
 export default function AdditiveList() {
-    // const [enumber] = useState(additives.map((enumber) => {
-    //     return enumber.eNumber
-    // }))
     // const [filteredList, setFilteredList] = useState(additives.map((index) => {
     //     return index.eNumber
     // }))
@@ -16,7 +10,7 @@ export default function AdditiveList() {
     //     // Access input value
     //     const query = event.target.value;
     //     // Create copy of item list
-    //     var updatedList = [...enumber]
+    //     var updatedList = [...filteredList]
     //     // Include all elements which includes the search query
     //     updatedList = updatedList.filter((item) => {
     //         return item.toLowerCase().indexOf(query.toLowerCase()) !== -1
@@ -41,4 +35,3 @@ export default function AdditiveList() {
         })
     )
 }
-
