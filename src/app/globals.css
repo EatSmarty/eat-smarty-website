@@ -381,6 +381,3 @@ input:checked + .slider:before {
 .leaf-header{
   height: 71px;
 }
-.home-screen{
-  overflow: hidden;
-}

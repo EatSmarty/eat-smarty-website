@@ -5,18 +5,18 @@ export default function Banner({ }) {
     return (
         <section className={clsx(
             "banner",
-            "mt-32",
             "text-3xl",
-            "w-full"
+            "w-full",
+            "mt-28"
         )}>
             <h2>
                 <div className={clsx(
-                    'flex justify-center items-baseline'
+                    "flex justify-center items-center",
                 )}>
                     <span className={clsx(
                         "title",
                         "text-[#0069FE]",
-                        "font-bold mr-1",
+                        "font-bold mr-2",
                     )}>Halalvar</span>
                     <span className={clsx(
                         "sub-title",

@@ -11,10 +11,10 @@ import Banner from "../../components/home/banner"
 
 export default function page() {
   return (
-    <div className='home-screen'>
+    <>
       <main className={clsx(
         "main-content",
-        "flex justify-center items-center flex-col"
+        "flex justify-center items-center flex-col",
       )}>
         <Banner></Banner>
         <Slogan></Slogan>
@@ -23,6 +23,6 @@ export default function page() {
         <Category></Category>
         <CopyRight></CopyRight>
       </main>
-    </div >
+    </>
   )
 }

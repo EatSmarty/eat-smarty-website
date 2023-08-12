@@ -10,20 +10,18 @@ export default function Page() {
   return (
     <>
       <Header title={'Additives'} />
-      <div className={clsx(
-        "home-screen",
+      <main className={clsx(
+        "main-content",
+        "mb-14",
+        "flex justify-center items-center flex-col"
       )}>
-        <main className={clsx(
-          "main-content",
-          "mt-5 mb-14",
-          "flex justify-center items-center flex-col"
+        <div className={clsx(
+          "mt-5"
         )}>
-          <div>
-            <Search />
-            <AdditiveList />
-          </div>
-        </main>
-      </div>
+          <Search />
+          <AdditiveList />
+        </div>
+      </main>
     </>
   )
 }
