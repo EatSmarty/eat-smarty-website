@@ -1,5 +1,3 @@
-'use client'
-
 import clsx from "clsx"
 import Category from "../../components/home/category"
 import Features from "../../components/home/features"
