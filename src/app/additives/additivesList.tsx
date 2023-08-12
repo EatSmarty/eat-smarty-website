@@ -25,7 +25,7 @@ export default function AdditiveList() {
     //     setFilteredList(updatedList)
     // }
 
-    const [jsonData] = useState(additives)
+    const jsonData = additives
 
     return (
         jsonData.map((index) => {

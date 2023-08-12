@@ -1,7 +1,5 @@
-import { useState } from 'react'
 import clsx from 'clsx';
 import Link from 'next/link';
-import additives from './additives.json'
 import GaugeChart from 'react-gauge-chart'
 import Image from 'next/image';
 
@@ -16,9 +14,9 @@ export default function AdditiveCart({ enumber, name, badge, danger, source }) {
         "flex justify-between items-center",
         "rounded",
         "cursor-pointer",
-        badge == true ? "bg-green-50" : undefined ||
-          badge == false ? "bg-red-50" : undefined ||
-            badge == null ? "bg-orange-50" : undefined,
+        badge == true ? "bg-green-100" : undefined ||
+          badge == false ? "bg-red-100" : undefined ||
+            badge == null ? "bg-orange-100" : undefined,
       )}>
         <div className={clsx(
           "enumber"
@@ -39,7 +37,7 @@ export default function AdditiveCart({ enumber, name, badge, danger, source }) {
           )}>
             <GaugeChart id="gauge-chart1"
               nrOfLevels={5}
-              percent={danger}
+              percent={danger / 5}
               arcWidth={0.3}
               cornerRadius={1}
               animate={false}
@@ -48,45 +46,14 @@ export default function AdditiveCart({ enumber, name, badge, danger, source }) {
           <div>
             {
               // plant cond
-              source == "plant" ?
+              source == "plant" || "pig" || "chemistry" || "synthetic" || "insec"
+                ?
                 <Image
-                  src={"./plant.png"}
+                  src={`./${source}.png`}
                   width={30} height={30}
-                  alt={"plant icon"}
+                  alt={`${source} icon`}
                 />
-                : "not define source" &&
-                  // chemistry cond
-                  source == "pig" ?
-                  <Image
-                    src={"./pig.png"}
-                    width={30} height={30}
-                    alt={"pig icon"}
-                  />
-                  : "not define source" &&
-                    // pig meat cond
-                    source == "chemistry" ?
-                    <Image
-                      src={"./chemistry.png"}
-                      width={30} height={30}
-                      alt={"chemistry icon"}
-                    />
-                    : "not define source" &&
-                      // synthetic cond
-                      source == "synthetic" ?
-                      <Image
-                        src={"./synthetic.png"}
-                        width={30} height={30}
-                        alt={"synthetic icon"}
-                      />
-                      : "not define source" &&
-                        // insec cond
-                        source == "insec" ?
-                        <Image
-                          src={"./insec.png"}
-                          width={30} height={30}
-                          alt={"synthetic icon"}
-                        />
-                        : "not define source"
+                : undefined
             }
           </div>
           <p className={clsx(
