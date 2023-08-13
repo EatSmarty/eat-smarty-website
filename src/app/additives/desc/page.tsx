@@ -17,9 +17,7 @@ const page: FC<pageProps> = ({ }) => {
                 "flex justify-center items-center",
                 "main-content"
             )}>
-                <div>
-                    <Desc></Desc>
-                </div>
+                <Desc></Desc>
             </main>
         </div>
     )
