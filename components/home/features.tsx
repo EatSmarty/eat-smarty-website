@@ -11,7 +11,6 @@ const Features: FC<featuresProps> = ({ }) => {
         "mt-20",
         "text-base",
         "w-1/2",
-        "grid grid-cols-2 gap-y-5"
     )}>
         <div className={clsx(
             "feature",

@@ -381,3 +381,9 @@ input:checked + .slider:before {
 .leaf-header{
   height: 71px;
 }
+
+.features{
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 50px;
+}
