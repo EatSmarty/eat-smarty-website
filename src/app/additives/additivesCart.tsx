@@ -6,7 +6,7 @@ import Image from 'next/image';
 export default function AdditiveCart({ enumber, name, badge, danger, source }) {
 
   return (
-    <Link href={"/additives/e-number"}>
+    <Link href={"/additives/desc"}>
       <div className={clsx(
         "list-container",
         "w-full",
