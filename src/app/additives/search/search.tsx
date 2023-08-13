@@ -14,7 +14,12 @@ const itemList = [
 ];
 
 export default function Search({ }) {
+  const [text, setText] = useState('')
+  // console.log();
+  if (text === 'hosein') {
+    console.log('true');
 
+  }
   return (
     <section className={clsx(
       "search-box",
@@ -34,7 +39,9 @@ export default function Search({ }) {
           "outline-none",
           "p-2",
           "text-sm"
-        )} type="text" placeholder='Search...' />
+        )} type="text" placeholder='Search...' value={text}
+          onChange={e => setText(e.target.value)
+          } />
         <svg xmlns="http://www.w3.org/2000/svg" fill="none"
           viewBox="0 0 24 24" stroke="currentColor"
           className="w-6 h-6 text-gray-500 cursor-pointer absolute">
@@ -44,4 +51,5 @@ export default function Search({ }) {
       </div>
     </section>
   )
+
 }
