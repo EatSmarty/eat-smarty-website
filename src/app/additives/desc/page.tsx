@@ -2,7 +2,8 @@
 
 import { FC } from 'react'
 import Header from './header'
-import Desc from './e-number'
+import Desc from './desc'
+import clsx from 'clsx'
 
 interface pageProps {
 
@@ -12,7 +13,10 @@ const page: FC<pageProps> = ({ }) => {
     return (
         <div className='home-screen'>
             <Header></Header>
-            <main className='flex justify-center items-center'>
+            <main className={clsx(
+                "flex justify-center items-center",
+                "main-content"
+            )}>
                 <div>
                     <Desc></Desc>
                 </div>
