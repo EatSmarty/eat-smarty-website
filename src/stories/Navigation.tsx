@@ -5,12 +5,15 @@ import qrcodeIcon from '../../public/svg/qrcode.svg'
 import settingIcon from '../../public/svg/setting.svg'
 
 type Props = {
-    variant?: '#0069FE' | 'tomato',
+    /**
+     * Navigation components use to color to show active icon
+     */
+    color?: '#0069FE' | 'tomato',
 }
 
 
-
-const Navigation = ({ variant = '#0069FE' }: Props) => {
+/** This is navigation components */
+const Navigation = ({ color: variant = '#0069FE' }: Props) => {
     return <div style={{
         padding: 1,
         background: '#eee',

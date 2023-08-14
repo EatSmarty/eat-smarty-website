@@ -7,7 +7,7 @@ const meta: Meta<typeof Navigation> = {
     title: "Navigation",
     tags: ['autodocs'],
     argTypes: {
-        variant: {
+        color: {
             control: {type: 'radio'},
             options: ['#0069FE', 'tomato', 'orange']
         }
@@ -24,12 +24,12 @@ export const Primary: Story = {
 
 export const Blue: Story = {
     args: {
-        variant: '#0069FE'
+        color: '#0069FE'
     }
 }
 
 export const Red: Story = {
     args: {
-        variant: 'tomato'
+        color: 'tomato'
     }
 }
