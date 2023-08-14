@@ -1,112 +1,148 @@
 {
-  "extends": [
-      "airbnb-typescript/base",
-      "plugin:@typescript-eslint/recommended"
-  ],
-  "parserOptions": {
-      "parser": "@babel/eslint-parser",
-      "requireConfigFile": false,
-      "project": "./tsconfig.json"
-  },
-  "ignorePatterns": [
-      "**/dist/*",
-      "**/build/*",
-      "**/coverage/*",
-      "**/phalcon/*",
-      "**/storybook-static/*",
-      "github/*",
-      "**/vendor/*.js",
-      "**/node_modules/*",
-      "**/jest.config.js",
-      "**/jest.setup.js"
-  ],
-  "rules": {
-      "indent": "off",
-      "react/jsx-filename-extension": [0],
-      "@typescript-eslint/indent": ["error", 4],
-      "max-len": [
-          "error",
-          {
-              "code": 80,
-              "ignorePattern": "^\\s*<",
-              "ignoreComments": true,
-              "ignoreTrailingComments": false,
-              "ignoreUrls": true,
-              "ignoreStrings": true,
-              "ignoreTemplateLiterals": true,
-              "ignoreRegExpLiterals": true
-          }
-      ],
-      "max-lines": ["error", 250],
-      "max-classes-per-file": ["error", 1],
-      "no-console": "error",
-      "no-multi-spaces": "error",
-      "key-spacing": [
-          "error",
-          {
-              "beforeColon": false,
-              "afterColon": true
-          }
-      ],
-      "space-in-parens": ["error", "never"],
-      "quotes": "off",
-      "@typescript-eslint/quotes": ["error", "double"],
-      "curly": ["error", "all"],
-      "linebreak-style": [0],
-      "no-underscore-dangle": [
-          2,
-          {
-              "allow": ["_id"]
-          }
-      ],
-      "import/no-unresolved": [
-          2,
-          {
-              "ignore": ["^@"]
-          }
-      ],
-      "no-unused-vars": "off",
-      "@typescript-eslint/no-unused-vars": "error",
-      "import/no-extraneous-dependencies": [0],
-      "no-multiple-empty-lines": [
-          "error",
-          {
-              "max": 1,
-              "maxBOF": 0,
-              "maxEOF": 0
-              }
-          ],
-      "import/extensions": "off"
-  },
-  "plugins": [
-      "@typescript-eslint",
-      "import",
-      "jest"
-  ],
-  "overrides": [
-      {
-          "files": ["example/path/to/override/src/**/*.js"],
-          "rules": {}
-      }
-  ],
-  "root": true,
-  "env": {
-      "es6": true,
-      "browser": true,
-      "node": true,
-      "mocha": true,
-      "serviceworker": true,
-      "jest": true
-  },
-  "settings": {
-      "vue": {
-          "version": "3"
-      },
-      "import/resolver": {
-          "node": {
-              "extensions": [".js", ".jsx", ".ts", ".tsx"]
-          },
-          "typescript": true
-      }
-  }
+    "extends": [
+        "airbnb-typescript/base",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:storybook/recommended"
+    ],
+    "parserOptions": {
+        "parser": "@babel/eslint-parser",
+        "requireConfigFile": false,
+        "project": "./tsconfig.json"
+    },
+    "ignorePatterns": [
+        "**/dist/*",
+        "**/build/*",
+        "**/coverage/*",
+        "**/phalcon/*",
+        "**/storybook-static/*",
+        "github/*",
+        "**/vendor/*.js",
+        "**/node_modules/*",
+        "**/jest.config.js",
+        "**/jest.setup.js"
+    ],
+    "rules": {
+        "indent": "off",
+        "react/jsx-filename-extension": [
+            0
+        ],
+        "@typescript-eslint/indent": [
+            "error",
+            4
+        ],
+        "max-len": [
+            "error",
+            {
+                "code": 80,
+                "ignorePattern": "^\\s*<",
+                "ignoreComments": true,
+                "ignoreTrailingComments": false,
+                "ignoreUrls": true,
+                "ignoreStrings": true,
+                "ignoreTemplateLiterals": true,
+                "ignoreRegExpLiterals": true
+            }
+        ],
+        "max-lines": [
+            "error",
+            250
+        ],
+        "max-classes-per-file": [
+            "error",
+            1
+        ],
+        "no-console": "error",
+        "no-multi-spaces": "error",
+        "key-spacing": [
+            "error",
+            {
+                "beforeColon": false,
+                "afterColon": true
+            }
+        ],
+        "space-in-parens": [
+            "error",
+            "never"
+        ],
+        "quotes": "off",
+        "@typescript-eslint/quotes": [
+            "error",
+            "double"
+        ],
+        "curly": [
+            "error",
+            "all"
+        ],
+        "linebreak-style": [
+            0
+        ],
+        "no-underscore-dangle": [
+            2,
+            {
+                "allow": [
+                    "_id"
+                ]
+            }
+        ],
+        "import/no-unresolved": [
+            2,
+            {
+                "ignore": [
+                    "^@"
+                ]
+            }
+        ],
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": "error",
+        "import/no-extraneous-dependencies": [
+            0
+        ],
+        "no-multiple-empty-lines": [
+            "error",
+            {
+                "max": 1,
+                "maxBOF": 0,
+                "maxEOF": 0
+            }
+        ],
+        "import/extensions": "off"
+    },
+    "plugins": [
+        "@typescript-eslint",
+        "import",
+        "jest"
+    ],
+    "overrides": [
+        {
+            "files": [
+                "example/path/to/override/src/**/*.js"
+            ],
+            "rules": {}
+        }
+    ],
+    "root": true,
+    "env": {
+        "es6": true,
+        "browser": true,
+        "node": true,
+        "mocha": true,
+        "serviceworker": true,
+        "jest": true
+    },
+    "settings": {
+        "vue": {
+            "version": "3"
+        },
+        "import/resolver": {
+            "node": {
+                "extensions": [
+                    ".js",
+                    ".jsx",
+                    ".ts",
+                    ".tsx"
+                ]
+            },
+            "typescript": true
+        }
+    }
 }

@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next export"
+    "export": "next export",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@capacitor/cli": "^5.2.0",
@@ -34,12 +36,22 @@
     "typescript": "5.1.6"
   },
   "devDependencies": {
+    "@storybook/addon-essentials": "^7.2.3",
+    "@storybook/addon-interactions": "^7.2.3",
+    "@storybook/addon-links": "^7.2.3",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/blocks": "^7.2.3",
+    "@storybook/nextjs": "^7.2.3",
+    "@storybook/react": "^7.2.3",
+    "@storybook/testing-library": "^0.2.0",
     "@types/react-collapse": "^5.0.1",
     "@typescript-eslint/eslint-plugin": "^5.13.0",
     "@typescript-eslint/parser": "^5.0.0",
     "eslint": "8.44.0",
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-config-airbnb-typescript": "^17.0.0",
-    "eslint-config-next": "13.4.9"
+    "eslint-config-next": "13.4.9",
+    "eslint-plugin-storybook": "^0.6.13",
+    "storybook": "^7.2.3"
   }
 }
