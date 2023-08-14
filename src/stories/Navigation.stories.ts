@@ -4,7 +4,14 @@ import Navigation from './Navigation'
 
 const meta: Meta<typeof Navigation> = {
     component: Navigation,
-    title: "Navigation"
+    title: "Navigation",
+    tags: ['autodocs'],
+    argTypes: {
+        variant: {
+            control: {type: 'radio'},
+            options: ['#0069FE', 'tomato', 'orange']
+        }
+    },
 }
 
 export default meta
