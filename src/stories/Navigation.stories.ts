@@ -11,8 +11,18 @@ export default meta
 
 type Story = StoryObj<typeof meta>
 
-export const Base: Story = {
-    args: {
+export const Primary: Story = {
 
+}
+
+export const Blue: Story = {
+    args: {
+        variant: '#0069FE'
+    }
+}
+
+export const Red: Story = {
+    args: {
+        variant: 'tomato'
     }
 }

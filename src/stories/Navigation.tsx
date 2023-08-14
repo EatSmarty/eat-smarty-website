@@ -4,11 +4,13 @@ import listIcon from '../../public/svg/list.svg'
 import qrcodeIcon from '../../public/svg/qrcode.svg'
 import settingIcon from '../../public/svg/setting.svg'
 
-type Props = {}
+type Props = {
+    variant?: '#0069FE' | 'tomato',
+}
 
 
 
-const Navigation = (props: Props) => {
+const Navigation = ({ variant = '#0069FE' }: Props) => {
     return <div style={{
         padding: 1,
         background: '#eee',
@@ -22,7 +24,7 @@ const Navigation = (props: Props) => {
             <li style={{
                 listStyle: 'none',
                 padding: '10px',
-                background: '#0069FE',
+                background: variant,
                 borderRadius: '5px',
                 fontSize: '14px',
             }}>
@@ -36,7 +38,7 @@ const Navigation = (props: Props) => {
             <li style={{
                 listStyle: 'none',
                 padding: '10px',
-                // background: '#0069FE',
+                // background: variant,
                 borderRadius: '5px',
                 fontSize: '14px'
             }}>
@@ -50,7 +52,7 @@ const Navigation = (props: Props) => {
             <li style={{
                 listStyle: 'none',
                 padding: '10px',
-                // background: '#0069FE',
+                // background: variant,
                 borderRadius: '5px',
                 fontSize: '14px'
             }}>
@@ -64,7 +66,7 @@ const Navigation = (props: Props) => {
             <li style={{
                 listStyle: 'none',
                 padding: '10px',
-                // background: '#0069FE',
+                // background: variant,
                 borderRadius: '5px',
                 fontSize: '14px'
             }}>
