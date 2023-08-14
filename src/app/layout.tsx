@@ -5,7 +5,6 @@ import Navigation from './navigation'
 import Header from './header'
 
 const inter = Inter({ subsets: ['latin'] })
-const siteTitle = "Halalvar"
 
 export const metadata: Metadata = {
   title: {
