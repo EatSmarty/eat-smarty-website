@@ -13,13 +13,16 @@ const itemList = [
   "Tomato"
 ];
 
-export default function Search({ }) {
-  const [text, setText] = useState('')
-  // console.log();
-  if (text === 'hosein') {
-    console.log('true');
 
+export default function Search({ }) {
+  const [searchValue, setSearchValue] = useState('E100')
+
+  function handleChange(event) {
+    return (
+      setSearchValue(event.target.value)
+    )
   }
+
   return (
     <section className={clsx(
       "search-box",
@@ -28,6 +31,7 @@ export default function Search({ }) {
       "border",
       "rounded"
     )}>
+      <p>{searchValue}</p>
       <div className={clsx(
         "search-input",
         "flex items-center justify-between",
@@ -39,9 +43,8 @@ export default function Search({ }) {
           "outline-none",
           "p-2",
           "text-sm"
-        )} type="text" placeholder='Search...' value={text}
-          onChange={e => setText(e.target.value)
-          } />
+        )} type="text" placeholder='Search...'
+          onChange={handleChange} />
         <svg xmlns="http://www.w3.org/2000/svg" fill="none"
           viewBox="0 0 24 24" stroke="currentColor"
           className="w-6 h-6 text-gray-500 cursor-pointer absolute">
