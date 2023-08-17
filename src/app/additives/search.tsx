@@ -1,4 +1,4 @@
-import AdditiveCart from "./additivesCart"
+import AdditiveCart from "./additivesCard"
 
 
 export default function Search({ filteredAdditives }) {
