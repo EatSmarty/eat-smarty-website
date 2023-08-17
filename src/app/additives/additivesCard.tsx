@@ -3,8 +3,7 @@ import Link from 'next/link';
 import GaugeChart from 'react-gauge-chart'
 import Image from 'next/image';
 
-export default function AdditiveCart({ enumber, name, badge, danger, source }) {
-
+export default function AdditiveCart({ additives }) {
   return (
     <Link href={"/additives/desc"}>
       <div className={clsx(
@@ -14,19 +13,19 @@ export default function AdditiveCart({ enumber, name, badge, danger, source }) {
         "flex justify-between items-center",
         "rounded",
         "cursor-pointer",
-        badge == true ? "bg-green-100" : undefined ||
-          badge == false ? "bg-red-100" : undefined ||
-            badge == null ? "bg-orange-100" : undefined,
+        additives.isHalal == true ? "bg-green-100" : undefined ||
+          additives.isHalal == false ? "bg-red-100" : undefined ||
+            additives.isHalal == null ? "bg-orange-100" : undefined,
       )}>
         <div className={clsx(
           "enumber"
         )}>
-          {enumber}
+          {additives.eNumber}
         </div>
         <p className={clsx(
           "name"
         )}>
-          {name}
+          {additives.name}
         </p>
         <div className={clsx(
           "flex justify-between items-center"
@@ -37,7 +36,7 @@ export default function AdditiveCart({ enumber, name, badge, danger, source }) {
           )}>
             <GaugeChart id="gauge-chart1"
               nrOfLevels={5}
-              percent={danger / 5}
+              percent={additives.danger / 5}
               arcWidth={0.3}
               cornerRadius={1}
               animate={false}
@@ -46,21 +45,21 @@ export default function AdditiveCart({ enumber, name, badge, danger, source }) {
           <div>
             {
               // plant cond
-              source == "plant" || "pig" || "chemistry" || "synthetic" || "insec"
+              additives.source == "plant" || "pig" || "chemistry" || "synthetic" || "insec"
                 ?
                 <Image
-                  src={`./${source}.png`}
+                  src={`./${additives.source}.png`}
                   width={30} height={30}
-                  alt={`${source} icon`}
+                  alt={`${additives.source} icon`}
                 />
                 : undefined
             }
           </div>
           <p className={clsx(
             "badge"
-          )}>{badge == true ? "Halal" : undefined ||
-            badge == false ? "Haram" : undefined ||
-              badge == null ? "Mushbooh" : undefined}
+          )}>{additives.isHalal == true ? "Halal" : undefined ||
+            additives.isHalal == false ? "Haram" : undefined ||
+              additives.isHalal == null ? "Mushbooh" : undefined}
           </p>
         </div>
       </div>

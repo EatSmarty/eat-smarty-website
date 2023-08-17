@@ -2,7 +2,7 @@
 
 import clsx from "clsx"
 import AdditiveList from "./additivesList"
-import Search from "./search/search"
+import Search from "./search"
 import Header from "../header"
 
 
@@ -18,7 +18,6 @@ export default function Page() {
         <div className={clsx(
           "mt-5"
         )}>
-          <Search />
           <AdditiveList />
         </div>
       </main>
