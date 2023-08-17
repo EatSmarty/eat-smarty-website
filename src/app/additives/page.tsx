@@ -18,7 +18,6 @@ export default function Page() {
         <div className={clsx(
           "mt-5"
         )}>
-          <Search />
           <AdditiveList />
         </div>
       </main>

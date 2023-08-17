@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Search from "./search";
 import clsx from "clsx";
+import Image from "next/image";
 
 export default function FilterdSearch({ additives }) {
     const [searchField, setSearchField] = useState("");
@@ -27,11 +28,35 @@ export default function FilterdSearch({ additives }) {
     }
 
     return (
-        <div className="App mt-20">
-            <div className="search-text">Search:</div>
-            <input className={clsx(
-
-            )} onChange={handleChange} />
+        <div className={clsx(
+            "mt-20",
+            "flex justify-center items-center flex-col"
+        )}>
+            <div className={clsx(
+                "bg-gray-100",
+                "flex",
+                "rounded",
+                "w-full"
+            )}>
+                <Image
+                    height={30}
+                    width={30}
+                    src={'./svg/search.svg'}
+                    alt="search"
+                    className={clsx(
+                        "p-1 ml-2"
+                    )}
+                />
+                <input className={clsx(
+                    "w-full",
+                    "p-2",
+                    "outline-none",
+                    "bg-gray-100",
+                    "inline"
+                )}
+                    placeholder="Search..."
+                    onChange={handleChange} />
+            </div>
 
             <div>
                 {searchList()}
