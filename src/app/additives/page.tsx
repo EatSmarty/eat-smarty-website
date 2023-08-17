@@ -2,7 +2,7 @@
 
 import clsx from "clsx"
 import AdditiveList from "./additivesList"
-import Search from "./search/search"
+import Search from "./search"
 import Header from "../header"
 
 
