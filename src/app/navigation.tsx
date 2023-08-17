@@ -3,9 +3,14 @@ import clsx from 'clsx';
 import Image from 'next/image';
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-
+import { useState } from 'react';
 export default function Navigation() {
     const pathname = usePathname();
+    const [pathName, setPathName] = useState("")
+
+    function clickHandler() {
+        setPathName(pathname)
+    }
 
     return (
         <nav className={clsx(
@@ -19,8 +24,8 @@ export default function Navigation() {
             "px-5"
         )}>
             <Link className={clsx(
-                pathname == '/' ? 'active' : '',
-            )} href={"./"} >
+                pathName === '/' ? 'active' : '',
+            )} href={"./"} onClick={clickHandler} >
                 <Image
                     src={'./svg/home.svg'}
                     height={30}
@@ -30,8 +35,8 @@ export default function Navigation() {
             </Link>
 
             <Link className={clsx(
-                pathname == '/additives' ? 'active' : ''
-            )} href={"/additives"} >
+                pathName === '/additives' ? 'active' : ''
+            )} href={"/additives"} onClick={clickHandler} >
                 <Image
                     src={'./svg/list.svg'}
                     height={30}
@@ -41,8 +46,8 @@ export default function Navigation() {
             </Link>
 
             <Link className={clsx(
-                pathname == '/scan' ? 'active' : ''
-            )} href={"/scan"} replace>
+                pathName === '/scan' ? 'active' : ''
+            )} href={"/scan"} onClick={clickHandler}>
                 <Image
                     src={'./svg/qrcode.svg'}
                     height={30}
@@ -52,8 +57,8 @@ export default function Navigation() {
             </Link>
 
             <Link className={clsx(
-                pathname == '/setting' ? 'active' : ''
-            )} href={"/setting"}>
+                pathName === '/setting' ? 'active' : ''
+            )} href={"/setting"} onClick={clickHandler}>
                 <Image
                     src={'./svg/setting.svg'}
                     height={30}
@@ -64,3 +69,4 @@ export default function Navigation() {
         </nav>
     )
 }
+
