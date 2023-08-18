@@ -17,7 +17,6 @@
     "@types/node": "20.4.1",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
-    "autoprefixer": "10.4.14",
     "clsx": "^2.0.0",
     "country-flag-icons": "^1.5.7",
     "dynamsoft-camera-enhancer": "^3.3.4",
@@ -25,14 +24,12 @@
     "html5-qrcode": "^2.3.8",
     "husky": "^8.0.3",
     "next": "13.4.9",
-    "postcss": "8.4.25",
     "quagga": "^0.12.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-gauge-chart": "^0.4.1",
     "react-icons": "^4.10.1",
     "react-snap-carousel": "^0.3.2",
-    "tailwindcss": "3.3.2",
     "typescript": "5.1.6"
   },
   "devDependencies": {
@@ -49,11 +46,14 @@
     "@types/react-collapse": "^5.0.1",
     "@typescript-eslint/eslint-plugin": "^5.13.0",
     "@typescript-eslint/parser": "^5.0.0",
+    "autoprefixer": "^10.4.15",
     "eslint": "8.44.0",
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-config-next": "13.4.9",
     "eslint-plugin-storybook": "^0.6.13",
-    "storybook": "^7.2.3"
+    "postcss": "^8.4.28",
+    "storybook": "^7.2.3",
+    "tailwindcss": "^3.3.3"
   }
 }
