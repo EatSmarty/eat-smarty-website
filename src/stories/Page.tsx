@@ -8,16 +8,16 @@ type User = {
 };
 
 export const Page: React.FC = () => {
-  const [user, setUser] = React.useState<User>();
+  const [title, setTitle] = React.useState<User>();
 
   return (
     <article>
-      <Header
-        user={user}
+      {/* <Header
+        page={title}
         onLogin={() => setUser({ name: 'Jane Doe' })}
         onLogout={() => setUser(undefined)}
         onCreateAccount={() => setUser({ name: 'Jane Doe' })}
-      />
+      /> */}
 
       <section className="storybook-page">
         <h2>Pages in Storybook</h2>

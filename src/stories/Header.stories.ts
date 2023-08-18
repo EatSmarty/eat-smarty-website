@@ -15,12 +15,34 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const LoggedIn: Story = {
+export const Home: Story = {
   args: {
-    user: {
-      name: 'Jane Doe',
+    page: {
+      title: 'Home',
     },
   },
 };
 
-export const LoggedOut: Story = {};
+export const Additives: Story = {
+  args: {
+    page: {
+      title: 'Additives'
+    }
+  }
+};
+
+export const Scan: Story = {
+  args: {
+    page: {
+      title: 'Scan'
+    }
+  }
+};
+
+export const Setting: Story = {
+  args: {
+    page: {
+      title: 'Setting'
+    }
+  }
+};

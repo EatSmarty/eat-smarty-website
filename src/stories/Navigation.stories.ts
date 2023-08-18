@@ -4,7 +4,7 @@ import Navigation from './Navigation'
 
 const meta: Meta<typeof Navigation> = {
     component: Navigation,
-    title: "Navigation",
+    title: "Example/Navigation",
     tags: ['autodocs'],
     argTypes: {
         color: {
