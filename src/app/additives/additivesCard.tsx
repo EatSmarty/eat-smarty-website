@@ -38,7 +38,7 @@ export default function AdditiveCart({ additives }) {
         )}>
           <div className={clsx(
             "mr-3 ",
-            "w-1/3",
+            "w-12",
           )}>
             <GaugeChart id="gauge-chart1"
               nrOfLevels={5}
@@ -48,14 +48,16 @@ export default function AdditiveCart({ additives }) {
               animate={false}
             />
           </div>
-          <div>
+          <div className={clsx(
+            "mr-2"
+          )}>
             {
               // plant cond
               additives.source == "plant" || "pig" || "chemistry" || "synthetic" || "insec"
                 ?
                 <Image
                   src={`./${additives.source}.png`}
-                  width={30} height={30}
+                  width={20} height={20}
                   alt={`${additives.source} icon`}
                 />
                 : undefined
@@ -63,9 +65,21 @@ export default function AdditiveCart({ additives }) {
           </div>
           <p className={clsx(
             "badge"
-          )}>{additives.isHalal == true ? "Halal" : undefined ||
-            additives.isHalal == false ? "Haram" : undefined ||
-              additives.isHalal == null ? "Mushbooh" : undefined}
+          )}>{additives.isHalal == true ? <Image
+            src={`./icon/ok.png`}
+            width={30} height={30}
+            alt={"halal"}
+          /> : undefined ||
+            additives.isHalal == false ? <Image
+            src={`./icon/cancle.png`}
+            width={30} height={30}
+            alt={"haram"}
+          /> : undefined ||
+            additives.isHalal == null ? <Image
+            src={`./icon/question-mark.png`}
+            width={30} height={30}
+            alt={"mushbooh"}
+          /> : undefined}
           </p>
         </div>
       </div>
