@@ -3,14 +3,10 @@ import clsx from 'clsx';
 import Image from 'next/image';
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { useState } from 'react';
+
+
 export default function Navigation() {
     const pathname = usePathname();
-    const [pathName, setPathName] = useState("")
-
-    function clickHandler() {
-        setPathName(pathname)
-    }
 
     return (
         <nav className={clsx(
@@ -24,45 +20,45 @@ export default function Navigation() {
             "px-5"
         )}>
             <Link className={clsx(
-                pathName === '/' ? 'active' : '',
-            )} href={"./"} onClick={clickHandler} >
+                pathname === '/' ? 'active' : '',
+            )} href={"./"} >
                 <Image
                     src={'./svg/home.svg'}
-                    height={30}
-                    width={30}
+                    height={28}
+                    width={28}
                     alt='home'
                 />
             </Link>
 
             <Link className={clsx(
-                pathName === '/additives' ? 'active' : ''
-            )} href={"/additives"} onClick={clickHandler} >
+                pathname === '/additives' ? 'active' : ''
+            )} href={"/additives"} >
                 <Image
                     src={'./svg/list.svg'}
-                    height={30}
-                    width={30}
+                    height={28}
+                    width={28}
                     alt='list'
                 />
             </Link>
 
             <Link className={clsx(
-                pathName === '/scan' ? 'active' : ''
-            )} href={"/scan"} onClick={clickHandler}>
+                pathname === '/scan' ? 'active' : ''
+            )} href={"/scan"}>
                 <Image
                     src={'./svg/qrcode.svg'}
-                    height={30}
-                    width={30}
+                    height={28}
+                    width={28}
                     alt='qrcode'
                 />
             </Link>
 
             <Link className={clsx(
-                pathName === '/setting' ? 'active' : ''
-            )} href={"/setting"} onClick={clickHandler}>
+                pathname === '/setting' ? 'active' : ''
+            )} href={"/setting"}>
                 <Image
                     src={'./svg/setting.svg'}
-                    height={30}
-                    width={30}
+                    height={28}
+                    width={28}
                     alt='list'
                 />
             </Link>
