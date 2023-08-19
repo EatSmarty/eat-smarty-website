@@ -3,6 +3,12 @@ import Link from 'next/link';
 import GaugeChart from 'react-gauge-chart'
 import Image from 'next/image';
 
+// interface AdditivesInterface {
+//   code: number;
+//   eNumber: string;
+//   name: string;
+// }
+
 export default function AdditiveCart({ additives }) {
   return (
     <Link href={"/additives/desc"}>
