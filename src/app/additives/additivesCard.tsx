@@ -1,7 +1,8 @@
 import clsx from 'clsx';
 import Link from 'next/link';
 import GaugeChart from 'react-gauge-chart'
-import Image from 'next/image';
+import Source from './source';
+import Ishalal from './ishalal';
 
 // interface AdditivesInterface {
 //   code: number;
@@ -23,14 +24,10 @@ export default function AdditiveCart({ additives }) {
           additives.isHalal == false ? "bg-red-100" : undefined ||
             additives.isHalal == null ? "bg-orange-100" : undefined,
       )}>
-        <div className={clsx(
-          "enumber"
-        )}>
+        <div>
           {additives.eNumber}
         </div>
-        <p className={clsx(
-          "name"
-        )}>
+        <p>
           {additives.name}
         </p>
         <div className={clsx(
@@ -48,39 +45,8 @@ export default function AdditiveCart({ additives }) {
               animate={false}
             />
           </div>
-          <div className={clsx(
-            "mr-2"
-          )}>
-            {
-              // plant cond
-              additives.source == "plant" || "pig" || "chemistry" || "synthetic" || "insec"
-                ?
-                <Image
-                  src={`./${additives.source}.png`}
-                  width={20} height={20}
-                  alt={`${additives.source} icon`}
-                />
-                : undefined
-            }
-          </div>
-          <p className={clsx(
-            "badge"
-          )}>{additives.isHalal == true ? <Image
-            src={`./icon/ok.png`}
-            width={30} height={30}
-            alt={"halal"}
-          /> : undefined ||
-            additives.isHalal == false ? <Image
-            src={`./icon/cancle.png`}
-            width={30} height={30}
-            alt={"haram"}
-          /> : undefined ||
-            additives.isHalal == null ? <Image
-            src={`./icon/question-mark.png`}
-            width={30} height={30}
-            alt={"mushbooh"}
-          /> : undefined}
-          </p>
+          <Source source={additives.source} />
+          <Ishalal isHalal={additives.isHalal} />
         </div>
       </div>
     </Link>
