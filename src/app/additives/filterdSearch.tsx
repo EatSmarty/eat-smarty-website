@@ -7,7 +7,7 @@ export default function FilterdSearch({ additives }) {
     const [searchField, setSearchField] = useState("");
 
     const filteredAdditives = additives.filter(
-        additive => {
+        (additive: { name: string; eNumber: string; }) => {
             return (
                 additive.name.toLowerCase()
                     .includes(searchField.toLowerCase()) ||
@@ -17,7 +17,7 @@ export default function FilterdSearch({ additives }) {
         }
     )
 
-    const handleChange = e => {
+    const handleChange = (e: { target: { value: React.SetStateAction<string>; }; }) => {
         setSearchField(e.target.value)
     }
 
@@ -29,13 +29,13 @@ export default function FilterdSearch({ additives }) {
 
     return (
         <div className={clsx(
-            "mt-20",
-            "flex justify-center items-center flex-col"
+            "mt-20 w-full",
+            "flex justify-center items-center flex-col",
         )}>
             <div className={clsx(
                 "bg-gray-100",
-                "flex",
                 "rounded",
+                "flex",
                 "w-full"
             )}>
                 <Image
@@ -49,7 +49,7 @@ export default function FilterdSearch({ additives }) {
                 />
                 <input className={clsx(
                     "w-full",
-                    "p-2",
+                    "p-2.5",
                     "outline-none",
                     "bg-gray-100",
                     "inline"
@@ -57,10 +57,7 @@ export default function FilterdSearch({ additives }) {
                     placeholder="Search..."
                     onChange={handleChange} />
             </div>
-
-            <div>
-                {searchList()}
-            </div>
+            {searchList()}
         </div>
     );
 }
