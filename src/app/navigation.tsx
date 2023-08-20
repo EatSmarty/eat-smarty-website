@@ -1,12 +1,11 @@
 'use client'
 import clsx from 'clsx';
-import Image from 'next/image';
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+import Navigationbuttons from './navigationbuttons';
+
 
 
 export default function Navigation() {
-    const pathname = usePathname();
+
 
     return (
         <nav className={clsx(
@@ -19,49 +18,11 @@ export default function Navigation() {
             "w-full",
             "px-5"
         )}>
-            <Link className={clsx(
-                pathname === '/' ? 'active' : '',
-            )} href={"./"} >
-                <Image
-                    src={'./svg/home.svg'}
-                    height={28}
-                    width={28}
-                    alt='home'
-                />
-            </Link>
+            <Navigationbuttons iconbutton={'home'} pathnameProp={''} />
+            <Navigationbuttons iconbutton={'list'} pathnameProp={'additives'} />
+            <Navigationbuttons iconbutton={'scan'} pathnameProp={'scan'} />
+            <Navigationbuttons iconbutton={'setting'} pathnameProp={'setting'} />
 
-            <Link className={clsx(
-                pathname === '/additives' ? 'active' : ''
-            )} href={"/additives"} >
-                <Image
-                    src={'./svg/list.svg'}
-                    height={28}
-                    width={28}
-                    alt='list'
-                />
-            </Link>
-
-            <Link className={clsx(
-                pathname === '/scan' ? 'active' : ''
-            )} href={"/scan"}>
-                <Image
-                    src={'./svg/qrcode.svg'}
-                    height={28}
-                    width={28}
-                    alt='qrcode'
-                />
-            </Link>
-
-            <Link className={clsx(
-                pathname === '/setting' ? 'active' : ''
-            )} href={"/setting"}>
-                <Image
-                    src={'./svg/setting.svg'}
-                    height={28}
-                    width={28}
-                    alt='list'
-                />
-            </Link>
         </nav>
     )
 }
