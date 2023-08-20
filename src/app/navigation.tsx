@@ -3,7 +3,6 @@ import clsx from 'clsx';
 import Navigationbuttons from './navigationbuttons';
 
 
-
 export default function Navigation() {
 
 
@@ -18,10 +17,10 @@ export default function Navigation() {
             "w-full",
             "px-5"
         )}>
-            <Navigationbuttons iconbutton={'home'} pathnameProp={''} />
-            <Navigationbuttons iconbutton={'list'} pathnameProp={'additives'} />
-            <Navigationbuttons iconbutton={'scan'} pathnameProp={'scan'} />
-            <Navigationbuttons iconbutton={'setting'} pathnameProp={'setting'} />
+            <Navigationbuttons icon={'./svg/home.svg'} pathnameProp={''} />
+            <Navigationbuttons icon={'./svg/list.svg'} pathnameProp={'additives'} />
+            <Navigationbuttons icon={'./svg/scan.svg'} pathnameProp={'scan'} />
+            <Navigationbuttons icon={'./svg/setting.svg'} pathnameProp={'setting'} />
 
         </nav>
     )
