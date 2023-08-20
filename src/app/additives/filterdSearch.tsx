@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Search from "./search";
 import clsx from "clsx";
 import Image from "next/image";
+import Searchinput from "./searchinput";
 
 export default function FilterdSearch({ additives }) {
     const [searchField, setSearchField] = useState("");
@@ -47,15 +48,7 @@ export default function FilterdSearch({ additives }) {
                         "p-1 ml-2"
                     )}
                 />
-                <input className={clsx(
-                    "w-full",
-                    "p-2.5",
-                    "outline-none",
-                    "bg-gray-100",
-                    "inline"
-                )}
-                    placeholder="Search..."
-                    onChange={handleChange} />
+                <Searchinput handleChange={handleChange} />
             </div>
             {searchList()}
         </div>
