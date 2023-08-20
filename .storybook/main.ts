@@ -12,8 +12,18 @@ const config: StorybookConfig = {
     name: "@storybook/nextjs",
     options: {},
   },
+  typescript: {
+    check: false,
+    checkOptions: {},
+    reactDocgen: false,
+    reactDocgenTypescriptOptions: {
+       shouldExtractLiteralValuesFromEnum: true,
+       propFilter: (prop) => (prop.parent ? !/node_modules/.test(prop.parent.fileName) : true),
+    },
+ },
   docs: {
     autodocs: "tag",
   },
 };
+
 export default config;

@@ -1,10 +1,7 @@
 'use client'
 
 import { FC } from 'react'
-import Header from '../header'
-import Navigation from '../page'
 import BarcodeScanner from './barcodeScanner'
-// import Scan from './scan'
 
 interface pageProps {
 
