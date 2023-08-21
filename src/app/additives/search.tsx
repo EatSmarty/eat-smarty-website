@@ -1,5 +1,5 @@
 import clsx from "clsx"
-import AdditiveCart from "../../../components/additives/additivesCard"
+import AdditiveCart from "../../components/additives/additivesCard"
 
 
 export default function Search({ filteredAdditives }) {
