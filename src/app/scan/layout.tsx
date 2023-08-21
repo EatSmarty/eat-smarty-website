@@ -1,5 +1,5 @@
 import { Metadata } from "next"
-import Header from "../../../components/header/header"
+import Header from "../../components/header/header"
 
 export const metadata: Metadata = {
     title: "Scan"

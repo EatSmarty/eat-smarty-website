@@ -1,6 +1,7 @@
 import type {Meta, StoryObj} from '@storybook/react'
 import NavigationButtons from './navigationbuttons'
-import './globals.css'
+import '../../app/globals.css'
+
 
 
 const meta = {
