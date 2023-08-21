@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "code": 100,
         "eNumber": "E100",
         "name": "Curcumin",
@@ -38,6 +39,7 @@
         "description": "Naturally occurring in some fruit but generally manufactured synthetically for use as a food preservative"
     },
     {
+        "id": 2,
         "code": 100,
         "eNumber": "E100i",
         "name": "Curcumin",
@@ -54,6 +56,7 @@
         "isHalal": true
     },
     {
+        "id": 3,
         "code": 100,
         "eNumber": "E100ii",
         "name": "Turmeric",
@@ -69,6 +72,7 @@
         "isHalal": true
     },
     {
+        "id": 4,
         "code": 101,
         "eNumber": "E101",
         "name": "Riboflavins",
@@ -106,6 +110,7 @@
         "description": "Naturally occurring in some fruit but generally manufactured synthetically for use as a food preservative"
     },
     {
+        "id": 5,
         "code": 102,
         "eNumber": "E102",
         "name": "Tartrazine",
