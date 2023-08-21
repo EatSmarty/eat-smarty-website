@@ -1,52 +1,50 @@
 import clsx from 'clsx';
 import Link from 'next/link';
-import GaugeChart from 'react-gauge-chart'
+
 import Source from './source';
 import Ishalal from './ishalal';
+import Gauge from './gauge';
 
 interface AdditivesInterface {
-  code: number;
+  code: number | null;
   enumber: string;
   name: string;
   isHalal: boolean;
   source: string;
+  danger: string | number
 }
 
-export default function AdditiveCart({ isHalal, enumber, name, source, danger }) {
+export default function AdditiveCart({ isHalal, enumber, name, source, danger }: AdditivesInterface) {
 
   if (isHalal) {
 
   }
 
   return (
-    <Link href={"/additives/desc"}>
+    <Link href={"/additives/desc"} className={clsx(
+      "list-container",
+      "mt-5",
+      "flex justify-between items-center flex-col",
+      "rounded",
+    )}>
+      <p>
+        {enumber}
+      </p>
+      <p>
+        {name}
+      </p>
       <div className={clsx(
-        "list-container",
-        "mt-5",
-        "flex justify-between items-center",
-        "rounded",
-        "cursor-pointer"
+        "detail-card",
+        "flex justify-center items-center flex-col",
       )}>
-        <div>
-          {enumber}
-        </div>
-        <p>
-          {name}
-        </p>
+        <Gauge danger={danger} />
         <div className={clsx(
-          "flex justify-between items-center",
-          "w-10"
+          "flex justify-center items-center",
+          "mt-3"
         )}>
-          <GaugeChart id="gauge-chart1"
-            nrOfLevels={5}
-            percent={danger / 5}
-            arcWidth={0.3}
-            cornerRadius={1}
-            animate={false}
-          />
+          <Source source={source} />
+          <Ishalal isHalal={isHalal} />
         </div>
-        <Source source={source} />
-        <Ishalal isHalal={isHalal} />
       </div>
     </Link>
   )
