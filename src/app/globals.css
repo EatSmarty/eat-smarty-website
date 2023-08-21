@@ -145,18 +145,7 @@ body {
   /* width: 400px; */
 }
 .search-input{
-  transition: 0.2s;
-}
-.search-input input{
-  transition: .1s;
-}
-.search-input input:focus{
-  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
-  padding: 10px;
-  border-radius: 4px;
-}
-.search-input svg{
-  right: 20px;
+  outline: none;
 }
 /* E-list */
 .e-food{
@@ -304,7 +293,7 @@ input:checked + .slider:before {
   width: 900px;
 }
 .list-container{
-  width: 900px;
+  /* padding: 20px; */
 }
 @media screen and (max-width: 1000px) {
   .title{
@@ -326,7 +315,18 @@ input:checked + .slider:before {
     width: 700px;
   }
   .list-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
     width: 700px;
+  }
+  .detail-card{
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .additives-list{
+    grid-template-columns: 1fr;
   }
 }
 @media screen and (max-width: 700px) {
