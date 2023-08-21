@@ -35,9 +35,9 @@ export default function FilterdSearch({ additives }) {
         )}>
             <div className={clsx(
                 "bg-gray-100",
-                "rounded",
-                "flex",
-                "w-full"
+                "flex justify-start items-stretch",
+                "w-full",
+                "border-b-2 border-blue-600"
             )}>
                 <Image
                     height={30}
