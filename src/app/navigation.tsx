@@ -1,6 +1,6 @@
 'use client'
 import clsx from 'clsx';
-import Navigationbuttons from './navigationbuttons';
+import Navigationbuttons from '../../components/navigation/navigationbuttons';
 
 
 export default function Navigation() {
