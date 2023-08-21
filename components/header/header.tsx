@@ -19,9 +19,10 @@ export default function Header({ title }: Props) {
       "fixed",
       "bg-[#fff]",
       "border-b",
-      "ml-2",
     )}>
-      <h1 className='text-xl font-bold ml-5'>{title}</h1>
+      <h1 className={clsx(
+        "text-xl font-bold ml-2"
+      )}>{title}</h1>
       <Image
         src="https://github.com/Halalvar/halalvar/blob/main/public/logo.png?raw=true"
         width={70}
