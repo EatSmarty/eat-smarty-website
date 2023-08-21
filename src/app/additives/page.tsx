@@ -2,7 +2,7 @@
 
 import clsx from "clsx"
 import AdditiveList from "./additivesList"
-import Header from "../header"
+import Header from "../../../components/header/header"
 
 
 export default function Page() {

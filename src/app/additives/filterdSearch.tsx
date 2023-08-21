@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Search from "./search";
 import clsx from "clsx";
 import Image from "next/image";
-import Searchinput from "./searchinput";
+import Searchinput from "../../../components/additives/searchinput";
 
 export default function FilterdSearch({ additives }) {
     const [searchField, setSearchField] = useState("");

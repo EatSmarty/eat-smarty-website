@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import additives from './additives.json'
-import AdditiveCart from './additivesCard';
+import AdditiveCart from '../../../components/additives/additivesCard';
 import FilterdSearch from './filterdSearch';
 
 
