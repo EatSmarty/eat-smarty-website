@@ -37,7 +37,8 @@ export default function FilterdSearch({ additives }) {
                 "bg-gray-100",
                 "flex justify-start items-stretch",
                 "w-full",
-                "border-b-2 border-blue-600"
+                "py-2",
+                "border-b-2 border-blue-600",
             )}>
                 <Image
                     height={30}

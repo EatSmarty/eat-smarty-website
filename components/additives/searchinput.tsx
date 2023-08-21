@@ -8,7 +8,7 @@ export default function Searchinput({ handleChange }) {
             <input className={clsx(
                 "w-full",
                 "bg-gray-100",
-                "search-input"
+                "search-input",
             )}
                 placeholder="Search..."
                 onChange={handleChange} />
