@@ -23,9 +23,7 @@ export default function AdditiveCart({ isHalal, enumber, name, source, danger }:
   return (
     <Link href={"/additives/desc"} className={clsx(
       "list-container",
-      "mt-5",
       "flex justify-between items-center flex-col",
-      "rounded",
     )}>
       <p>
         {enumber}
