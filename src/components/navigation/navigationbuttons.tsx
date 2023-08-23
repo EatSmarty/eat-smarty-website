@@ -1,3 +1,4 @@
+'use client'
 import clsx from 'clsx';
 import Image from 'next/image';
 import Link from 'next/link'
@@ -18,10 +19,10 @@ export default function Navigationbuttons({ icon, pathnameProp }: NavigationButt
 
     return (
         <Link className={clsx(
-            pathname === `/${pathnameProp}` ? 'active' : '',
+            pathname === `@${pathnameProp}` ? 'active' : '',
             "flex justify-center items-center",
 
-        )} href={`./${pathnameProp}`} >
+        )} href={'./additives'} >
             <Image
                 src={`${icon}`}
                 height={28}
