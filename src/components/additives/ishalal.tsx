@@ -1,21 +1,24 @@
 import Image from 'next/image';
+import ok from '../../assets/icon/ok.png'
+import cancle from '../../assets/icon/cancle.png'
+import mushbooh from '../../assets/icon/question-mark.png'
 
 
 export default function Ishalal({ isHalal }) {
     return (
         <div>
             {isHalal == true ? <Image
-                src={`./icon/ok.png`}
+                src={ok}
                 width={30} height={30}
                 alt={"halal"}
             /> : undefined ||
                 isHalal == false ? <Image
-                src={`./icon/cancle.png`}
+                src={cancle}
                 width={30} height={30}
                 alt={"haram"}
             /> : undefined ||
                 isHalal == null ? <Image
-                src={`./icon/question-mark.png`}
+                src={mushbooh}
                 width={30} height={30}
                 alt={"mushbooh"}
             /> : undefined}
