@@ -1,5 +1,5 @@
 import additives from './additives.json'
-import FilterdSearch from './filterdSearch';
+import FilterdSearch from './filterdSearch'
 
 
 export default function AdditivesList() {

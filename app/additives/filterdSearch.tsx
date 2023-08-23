@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Search from "./search";
 import clsx from "clsx";
-import Searchinput from "../../components/additives/searchinput";
+import Searchinput from "@/components/additives/searchinput";
 
 export default function FilterdSearch({ additives }) {
     const [searchField, setSearchField] = useState("");

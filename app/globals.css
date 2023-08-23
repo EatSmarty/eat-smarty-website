@@ -107,6 +107,9 @@ body {
   background-color: #fff;
   border-radius: .25rem;
   z-index: 2;
+  position: fixed;
+  bottom: 0;
+  padding: 0 10px;
 }
 
 .history-item{
@@ -170,6 +173,10 @@ video {
   width: 500px;
   height: 400px;
   object-fit: cover;
+}
+
+.scan-page{
+  min-height: 100vh;
 }
 
 .scan{
@@ -291,9 +298,6 @@ input:checked + .slider:before {
 }
 .why-section{
   width: 900px;
-}
-.list-container{
-  /* padding: 20px; */
 }
 @media screen and (max-width: 1000px) {
   .title{
