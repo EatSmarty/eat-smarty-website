@@ -14,10 +14,9 @@ const page: FC<pageProps> = ({ }) => {
     <div className='home-screen'>
 
       <main className='flex justify-center items-center'>
-        <div>
-          <Faq></Faq>
 
-        </div>
+        <Faq />
+
       </main>
     </div>
   )
