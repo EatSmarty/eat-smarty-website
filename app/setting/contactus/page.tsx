@@ -1,22 +1,18 @@
 'use client'
 
 import { FC } from 'react'
-import Header from './header'
-import Contactus from './contactus'
-import Test from './test'
+import Contactus from '@/components/setting/contactus'
 
 interface pageProps {
-  
+
 }
 
-const page: FC<pageProps> = ({}) => {
-  return( 
-      <div className='home-screen'>
-        <Header></Header>
+const page: FC<pageProps> = ({ }) => {
+  return (
+    <div className='home-screen'>
       <main className='flex justify-center items-center'>
         <div>
-          <Contactus></Contactus>
-          <Test></Test>
+          <Contactus />
         </div>
       </main>
     </div>
