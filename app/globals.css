@@ -107,6 +107,9 @@ body {
   background-color: #fff;
   border-radius: .25rem;
   z-index: 2;
+  position: fixed;
+  bottom: 0;
+  padding: 0 10px;
 }
 
 .history-item{
