@@ -175,6 +175,10 @@ video {
   object-fit: cover;
 }
 
+.scan-page{
+  min-height: 100vh;
+}
+
 .scan{
   width: 200px;
   height: 150px;
@@ -294,9 +298,6 @@ input:checked + .slider:before {
 }
 .why-section{
   width: 900px;
-}
-.list-container{
-  /* padding: 20px; */
 }
 @media screen and (max-width: 1000px) {
   .title{
