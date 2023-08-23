@@ -391,3 +391,7 @@ input:checked + .slider:before {
   grid-template-columns: 2fr 2fr;
   gap: 50px;
 }
+
+.accordion{
+  width: 95%;
+}
