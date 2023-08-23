@@ -1,7 +1,7 @@
 'use client'
 
 import { FC } from 'react'
-import About from './about'
+import About from '@/components/setting/about'
 import clsx from 'clsx'
 
 interface pageProps {
