@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import Image from "next/image";
-
+import searchIcon from '../../assets/svg/search.svg'
 
 export default function Searchinput({ handleChange }) {
 
@@ -16,7 +16,7 @@ export default function Searchinput({ handleChange }) {
                 <Image
                     height={30}
                     width={30}
-                    src={'./svg/search.svg'}
+                    src={searchIcon}
                     alt="search"
                     className={clsx(
                         "p-1 ml-2"
