@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Search from "./search";
+import Search from "@/components/additives/search";
 import clsx from "clsx";
 import Searchinput from "@/components/additives/searchinput";
 
