@@ -1,5 +1,5 @@
 import type {Meta, StoryObj} from '@storybook/react'
-import NavigationButtons from './navigationbuttons'
+import NavigationButtons from '@/components/navigation/navigation'
 import '../../app/globals.css'
 
 
