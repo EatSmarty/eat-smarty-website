@@ -4,14 +4,7 @@ import AdditiveCart from "@/components/additives/additivesCard"
 
 export default function Search({ filteredAdditives }) {
   const filtered = filteredAdditives?.map(additive =>
-    <div className={clsx(
-      "rounded",
-      "px-7 py-2",
-      "hover:shadow-lg",
-      `${additive.isHalal == true ? "bg-green-100" : undefined ||
-        additive.isHalal == false ? "bg-red-100" : undefined ||
-          additive.isHalal == null ? "bg-orange-100" : undefined}`
-    )}>
+    <div>
       <AdditiveCart
         key={additive.id}
         isHalal={additive.isHalal}
