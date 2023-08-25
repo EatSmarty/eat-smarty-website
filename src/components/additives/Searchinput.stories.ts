@@ -1,6 +1,5 @@
 import type {Meta, StoryObj} from '@storybook/react'
 import Searchinput from './searchinput'
-import '../../app/globals.css'
 
 
 const meta = {
