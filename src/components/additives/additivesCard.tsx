@@ -1,6 +1,5 @@
 import clsx from 'clsx';
 import Link from 'next/link';
-
 import Source from './source';
 import Ishalal from './ishalal';
 import Gauge from './gauge';
@@ -9,7 +8,7 @@ interface AdditivesInterface {
   code: number | null;
   enumber: string;
   name: string;
-  isHalal: boolean;
+  isHalal: boolean | null;
   source: string;
   danger: string | number
 }
