@@ -1,6 +1,5 @@
 import type {Meta, StoryObj} from '@storybook/react'
 import Header from './header'
-import '../../app/globals.css'
 
 const meta = {
     title: 'Header',
