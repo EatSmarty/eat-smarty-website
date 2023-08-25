@@ -1,6 +1,6 @@
 import type {Meta, StoryObj} from '@storybook/react'
 import AdditivesCard from './additivesCard'
-import Source from './source';
+
 
 
 const meta = {
@@ -46,7 +46,7 @@ export const MushboohCard: Story = {
         enumber: "E101",
         name: "Riboflavin",
         isHalal: null,
-        source: "pg",
+        source: 'pig',
         danger: 2
     }
 }
