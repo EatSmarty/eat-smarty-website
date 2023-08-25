@@ -1,7 +1,5 @@
 import type {Meta, StoryObj} from '@storybook/react'
-import NavigationButtons from '@/components/navigation/navigation'
-import '../../app/globals.css'
-
+import NavigationButtons from './navigation'
 
 
 const meta = {
@@ -19,26 +17,8 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>
 
-export const NavigationHome: Story = {
+export const NavigationPrimary: Story = {
     args: {
-        icon: 'home'
-    }
-}
 
-export const NavigationList: Story = {
-    args: {
-        icon: 'list'
-    }
-}
-
-export const NavigationScan: Story = {
-    args: {
-        icon: 'scan'
-    }
-}
-
-export const NavigationSetting: Story = {
-    args: {
-        icon: 'setting'
     }
 }
