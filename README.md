@@ -17,6 +17,8 @@
 
 
 
+## Licence
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Version
 ![version](https://img.shields.io/badge/version-0.1.0-blue)
