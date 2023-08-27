@@ -15,6 +15,9 @@
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 
+## 💡 Inspiration
+
+Halalvar is an app that allows users to scan the barcode or manually enter the name of a food or grocery item to get detailed information about its ingredients. The app includes a special feature that checks whether the product is halal or not, making it a convenient tool for those who follow halal dietary restrictions. Users can view information about additives, allergens, and other potentially harmful substances, as well as information about the nutritional value of the item. The app is designed to help users make informed decisions about the food and grocery items they consume, and to provide a convenient way to access this information while shopping or preparing meals.
 
 
 ## Licence
