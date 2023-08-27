@@ -1,3 +1,8 @@
+<p align="center">
+    <img src="https://github.com/Halalvar/halalvar/blob/main/public/cardiogram.png?raw=true"
+        height="130">
+</p>
+
 # [🌐Halalvar](https://halalvar.com)
 
 
