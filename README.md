@@ -19,6 +19,20 @@
 
 Halalvar is an app that allows users to scan the barcode or manually enter the name of a food or grocery item to get detailed information about its ingredients. The app includes a special feature that checks whether the product is halal or not, making it a convenient tool for those who follow halal dietary restrictions. Users can view information about additives, allergens, and other potentially harmful substances, as well as information about the nutritional value of the item. The app is designed to help users make informed decisions about the food and grocery items they consume, and to provide a convenient way to access this information while shopping or preparing meals.
 
+## 🛠 Usage
+
+clone repository
+```
+$ git clone https://github.com/Halalvar/halalvar.git
+```
+install node package module
+```
+$ npm i
+```
+run project on localhost
+```
+$ npm run dev
+```
 
 ## Licence
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
