@@ -5,6 +5,7 @@ import home from '../../assets/svg/home.svg'
 import list from '../../assets/svg/list.svg'
 import scan from '../../assets/svg/scan.svg'
 import setting from '../../assets/svg/setting.svg'
+import Homeicon from '../svg/homicon';
 
 export default function Navigation() {
 
@@ -20,12 +21,7 @@ export default function Navigation() {
         )}>
             {/* home */}
             <Link href={'/'} >
-                <Image
-                    src={home}
-                    height={28}
-                    width={28}
-                    alt='icon'
-                />
+                <Homeicon />
             </Link>
             {/* list */}
             <Link href={'/additives'} >
