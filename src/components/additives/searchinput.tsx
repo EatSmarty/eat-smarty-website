@@ -9,9 +9,11 @@ export default function Searchinput({ handleChange }) {
             <div className={clsx(
                 "bg-gray-100",
                 "flex justify-start items-stretch",
-                "w-full",
-                "py-2",
-                "border-b-2 border-blue-600",
+                "w-4/5",
+                "py-2 mt-5",
+                "rounded",
+                "md:w-2/5"
+                // "border-b-2 border-blue-600",
             )}>
                 <Image
                     height={30}
@@ -19,7 +21,7 @@ export default function Searchinput({ handleChange }) {
                     src={searchIcon}
                     alt="search"
                     className={clsx(
-                        "p-1 ml-2"
+                        "p-1 ml-2",
                     )}
                 />
                 <input className={clsx(
