@@ -1,12 +1,9 @@
 import clsx from 'clsx';
-import Image from 'next/image';
 import Link from 'next/link'
-import list from '../../assets/svg/list.svg'
-import scan from '../../assets/svg/scan.svg'
-import setting from '../../assets/svg/setting.svg'
 import Homeicon from '../svg/homicon';
 import Additivesicon from '../svg/additivesicon';
 import Scanicon from '../svg/scanicon';
+import Settingicon from '../svg/settingicon';
 
 export default function Navigation() {
 
@@ -29,14 +26,8 @@ export default function Navigation() {
             <Link href={'/scan'} >
                 <Scanicon />
             </Link>
-            {/* setting */}
             <Link href={'/setting'} >
-                <Image
-                    src={setting}
-                    height={28}
-                    width={28}
-                    alt='icon'
-                />
+                <Settingicon />
             </Link>
 
         </nav>
