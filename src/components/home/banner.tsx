@@ -5,9 +5,8 @@ export default function Banner({ }) {
     return (
         <section className={clsx(
             "banner",
-            "text-3xl",
-            "w-full",
-            "mt-28"
+            "text-5xl",
+            "mt-28",
         )}>
             <h2>
                 <div className={clsx(
@@ -17,6 +16,7 @@ export default function Banner({ }) {
                         "title",
                         "text-[#0069FE]",
                         "font-bold mr-2",
+                        "fancy"
                     )}>Halalvar</span>
                     <span className={clsx(
                         "sub-title",
