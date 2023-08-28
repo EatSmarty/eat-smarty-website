@@ -1,6 +1,7 @@
 import clsx from 'clsx'
 import Link from 'next/link'
 import { FC } from 'react'
+import Arrowicon from '../svg/arrowicon'
 
 interface aboutProps {
 
@@ -33,16 +34,7 @@ const About: FC<aboutProps> = ({ }) => {
               "ml-4"
             )}>FAQ</p>
           </div>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-            viewBox="0 0 24 24" stroke="currentColor"
-            className={clsx(
-              "w-6 h-8 mr-4",
-              "hover:mr-3 duration-200",
-              "font-bold"
-            )}>
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-          </svg>
+          <Arrowicon />
         </Link>
         <Link href={"/setting/contactus"} className={clsx(
           "setting-item contact-us",
@@ -58,16 +50,7 @@ const About: FC<aboutProps> = ({ }) => {
               "ml-4"
             )}>Contact Us</p>
           </div>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-            viewBox="0 0 24 24" stroke="currentColor"
-            className={clsx(
-              "w-6 h-8",
-              "mr-4", "hover:mr-3 duration-200",
-              "font-bold"
-            )}>
-            <path stroke-linecap="round"
-              d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-          </svg>
+          <Arrowicon />
         </Link>
       </div>
     </section>
