@@ -12,16 +12,14 @@ export default function Navigation() {
     return (
         <nav className={clsx(
             "flex justify-between items-center",
+            "md:justify-around",
             "overflow-hidden",
             "border-t",
             "w-full",
             "navigation-bottom"
         )}>
             {/* home */}
-            <Link className={clsx(
-                "flex justify-center items-center",
-
-            )} href={'/'} >
+            <Link href={'/'} >
                 <Image
                     src={home}
                     height={28}
@@ -30,10 +28,7 @@ export default function Navigation() {
                 />
             </Link>
             {/* list */}
-            <Link className={clsx(
-                "flex justify-center items-center",
-
-            )} href={'/additives'} >
+            <Link href={'/additives'} >
                 <Image
                     src={list}
                     height={28}
@@ -42,10 +37,7 @@ export default function Navigation() {
                 />
             </Link>
             {/* scan */}
-            <Link className={clsx(
-                "flex justify-center items-center",
-
-            )} href={'/scan'} >
+            <Link href={'/scan'} >
                 <Image
                     src={scan}
                     height={28}
@@ -54,10 +46,7 @@ export default function Navigation() {
                 />
             </Link>
             {/* setting */}
-            <Link className={clsx(
-                "flex justify-center items-center",
-
-            )} href={'/setting'} >
+            <Link href={'/setting'} >
                 <Image
                     src={setting}
                     height={28}
