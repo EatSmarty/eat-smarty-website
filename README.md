@@ -34,6 +34,10 @@ run project on localhost
 $ npm run dev
 ```
 
+## Demo
+
+[Live](https://halalvar.vercel.app/)
+
 ## Licence
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
