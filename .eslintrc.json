@@ -127,7 +127,7 @@
         "node": true,
         "mocha": true,
         "serviceworker": true,
-        "jest": false
+        "jest": true
     },
     "settings": {
         "vue": {
