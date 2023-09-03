@@ -9,7 +9,7 @@ const Features: FC<featuresProps> = ({ }) => {
     return <section className={clsx(
         "flex flex-col justify-around items-stretch",
         "md:flex-row",
-        "mt-20",
+        "my-20",
         "text-base",
     )}>
         <div className={clsx(

@@ -2,14 +2,14 @@ import Image from 'next/image'
 import clsx from 'clsx';
 
 
-interface Props {
+interface HeaderProps {
   title: string | undefined | null;
   // backLink?: string;
   // halalStatus: "halal" | "mushbooh" | "haram"
 }
 
 
-export default function Header({ title }: Props) {
+export default function Header({ title }: HeaderProps) {
 
   return (
     <header className={clsx(
@@ -25,9 +25,9 @@ export default function Header({ title }: Props) {
         "text-xl font-bold ml-2"
       )}>{title}</h1>
       <Image
-        src="https://github.com/Halalvar/halalvar/blob/main/public/logo.png?raw=true"
-        width={70}
-        height={70}
+        src="https://github.com/EatSmarty/eat-smarty-website/blob/main/public/cardiogram.png?raw=true"
+        width={40}
+        height={40}
         alt='logo'
         className={clsx(
           "logo",
