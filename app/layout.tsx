@@ -3,32 +3,25 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Navigation from '@/components/navigation/navigation'
 import Header from '@/components/header/header'
-import clsx from 'clsx'
+import varient from '@/utilise/varient'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: {
-    default: 'Halalvar',
-    template: "%s | Halalvar"
+    default: `${varient.title}`,
+    template: `%s | ${varient.title}`
   },
   description: 'ensuring your dietary preferences are met' +
     'with absolute ease and confidence',
-  keywords: ['halal',
-    'haram',
-    'mushbooh',
-    'detect halal food',
-    'additives list',
-    'scan',
-    'scan halal',
-    'scan halal food'
-  ],
+  keywords: `${varient.keywords}`,
   openGraph: {
-    title: 'Halalvar',
+    title: `${varient.title}`,
     description: 'We specialize in seamlessly identifying halal food for you' +
       'by simply scanning the products barcode',
-    url: 'https://halalvar.com/',
-    siteName: 'halalvar',
+    url: 'https://eatsmarty.com/',
+    siteName: `${varient.brandName}`,
     images: [
       {
         url: '',
@@ -59,13 +52,6 @@ export const metadata: Metadata = {
     }
   },
 }
-
-interface Props {
-  title: string | undefined | null;
-  // backLink?: string;
-  // halalStatus: "halal" | "mushbooh" | "haram"
-}
-
 export default function RootLayout({
   children,
 }: {
