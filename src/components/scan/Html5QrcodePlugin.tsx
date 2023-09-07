@@ -63,12 +63,15 @@ const Html5QrcodePlugin: React.FC<Html5QrcodePluginProps> = (props) => {
 
     return (
         <section className={clsx(
-            "scan-page",
             "flex justify-center items-center",
-        )}>
-            <div id={qrcodeRegionId} className='bg-[#eee] rounded'>
-                <p className='text-xl'>Scan QR Code</p>
-                <p className='text-base text-gray-500 text-center mt-4'>Scanning the barcode of the product to detect the solvent</p>
+        )} >
+            <div id={qrcodeRegionId} className={clsx(
+                "bg-[#eee]",
+                "rounded",
+                "mt-40",
+                "w-1/2",
+                "flex justify-between items-center"
+            )}>
             </div>
         </section>
 
