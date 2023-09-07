@@ -1,11 +1,14 @@
 "use client"
 
-import React from 'react';
+import React, { useState } from 'react';
 import Html5QrcodePlugin from './Html5QrcodePlugin';
 
 const BarcodeScanner: React.FC = () => {
+  const [barcode, setBarcode] = useState("")
+
   const onNewScanResult = (decodedText: string) => {
-    // Handle the result here.
+    console.log(decodedText);
+
   };
 
   return (
@@ -13,8 +16,8 @@ const BarcodeScanner: React.FC = () => {
       <h1>Html5Qrcode React example!</h1>
       <Html5QrcodePlugin
         fps={10}
-        qrbox={450}
-        disableFlip={true}
+        qrbox={250}
+        disableFlip={false}
         qrCodeSuccessCallback={onNewScanResult}
       />
     </div>
