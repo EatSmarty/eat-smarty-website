@@ -13,7 +13,7 @@ interface Html5QrcodePluginProps {
     qrCodeErrorCallback?: (errorMessage: string) => void;
 }
 
-const qrcodeRegionId = 'html5qr-code-full';
+const qrcodeRegionId = 'html5qr-code-full-region';
 
 const Html5QrcodePlugin: React.FC<Html5QrcodePluginProps> = (props) => {
     const html5QrcodeScannerRef = useRef<Html5QrcodeScanner | null>(null);
@@ -63,14 +63,14 @@ const Html5QrcodePlugin: React.FC<Html5QrcodePluginProps> = (props) => {
 
     return (
         <section className={clsx(
-            "flex justify-center items-center",
+            "flex justify-center items-center flex-col",
         )} >
             <div id={qrcodeRegionId} className={clsx(
-                "bg-[#eee]",
+                "shadow",
+                "border-2",
                 "rounded",
-                "mt-40",
-                "w-1/2",
-                "flex justify-between items-center"
+                "mt-40 px-5",
+                "w-3/4",
             )}>
             </div>
         </section>

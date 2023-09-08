@@ -16,6 +16,7 @@ const BarcodeScanner: React.FC = () => {
       <Html5QrcodePlugin
         fps={10}
         qrbox={250}
+        aspectRatio={1}
         disableFlip={true}
         qrCodeSuccessCallback={onNewScanResult}
       />
