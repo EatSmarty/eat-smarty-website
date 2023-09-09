@@ -17,16 +17,16 @@ export default function Navigation() {
             "w-full",
             "navigation-bottom"
         )}>
-            <Link href={'/'} >
+            <Link href={'/'} data-testid='naviagate-to-home'>
                 <Homeicon />
             </Link>
-            <Link href={'/additives'} >
+            <Link href={'/additives'} data-testid='naviagate-to-additives'>
                 <Additivesicon />
             </Link>
-            <Link href={'/scan'} >
+            <Link href={'/scan'} data-testid='naviagate-to-scan'>
                 <Scanicon />
             </Link>
-            <Link href={'/setting'} >
+            <Link href={'/setting'} data-testid='naviagate-to-setting'>
                 <Settingicon />
             </Link>
 
