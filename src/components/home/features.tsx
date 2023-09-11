@@ -9,13 +9,13 @@ const Features: FC<featuresProps> = ({ }) => {
     return <section className={clsx(
         "flex flex-col justify-around items-stretch",
         "md:flex-row",
-        "my-20",
+        "my-10",
         "text-base",
     )}>
         <div className={clsx(
             "flex justify-center items-stretch",
             "rounded",
-            "w-40",
+            "w-40 h-40",
             "shadow",
             "m-5",
         )}>
@@ -44,7 +44,7 @@ const Features: FC<featuresProps> = ({ }) => {
         <div className={clsx(
             "flex justify-center items-stretch",
             "rounded",
-            "w-40",
+            "w-40 h-40",
             "shadow",
             "m-5"
         )}>
@@ -77,7 +77,7 @@ const Features: FC<featuresProps> = ({ }) => {
         <div className={clsx(
             "flex justify-center items-stretch",
             "rounded",
-            "w-40",
+            "w-40 h-40",
             "shadow",
             "m-5"
         )}>
@@ -117,7 +117,7 @@ const Features: FC<featuresProps> = ({ }) => {
         <div className={clsx(
             "flex justify-center items-stretch",
             "rounded",
-            "w-40",
+            "w-40 h-40",
             "shadow",
             "m-5"
         )}>
