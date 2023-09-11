@@ -1,9 +1,7 @@
 import clsx from "clsx";
-import Image from "next/image";
-import searchIcon from '../../assets/svg/search.svg'
 import Searchicon from "../svg/searchicon";
 
-export default function Searchinput({ handleChange }) {
+export default function Searchinput({ handleChange, placeholder }) {
 
     return (
         <>
@@ -11,10 +9,9 @@ export default function Searchinput({ handleChange }) {
                 "bg-gray-100",
                 "flex justify-start items-stretch",
                 "w-4/5",
-                "py-3 mt-5",
+                "py-3 my-5",
                 "rounded",
                 "md:w-2/5"
-                // "border-b-2 border-blue-600",
             )}>
                 <span className={clsx(
                     "mx-2"
@@ -26,7 +23,7 @@ export default function Searchinput({ handleChange }) {
                     "bg-gray-100",
                     "search-input",
                 )}
-                    placeholder="Search..."
+                    placeholder={placeholder}
                     onChange={handleChange} />
 
             </div>
