@@ -1,5 +1,4 @@
 import { FC } from 'react'
-import BarcodeScanner from '@/components/scan/barcodeScanner'
 import Scanned from '@/components/scan/scanned'
 
 interface pageProps {
