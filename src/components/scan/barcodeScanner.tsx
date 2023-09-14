@@ -1,5 +1,5 @@
 "use client"
-
+import { redirect } from 'next/navigation'
 import React, { useState } from 'react';
 import Html5QrcodePlugin from './Html5QrcodePlugin';
 import clsx from 'clsx';
@@ -20,11 +20,7 @@ const BarcodeScanner: React.FC = () => {
         disableFlip={true}
         qrCodeSuccessCallback={onNewScanResult}
       />
-      <h1 className={clsx(
-        "mt-20",
-        "text-center text-2xl text-green-600",
-        "font-bold",
-      )}>{barcode}</h1>
+      {barcode.length > 0 ? redirect('/scan/scanned') : undefined}
     </>
   );
 };
