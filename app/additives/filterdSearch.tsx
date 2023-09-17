@@ -33,7 +33,7 @@ export default function FilterdSearch({ additives }) {
             "flex justify-center items-center flex-col",
         )}>
 
-            <Searchinput handleChange={handleChange} placeholder={"Search"} />
+            <Searchinput handleChange={handleChange} placeholder={"Search"} keyDown={undefined} />
 
             {searchList()}
         </div>
