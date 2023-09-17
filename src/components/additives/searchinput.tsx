@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import Searchicon from "../svg/searchicon";
 
-export default function Searchinput({ handleChange, placeholder }) {
+export default function Searchinput({ handleChange, placeholder, keyDown }) {
 
     return (
         <>
@@ -24,7 +24,8 @@ export default function Searchinput({ handleChange, placeholder }) {
                     "search-input",
                 )}
                     placeholder={placeholder}
-                    onChange={handleChange} />
+                    onChange={handleChange}
+                    onKeyDown={keyDown} />
 
             </div>
         </>
