@@ -1,5 +1,4 @@
 import { FC } from 'react'
-import Scanned from '@/components/scan/scanned'
 
 interface pageProps {
 
@@ -8,7 +7,7 @@ interface pageProps {
 const page: FC<pageProps> = ({ }) => {
     return (
         <>
-            <Scanned />
+            <h1 className='pt-20'>Product</h1>
         </>
     )
 }

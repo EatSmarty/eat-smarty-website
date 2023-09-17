@@ -1,0 +1,60 @@
+[
+    {
+        "id": 1,
+        "barcode": "AB12345678910",
+        "title": "",
+        "category": "",
+        "description": "",
+        "src": "0.jpg",
+        "rating": 4,
+        "nutrition": [
+            {
+                "energy": 100,
+                "proteins": 1,
+                "carbohydrate": 1,
+                "sugars": 1,
+                "fat": 1,
+                "fibre": 1,
+                "sodium": 1
+            }
+        ],
+        "isHalal": true,
+        "isVegan": true,
+        "isVegetrian": true,
+        "isKosher": true,
+        "isJecfa": true,
+        "isPregnant": true,
+        "isChildren": true,
+        "isAllergey": false,
+        "isCarcinogenic": false
+    },
+    {
+        "id": 2,
+        "barcode": "AC12345678910",
+        "title": "",
+        "category": "",
+        "description": "",
+        "src": "1.jpg",
+        "rating": 4,
+        "nutrition": [
+            {
+                "energy": 100,
+                "proteins": 1,
+                "carbohydrate": 1,
+                "sugars": 1,
+                "fat": 1,
+                "fibre": 1,
+                "sodium": 1
+            }
+        ],
+        "isHalal": true,
+        "isVegan": true,
+        "isVegetrian": true,
+        "isKosher": true,
+        "isJecfa": true,
+        "isPregnant": true,
+        "isChildren": true,
+        "isAllergey": false,
+        "isCarcinogenic": false
+    }
+]

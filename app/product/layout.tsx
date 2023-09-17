@@ -12,7 +12,7 @@ export default function DashboardLayout({
 }) {
     return <section>
         <header>
-            <Header title={'Scanned'}></Header>
+            <Header title={'Product'}></Header>
         </header>
         {children}
     </section>
