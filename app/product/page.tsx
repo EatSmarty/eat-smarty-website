@@ -1,15 +1,7 @@
-import { FC } from 'react'
+import React from 'react'
 
-interface pageProps {
-
-}
-
-const page: FC<pageProps> = ({ }) => {
+export default function page() {
     return (
-        <>
-            <h1 className='pt-20'>Product</h1>
-        </>
+        <div>page</div>
     )
 }
-
-export default page
