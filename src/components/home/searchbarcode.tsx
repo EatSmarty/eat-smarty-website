@@ -1,7 +1,7 @@
 "use client"
 import { redirect } from 'next/navigation'
 import React, { useState } from 'react';
-import product from "@/components/home/Product.json";
+import product from "@/lib/Product.json";
 import Searchinput from '../additives/searchinput';
 
 
@@ -11,11 +11,11 @@ export default function Searchbarcode() {
 
     const handleChange = (e: { target: { value: React.SetStateAction<string>; }; }) => {
         setSearchField(e.target.value)
+
     }
 
-    // console.log(findCode);
+    let findIndex = product.findIndex(index => index.barcode === searchField)
     let findCode = product.some(item => item.barcode == searchField)
-
     const handleKeyDown = (e) => {
         if (e.key === 'Enter') {
         }
@@ -24,7 +24,7 @@ export default function Searchbarcode() {
     return (
         <>
             <Searchinput placeholder={'enter the barcode...'} handleChange={handleChange} keyDown={handleKeyDown} />
-            {findCode ? redirect('/product') : undefined}
+            {findCode ? redirect(`/product/${product[findIndex].id}`) : undefined}
         </>
     );
 };
