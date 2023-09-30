@@ -11,7 +11,6 @@ export default function Searchbarcode() {
 
     const handleChange = (e: { target: { value: React.SetStateAction<string>; }; }) => {
         setSearchField(e.target.value)
-
     }
 
     let findIndex = product.findIndex(index => index.barcode === searchField)
