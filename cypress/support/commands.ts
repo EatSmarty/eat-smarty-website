@@ -35,3 +35,21 @@
 //     }
 //   }
 // }
+// commands.d.ts
+declare namespace Cypress {
+    interface Chainable {
+        customVisit(url: string): Chainable<Element>;
+        clickNavigate(id: string): Chainable<Element>;
+    }
+}
+
+// custom command for visit url
+Cypress.Commands.add("customVisit", (url) => {
+    cy.log(`Navigating to: ${url}`);
+    cy.visit(url);
+});
+
+//custom command for navigate route
+Cypress.Commands.add('clickNavigate', (id)=>{
+    cy.get(id).click();
+})
