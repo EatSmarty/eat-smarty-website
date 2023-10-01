@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import additives from '../../additives.json'
+import additives from '../../../app/additives/additives.json'
 
 
 export default function AdditiveName() {

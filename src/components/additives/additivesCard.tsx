@@ -15,12 +15,9 @@ interface AdditivesInterface {
 
 export default function AdditiveCart({ isHalal, enumber, name, source, danger }: AdditivesInterface) {
 
-  if (isHalal) {
-
-  }
 
   return (
-    <Link href={"/additives/desc"} className={clsx(
+    <Link href={`/additives/${enumber}`} className={clsx(
       "list-container",
       "flex justify-between items-center flex-col",
       "rounded",

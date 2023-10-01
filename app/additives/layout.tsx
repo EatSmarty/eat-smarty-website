@@ -1,7 +1,7 @@
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-    title: "Setting"
+    title: "Additives"
 }
 
 export default function DashboardLayout({

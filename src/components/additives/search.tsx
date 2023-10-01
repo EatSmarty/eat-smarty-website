@@ -12,7 +12,7 @@ export default function Search({ filteredAdditives }) {
         name={additive.name}
         source={additive.source}
         danger={additive.danger}
-        code={0} />
+        code={additive.code} />
     </div>
   )
 
