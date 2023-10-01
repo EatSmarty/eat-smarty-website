@@ -53,8 +53,8 @@ Cypress.Commands.add("customVisit", (url) => {
 //custom command for navigate route
 Cypress.Commands.add('clickNavigate', (id)=>{
     cy.get(id).click();
-})
+});
 
 Cypress.Commands.add('headerTitle', (title)=>{
     cy.get('h1').contains(title);
-})
+});

@@ -9,7 +9,7 @@ describe('Route Navigation To Home Page', () => {
     // cy.clickNavigate('[data-testid="naviagate-to-home"]')
 
     // check title page
-    cy.headerTitle('home')
+    cy.headerTitle('Home')
   });
 });
 
