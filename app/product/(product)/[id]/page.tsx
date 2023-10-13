@@ -1,5 +1,6 @@
 import { FC } from 'react'
 import Product from './productId'
+import Container from './container'
 
 interface pageProps {
     params: { id: number }
@@ -8,8 +9,8 @@ interface pageProps {
 const page: FC<pageProps> = ({ params }) => {
     return (
         <>
-            <Product params={params} />
-
+            {/* <Product params={params} /> */}
+            <Container />
         </>
     )
 }

@@ -17,7 +17,7 @@ export default function Header({ title }: HeaderProps) {
       "flex justify-between items-center",
       "md:justify-around",
       "w-full",
-      "fixed",
+      "z-20",
       "bg-[#fff]",
       "border-b",
     )}>
