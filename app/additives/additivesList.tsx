@@ -1,4 +1,4 @@
-import additives from './additives.json'
+import additives from '@/lib/additives.json'
 import FilterdSearch from './filterdSearch'
 
 

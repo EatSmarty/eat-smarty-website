@@ -10,10 +10,8 @@ export default function DashboardLayout({
 }: {
     children: React.ReactNode
 }) {
-    return <section>
-        <header>
-            <Header title={'Product'}></Header>
-        </header>
+    return <>
+        <Header title={'Product'}></Header>
         {children}
-    </section>
+    </>
 }

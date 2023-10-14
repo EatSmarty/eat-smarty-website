@@ -1,18 +1,14 @@
 import React from 'react'
-import SwiperPage from './swiper'
+import ImageContainer from './imagecontainer'
 import clsx from 'clsx'
-import Maincontent from './maincontent'
 
 export default function Container() {
     return (
         <div className={clsx(
-            "flex justify-center items-start",
-            "my-5"
+            "flex justify-start flex-col",
+            "my-5 w-1/2"
         )}>
-            <div>
-                <SwiperPage />
-            </div>
-            <Maincontent />
+            {/* <ImageContainer /> */}
         </div>
     )
 }
