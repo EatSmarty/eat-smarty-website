@@ -6,7 +6,7 @@ export default function Banner({ }) {
         <section className={clsx(
             "banner",
             "text-5xl",
-            "mt-28 mb-5",
+            "mb-5",
         )}>
             <h2>
                 <div className={clsx(
