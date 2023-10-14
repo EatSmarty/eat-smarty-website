@@ -2,6 +2,7 @@
     {
         "id": 1,
         "barcode": "AB12345678910",
+        "imgproduct": "@/assets/products/cocacola.jpg",
         "title": "",
         "category": "",
         "description": "",
