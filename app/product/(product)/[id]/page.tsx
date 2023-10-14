@@ -9,8 +9,8 @@ interface pageProps {
 const page: FC<pageProps> = ({ params }) => {
     return (
         <>
-            {/* <Product params={params} /> */}
-            <Container />
+            <Product params={params} />
+            {/* <Container /> */}
         </>
     )
 }
