@@ -29,7 +29,7 @@ export default function FilterdSearch({ additives }) {
 
     return (
         <div className={clsx(
-            "mt-20 w-full",
+            "w-full",
             "flex justify-center items-center flex-col",
         )}>
 

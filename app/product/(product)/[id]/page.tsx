@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import Product from './productId'
-import Container from './container'
+
 
 interface pageProps {
     params: { id: number }
