@@ -1,0 +1,148 @@
+[
+    {
+        "id": 1,
+        "code": 100,
+        "eNumber": "E100",
+        "name": "Curcumin",
+        "category": "colours",
+        "subCategory": "yellows",
+        "danger": 1,
+        "source": "plant",
+        "otherNames": [
+            "E 100",
+            "Curcumin",
+            "Turmeric",
+            "Turmeric extract",
+            "Curcumin powder",
+            "E-100"
+        ],
+        "isHalal": true,
+        "isVegan": true,
+        "isVegetrian": true,
+        "isKosher": true,
+        "isJecfa": true,
+        "isPregnant": true,
+        "isChildren": true,
+        "isAllergey": false,
+        "isCarcinogenic": false,
+        "origin": "Natural colour isolated from the roots and stem of Yellowroot (Curcuma longa and Curcuma domestica). Turmeric is the crude extract, whereas curcumin is the purified compound. It imparts the yellow colour to curry powder. More on curcumin",
+        "function": "Food colour, whose colour ranges from yellow to red, depending on pH (acidity). It is not very soluble in water.",
+        "products": "Many different products.",
+        "sideEffect": "No side effects known in the concentrations used in foods.",
+        "Dietary restrictions": "None; E100 can be consumed by all religious groups, vegans and vegetarians.",
+        "approval": {
+            "usa": true,
+            "eur": true,
+            "australia": false
+        },
+        "exampleUse": "Used in pastries, confectionery, sauces, and soups",
+        "description": "Naturally occurring in some fruit but generally manufactured synthetically for use as a food preservative"
+    },
+    {
+        "id": 2,
+        "code": 100,
+        "eNumber": "E100i",
+        "name": "Curcumin",
+        "category": "colours",
+        "subCategory": "yellows",
+        "danger": 1,
+        "source": "plant",
+        "otherNames": [
+            "E 100(i)",
+            "E-100(i)",
+            "Curcumin",
+            "E100i"
+        ],
+        "isHalal": true
+    },
+    {
+        "id": 3,
+        "code": 100,
+        "eNumber": "E100ii",
+        "name": "Turmeric",
+        "category": "colours",
+        "subCategory": "yellows",
+        "danger": 0.3,
+        "source": "plant",
+        "otherNames": [
+            "E 100(ii)",
+            "E-100ii",
+            "Turmeric"
+        ],
+        "isHalal": true
+    },
+    {
+        "id": 4,
+        "code": 101,
+        "eNumber": "E101",
+        "name": "Riboflavins",
+        "category": "colours",
+        "subCategory": "yellows",
+        "danger": 0.1,
+        "source": "plant",
+        "otherNames": [
+            "B2",
+            "E 101",
+            "Vitamin B2",
+            "Riboflavin",
+            "E-101"
+        ],
+        "isHalal": true,
+        "isVegan": true,
+        "isVegetrian": true,
+        "isKosher": true,
+        "isJecfa": true,
+        "isPregnant": true,
+        "isChildren": true,
+        "isAllergey": false,
+        "isCarcinogenic": false,
+        "origin": "The E101 additive can be obtained by chemical synthesis from 3,4-dimethylaniline and ribose, as well as by microbiological method from the fungus Eremothecium gossypii or by genetically modified bacteria Bacillus subtilis.",
+        "function": "Food colour, whose colour ranges from yellow to red, depending on pH (acidity). It is not very soluble in water.",
+        "products": "The most frequent additive E101 is included in children's porridge, bread, peanut butter and dry breakfasts. In nature, riboflavin prevails in protein products of animal origin, such as meat, milk, liver, poultry, fish and eggs. It is also found in some vegetables, such as broccoli, spinach, white cabbage, buckwheat, and others.",
+        "sideEffect": "No side effects known in the concentrations used in foods.",
+        "Dietary restrictions": "None; E101 can be consumed by all religious groups, vegans and vegetarians.",
+        "approval": {
+            "usa": true,
+            "eur": true,
+            "australia": false
+        },
+        "exampleUse": "Used in pastries, confectionery, sauces, and soups",
+        "description": "Naturally occurring in some fruit but generally manufactured synthetically for use as a food preservative"
+    },
+    {
+        "id": 5,
+        "code": 102,
+        "eNumber": "E102",
+        "name": "Tartrazine",
+        "category": "colours",
+        "subCategory": "yellows",
+        "danger": 0.1,
+        "source": "synthetic",
+        "otherNames": [
+            "E 102",
+            "Tartrazine ",
+            "E-102"
+        ],
+        "isHalal": false,
+        "isVegan": true,
+        "isVegetrian": true,
+        "isKosher": true,
+        "isJecfa": true,
+        "isPregnant": true,
+        "isChildren": true,
+        "isAllergey": false,
+        "isCarcinogenic": false,
+        "origin": "Tartrazine (E102 food additive) is a food coloring of synthetic origin. It is not found in nature in its pure form. The E102 colorant is extracted from coal tar, a manufacturing waste product.  By its physical form, tartrazine is a water-soluble powder of yellow color with a golden tint",
+        "function": "Food colour, whose colour ranges from yellow to red, depending on pH (acidity). It is not very soluble in water.",
+        "products": "The most common  E102 additive (tartrazine) is found in confectionery products and drinks of yellow colors of all tints: candies, cakes, carbonated drinks. Also, E102 colorant is often found in canned fruits and vegetables, mustard, soups and yogurts.",
+        "sideEffect": "known to cause allergic reactions such as asthma and urticaria",
+        "Dietary restrictions": "None; E102 can be consumed by all religious groups, vegans and vegetarians.",
+        "approval": {
+            "usa": true,
+            "eur": true,
+            "australia": false
+        },
+        "exampleUse": "The most common  E102 additive (tartrazine) is found in confectionery products and drinks of yellow colors of all tints: candies, cakes, carbonated drinks. Also, E102 colorant is often found in canned fruits and vegetables, mustard, soups and yogurts.",
+        "description": "Tartrazine is widely used because of its low cost. The E102 additive is one of the cheapest synthetic colorants. The E102 colorant is used in the food industry to give products a yellow color. It is often mixed with other colorants to give products a certain color and tint."
+    }
+]
