@@ -1,18 +1,21 @@
 import clsx from 'clsx'
 import React from 'react'
 
-export default function Additivesdesc({ desc }) {
+export default function Additivesexample({ exampleUse }) {
     return (
         <div className={clsx(
+            "my-5",
             "flex items-center"
         )}>
             <h4 className={clsx(
                 "text-slate-500 text-xl"
-            )}>description | </h4>
-            <p className={clsx(
-                "mx-2"
             )}>
-                {desc}
+                Use |
+            </h4>
+            <p className={clsx(
+                "ml-2"
+            )}>
+                {exampleUse}
             </p>
         </div>
     )

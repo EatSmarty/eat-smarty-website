@@ -7,7 +7,9 @@ export default function Additivessource({ origin, category }) {
     return (
         <div className={clsx(
             "flex items-center",
-            "mt-5"
+            "mt-5",
+            "text-2xl",
+            "text-slate-500"
         )}>
             <Source source={origin} />
             <p>

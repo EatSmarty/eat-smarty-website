@@ -7,17 +7,16 @@ export default function Approval() {
     return (
         <>
             <div className={clsx(
-                "example",
-                "mb-5",
-                "text-left"
+                "my-5",
+                "flex items-center"
             )}>
                 <span className={clsx(
-                    "text-gray-500 ",
+                    "text-slate-500 text-xl",
                     "mr-2"
                 )}>Approval</span>
                 <div className={clsx(
                     "text-xl",
-                    "flex justify-center items-center"
+                    "flex items-center"
                 )}>
                     <US title="United States" className={clsx(
                         "w-10",

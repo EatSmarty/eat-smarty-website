@@ -6,6 +6,12 @@ import Additivessource from '@/components/additives/additivesource'
 import Additivesdesc from '../../../../src/components/additives/additivesdesc'
 import Additivesothername from '../../../../src/components/additives/additivesothername'
 import NotFound from '@/components/additives/not-found'
+import Approval from '@/components/additives/approval'
+import Additivesexample from '@/components/additives/additivesexample'
+import { TiTick } from 'react-icons/ti'
+import { RxCross2 } from 'react-icons/rx'
+import Additivescheck from '@/components/additives/additivescheck'
+
 
 interface pageProps {
     params: { number: string }
@@ -48,6 +54,11 @@ const page: FC<pageProps> = ({ params }) => {
                         <Additivessource origin={currentEnumber[0]?.source} category={currentEnumber[0]?.category} />
                         <Additivesothername othername={currentEnumber[0]?.otherNames} />
                         <Additivesdesc desc={currentEnumber[0]?.description} />
+                        <Additivesexample exampleUse={currentEnumber[0].exampleUse} />
+                        <Additivescheck
+                            allergy={currentEnumber[0].isAllergey ? <TiTick /> : <RxCross2 />}
+                            halal={currentEnumber[0].isHalal ? <TiTick /> : <RxCross2 />} />
+                        <Approval />
                     </div>
                 </>
             ) : (<NotFound />)}
