@@ -1,16 +1,11 @@
 import type { Metadata } from 'next'
-import { Roboto, Poppins } from 'next/font/google'
+import { DM_Sans } from 'next/font/google'
 import './globals.css'
 import Navigation from '@/components/navigation/navigation'
 import varient from '@/utilise/varient'
 
 
-const roboto = Roboto({
-  weight: '400',
-  subsets: ['latin'],
-})
-
-const poppins = Poppins({
+const DmSans = DM_Sans({
   weight: '400',
   subsets: ['latin'],
 })
@@ -66,7 +61,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>
+      <body className={DmSans.className}>
         {children}
         <Navigation />
       </body>
