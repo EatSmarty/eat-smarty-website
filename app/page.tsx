@@ -1,14 +1,14 @@
-'use client'
-import clsx from "clsx"
-import Features from "@/components/home/features"
-import CopyRight from "@/components/home/copyright"
-import Slogan from "@/components/home/slogan"
-import Banner from "@/components/home/banner"
-import Searchbarcode from "@/components/home/searchbarcode"
-import Header from "@/components/header/header"
+"use client";
 
+import clsx from "clsx";
+import Features from "@/components/home/features";
+import CopyRight from "@/components/home/copyright";
+import Slogan from "@/components/home/slogan";
+import Banner from "@/components/home/banner";
+import Searchbarcode from "@/components/home/searchbarcode";
+import Header from "@/components/header/header";
 
-export default function page() {
+export default function Page() {
 
   return (
     <>
@@ -23,5 +23,5 @@ export default function page() {
         <CopyRight />
       </main>
     </>
-  )
+  );
 }

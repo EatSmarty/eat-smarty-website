@@ -1,6 +1,5 @@
-import clsx from "clsx"
-import AdditiveCart from "@/components/additives/additivesCard"
-
+import clsx from "clsx";
+import AdditiveCart from "@/components/additives/additivesCard";
 
 export default function Search({ filteredAdditives }) {
   const filtered = filteredAdditives?.map(additive =>
@@ -13,8 +12,8 @@ export default function Search({ filteredAdditives }) {
         source={additive.source}
         danger={additive.danger}
         code={additive.code} />
-    </div>
-  )
+    </div>,
+  );
 
   return (
     <div className={clsx(
@@ -25,5 +24,5 @@ export default function Search({ filteredAdditives }) {
       {filtered}
 
     </div>
-  )
+  );
 }

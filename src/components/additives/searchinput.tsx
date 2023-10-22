@@ -11,10 +11,10 @@ export default function Searchinput({ handleChange, placeholder, keyDown }) {
                 "w-4/5",
                 "py-3 my-5",
                 "rounded",
-                "md:w-2/5"
+                "md:w-2/5",
             )}>
                 <span className={clsx(
-                    "mx-2"
+                    "mx-2",
                 )}>
                     <Searchicon />
                 </span>
@@ -29,5 +29,5 @@ export default function Searchinput({ handleChange, placeholder, keyDown }) {
 
             </div>
         </>
-    )
+    );
 }

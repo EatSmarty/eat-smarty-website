@@ -1,15 +1,8 @@
-'use client'
+"use client";
 
-import { FC } from 'react'
+import Faq from "@/components/setting/faq";
 
-import Faq from '@/components/setting/faq'
-
-interface pageProps {
-
-}
-
-
-const page: FC<pageProps> = ({ }) => {
+export default function Page() {
   return (
     <div className='home-screen'>
 
@@ -19,7 +12,5 @@ const page: FC<pageProps> = ({ }) => {
 
       </main>
     </div>
-  )
+  );
 }
-
-export default page

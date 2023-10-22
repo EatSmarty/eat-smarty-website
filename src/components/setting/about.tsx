@@ -1,37 +1,32 @@
-import clsx from 'clsx'
-import Link from 'next/link'
-import { FC } from 'react'
-import Arrowicon from '../svg/arrowicon'
+import clsx from "clsx";
+import Link from "next/link";
+import Arrowicon from "../svg/arrowicon";
 
-interface aboutProps {
-
-}
-
-const About: FC<aboutProps> = ({ }) => {
+export default function About() {
   return <div>
     <section className={clsx(
       "about",
       "mt-28",
-      "text-2xl"
+      "text-2xl",
     )}>
       <p className=''>About</p>
       <div className={clsx(
         "about-items",
-        "text-xl"
+        "text-xl",
       )}>
-        <Link href={'/setting/faq'} className={clsx(
+        <Link href={"/setting/faq"} className={clsx(
           "setting-item contact-us",
           "flex justify-between itmes-center",
           "w-full",
           "py-3 mt-3",
           "cursor-pointer",
-          "rounded border-2"
+          "rounded border-2",
         )}>
           <div className={clsx(
-            "flex justify-center items-center"
+            "flex justify-center items-center",
           )}>
             <p className={clsx(
-              "ml-4"
+              "ml-4",
             )}>FAQ</p>
           </div>
           <Arrowicon />
@@ -41,20 +36,18 @@ const About: FC<aboutProps> = ({ }) => {
           "flex justify-between itmes-center",
           "w-full", "py-3 mt-3",
           "cursor-pointer",
-          "rounded border-2"
+          "rounded border-2",
         )}>
           <div className={clsx(
-            "flex justify-center items-center"
+            "flex justify-center items-center",
           )}>
             <p className={clsx(
-              "ml-4"
+              "ml-4",
             )}>Contact Us</p>
           </div>
           <Arrowicon />
         </Link>
       </div>
     </section>
-  </div>
+  </div>;
 }
-
-export default About
