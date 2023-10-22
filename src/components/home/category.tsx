@@ -1,20 +1,19 @@
-import clsx from 'clsx'
-import Image from 'next/image'
-
+import clsx from "clsx";
+import Image from "next/image";
 
 export default function Category({ }) {
   return (
     <div>
       <section className={clsx(
         "category",
-        "mt-14 mx-5"
+        "mt-14 mx-5",
       )}>
         <div className={clsx(
-          "category-items"
+          "category-items",
         )}>
           <div className={clsx(
             "container",
-            "cursor-pointer"
+            "cursor-pointer",
           )}>
             <Image src="https://halalvar.github.io/halalvar/fruit-3d.jpg"
               width={100}
@@ -22,20 +21,20 @@ export default function Category({ }) {
               alt="fruite"
               className={clsx(
                 "image",
-                "rounded"
+                "rounded",
               )}
             />
             <div className={clsx(
-              "overlay"
+              "overlay",
             )}>
               <div className={clsx(
-                "text"
+                "text",
               )}>Fruit</div>
             </div>
           </div>
           <div className={clsx(
             "container",
-            "cursor-pointer"
+            "cursor-pointer",
           )}>
             <Image src="https://halalvar.github.io/halalvar/drink-3d.jpg"
               width={100}
@@ -43,20 +42,20 @@ export default function Category({ }) {
               alt="drink"
               className={clsx(
                 "image",
-                "rounded"
+                "rounded",
               )}
             />
             <div className={clsx(
-              "overlay"
+              "overlay",
             )}>
               <div className={clsx(
-                "text"
+                "text",
               )}>Drink</div>
             </div>
           </div>
           <div className={clsx(
             "container",
-            "cursor-pointer"
+            "cursor-pointer",
           )}>
             <Image src="https://halalvar.github.io/halalvar/vegetable-3d.jpg"
               width={100}
@@ -64,20 +63,20 @@ export default function Category({ }) {
               alt="vegetabls"
               className={clsx(
                 "image",
-                "rounded"
+                "rounded",
               )}
             />
             <div className={clsx(
-              "overlay"
+              "overlay",
             )}>
               <div className={clsx(
-                "text"
+                "text",
               )}>Vegetabls</div>
             </div>
           </div>
           <div className={clsx(
             "container",
-            "cursor-pointer"
+            "cursor-pointer",
           )}>
             <Image src="https://halalvar.github.io/halalvar/bread-3d.jpg"
               width={100}
@@ -85,20 +84,20 @@ export default function Category({ }) {
               alt="bread"
               className={clsx(
                 "image",
-                "rounded"
+                "rounded",
               )}
             />
             <div className={clsx(
-              "overlay"
+              "overlay",
             )}>
               <div className={clsx(
-                "text"
+                "text",
               )}>Bread</div>
             </div>
           </div>
           <div className={clsx(
             "container",
-            "cursor-pointer"
+            "cursor-pointer",
           )}>
             <Image src="https://halalvar.github.io/halalvar/fresh-food-3d.jpg"
               width={100}
@@ -106,20 +105,20 @@ export default function Category({ }) {
               alt="fresh food"
               className={clsx(
                 "image",
-                "rounded"
+                "rounded",
               )}
             />
             <div className={clsx(
-              "overlay"
+              "overlay",
             )}>
               <div className={clsx(
-                "text"
+                "text",
               )}>FreshFood</div>
             </div>
           </div>
           <div className={clsx(
             "container",
-            "cursor-pointer"
+            "cursor-pointer",
           )}>
             <Image src="https://halalvar.github.io/halalvar/ice-cream-3d.jpg"
               width={100}
@@ -127,19 +126,19 @@ export default function Category({ }) {
               alt="ice cream"
               className={clsx(
                 "image",
-                "rounded"
+                "rounded",
               )}
             />
             <div className={clsx(
-              "overlay"
+              "overlay",
             )}>
               <div className={clsx(
-                "text"
+                "text",
               )}>Ice-cream</div>
             </div>
           </div>
         </div>
       </section>
     </div>
-  )
+  );
 }
