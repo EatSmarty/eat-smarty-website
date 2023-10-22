@@ -1,17 +1,10 @@
-import clsx from 'clsx'
-import { FC } from 'react'
+import clsx from "clsx";
 
-interface copyrightProps {
-
-}
-
-const CopyRight: FC<copyrightProps> = ({ }) => {
+export default function CopyRight() {
   return (
     <p className={clsx(
       "text-gray-500",
-      "mb-14"
+      "mb-14",
     )}>©EATSMARTY 2023 | All Rights Reserved</p>
-  )
+  );
 }
-
-export default CopyRight
