@@ -1,7 +1,7 @@
-"use client"
-import React, { useEffect, useRef } from 'react';
-import { Html5QrcodeScanner } from 'html5-qrcode';
-import clsx from 'clsx';
+"use client";
+import React, { useEffect, useRef } from "react";
+import { Html5QrcodeScanner } from "html5-qrcode";
+import clsx from "clsx";
 
 interface Html5QrcodePluginProps {
     fps?: number;
@@ -13,11 +13,12 @@ interface Html5QrcodePluginProps {
     qrCodeErrorCallback?: (errorMessage: string) => void;
 }
 
-const qrcodeRegionId = 'html5qr-code-full-region';
+const qrcodeRegionId = "html5qr-code-full-region";
 
 const Html5QrcodePlugin: React.FC<Html5QrcodePluginProps> = (props) => {
     const html5QrcodeScannerRef = useRef<Html5QrcodeScanner | null>(null);
     useEffect(() => {
+        // eslint-disable-next-line @typescript-eslint/no-shadow
         function createConfig(props: Html5QrcodePluginProps) {
             const config: any = {};
             if (props.fps) {
@@ -39,25 +40,22 @@ const Html5QrcodePlugin: React.FC<Html5QrcodePluginProps> = (props) => {
         const verbose = props.verbose === true;
 
         if (!props.qrCodeSuccessCallback) {
-            throw new Error('qrCodeSuccessCallback is a required callback.');
+            throw new Error("qrCodeSuccessCallback is a required callback.");
         }
 
         html5QrcodeScannerRef.current = new Html5QrcodeScanner(
             qrcodeRegionId,
             config,
-            verbose
+            verbose,
         );
 
         html5QrcodeScannerRef.current.render(
             props.qrCodeSuccessCallback,
-            props.qrCodeErrorCallback
+            props.qrCodeErrorCallback,
         );
 
         return () => {
             // Clear the scanner when the component unmounts
-            html5QrcodeScannerRef.current?.clear().catch((error) => {
-                console.error('Failed to clear html5QrcodeScanner. ', error);
-            });
         };
     }, []);
 
@@ -75,7 +73,7 @@ const Html5QrcodePlugin: React.FC<Html5QrcodePluginProps> = (props) => {
             </div>
         </section>
 
-    )
+    );
 };
 
 export default Html5QrcodePlugin;
