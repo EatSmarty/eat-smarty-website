@@ -1,12 +1,8 @@
-"use client"
-import clsx from 'clsx';
-import React from 'react'
-import Image from 'next/image';
-import productpic from "@/assets/products/cocacola.jpg"
-
-interface imageProps {
-    imgsrc: string
-}
+"use client";
+import clsx from "clsx";
+import React from "react";
+import Image from "next/image";
+import productpic from "@/assets/products/cocacola.jpg";
 
 export default function Imgcontainer() {
 
@@ -15,12 +11,12 @@ export default function Imgcontainer() {
             className={clsx(
                 "rounded",
                 "mr-10",
-                "shadow"
+                "shadow",
             )}
             src={productpic}
             height={200}
             width={200}
             alt='products'
         />
-    )
+    );
 }
