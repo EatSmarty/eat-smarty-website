@@ -1,12 +1,11 @@
-import clsx from 'clsx'
-import React from 'react'
+import React from "react";
 
-interface enumberProps {
+interface EnumberProps {
     params: { number: string }
 }
 
-export default function Enumber({ params }: enumberProps) {
+export default function Enumber({ params }: EnumberProps) {
     return (
         <div> {params.number} </div>
-    )
+    );
 }
