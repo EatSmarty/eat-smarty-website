@@ -28,7 +28,7 @@
             0
         ],
         "@typescript-eslint/indent": [
-            "error",
+            "off",
             2
         ],
         "max-len": [
