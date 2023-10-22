@@ -29,7 +29,7 @@
         ],
         "@typescript-eslint/indent": [
             "error",
-            4
+            2
         ],
         "max-len": [
             "error",
