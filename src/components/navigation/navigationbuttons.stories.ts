@@ -1,24 +1,23 @@
-import type {Meta, StoryObj} from '@storybook/react'
-import NavigationButtons from './navigation'
-
+import type { Meta, StoryObj } from "@storybook/react";
+import NavigationButtons from "./navigation";
 
 const meta = {
-    title: 'Navigationbuttons',
+    title: "Navigationbuttons",
     component: NavigationButtons,
     parameters: {
-        layout: 'centerd',
+        layout: "centerd",
     },
-    tags: ['outodocs'],
+    tags: ["outodocs"],
     argTypes: {
 
-    }
+    },
 } satisfies Meta<typeof NavigationButtons>;
 
 export default meta;
-type Story = StoryObj<typeof meta>
+type Story = StoryObj<typeof meta>;
 
 export const NavigationPrimary: Story = {
     args: {
 
-    }
-}
+    },
+};

@@ -1,41 +1,41 @@
-import type {Meta, StoryObj} from '@storybook/react'
-import Header from './header'
+import type { Meta, StoryObj } from "@storybook/react";
+import Header from "./header";
 
 const meta = {
-    title: 'Header',
+    title: "Header",
     component: Header,
     parameters: {
-        layout: 'centerd',
+        layout: "centerd",
     },
-    tags: ['outodocs'],
+    tags: ["outodocs"],
     argTypes: {
 
-    }
+    },
 } satisfies Meta<typeof Header>;
 
 export default meta;
-type Story = StoryObj<typeof meta>
+type Story = StoryObj<typeof meta>;
 
 export const HeaderHome: Story = {
     args: {
-        title: 'Home'
-    }
-}
+        title: "Home",
+    },
+};
 
 export const HeaderAdditives: Story = {
     args: {
-        title: 'Additives'
-    }
-}
+        title: "Additives",
+    },
+};
 
 export const HeaderScan: Story = {
     args: {
-        title: 'Scan'
-    }
-}
+        title: "Scan",
+    },
+};
 
 export const HeaderSetting: Story = {
     args: {
-        title: 'Setting'
-    }
-}
+        title: "Setting",
+    },
+};
