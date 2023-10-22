@@ -1,22 +1,20 @@
-import type {Meta, StoryObj} from '@storybook/react'
-import AdditivesCard from './additivesCard'
-
-
+import type { Meta, StoryObj } from "@storybook/react";
+import AdditivesCard from "./additivesCard";
 
 const meta = {
-    title: 'AdditivesCard',
+    title: "AdditivesCard",
     component: AdditivesCard,
     parameters: {
-        layout: 'centerd',
+        layout: "centerd",
     },
-    tags: ['outodocs'],
+    tags: ["outodocs"],
     argTypes: {
 
-    }
-} satisfies Meta<typeof AdditivesCard>
+    },
+} satisfies Meta<typeof AdditivesCard>;
 
 export default meta;
-type Story = StoryObj<typeof meta>
+type Story = StoryObj<typeof meta>;
 
 export const HalalCard: Story = {
     args: {
@@ -25,9 +23,9 @@ export const HalalCard: Story = {
         name: "Curcumin",
         isHalal: true,
         source: "plant",
-        danger: 1
-    }
-}
+        danger: 1,
+    },
+};
 
 export const HaramCard: Story = {
     args: {
@@ -36,9 +34,9 @@ export const HaramCard: Story = {
         name: "Tartrazine",
         isHalal: false,
         source: "chemistry",
-        danger: 2
-    }
-}
+        danger: 2,
+    },
+};
 
 export const MushboohCard: Story = {
     args: {
@@ -46,7 +44,7 @@ export const MushboohCard: Story = {
         enumber: "E101",
         name: "Riboflavin",
         isHalal: null,
-        source: 'pig',
-        danger: 2
-    }
-}
+        source: "pig",
+        danger: 2,
+    },
+};
