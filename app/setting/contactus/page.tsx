@@ -1,13 +1,8 @@
-'use client'
+"use client";
 
-import { FC } from 'react'
-import Contactus from '@/components/setting/contactus'
+import Contactus from "@/components/setting/contactus";
 
-interface pageProps {
-
-}
-
-const page: FC<pageProps> = ({ }) => {
+export default function Page() {
   return (
     <div className='home-screen'>
       <main className='flex justify-center items-center'>
@@ -16,7 +11,5 @@ const page: FC<pageProps> = ({ }) => {
         </div>
       </main>
     </div>
-  )
+  );
 }
-
-export default page
