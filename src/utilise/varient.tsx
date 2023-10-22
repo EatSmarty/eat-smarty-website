@@ -1,5 +1,5 @@
-const brandName = "EATSMARTY"
-const title = "EATSMARTY"
+const brandName = "EATSMARTY";
+const title = "EATSMARTY";
 const keywords = [
     "halal",
     "haram",
@@ -12,7 +12,6 @@ const keywords = [
     "detect halal food",
     "additives",
     "open source",
-]
+];
 
-
-export default { title, brandName, keywords }
+export default { title, brandName, keywords };
