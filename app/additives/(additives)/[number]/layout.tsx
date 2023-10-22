@@ -1,9 +1,8 @@
-import { Metadata } from "next"
-
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Enumber"
-}
+    title: "Enumber",
+};
 
 export default function DashboardLayout({
     children,
@@ -12,5 +11,5 @@ export default function DashboardLayout({
 }) {
     return <>
         {children}
-    </>
+    </>;
 }
