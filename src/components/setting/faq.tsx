@@ -48,13 +48,13 @@ function Faq() {
             id: 9,
             title: "Is your app free to use?",
             desc: "We offer both free and premium subscription options. The free version includes basic features, while our premium subscription unlocks additional benefits and advanced functionalities for a seamless experience.",
-        }
-    ]
+        },
+    ];
     return <Accordion className={clsx(
         "accordion",
         "text-gray-500",
         "mt-20 mb-40",
-        "outline-none"
+        "outline-none",
     )} isCompact variant="splitted" defaultExpandedKeys={["1"]} hideIndicator
         motionProps={{
             variants: {
@@ -101,14 +101,14 @@ function Faq() {
                 "m-3 p-2",
                 "bg-slate-200",
                 "rounded",
-                "border-none"
+                "border-none",
             )} key={index.id} aria-label={index.title} title={index.title}>
                 <p className="desc text-base">{index.desc}</p>
             </AccordionItem>
 
         ))}
 
-    </Accordion>
+    </Accordion>;
 }
 
-export default Faq
+export default Faq;
