@@ -1,23 +1,17 @@
-'use client'
+"use client";
 
-import { FC } from 'react'
-import About from '@/components/setting/about'
-import clsx from 'clsx'
-import Header from '@/components/header/header'
+import About from "@/components/setting/about";
+import clsx from "clsx";
+import Header from "@/components/header/header";
 
-interface pageProps {
-
-}
-
-
-const Page: FC<pageProps> = () => {
+export default function Page() {
   return (
     <>
-      <Header title={'Setting'}></Header>
+      <Header title={"Setting"}></Header>
       <div className='home-screen mb-20'>
         <main className={clsx(
           "main-content",
-          "flex justify-center items-center flex-col"
+          "flex justify-center items-center flex-col",
         )}>
           <div>
             <About></About>
@@ -25,7 +19,5 @@ const Page: FC<pageProps> = () => {
         </main>
       </div>
     </>
-  )
+  );
 }
-
-export default Page

@@ -1,8 +1,8 @@
-import clsx from 'clsx';
-import Link from 'next/link';
-import Source from './source';
-import Ishalal from './ishalal';
-import Gauge from './gauge';
+import clsx from "clsx";
+import Link from "next/link";
+import Source from "./source";
+import Ishalal from "./ishalal";
+import Gauge from "./gauge";
 
 interface AdditivesInterface {
   code: number | null;
@@ -13,8 +13,9 @@ interface AdditivesInterface {
   danger: string | number
 }
 
-export default function AdditiveCart({ isHalal, enumber, name, source, danger }: AdditivesInterface) {
-
+export default function AdditiveCart(
+  { isHalal, enumber, name, source, danger }: AdditivesInterface,
+) {
 
   return (
     <Link href={`/additives/${enumber}`} className={clsx(
@@ -26,7 +27,7 @@ export default function AdditiveCart({ isHalal, enumber, name, source, danger }:
       "w-40",
       `${isHalal == true ? "bg-green-100" : undefined ||
         isHalal == false ? "bg-red-100" : undefined ||
-          isHalal == null ? "bg-orange-100" : undefined}`
+          isHalal == null ? "bg-orange-100" : undefined}`,
     )}>
       <p>
         {enumber}
@@ -41,12 +42,12 @@ export default function AdditiveCart({ isHalal, enumber, name, source, danger }:
         <Gauge danger={danger} />
         <div className={clsx(
           "flex justify-center items-center",
-          "mt-3"
+          "mt-3",
         )}>
           <Source source={source} />
           <Ishalal isHalal={isHalal} />
         </div>
       </div>
     </Link>
-  )
+  );
 }
