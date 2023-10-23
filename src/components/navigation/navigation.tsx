@@ -11,13 +11,11 @@ import {
     AiOutlineSetting,
 } from "react-icons/ai";
 import { FaListUl } from "react-icons/fa";
-// import { useRouter } from "next/router";
 import { usePathname } from "next/navigation";
 import { BiScan } from "react-icons/bi";
+
 export default function Navigation() {
     const router = usePathname();
-    // eslint-disable-next-line no-console
-    console.log(router);
 
     return (
         <nav className={clsx(
