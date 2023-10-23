@@ -36,6 +36,7 @@
 //   }
 // }
 // commands.d.ts
+// eslint-disable-next-line @typescript-eslint/no-namespace
 declare namespace Cypress {
     interface Chainable {
         customVisit(url: string): Chainable<Element>;
@@ -51,10 +52,10 @@ Cypress.Commands.add("customVisit", (url) => {
 });
 
 //custom command for navigate route
-Cypress.Commands.add('clickNavigate', (id)=>{
+Cypress.Commands.add("clickNavigate", (id)=>{
     cy.get(id).click();
 });
 
-Cypress.Commands.add('headerTitle', (title)=>{
-    cy.get('h1').contains(title);
+Cypress.Commands.add("headerTitle", (title)=>{
+    cy.get("h1").contains(title);
 });
