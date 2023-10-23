@@ -4,7 +4,7 @@ export default defineConfig({
   projectId: "d98jup",
 
   e2e: {
-    setupNodeEvents(on, config) {
+    setupNodeEvents() {
       // implement node event listeners here
     },
   },

@@ -1,11 +1,21 @@
+"use client";
+
 import clsx from "clsx";
 import Link from "next/link";
-import Homeicon from "../svg/homicon";
-import Additivesicon from "../svg/additivesicon";
-import Scanicon from "../svg/scanicon";
-import Settingicon from "../svg/settingicon";
+import {
+    AiFillHome,
+    AiOutlineHome,
+    AiOutlineUnorderedList,
+    AiOutlineScan,
+    AiFillSetting,
+    AiOutlineSetting,
+} from "react-icons/ai";
+import { FaListUl } from "react-icons/fa";
+import { usePathname } from "next/navigation";
+import { BiScan } from "react-icons/bi";
 
 export default function Navigation() {
+    const router = usePathname();
 
     return (
         <nav className={clsx(
@@ -17,16 +27,16 @@ export default function Navigation() {
             "navigation-bottom",
         )}>
             <Link href={"/"} data-testid='naviagate-to-home'>
-                <Homeicon />
+                {router == "/" ? <AiFillHome size={30} /> : <AiOutlineHome size={30} />}
             </Link>
             <Link href={"/additives"} data-testid='naviagate-to-additives'>
-                <Additivesicon />
+                {router == "/additives" ? <FaListUl size={28} /> : <AiOutlineUnorderedList size={30} />}
             </Link>
             <Link href={"/scan"} data-testid='naviagate-to-scan'>
-                <Scanicon />
+                {router == "/scan" ? <BiScan size={30} /> : <AiOutlineScan size={30} />}
             </Link>
             <Link href={"/setting"} data-testid='naviagate-to-setting'>
-                <Settingicon />
+                {router == "/setting" ? <AiFillSetting size={30} /> : <AiOutlineSetting size={30} />}
             </Link>
 
         </nav>
