@@ -5,6 +5,12 @@ import Producttitle from "./producttitle";
 import Productdecscription from "./productdecscription";
 import Source from "@/components/additives/source";
 import Ishalal from "@/components/additives/ishalal";
+import { LuVegan } from "react-icons/lu";
+import { MdPregnantWoman } from "react-icons/md";
+import { FaAllergies } from "react-icons/fa";
+import { TbMoodSick } from "react-icons/tb";
+import Badgecheck from "./badgecheck";
+import Nutrition from "./nutrition";
 
 interface ContainerInterface {
     // code: number | null;
@@ -42,15 +48,34 @@ export default function Container({ }: ContainerInterface) {
                 </div>
                 <div className={clsx(
                     "flex items-center",
-                    "text-gray-500",
+                    "text-white",
                 )}>
-                    <p className={clsx(
-                        "mx-2",
-                    )}>
-                        Halal
-                    </p>
-                    <Ishalal isHalal={true} />
+                    <Badgecheck
+                        title="Halal"
+                        truthyOption={<Ishalal isHalal={true} />}
+                        isTrue={true} />
+                    <Badgecheck
+                        title="Vegan"
+                        truthyOption={<LuVegan size={25} />}
+                        isTrue={true} />
+                    <Badgecheck
+                        title="Vegeterian"
+                        truthyOption={<LuVegan size={25} />}
+                        isTrue={true} />
+                    <Badgecheck
+                        title="Carcinogenic"
+                        truthyOption={<TbMoodSick size={25} />}
+                        isTrue={true} />
+                    <Badgecheck
+                        title="Pregnant"
+                        truthyOption={<MdPregnantWoman size={30} />}
+                        isTrue={false} />
+                    <Badgecheck
+                        title="Allergey"
+                        truthyOption={<FaAllergies size={25} />}
+                        isTrue={true} />
                 </div>
+                <Nutrition />
                 <Productdecscription />
             </span>
             {/* <GaugeProduct/> */}
