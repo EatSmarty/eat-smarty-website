@@ -16,7 +16,9 @@
                 "sugars": 1,
                 "fat": 1,
                 "fibre": 1,
-                "sodium": 1
+                "sodium": 1,
+                "salt": 0,
+                "Saturates": 0
             }
         ],
         "isHalal": true,

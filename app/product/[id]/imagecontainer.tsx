@@ -10,7 +10,6 @@ export default function Imgcontainer() {
         <Image
             className={clsx(
                 "rounded",
-                "mr-10",
                 "shadow",
             )}
             src={productpic}

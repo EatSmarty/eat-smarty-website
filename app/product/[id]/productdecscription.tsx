@@ -4,7 +4,7 @@ import React from "react";
 export default function Productdecscription() {
     return (
         <p className={clsx(
-            "w-40",
+            "text-gray-500",
         )}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             In quisquam et nisi voluptatibus vel blanditiis corporis,

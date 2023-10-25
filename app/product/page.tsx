@@ -1,7 +1,10 @@
+import ProductPage from "./[id]/page";
 import React from "react";
 
-export default function page() {
+export default function page({ params }) {
     return (
-        <div>page</div>
+        <>
+            <ProductPage params={params} />
+        </>
     );
 }
