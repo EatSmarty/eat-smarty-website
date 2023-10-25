@@ -6,19 +6,19 @@ export default function Nutrition() {
     return (
         <div className={clsx(
             "text-xl",
-            "my-5",
+            "my-5 mx-2",
         )}>
             <h1>Nutrition Facts</h1>
             <table>
                 <TableRow title="Energy" value={"100kcal"} />
-                <TableRow title="Proteins" value={"100kcal"} />
-                <TableRow title="Carbohydrate" value={"100kcal"} />
-                <TableRow title="Sugars" value={"100kcal"} />
-                <TableRow title="Fat" value={"100kcal"} />
-                <TableRow title="Fibre" value={"100kcal"} />
-                <TableRow title="Sodium" value={"100kcal"} />
-                <TableRow title="Salt" value={"100kcal"} />
-                <TableRow title="Saturates" value={"100kcal"} />
+                <TableRow title="Proteins" value={"1"} />
+                <TableRow title="Carbohydrate" value={"1"} />
+                <TableRow title="Sugars" value={"1"} />
+                <TableRow title="Fat" value={"1"} />
+                <TableRow title="Fibre" value={"1"} />
+                <TableRow title="Sodium" value={"1"} />
+                <TableRow title="Salt" value={"1"} />
+                <TableRow title="Saturates" value={"1"} />
             </table>
         </div>
     );
