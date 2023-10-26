@@ -33,9 +33,6 @@ export default function Container({ params }: ContainerInterface) {
         mainItem.id == params.id
     ));
 
-    // eslint-disable-next-line no-console
-    console.log(mainProduct);
-
     return (
         <div className={clsx(
             "w-full max-w-[1280px]",
@@ -61,14 +58,14 @@ export default function Container({ params }: ContainerInterface) {
                         )}>
                             Plant Origin
                         </span>
-                        <Source source={mainProduct[0]?.source} />
+                        <Source source={mainProduct[0].source} />
                     </div>
                     <div className={clsx(
                         "md:flex",
                         "text-white",
                     )}>
                         <Badgecheck
-                            title="Halal"
+                            title={mainProduct[0].what}
                             truthyOption={
                                 <Ishalal
                                     isHalal={mainProduct[0].isHalal}
