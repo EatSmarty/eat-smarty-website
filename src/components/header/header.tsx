@@ -11,13 +11,15 @@ export default function Header({ title }: HeaderProps) {
 
   return (
     <header className={clsx(
-      "header",
-      "flex justify-between items-center",
-      "md:justify-around",
-      "w-full",
-      "relative z-20",
-      "bg-[#fff]",
       "border-b",
+      "overflow-hidden",
+      "w-full h-[50px]",
+      "md:h-[50px]",
+      "px-5 md:px-10",
+      "bg-white",
+      "flex md:justify-around justify-between items-center",
+      "z-20",
+      "sticky top-0",
     )}>
       <h1 className={clsx(
         "text-xl font-bold ml-2",
