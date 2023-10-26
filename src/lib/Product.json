@@ -9,6 +9,7 @@
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.In quisquam et nisi voluptatibus vel blanditiis corporis,delectus beatae eos, aut animi ullam ex quidem fugiat.Soluta quod explicabo eius maxime?",
         "src": "0.jpg",
         "rating": 4,
+        "what": "Halal",
         "nutrition": [
             {
                 "energy": 100,
@@ -41,6 +42,7 @@
         "description": "",
         "src": "1.jpg",
         "rating": 4,
+        "what": "Haram",
         "nutrition": [
             {
                 "energy": 100,
@@ -54,7 +56,40 @@
                 "Saturates": 0
             }
         ],
-        "isHalal": true,
+        "isHalal": false,
+        "isVegan": false,
+        "isVegetrian": true,
+        "isKosher": true,
+        "isJecfa": true,
+        "isPregnant": true,
+        "isChildren": true,
+        "isAllergey": false,
+        "isCarcinogenic": false
+    },
+    {
+        "id": 3,
+        "barcode": "AC12345678910",
+        "title": "CocaCola Zero",
+        "category": "",
+        "source": "plant",
+        "description": "",
+        "src": "1.jpg",
+        "rating": 4,
+        "what": "Mashbooh",
+        "nutrition": [
+            {
+                "energy": 100,
+                "proteins": 2,
+                "carbohydrate": 2,
+                "sugars": 2,
+                "fat": 2,
+                "fibre": 2,
+                "sodium": 1,
+                "salt": 0,
+                "Saturates": 0
+            }
+        ],
+        "isHalal": null,
         "isVegan": false,
         "isVegetrian": true,
         "isKosher": true,
