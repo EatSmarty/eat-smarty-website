@@ -3,9 +3,10 @@
         "id": 1,
         "barcode": "AB12345678910",
         "imgproduct": "@/assets/products/cocacola.jpg",
-        "title": "",
+        "title": "CocaCola",
         "category": "",
-        "description": "",
+        "source": "plant",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.In quisquam et nisi voluptatibus vel blanditiis corporis,delectus beatae eos, aut animi ullam ex quidem fugiat.Soluta quod explicabo eius maxime?",
         "src": "0.jpg",
         "rating": 4,
         "nutrition": [
@@ -26,7 +27,7 @@
         "isVegetrian": true,
         "isKosher": true,
         "isJecfa": true,
-        "isPregnant": true,
+        "isPregnant": false,
         "isChildren": true,
         "isAllergey": false,
         "isCarcinogenic": false
@@ -34,24 +35,27 @@
     {
         "id": 2,
         "barcode": "AC12345678910",
-        "title": "",
+        "title": "CocaCola Zero",
         "category": "",
+        "source": "plant",
         "description": "",
         "src": "1.jpg",
         "rating": 4,
         "nutrition": [
             {
                 "energy": 100,
-                "proteins": 1,
-                "carbohydrate": 1,
-                "sugars": 1,
-                "fat": 1,
-                "fibre": 1,
-                "sodium": 1
+                "proteins": 2,
+                "carbohydrate": 2,
+                "sugars": 2,
+                "fat": 2,
+                "fibre": 2,
+                "sodium": 1,
+                "salt": 0,
+                "Saturates": 0
             }
         ],
         "isHalal": true,
-        "isVegan": true,
+        "isVegan": false,
         "isVegetrian": true,
         "isKosher": true,
         "isJecfa": true,

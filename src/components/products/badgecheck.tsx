@@ -13,7 +13,7 @@ export default function Badgecheck(
     return (
         <div className={clsx(
             "flex items-center",
-            "mx-2 px-2 py-1 h-10",
+            "my-1 p-1 mr-1",
             isTrue ? "bg-green-500" : "bg-red-500",
             "rounded",
         )}>
