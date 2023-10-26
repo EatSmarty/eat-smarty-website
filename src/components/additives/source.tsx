@@ -2,7 +2,7 @@ import clsx from "clsx";
 import Image from "next/image";
 
 interface SourceInterface {
-    source?: string | null | undefined
+    source: string | null | undefined
 }
 
 export default function Source({ source }: SourceInterface) {

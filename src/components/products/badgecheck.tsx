@@ -4,7 +4,7 @@ import React from "react";
 interface BadgeChekcProps {
     truthyOption: JSX.Element
     title: string
-    isTrue: boolean
+    isTrue: boolean | null
 }
 
 export default function Badgecheck(
