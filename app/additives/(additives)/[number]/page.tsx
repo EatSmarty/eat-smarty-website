@@ -5,12 +5,13 @@ import clsx from "clsx";
 import Additivessource from "@/components/additives/additivesource";
 import Additivesdesc from "@/components/additives/additivesdesc";
 import Additivesothername from "@/components/additives/additivesothername";
-import NotFound from "@/components/additives/not-found";
+import NotFound from "./not-found";
 import Approval from "@/components/additives/approval";
 import Additivesexample from "@/components/additives/additivesexample";
 import { TiTick } from "react-icons/ti";
 import { RxCross2 } from "react-icons/rx";
 import Additivescheck from "@/components/additives/additivescheck";
+import { notFound } from "next/navigation";
 
 interface PageProps {
     params: { number: string }
@@ -29,6 +30,10 @@ const page: FC<PageProps> = ({ params }) => {
         item.eNumber === params.number);
     const currentUrl = mainEnumber.some(item =>
         item.eNumber === params.number);
+
+    if (!currentUrl) {
+        notFound();
+    }
 
     return (
         <>
@@ -71,7 +76,9 @@ const page: FC<PageProps> = ({ params }) => {
                         <Approval />
                     </div>
                 </>
-            ) : (<NotFound />)}
+            ) : (<>
+                <NotFound />
+            </>)}
         </>
     );
 };
