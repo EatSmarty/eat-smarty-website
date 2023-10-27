@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from "react";
 import clsx from "clsx";
 import ImageContainer from "./imagecontainer";
@@ -25,87 +26,104 @@ interface ContainerInterface {
 
 export default function Container({ params }: ContainerInterface) {
 
-    const filterdById = ProductJson.map(productId => (
-        productId
+    const MainProduct = ProductJson.filter(
+        (product: { id: number; }) => {
+            return (
+                product.id
+            );
+        },
+    );
+
+    const mainProduct = MainProduct.filter(mainItem => (
+        mainItem.id === params.id
     ));
 
-    const mainProduct = filterdById.filter(mainItem => (
-        mainItem.id == params.id
-    ));
+    // eslint-disable-next-line no-console, @typescript-eslint/no-unused-vars
+    const currentUrl = mainProduct.some(item =>
+        item.id === params.id);
+
+    const currentProduct = mainProduct[0];
 
     return (
-        <div className={clsx(
-            "w-full max-w-[1280px]",
-            "px-10 md:px-10",
-            "mx-auto",
-            "border-b",
-            "flex items-center",
-        )}>
+        <>
+            {/* {currentUrl ? (
+                <>
+
+                </>
+            ) : (<NotFound />)} */}
             <div className={clsx(
-                "my-5",
+                "w-full max-w-[1280px]",
+                "px-10 md:px-10",
+                "mx-auto",
+                "border-b",
+                "flex items-center",
             )}>
-                <ImageContainer />
                 <div className={clsx(
-                    "my-10",
+                    "my-5",
                 )}>
-                    <Producttitle name={mainProduct[0]?.title} />
+                    <ImageContainer />
                     <div className={clsx(
-                        "flex items-center",
-                        "text-gray-500",
+                        "my-10",
                     )}>
-                        <span className={clsx(
-                            "my-2",
+                        <Producttitle name={currentProduct?.title} />
+                        <div className={clsx(
+                            "flex items-center",
+                            "text-gray-500",
                         )}>
-                            Plant Origin
-                        </span>
-                        <Source source={mainProduct[0].source} />
+                            <span className={clsx(
+                                "my-2",
+                            )}>
+                                Plant Origin
+                            </span>
+                            <Source source={currentProduct?.source} />
+                        </div>
+                        <div className={clsx(
+                            "md:flex",
+                            "text-white",
+                        )}>
+                            <Badgecheck
+                                title={currentProduct?.what}
+                                truthyOption={
+                                    <Ishalal
+                                        isHalal={currentProduct?.isHalal}
+                                    />}
+                                isTrue={currentProduct?.isHalal} />
+                            <Badgecheck
+                                title="Vegan"
+                                truthyOption={<LuVegan size={25} />}
+                                isTrue={currentProduct?.isVegan} />
+                            <Badgecheck
+                                title="Vegeterian"
+                                truthyOption={<LuVegan size={25} />}
+                                isTrue={currentProduct?.isVegetrian} />
+                            <Badgecheck
+                                title="Carcinogenic"
+                                truthyOption={<TbMoodSick size={25} />}
+                                isTrue={currentProduct?.isCarcinogenic} />
+                            <Badgecheck
+                                title="Pregnant"
+                                truthyOption={<MdPregnantWoman size={30} />}
+                                isTrue={currentProduct?.isPregnant} />
+                            <Badgecheck
+                                title="Allergey"
+                                truthyOption={<FaAllergies size={25} />}
+                                isTrue={currentProduct?.isAllergey} />
+                        </div>
+                        <Nutrition
+                            energy={currentProduct?.nutrition[0].energy}
+                            proteins={currentProduct?.nutrition[0].proteins}
+                            carbohydrate={currentProduct?.nutrition[0].carbohydrate}
+                            sugars={currentProduct?.nutrition[0].sugars}
+                            fat={currentProduct?.nutrition[0].fat}
+                            fibre={currentProduct?.nutrition[0].fibre}
+                            sodium={currentProduct?.nutrition[0].sodium}
+                            salt={currentProduct?.nutrition[0].salt}
+                            saturates={currentProduct?.nutrition[0].Saturates} />
+                        <Productdecscription />
                     </div>
-                    <div className={clsx(
-                        "md:flex",
-                        "text-white",
-                    )}>
-                        <Badgecheck
-                            title={mainProduct[0].what}
-                            truthyOption={
-                                <Ishalal
-                                    isHalal={mainProduct[0].isHalal}
-                                />}
-                            isTrue={mainProduct[0].isHalal} />
-                        <Badgecheck
-                            title="Vegan"
-                            truthyOption={<LuVegan size={25} />}
-                            isTrue={mainProduct[0].isVegan} />
-                        <Badgecheck
-                            title="Vegeterian"
-                            truthyOption={<LuVegan size={25} />}
-                            isTrue={mainProduct[0].isVegetrian} />
-                        <Badgecheck
-                            title="Carcinogenic"
-                            truthyOption={<TbMoodSick size={25} />}
-                            isTrue={mainProduct[0].isCarcinogenic} />
-                        <Badgecheck
-                            title="Pregnant"
-                            truthyOption={<MdPregnantWoman size={30} />}
-                            isTrue={mainProduct[0].isPregnant} />
-                        <Badgecheck
-                            title="Allergey"
-                            truthyOption={<FaAllergies size={25} />}
-                            isTrue={mainProduct[0].isAllergey} />
-                    </div>
-                    <Nutrition
-                        energy={mainProduct[0].nutrition[0].energy}
-                        proteins={mainProduct[0].nutrition[0].proteins}
-                        carbohydrate={mainProduct[0].nutrition[0].carbohydrate}
-                        sugars={mainProduct[0].nutrition[0].sugars}
-                        fat={mainProduct[0].nutrition[0].fat}
-                        fibre={mainProduct[0].nutrition[0].fibre}
-                        sodium={mainProduct[0].nutrition[0].sodium}
-                        salt={mainProduct[0].nutrition[0].salt}
-                        saturates={mainProduct[0].nutrition[0].Saturates} />
-                    <Productdecscription />
-                </div>
-                {/* <GaugeProduct/> */}
-            </div >
-        </div>
+                    {/* <GaugeProduct/> */}
+                </div >
+            </div>
+        </>
     );
 }
