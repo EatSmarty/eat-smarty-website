@@ -8,7 +8,7 @@ export default function NotFound() {
         )}>
             <h1 className={clsx(
                 "text-red-500",
-            )}>Not found Additive – 404!</h1>
+            )}>Not found – 404!</h1>
             <div className={clsx(
                 "text-white bg-green-500",
                 "py-1 px-2 my-2",
