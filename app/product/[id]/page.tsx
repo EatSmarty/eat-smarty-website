@@ -3,7 +3,7 @@ import Container from "@/components/products/container";
 import clsx from "clsx";
 import Header from "@/components/header/header";
 import ProductJson from "@/lib/Product.json";
-import NotFound from "./not-found";
+import NotFound from "../not-found";
 
 interface ProductPageProps {
     params: { id: number }
