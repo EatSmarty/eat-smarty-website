@@ -22,7 +22,6 @@ export default function Search({ filteredAdditives }) {
       "mb-20 mt-10",
     )}>
       {filtered}
-
     </div>
   );
 }
