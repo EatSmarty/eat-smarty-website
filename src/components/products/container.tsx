@@ -4,7 +4,6 @@ import clsx from "clsx";
 import ImageContainer from "./imagecontainer";
 import Producttitle from "./producttitle";
 import Productdecscription from "./productdecscription";
-import Source from "@/components/additives/source";
 import Ishalal from "@/components/additives/ishalal";
 import { LuVegan } from "react-icons/lu";
 import { MdPregnantWoman } from "react-icons/md";
@@ -35,22 +34,13 @@ export default function Container({ params }: ContainerInterface) {
     );
 
     const mainProduct = MainProduct.filter(mainItem => (
-        mainItem.id === params.id
+        mainItem.id == params.id
     ));
-
-    // eslint-disable-next-line no-console, @typescript-eslint/no-unused-vars
-    const currentUrl = mainProduct.some(item =>
-        item.id === params.id);
 
     const currentProduct = mainProduct[0];
 
     return (
         <>
-            {/* {currentUrl ? (
-                <>
-
-                </>
-            ) : (<NotFound />)} */}
             <div className={clsx(
                 "w-full max-w-[1280px]",
                 "px-10 md:px-10",
@@ -68,14 +58,14 @@ export default function Container({ params }: ContainerInterface) {
                         <Producttitle name={currentProduct?.title} />
                         <div className={clsx(
                             "flex items-center",
-                            "text-gray-500",
+                            "text-xl",
                         )}>
                             <span className={clsx(
-                                "my-2",
+                                "my-2 mr-1",
                             )}>
-                                Plant Origin
+                                {currentProduct?.source}
                             </span>
-                            <Source source={currentProduct?.source} />
+                            <span>origin</span>
                         </div>
                         <div className={clsx(
                             "md:flex",
@@ -121,7 +111,6 @@ export default function Container({ params }: ContainerInterface) {
                             saturates={currentProduct?.nutrition[0].Saturates} />
                         <Productdecscription />
                     </div>
-                    {/* <GaugeProduct/> */}
                 </div >
             </div>
         </>
