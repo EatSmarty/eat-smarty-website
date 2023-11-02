@@ -14,14 +14,17 @@ export default function Page() {
     <>
       <Header title={"Home"} />
       <main className={clsx(
-        "flex justify-center items-center flex-col",
+        "flex items-center flex-col",
+        "my-10",
       )}>
         <Banner />
         <Slogan />
         <Searchbarcode />
         <Features />
-        <CopyRight />
       </main>
+      <footer>
+        <CopyRight />
+      </footer>
     </>
   );
 }

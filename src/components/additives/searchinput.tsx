@@ -20,13 +20,12 @@ export default function Searchinput({ handleChange, placeholder, keyDown }) {
                 </span>
                 <input className={clsx(
                     "w-full",
-                    "bg-gray-100",
+                    "bg-transparent",
                     "search-input",
                 )}
                     placeholder={placeholder}
                     onChange={handleChange}
                     onKeyDown={keyDown} />
-
             </div>
         </>
     );
