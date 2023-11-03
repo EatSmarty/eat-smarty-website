@@ -16,8 +16,6 @@ export default function Page() {
   };
   return (
     <>
-      {/* <Header title={"Scan"}></Header>
-      <BarcodeScanner /> */}
       <div className={clsx(
         "flex items-center flex-col",
         "w-full h-full",
