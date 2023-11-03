@@ -1,4 +1,5 @@
 "use client";
+
 import { redirect } from "next/navigation";
 import React, { useState } from "react";
 import Html5QrcodePlugin from "./Html5QrcodePlugin";
@@ -18,7 +19,7 @@ const BarcodeScanner: React.FC = () => {
         qrbox={250}
         qrCodeSuccessCallback={onNewScanResult}
       />
-      {barcode.length > 0 ? redirect(`/${product[0].id}`) : undefined}
+      {barcode.length > 0 ? redirect(`product/${product[0].id}`) : undefined}
     </>
   );
 };
