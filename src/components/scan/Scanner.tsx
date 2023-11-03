@@ -1,15 +1,17 @@
 /* eslint-disable no-console */
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Quagga from "quagga";
 import config from "./config.json";
+import clsx from "clsx";
 
 const Scanner = props => {
     const { onDetected } = props;
-
+    const [errMsg, setErrMsg] = useState("");
     useEffect(() => {
         Quagga.init(config, err => {
             if (err) {
                 console.log(err, "error msg");
+                setErrMsg("Permission denied");
             }
             Quagga.start();
             return () => {
@@ -71,7 +73,17 @@ const Scanner = props => {
     };
 
     return (
-        <div id="interactive" className="viewport" />
+        <div className={clsx(
+            "flex flex-col",
+        )}>
+            <p className={clsx(
+                "text-center",
+                "bg-red-200",
+                "text-red-600 text-2xl",
+                "rounded",
+            )}>{errMsg}</p>
+            <div id="interactive" className="viewport" />
+        </div>
     );
 };
 
