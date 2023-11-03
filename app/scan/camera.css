@@ -1,0 +1,44 @@
+.camera {
+    font-family: sans-serif;
+    text-align: center;
+    height: 100vh;
+    width: 99vw;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .container,
+  #interactive.viewport {
+    width: 350px;
+    height: 300px;
+  }
+
+  #interactive.viewport canvas,
+  video {
+    width: 350px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #interactive.viewport canvas.drawingBuffer,
+  video.drawingBuffer {
+    width: 350px;
+    height: 300px;
+  }
+
+  .button-tap-camera{
+    /* background-color: rgb(69, 214, 69); */
+    padding: 5px 7px;
+    border-radius: 4px;
+    margin: 20px;
+  }
