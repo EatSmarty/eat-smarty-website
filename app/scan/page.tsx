@@ -18,7 +18,7 @@ export default function Page() {
     <>
       <div className={clsx(
         "flex items-center flex-col",
-        "w-full h-full",
+        // "w-full h-full",
         "camera",
       )}>
         <div className={clsx(
