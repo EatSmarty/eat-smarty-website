@@ -1,19 +1,15 @@
-import { Metadata } from "next"
-import Header from "@/components/header/header"
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Setting"
-}
+    title: "Setting",
+};
 
 export default function DashboardLayout({
     children,
 }: {
     children: React.ReactNode
 }) {
-    return <section>
-        <header>
-            <Header title={'Setting'}></Header>
-        </header>
+    return <>
         {children}
-    </section>
+    </>;
 }

@@ -1,7 +1,5 @@
-import clsx from 'clsx'
-import GaugeChart from 'react-gauge-chart'
-
-
+import clsx from "clsx";
+import GaugeChart from "react-gauge-chart";
 
 export default function Gauge({ danger }) {
 
@@ -18,5 +16,5 @@ export default function Gauge({ danger }) {
                 animate={false}
             />
         </div>
-    )
+    );
 }

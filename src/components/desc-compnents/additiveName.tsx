@@ -1,12 +1,11 @@
 import clsx from "clsx";
-import additives from '../../additives.json'
-
+import additives from "@/lib/additives.json";
 
 export default function AdditiveName() {
     return (
         <>
             <div className={clsx(
-                "mb-2"
+                "mb-2",
             )}>
                 <p className={clsx(
                     "text-gray-500",
@@ -17,5 +16,5 @@ export default function AdditiveName() {
                 )}>{additives[0].eNumber}</p>
             </div>
         </>
-    )
+    );
 }

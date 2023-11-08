@@ -1,23 +1,23 @@
 import clsx from "clsx";
 
-
-export default function Category() {
+export default function Description() {
     return (
         <>
             <div className={clsx(
                 "desc",
                 "my-5",
-                "text-left"
+                "text-left",
             )}>
                 <span className={clsx(
                     "text-gray-500 ",
-                    "mr-2"
-                )}>Category</span>
+                    "mr-2",
+                )}>description</span>
                 <span className={clsx(
                     "desc",
-                    "text-xl text-"
-                )}>Colours</span>
+                    "text-xl text-",
+                )}>Naturally occurring orange/yellow colour,
+                    Extracted from the spice turmeric</span>
             </div>
         </>
-    )
+    );
 }

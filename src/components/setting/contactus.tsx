@@ -1,25 +1,20 @@
-import clsx from 'clsx'
-import { FC } from 'react'
+import clsx from "clsx";
 
-interface contactusProps {
-
-}
-
-const Contactus: FC<contactusProps> = ({ }) => {
+export default function Contactus() {
     return <>
         <section className={clsx(
             "flex justefy-center items-center flex-col",
             "text-2xl",
-            "mt-32"
+            "mt-32",
         )}>
             <p className={clsx(
                 "title",
                 "mb-10",
-                "text-bold text-[#0069FE]"
+                "text-bold text-[#0069FE]",
             )}>Contact Us</p>
             <div className={clsx(
                 "flex justify-center items-center flex-col",
-                "rounded"
+                "rounded",
             )}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none"
                     viewBox="0 0 24 24" stroke="currentColor"
@@ -38,19 +33,18 @@ const Contactus: FC<contactusProps> = ({ }) => {
                     or comments about our project, please contact us.
                     You can contact us via github issue. We are always
                     looking for ways to improve our project, So if you want to
-                    work with us, please let us know! Thank you for your support.
+                    work with us, please let us know!
+                    Thank you for your support.
                 </p>
                 <a className={clsx(
                     "bg-[#0069FE]",
                     "text-[#fff]",
                     "rounded",
-                    "p-1.5  mb-5"
+                    "p-1.5  mb-5",
                 )} href="https://github.com/Halalvar/halalvar/issues" target='_blank'>
                     Github Issues
                 </a>
             </div>
         </section>
-    </>
+    </>;
 }
-
-export default Contactus

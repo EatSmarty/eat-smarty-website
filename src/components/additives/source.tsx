@@ -1,14 +1,15 @@
-import clsx from 'clsx';
-import Image from 'next/image';
+import clsx from "clsx";
+import Image from "next/image";
+// import plant from "@/assets/icon/plant.png";
 
 interface SourceInterface {
-    source?: string | null | undefined
+    source: string | null | undefined
 }
 
-export default function Source({ source }) {
+export default function Source({ source }: SourceInterface) {
     return (
         <div className={clsx(
-            "mr-2"
+            "mr-2",
         )}>
             {
                 // plant cond
@@ -28,5 +29,5 @@ export default function Source({ source }) {
                     : undefined
             }
         </div>
-    )
+    );
 }

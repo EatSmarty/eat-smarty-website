@@ -1,34 +1,29 @@
-import clsx from 'clsx'
-import { FC } from 'react'
+import clsx from "clsx";
 
-interface featuresProps {
-
-}
-
-const Features: FC<featuresProps> = ({ }) => {
+export default function Features() {
     return <section className={clsx(
         "flex flex-col justify-around items-stretch",
         "md:flex-row",
-        "mt-20",
+        "my-10",
         "text-base",
     )}>
         <div className={clsx(
             "flex justify-center items-stretch",
             "rounded",
-            "w-40",
+            "w-40 h-40",
             "shadow",
             "m-5",
         )}>
             <div className={clsx(
                 "flex flex-col justify-between items-center",
-                "m-5"
+                "m-5",
             )}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none"
                     viewBox="0 0 24 24" stroke="currentColor"
                     className={clsx(
                         "w-10 h-10",
                         "duration-200 hover:text-[#0069FE]",
-                        "text-gray-500"
+                        "text-gray-500",
                     )}>
                     <path d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625
                  4.5h12.75a1.875 1.875 0 010 3.75H5.625a1.875 1.875 0 010-3.75z"
@@ -37,27 +32,27 @@ const Features: FC<featuresProps> = ({ }) => {
                 <p className={clsx(
                     "desc-feature",
                     "font-bold text-gray-500",
-                    "text-center"
+                    "text-center",
                 )}>Additives List</p>
             </div>
         </div>
         <div className={clsx(
             "flex justify-center items-stretch",
             "rounded",
-            "w-40",
+            "w-40 h-40",
             "shadow",
-            "m-5"
+            "m-5",
         )}>
             <div className={clsx(
                 "flex flex-col justify-between items-center",
-                "m-5"
+                "m-5",
             )}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none"
                     viewBox="0 0 24 24" stroke="currentColor"
                     className={clsx(
                         "w-10 h-10",
                         "duration-200 hover:text-[#0069FE]",
-                        "text-gray-500"
+                        "text-gray-500",
                     )}>
                     <path d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653
                  3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097
@@ -70,27 +65,27 @@ const Features: FC<featuresProps> = ({ }) => {
                 <p className={clsx(
                     "desc-feature",
                     "font-bold text-gray-500",
-                    "w-34 mt-5 text-center"
+                    "w-34 mt-5 text-center",
                 )}>Independent Database</p>
             </div>
         </div>
         <div className={clsx(
             "flex justify-center items-stretch",
             "rounded",
-            "w-40",
+            "w-40 h-40",
             "shadow",
-            "m-5"
+            "m-5",
         )}>
             <div className={clsx(
                 "flex flex-col justify-between items-center",
-                "m-5"
+                "m-5",
             )}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none"
                     viewBox="0 0 24 24" stroke="currentColor"
                     className={clsx(
                         "w-10 h-10",
                         "duration-200 hover:text-[#0069FE]",
-                        "text-gray-500"
+                        "text-gray-500",
                     )}>
                     <path d="M3.75 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0
                 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125
@@ -110,27 +105,27 @@ const Features: FC<featuresProps> = ({ }) => {
                     "desc-feature",
                     "font-bold text-gray-500",
                     "w-34",
-                    "mt-5 text-center"
+                    "mt-5 text-center",
                 )}>Halal Food Detect</p>
             </div>
         </div>
         <div className={clsx(
             "flex justify-center items-stretch",
             "rounded",
-            "w-40",
+            "w-40 h-40",
             "shadow",
-            "m-5"
+            "m-5",
         )}>
             <div className={clsx(
                 "flex flex-col justify-between items-center",
-                "m-5"
+                "m-5",
             )}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none"
                     viewBox="0 0 24 24" stroke="currentColor"
                     className={clsx(
                         "w-10 h-10",
                         "duration-200 hover:text-[#0069FE]",
-                        "text-gray-500"
+                        "text-gray-500",
                     )}>
                     <path d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708
                 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0
@@ -140,11 +135,9 @@ const Features: FC<featuresProps> = ({ }) => {
                     "desc-feature",
                     "font-bold text-gray-500",
                     "w-34",
-                    "mt-5 text-center"
+                    "mt-5 text-center",
                 )}>Comprehensive Information</p>
             </div>
         </div>
-    </section>
+    </section>;
 }
-
-export default Features

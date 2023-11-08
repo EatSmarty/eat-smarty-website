@@ -1,25 +1,30 @@
-import clsx from "clsx"
-import Category from "@/components/home/category"
-import Features from "@/components/home/features"
-import CopyRight from "@/components/home/copyright"
-import Slogan from "@/components/home/slogan"
-import Banner from "@/components/home/banner"
+"use client";
 
+import clsx from "clsx";
+import Features from "@/components/home/features";
+import CopyRight from "@/components/home/copyright";
+import Slogan from "@/components/home/slogan";
+import Banner from "@/components/home/banner";
+import Searchbarcode from "@/components/home/searchbarcode";
+import Header from "@/components/header/header";
 
+export default function Page() {
 
-
-export default function page() {
   return (
     <>
+      <Header title={"Home"} />
       <main className={clsx(
-        "flex justify-center items-center flex-col",
+        "flex items-center flex-col",
+        "my-10",
       )}>
-        <Banner></Banner>
-        <Slogan></Slogan>
-        <Features></Features>
-        <Category></Category>
-        <CopyRight></CopyRight>
+        <Banner />
+        <Slogan />
+        <Searchbarcode />
+        <Features />
       </main>
+      <footer>
+        <CopyRight />
+      </footer>
     </>
-  )
+  );
 }

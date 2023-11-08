@@ -1,22 +1,21 @@
-import type {Meta, StoryObj} from '@storybook/react'
-import Searchinput from './searchinput'
-
+import type { Meta, StoryObj } from "@storybook/react";
+import Searchinput from "./searchinput";
 
 const meta = {
-    title: 'Searchinput',
+    title: "Searchinput",
     component: Searchinput,
     parameters: {
-        layout: 'centerd',
+        layout: "centerd",
     },
-    tags: ['outodocs'],
+    tags: ["outodocs"],
     argTypes: {
 
-    }
+    },
 } satisfies Meta<typeof Searchinput>;
 
 export default meta;
-type Story = StoryObj<typeof meta>
+type Story = StoryObj<typeof meta>;
 
 export const Input: Story = {
 
-}
+};

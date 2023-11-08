@@ -1,25 +1,24 @@
 import clsx from "clsx";
 
-
 export default function Examples() {
     return (
         <>
             <div className={clsx(
                 "example",
                 "mb-5",
-                "text-left"
+                "text-left",
             )}>
                 <span className={clsx(
                     "text-gray-500 ",
-                    "mr-2"
+                    "mr-2",
                 )}>Example</span>
                 <span className={clsx(
-                    "text-xl"
+                    "text-xl",
                 )}>Used in pastries,
                     confectionery,
                     sauces, and soups
                 </span>
             </div>
         </>
-    )
+    );
 }

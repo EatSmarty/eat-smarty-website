@@ -2,7 +2,8 @@
     "extends": [
         "airbnb-typescript/base",
         "plugin:@typescript-eslint/recommended",
-        "plugin:storybook/recommended"
+        "plugin:storybook/recommended",
+        "plugin:jest/recommended"
     ],
     "parserOptions": {
         "parser": "@babel/eslint-parser",
@@ -27,8 +28,8 @@
             0
         ],
         "@typescript-eslint/indent": [
-            "error",
-            4
+            "off",
+            2
         ],
         "max-len": [
             "error",

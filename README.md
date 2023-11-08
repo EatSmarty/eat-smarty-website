@@ -3,7 +3,7 @@
         height="130">
 </p>
 
-# [🌐Halalvar](https://halalvar.com)
+# [🌐Eatsmarty](https://eatsmarty.com)
 
 ## 💻Tech Stack
 
@@ -23,7 +23,7 @@ Halalvar is an app that allows users to scan the barcode or manually enter the n
 
 clone repository
 ```
-$ git clone https://github.com/Halalvar/halalvar.git
+$ git clone https://github.com/EatSmarty/eat-smarty-website.git
 ```
 install node package module
 ```

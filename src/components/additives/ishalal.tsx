@@ -1,8 +1,7 @@
-import Image from 'next/image';
-import ok from '../../assets/icon/ok.png'
-import cancle from '../../assets/icon/cancle.png'
-import mushbooh from '../../assets/icon/question-mark.png'
-
+import Image from "next/image";
+import ok from "@/assets/icon/ok.png";
+import cancle from "@/assets/icon/cancle.png";
+import mushbooh from "@/assets/icon/question-mark.png";
 
 export default function Ishalal({ isHalal }) {
     return (
@@ -23,5 +22,5 @@ export default function Ishalal({ isHalal }) {
                 alt={"mushbooh"}
             /> : undefined}
         </div>
-    )
+    );
 }
