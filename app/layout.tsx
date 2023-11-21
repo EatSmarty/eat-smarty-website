@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
-import { DM_Sans } from "next/font/google";
+import { Mulish } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/navigation/navigation";
 import varient from "@/utilise/varient";
 
-const DmSans = DM_Sans({
-  weight: "400",
+const mulish = Mulish({
   subsets: ["latin"],
 });
 
@@ -60,7 +59,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={DmSans.className}>
+      <body className={mulish.className}>
         {children}
         <Navigation />
       </body>
