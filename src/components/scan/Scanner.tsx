@@ -3,17 +3,19 @@ import React, { useEffect, useState } from "react";
 import Quagga from "quagga";
 import config from "./config.json";
 import clsx from "clsx";
+import { TbLockAccessOff } from "react-icons/tb";
 
 const Scanner = props => {
     const { onDetected } = props;
-    const [errMsg, setErrMsg] = useState("");
+    const [accessMsg, setAccessMsg] = useState("");
     useEffect(() => {
         Quagga.init(config, err => {
             if (err) {
                 console.log(err, "error msg");
-                setErrMsg("Permission denied");
+                setAccessMsg("Please allow Eatsmarty to access camera!");
+            } else {
+                Quagga.start();
             }
-            Quagga.start();
             return () => {
                 Quagga.stop();
             };
@@ -76,12 +78,20 @@ const Scanner = props => {
         <div className={clsx(
             "flex flex-col",
         )}>
-            <p className={clsx(
-                "text-center",
-                "bg-red-200",
-                "text-red-600 text-2xl",
-                "rounded",
-            )}>{errMsg}</p>
+            <div>
+                <p className={clsx(
+                    "text-2xl",
+                    "text-center",
+                    "mb-10",
+                )}>
+                    {accessMsg}
+                </p>
+                <div className={clsx(
+                    "flex justify-center items-center",
+                )}>
+                    {accessMsg ? <TbLockAccessOff size={60} /> : null}
+                </div>
+            </div>
             <div id="interactive" className="viewport" />
         </div>
     );
