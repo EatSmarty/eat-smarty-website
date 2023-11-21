@@ -3,7 +3,6 @@ import Container from "@/components/products/container";
 import clsx from "clsx";
 import Header from "@/components/header/header";
 import ProductJson from "@/lib/Product.json";
-import NotFound from "../not-found";
 import { notFound } from "next/navigation";
 
 interface ProductPageProps {
@@ -32,17 +31,13 @@ export default function Page({ params }: ProductPageProps) {
 
     return (
         <>
-            {currentUrl ? (
-                <>
-                    <Header title={"Product"}></Header>
+            <Header title={"Product"}></Header>
 
-                    <div className={clsx(
-                        "flex justify-center",
-                    )}>
-                        <Container params={params} danger={5} />
-                    </div>
-                </>
-            ) : (<NotFound />)}
+            <div className={clsx(
+                "flex justify-center",
+            )}>
+                <Container params={params} danger={5} />
+            </div>
         </>
     );
 }

@@ -17,6 +17,7 @@ export default function Header({ title }: HeaderProps) {
       "md:h-[50px]",
       "px-5 md:px-10",
       "bg-white",
+      " font-bold",
       "flex md:justify-around justify-between items-center",
       "z-20",
       "sticky top-0",

@@ -29,7 +29,8 @@ export default function Page() {
         </div>
         <button
           className="button-tap-camera"
-          onClick={() => setCamera(!camera)}>
+          onClick={() => setCamera(!camera)}
+        >
           {camera ? "Stop" : <BsUpcScan size={150} />}
           <p className={clsx(
             "font-bold",
