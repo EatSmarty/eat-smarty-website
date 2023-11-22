@@ -39,7 +39,7 @@ describe("Route Navigation To Scan Page", () => {
   // eslint-disable-next-line jest/expect-expect
   it("Should navigate to different routes", () => {
     // Visit the initial page (e.g., your application"s scan page)
-    cy.customVisit("https://eatsmarty.github.io/eat-smarty-website//scan");
+    cy.customVisit("https://eatsmarty.github.io/eat-smarty-website/scan");
 
     // Perform actions that trigger route navigation
     // Click a link to navigate to the "scan" page
