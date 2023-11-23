@@ -72,18 +72,6 @@ body {
 .container:hover .overlay {
   height: 100%;
 }
-.text{
-  color: #000;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
 .category-items{
   margin-top: 30px;
   display: grid;
@@ -122,16 +110,6 @@ body {
   font-weight: bold;
   transition: .2s;
 }
-.active{
-  transform: scale(1.15);
-  background-color: #0069FE;
-  color: #fff;
-  padding: 3px;
-  border-radius: .25rem;
-  animation: moveInBottom .2s ease-out;
-  animation-fill-mode: backwards;
-
-}
 @keyframes moveInBottom {
   0% {
       opacity: 0;
@@ -145,12 +123,10 @@ body {
 }
 .search-box{
   position: relative;
-  /* width: 400px; */
 }
 .search-input{
   outline: none;
 }
-/* E-list */
 .e-food{
   justify-content: space-between;
   align-items: center;
