@@ -11,7 +11,6 @@ export default function Header({ title }: HeaderProps) {
 
   return (
     <header className={clsx(
-      "border-b",
       "overflow-hidden",
       "w-full h-[50px]",
       "md:h-[50px]",

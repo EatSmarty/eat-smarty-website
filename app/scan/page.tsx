@@ -18,31 +18,28 @@ export default function Page() {
   return (
     <>
       <Header title={"Scan"} />
-      <main>
+      <div className={clsx(
+        "flex items-center flex-col",
+        "camera",
+      )}>
         <div className={clsx(
-          "flex items-center flex-col",
-          // "w-full h-full",
-          "camera",
+          "flex justify-center items-center",
+          "rounded",
         )}>
-          <div className={clsx(
-            "flex justify-center items-center",
-            "rounded",
-          )}>
-            {camera && <Scanner onDetected={onDetected} />}
-          </div>
-          <button
-            className="button-tap-camera"
-            onClick={() => setCamera(!camera)}
-          >
-            {camera ? "Stop" : <BsUpcScan size={150} />}
-            <p className={clsx(
-              "font-bold",
-              "text-2xl",
-              "mt-5",
-            )}>{result ? result : "Tap To Scan"}</p>
-          </button>
+          {camera && <Scanner onDetected={onDetected} />}
         </div>
-      </main>
+        <button
+          className="button-tap-camera"
+          onClick={() => setCamera(!camera)}
+        >
+          {camera ? "Stop" : <BsUpcScan size={150} />}
+          <p className={clsx(
+            "font-bold",
+            "text-2xl",
+            "mt-5",
+          )}>{result ? result : "Tap To Scan"}</p>
+        </button>
+      </div>
     </>
   );
 }

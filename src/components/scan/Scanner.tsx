@@ -76,7 +76,7 @@ const Scanner = props => {
 
     return (
         <div className={clsx(
-            "flex flex-col",
+            "flex justify-center items-center flex-col",
         )}>
             <div>
                 <p className={clsx(
