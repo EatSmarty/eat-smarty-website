@@ -3,42 +3,64 @@
 import clsx from "clsx";
 import Link from "next/link";
 import {
-    AiFillHome,
+    // AiFillHome,
     AiOutlineHome,
     AiOutlineUnorderedList,
     AiOutlineScan,
-    AiFillSetting,
+    // AiFillSetting,
     AiOutlineSetting,
 } from "react-icons/ai";
-import { FaListUl } from "react-icons/fa";
 import { usePathname } from "next/navigation";
-import { BiScan } from "react-icons/bi";
+import "./navigation.css";
 
 export default function Navigation() {
     const router = usePathname();
-
     return (
-        <nav className={clsx(
+        <ul className={clsx(
+            "w-3/4 h-20",
             "flex justify-between items-center",
-            "md:justify-around",
-            "overflow-hidden",
-            "border-t",
-            "w-full",
+            "shadow-2xl",
             "navigation-bottom",
         )}>
-            <Link href={"/"} data-testid='naviagate-to-home'>
-                {router == "/" ? <AiFillHome size={30} /> : <AiOutlineHome size={30} />}
-            </Link>
-            <Link href={"/additives"} data-testid='naviagate-to-additives'>
-                {router == "/additives" ? <FaListUl size={28} /> : <AiOutlineUnorderedList size={30} />}
-            </Link>
-            <Link href={"/scan"} data-testid='naviagate-to-scan'>
-                {router == "/scan" ? <BiScan size={30} /> : <AiOutlineScan size={30} />}
-            </Link>
-            <Link href={"/setting"} data-testid='naviagate-to-setting'>
-                {router == "/setting" ? <AiFillSetting size={30} /> : <AiOutlineSetting size={30} />}
-            </Link>
+            <li className={`list ${router == "/" ? "active" : ""}`}>
+                <Link id="nav-link" href={"/"} data-testid='naviagate-to-home'>
+                    <span className="icon">
+                        {router == "/" ? <AiOutlineHome color="#fff" /> : <AiOutlineHome color="#000" />}
+                    </span>
+                    <span className="nav-text">Home</span>
+                </Link>
+                <div className={`${router == "/" ? "indicator" : ""}`}></div>
+            </li>
+            <li className={`list ${router == "/additives" ? "active" : ""}`} >
+                <Link href={"/additives"} data-testid='naviagate-to-additives'>
+                    <span className="icon">
+                        {router == "/additives" ? <AiOutlineUnorderedList color="#fff" /> : <AiOutlineUnorderedList color="#000" />}
+                    </span>
+                    <span className="nav-text">Additives</span>
+                </Link>
+                <div className={`${router == "/additives" ? "indicator1" : ""}`}></div>
+            </li>
+            <li className={`list ${router == "/scan" ? "active" : ""}`}>
+                <Link href={"/scan"} data-testid='naviagate-to-scan'>
+                    <span className="icon">
+                        {router == "/scan" ? <AiOutlineScan color="#fff" /> : <AiOutlineScan color="#000" />}
+                    </span>
+                    <span className="nav-text">Scan</span>
+                </Link>
+                <div className={`${router == "/scan" ? "indicator2" : ""}`}></div>
 
-        </nav>
+            </li>
+            <li className={`list ${router == "/setting" ? "active" : ""}`}>
+                <Link href={"/setting"} data-testid='naviagate-to-setting'>
+                    <span className="icon">
+                        {router == "/setting" ? <AiOutlineSetting color="#fff" /> : <AiOutlineSetting color="#000" />}
+
+                    </span>
+                    <span className="nav-text">Setting</span>
+                </Link>
+                <div className={`${router == "/setting" ? "indicator3" : ""}`}></div>
+
+            </li>
+        </ul>
     );
 }
