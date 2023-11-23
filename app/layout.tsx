@@ -3,6 +3,7 @@ import { Mulish } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/navigation/navigation";
 import varient from "@/utilise/varient";
+import clsx from "clsx";
 
 const mulish = Mulish({
   subsets: ["latin"],
@@ -59,9 +60,21 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={mulish.className}>
-        {children}
-        <Navigation />
+      <body className={clsx(
+        "flex justify-center items-center",
+      )}>
+        <div className={clsx(
+          `${mulish.className}`,
+          "w-full",
+        )}>
+          {children}
+          <nav className={clsx(
+            "flex justify-center items-center",
+            "relative",
+          )}>
+            <Navigation />
+          </nav>
+        </div>
       </body>
     </html>
   );
