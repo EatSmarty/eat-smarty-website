@@ -5,7 +5,6 @@ import clsx from "clsx";
 import Scanner from "@/components/scan/Scanner";
 import { BsUpcScan } from "react-icons/bs";
 import "./camera.css";
-import Header from "@/components/header/header";
 
 export default function Page() {
   const [camera, setCamera] = useState(false);
@@ -17,7 +16,6 @@ export default function Page() {
   };
   return (
     <>
-      <Header title={"Scan"} />
       <div className={clsx(
         "flex items-center flex-col",
         "camera",

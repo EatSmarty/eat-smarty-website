@@ -4,6 +4,7 @@ import "./globals.css";
 import Navigation from "@/components/navigation/navigation";
 import varient from "@/utilise/varient";
 import clsx from "clsx";
+import Header from "@/components/header/header";
 
 const mulish = Mulish({
   subsets: ["latin"],
@@ -28,21 +29,18 @@ export const metadata: Metadata = {
         url: "",
         width: 800,
         height: 600,
-        alt: "halalvar banner",
+        alt: "Eatsmarty banner",
       },
       {
         url: "",
         width: 1800,
         height: 1600,
-        alt: "halalvar banner",
+        alt: "Eatsmarty banner",
       },
     ],
     locale: "en_US",
     type: "website",
   },
-  themeColor: [
-    { media: "(default-color-scheme: light)", color: "white" },
-  ],
   icons: {
     icon: "/icon.ico",
     shortcut: "/shortcut-icon.png",
@@ -58,6 +56,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode,
 }) {
+
   return (
     <html lang="en">
       <body className={clsx(
@@ -67,13 +66,9 @@ export default function RootLayout({
           `${mulish.className}`,
           "w-full",
         )}>
+          <Header />
           {children}
-          <nav className={clsx(
-            "flex justify-center items-center",
-            "relative",
-          )}>
-            <Navigation />
-          </nav>
+          <Navigation />
         </div>
       </body>
     </html>

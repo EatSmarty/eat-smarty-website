@@ -39,7 +39,7 @@ const page: FC<PageProps> = ({ params }) => {
         <>
             {currentUrl ? (
                 <>
-                    <Header title={"Enumber"} /><div className={clsx(
+                    <Header /><div className={clsx(
                         "flex justify-center",
                         "text-xl",
                         `${currentEnumber[0]?.isHalal == true ? "bg-green-100" : undefined ||

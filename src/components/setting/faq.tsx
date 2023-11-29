@@ -53,7 +53,6 @@ function Faq() {
   return <Accordion className={clsx(
     "accordion",
     "text-gray-500",
-    "mt-20 mb-40",
     "outline-none",
   )}
     isCompact variant="splitted" defaultExpandedKeys={["1"]} hideIndicator
