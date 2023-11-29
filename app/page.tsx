@@ -6,13 +6,11 @@ import CopyRight from "@/components/home/copyright";
 import Slogan from "@/components/home/slogan";
 import Banner from "@/components/home/banner";
 import Searchbarcode from "@/components/home/searchbarcode";
-import Header from "@/components/header/header";
 
 export default function Page() {
 
   return (
     <>
-      <Header title={"Home"} />
       <main className={clsx(
         "flex items-center flex-col",
         "my-10",
