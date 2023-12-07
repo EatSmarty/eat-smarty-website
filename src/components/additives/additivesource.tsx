@@ -1,4 +1,3 @@
-import Source from "@/components/additives/source";
 import clsx from "clsx";
 import React from "react";
 
@@ -10,7 +9,6 @@ export default function Additivessource({ origin, category }) {
             "text-2xl",
             "text-slate-500",
         )}>
-            <Source source={origin} />
             <p>
                 {origin} origin
             </p>

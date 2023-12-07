@@ -12,7 +12,7 @@ export default function Page() {
           "flex justify-center items-center flex-col",
         )}>
           <div>
-            <About></About>
+            <About />
           </div>
         </main>
       </div>

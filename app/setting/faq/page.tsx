@@ -4,6 +4,7 @@ import Faq from "@/components/setting/faq";
 import clsx from "clsx";
 
 export default function Page() {
+
   return (
     <div className={clsx(
       "md:w-full md:px-40",
