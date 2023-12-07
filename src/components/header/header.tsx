@@ -44,6 +44,7 @@ export default function Header() {
       "flex md:justify-around justify-between items-center",
       "z-20",
       "top-0",
+      "shadow",
     )}>
       <div className={clsx(
         "flex justify-center items-center",

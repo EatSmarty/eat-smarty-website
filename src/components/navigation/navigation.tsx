@@ -32,6 +32,7 @@ export default function Navigation() {
                         <span className="nav-text">Home</span>
                     </Link>
                     <div className={`${router == "/" ? "indicator" : ""}`}></div>
+                    <div className={`${router == "/" ? "shadow-indicator" : ""}`}></div>
                 </li>
                 <li className={`list ${router == "/additives" ? "active" : ""}`} >
                     <Link href={"/additives"} data-testid='naviagate-to-additives'>
@@ -41,6 +42,7 @@ export default function Navigation() {
                         <span className="nav-text">Additives</span>
                     </Link>
                     <div className={`${router == "/additives" ? "indicator1" : ""}`}></div>
+                    <div className={`${router == "/additives" ? "shadow-indicator" : ""}`}></div>
                 </li>
                 <li className={`list ${router == "/scan" ? "active" : ""}`}>
                     <Link href={"/scan"} data-testid='naviagate-to-scan'>
@@ -50,7 +52,7 @@ export default function Navigation() {
                         <span className="nav-text">Scan</span>
                     </Link>
                     <div className={`${router == "/scan" ? "indicator2" : ""}`}></div>
-
+                    <div className={`${router == "/scan" ? "shadow-indicator" : ""}`}></div>
                 </li>
                 <li className={`list ${router == "/setting" ? "active" : ""}`}>
                     <Link href={"/setting"} data-testid='naviagate-to-setting'>
@@ -61,7 +63,7 @@ export default function Navigation() {
                         <span className="nav-text">Setting</span>
                     </Link>
                     <div className={`${router == "/setting" ? "indicator3" : ""}`}></div>
-
+                    <div className={`${router == "/setting" ? "shadow-indicator" : ""}`}></div>
                 </li>
             </ul>
         </nav>

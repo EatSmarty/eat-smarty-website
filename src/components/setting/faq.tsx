@@ -52,7 +52,6 @@ function Faq() {
   ];
   return <Accordion className={clsx(
     "accordion",
-    "text-gray-500",
     "outline-none",
   )}
     isCompact variant="splitted" defaultExpandedKeys={["1"]} hideIndicator
@@ -99,9 +98,10 @@ function Faq() {
         "accordion-item",
         "text-xl text-left",
         "m-3 p-2",
-        "bg-slate-200",
+        "bg-blue-500",
         "rounded",
         "border-none",
+        "text-white",
       )} key={index.id} aria-label={index.title} title={index.title}>
         <p className="desc text-base">{index.desc}</p>
       </AccordionItem>
