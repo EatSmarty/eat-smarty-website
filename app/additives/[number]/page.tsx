@@ -1,5 +1,4 @@
 import { FC } from "react";
-import Header from "@/components/header/header";
 import additives from "@/lib/additives.json";
 import clsx from "clsx";
 import Additivessource from "@/components/additives/additivesource";
@@ -39,7 +38,7 @@ const page: FC<PageProps> = ({ params }) => {
         <>
             {currentUrl ? (
                 <>
-                    <Header /><div className={clsx(
+                    <div className={clsx(
                         "flex justify-center",
                         "text-xl",
                         `${currentEnumber[0]?.isHalal == true ? "bg-green-100" : undefined ||
@@ -53,9 +52,10 @@ const page: FC<PageProps> = ({ params }) => {
                         <h3 className={clsx(
                             "mx-2",
                         )}>{currentEnumber[0]?.name}</h3>
-                    </div><div className={clsx(
-                        "flex flex-col ",
-                        "mx-5",
+                    </div>
+                    <div className={clsx(
+                        "flex flex-col justify-center items-center",
+                        "mx-5 my-5",
                     )}>
                         <Additivessource
                             origin={currentEnumber[0]?.source}
