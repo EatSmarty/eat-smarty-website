@@ -1,7 +1,6 @@
 import React from "react";
 import Container from "@/components/products/container";
 import clsx from "clsx";
-import Header from "@/components/header/header";
 import ProductJson from "@/lib/Product.json";
 import { notFound } from "next/navigation";
 
@@ -31,8 +30,6 @@ export default function Page({ params }: ProductPageProps) {
 
     return (
         <>
-            <Header title={"Product"}></Header>
-
             <div className={clsx(
                 "flex justify-center",
             )}>
