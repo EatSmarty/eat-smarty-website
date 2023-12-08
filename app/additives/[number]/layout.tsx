@@ -1,14 +1,9 @@
 "use client";
 
 import clsx from "clsx";
-import { Metadata } from "next";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { MdArrowBackIos } from "react-icons/md";
-
-export const metadata: Metadata = {
-    title: "Enumber",
-};
 
 export default function DashboardLayout({
     children,
