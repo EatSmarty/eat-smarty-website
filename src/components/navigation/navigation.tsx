@@ -25,7 +25,7 @@ export default function Navigation() {
                 "navigation-bottom",
             )}>
                 <li className={`list ${router == "/" ? "active" : ""}`}>
-                    <Link id="nav-link" href={"/"} data-testid='naviagate-to-home'>
+                    <Link href={"/"}>
                         <span className="icon">
                             {router == "/" ? <AiOutlineHome color="#fff" /> : <AiOutlineHome color="#000" />}
                         </span>
@@ -35,7 +35,7 @@ export default function Navigation() {
                     <div className={`${router == "/" ? "shadow-indicator" : ""}`}></div>
                 </li>
                 <li className={`list ${router == "/additives" ? "active" : ""}`} >
-                    <Link href={"/additives"} data-testid='naviagate-to-additives'>
+                    <Link href={"/additives"}>
                         <span className="icon">
                             {router == "/additives" ? <AiOutlineUnorderedList color="#fff" /> : <AiOutlineUnorderedList color="#000" />}
                         </span>
@@ -45,7 +45,7 @@ export default function Navigation() {
                     <div className={`${router == "/additives" ? "shadow-indicator" : ""}`}></div>
                 </li>
                 <li className={`list ${router == "/scan" ? "active" : ""}`}>
-                    <Link href={"/scan"} data-testid='naviagate-to-scan'>
+                    <Link href={"/scan"} >
                         <span className="icon">
                             {router == "/scan" ? <AiOutlineScan color="#fff" /> : <AiOutlineScan color="#000" />}
                         </span>
@@ -55,7 +55,7 @@ export default function Navigation() {
                     <div className={`${router == "/scan" ? "shadow-indicator" : ""}`}></div>
                 </li>
                 <li className={`list ${router == "/setting" ? "active" : ""}`}>
-                    <Link href={"/setting"} data-testid='naviagate-to-setting'>
+                    <Link href={"/setting"}>
                         <span className="icon">
                             {router == "/setting" ? <AiOutlineSetting color="#fff" /> : <AiOutlineSetting color="#000" />}
 
@@ -66,6 +66,6 @@ export default function Navigation() {
                     <div className={`${router == "/setting" ? "shadow-indicator" : ""}`}></div>
                 </li>
             </ul>
-        </nav>
+        </nav >
     );
 }

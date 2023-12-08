@@ -56,6 +56,6 @@ Cypress.Commands.add("clickNavigate", (id)=>{
     cy.get(id).click();
 });
 
-Cypress.Commands.add("headerTitle", (title)=>{
-    cy.get("h1").contains(title);
+Cypress.Commands.add("headerTitle", (mainRoute)=>{
+    cy.get("h1").contains(mainRoute);
 });
