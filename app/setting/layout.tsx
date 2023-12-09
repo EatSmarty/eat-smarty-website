@@ -14,7 +14,7 @@ export default function DashboardLayout({
     return <>
         {router === "/setting/faq" ||
             router === "/setting/contactus" ?
-            <Link href={"/setting"} className="absolute top-3 -left-7 ">
+            <Link href={"/setting"} className="top-3 -left-7 z-20 fixed">
                 <MdArrowBackIos size={25} className={clsx("mx-10")} />
             </Link> : <></>}
         {children}
