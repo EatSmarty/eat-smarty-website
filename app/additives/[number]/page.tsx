@@ -41,6 +41,7 @@ const page: FC<PageProps> = ({ params }) => {
                     <div className={clsx(
                         "flex justify-center",
                         "text-xl",
+                        "my-12",
                         `${currentEnumber[0]?.isHalal == true ? "bg-green-100" : undefined ||
                             currentEnumber[0]?.isHalal == false ? "bg-red-100" : undefined ||
                                 currentEnumber[0]?.isHalal == null ? "bg-orange-100" : undefined}`,
