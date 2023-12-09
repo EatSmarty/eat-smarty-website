@@ -12,17 +12,21 @@ export default function Page() {
   return (
     <>
       <main className={clsx(
-        "flex items-center flex-col",
-        "my-10",
+        "min-h-screen",
+        "flex flex-col items-center justify-between",
+        "my-16",
       )}>
         <Banner />
         <Slogan />
-        <Searchbarcode />
+        <span className={clsx(
+          "md:w-1/2 w-full",
+          "px-3",
+        )}>
+          <Searchbarcode />
+        </span>
         <Features />
-      </main>
-      <footer>
         <CopyRight />
-      </footer>
+      </main>
     </>
   );
 }
