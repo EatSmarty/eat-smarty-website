@@ -1,32 +1,28 @@
 import clsx from "clsx";
-import Searchicon from "../svg/searchicon";
+import { IoIosSearch } from "react-icons/io";
 
 export default function Searchinput({ handleChange, placeholder, keyDown }) {
 
     return (
         <>
-            <div className={clsx(
-                "bg-gray-100",
-                "flex justify-start items-stretch",
-                "w-4/5",
-                "py-3 my-5",
+            <label className={clsx(
+                "flex justify-start items-center",
+                "w-full",
+                "bg-blue-400",
                 "rounded",
-                "md:w-2/5",
+                "py-2",
             )}>
-                <span className={clsx(
-                    "mx-2",
-                )}>
-                    <Searchicon />
-                </span>
+                <IoIosSearch size={30} className={clsx("mx-2")} color="white" />
                 <input className={clsx(
-                    "w-full",
                     "bg-transparent",
                     "search-input",
+                    "text-white",
+                    "placeholder:text-white",
                 )}
                     placeholder={placeholder}
                     onChange={handleChange}
                     onKeyDown={keyDown} />
-            </div>
+            </label>
         </>
     );
 }
