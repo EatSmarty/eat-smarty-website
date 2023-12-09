@@ -12,8 +12,8 @@ export default function DashboardLayout({
 }) {
     const router = usePathname();
     return <>
-        {router === `${router}` ?
-            <Link href={"/additives"} className="absolute top-3 -left-7 ">
+        {router == `${router}` ?
+            <Link href={"/additives"} className="top-3 -left-7 z-20 fixed">
                 <MdArrowBackIos size={25} className={clsx("mx-10")} />
             </Link> : <></>}
         {children}

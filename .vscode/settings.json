@@ -24,8 +24,8 @@
     // optional
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-        "source.formatDocument": true,
-        "source.fixAll.eslint": true
+        "source.formatDocument": "explicit",
+        "source.fixAll.eslint": "explicit"
     },
     // required to format on save
     "editor.formatOnSaveMode": "file",
