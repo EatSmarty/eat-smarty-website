@@ -2,9 +2,9 @@ import clsx from "clsx";
 
 export default function Features() {
     return <section className={clsx(
-        "flex flex-col justify-around items-stretch",
+        "flex flex-col justify-around items-center",
         "md:flex-row",
-        "my-10",
+        "mb-10 mt-5",
         "text-base",
     )}>
         <div className={clsx(
@@ -12,7 +12,7 @@ export default function Features() {
             "rounded",
             "w-40 h-40",
             "shadow",
-            "m-5",
+            "my-5",
         )}>
             <div className={clsx(
                 "flex flex-col justify-between items-center",

@@ -5,6 +5,7 @@ export default function CopyRight() {
     <p className={clsx(
       "text-gray-500",
       "text-center",
+      "flex",
     )}>© 2023 EATSMARTY | All Rights Reserved</p>
   );
 }
