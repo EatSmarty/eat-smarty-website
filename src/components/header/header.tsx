@@ -35,7 +35,6 @@ export default function Header() {
 
   return (
     <header className={clsx(
-      "overflow-hidden",
       "w-full h-[50px]",
       "md:h-[50px]",
       "px-5 md:px-10",
@@ -45,6 +44,7 @@ export default function Header() {
       "z-20",
       "top-0",
       "shadow",
+      "fixed",
     )}>
       <div className={clsx(
         "flex justify-center items-center",
