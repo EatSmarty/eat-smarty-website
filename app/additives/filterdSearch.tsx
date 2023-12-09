@@ -33,16 +33,19 @@ export default function FilterdSearch({ additives }) {
 
   return (
     <div className={clsx(
-      "w-full",
-      "flex justify-center items-center flex-col",
+      // "w-full",
+      "flex justify-center items-center flex-col my-20",
     )}>
+      <div className={clsx(
+        "md:w-3/5 w-full px-3",
+      )}>
+        <Searchinput
+          handleChange={handleChange}
+          placeholder={"Search"}
+          keyDown={undefined} />
+        {searchList()}
+      </div>
 
-      <Searchinput
-        handleChange={handleChange}
-        placeholder={"Search"}
-        keyDown={undefined} />
-
-      {searchList()}
     </div>
   );
 }
