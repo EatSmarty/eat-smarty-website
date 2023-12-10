@@ -43,9 +43,8 @@ export default function FilterdSearch({ additives }) {
           handleChange={handleChange}
           placeholder={"Search"}
           keyDown={undefined} />
-        {searchList()}
       </div>
-
+      {searchList()}
     </div>
   );
 }

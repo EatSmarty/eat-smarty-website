@@ -1,0 +1,26 @@
+name: "🍻 TriageMate"
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  triage:
+    name: "🤖 Auto"
+    runs-on: ubuntu-latest
+    timeout-minutes: 1
+    permissions:
+      contents: read
+      pull-requests: write
+
+    steps:
+    # set the label for the PR
+    - uses: actions/labeler@v4
+      name: "🔖 Labeler"
+
+    # Assign the PR
+    - uses: actions-ecosystem/action-add-assignees@v1
+      name: "🧑‍💻 Assigner"
+      with:
+        github_token: ${{ secrets.github_token }}
+        assignees: ${{ github.actor }}
