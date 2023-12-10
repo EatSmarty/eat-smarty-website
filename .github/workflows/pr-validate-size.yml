@@ -1,0 +1,62 @@
+name: ⚖️ Validate PR
+
+on:
+  pull_request:
+    types: [ready_for_review, review_requested]
+
+env:
+  MAX_FILES_COUNT: 10
+  MAX_LINES_COUNT: 1000
+
+jobs:
+  count_changes:
+    name: 🔬 Size
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Get changed files and lines count
+        run: |
+          git fetch origin ${{ github.base_ref }} --depth=1
+          FILES_CHANGED=$(git diff --name-only FETCH_HEAD..HEAD | wc -l)
+          FILES_CHANGED=${FILES_CHANGED:-0}
+          echo "FILES_CHANGED=$FILES_CHANGED" >> $GITHUB_ENV
+          LINES_ADDED=$(git diff --shortstat FETCH_HEAD..HEAD | sed -n 's/[0-9]* files changed, \([0-9]*\) insertions.*/\1/p')
+          LINES_ADDED=${LINES_ADDED:-0}
+          echo "LINES_ADDED=$LINES_ADDED" >> $GITHUB_ENV
+          LINES_DELETED=$(git diff --shortstat FETCH_HEAD..HEAD | sed -n 's/[0-9]* files changed, \([0-9]*\) deletions.*/\1/p')
+          LINES_DELETED=${LINES_DELETED:-0}
+          echo "LINES_DELETED=$LINES_DELETED" >> $GITHUB_ENV
+
+      - name: Debug
+        run: |
+          echo "DEBUG:"
+          echo "GITHUB_BASE_REF=${{ github.base_ref }}"
+          echo "MAX_FILES_COUNT=$MAX_FILES_COUNT"
+          echo "MAX_LINES_COUNT=$MAX_LINES_COUNT"
+          echo "FILES_CHANGED=$FILES_CHANGED"
+          echo "LINES_ADDED=$LINES_ADDED"
+          echo "LINES_DELETED=$LINES_DELETED"
+        env:
+          FILES_CHANGED: ${{ env.FILES_CHANGED }}
+          LINES_ADDED: ${{ env.LINES_ADDED }}
+          LINES_DELETED: ${{ env.LINES_DELETED }}
+
+      - name: Check PR size against limits
+        run: |
+          if [[ $FILES_CHANGED -gt $MAX_FILES_COUNT || $(($LINES_ADDED + $LINES_DELETED)) -gt $MAX_LINES_COUNT ]]; then
+            echo "❗️ The pull request exceeds the allowed changes."
+            echo "Files changed: $FILES_CHANGED (max allowed: $MAX_FILES_COUNT)"
+            echo "Lines changed: $(($LINES_ADDED + $LINES_DELETED)) (max allowed: $MAX_LINES_COUNT)"
+            echo "Please split the pull request into smaller ones, to make the review process easier."
+
+            # TODO: add a message instead of exit and fail the pipeline
+            # exit 1
+          else
+            echo "✅ The pull request size is within allowed limits."
+          fi
+        env:
+          FILES_CHANGED: ${{ env.FILES_CHANGED }}
+          LINES_ADDED: ${{ env.LINES_ADDED }}
+          LINES_DELETED: ${{ env.LINES_DELETED }}

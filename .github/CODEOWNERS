@@ -1,0 +1,14 @@
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+# Code owners are automatically requested for review when someone opens a pull request that modifies code that they own
+
+# code owner for folder
+.github/  @JohnAdib
+
+# You can add multiple owner for each line, for example
+# .github/  @JohnAdib @User2 @User3 ...
+
+# code owner for single file
+LICENSE  @JohnAdib
+
+# code owner for file extension like .md for markdown files
+*.md @JohnAdib

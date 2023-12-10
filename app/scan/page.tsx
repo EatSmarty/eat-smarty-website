@@ -17,8 +17,8 @@ export default function Page() {
   return (
     <>
       <div className={clsx(
-        "flex items-center flex-col",
-        "camera",
+        "min-h-screen",
+        "flex justify-center items-center flex-col",
       )}>
         <div className={clsx(
           "flex justify-center items-center",
@@ -30,12 +30,14 @@ export default function Page() {
           className="button-tap-camera"
           onClick={() => setCamera(!camera)}
         >
-          {camera ? "Stop" : <BsUpcScan size={150} />}
+          {camera ? "Stop" : <BsUpcScan size={140} />}
           <p className={clsx(
             "font-bold",
             "text-2xl",
-            "mt-5",
-          )}>{result ? result : "Tap To Scan"}</p>
+            "mb-10",
+          )}>
+            {result ? result : "TapToScan"}
+          </p>
         </button>
       </div>
     </>

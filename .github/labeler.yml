@@ -1,0 +1,111 @@
+# https://github.com/actions/labeler
+
+'🥁GithubActions':
+  - ".github/**"
+
+'📖Docs':
+  - "docs/**"
+  - "*.md"
+
+'🍭ENV':
+  - "**/.env*"
+
+'⚕️Git':
+  - "**/.gitignore"
+  - "**/.gitmodules"
+
+# based on the file extension
+'📄PHP':
+  - "**/*.php"
+
+'📄HTML':
+  - "**/*.html"
+  - "**/*.phtml"
+
+'📄JavaScript':
+  - "**/*.js"
+
+'📄TypeScript':
+  - "**/*.ts"
+
+'📄ReactJavaScript':
+  - "**/*.jsx"
+
+'📄ReactTypeScript':
+  - "**/*.tsx"
+
+"🎨CSS":
+  - "**/*.css"
+  - "**/*.scss"
+
+'📄YAML':
+  - "**/*.yml"
+  - "**/*.yaml"
+
+'📄JSON':
+  - "**/*.json"
+
+'📄Text':
+  - "**/*.txt"
+
+'📄Markdown':
+  - "**/*.md"
+
+'📄Log':
+  - "**/*.log"
+
+'🏞️Image':
+  - "**/*.jpg"
+  - "**/*.jpeg"
+  - "**/*.png"
+  - "**/*.webp"
+  - "**/*.ico"
+
+'✒️SVG':
+  - "**/*.svg"
+
+'🎥Video':
+  - "**/*.mp4"
+  - "**/*.mpeg"
+  - "**/*.ico"
+
+'🎵Audio':
+  - "**/*.mp3"
+  - "**/*.ogg"
+
+# based on the file type add some tags
+'🐬Docker':
+  - "**/docker-compose*"
+  - "**/Dockerfile*"
+
+'📎VSCode':
+  - ".vscode/**"
+
+'🤹‍♂️Package.json':
+  - "**/package.json"
+  - "**/package-lock.json"
+
+'🥽TypeScript':
+  - "**/tsconfig.json"
+
+'🕵️‍♂️ESLint':
+  - "**/.eslintignore"
+  - "**/.eslintrc.json"
+
+# based on the folder or file extension
+
+'🎭Playwright':
+  - "*/playwright/**"
+
+'🌲Cypress':
+  - "*/cypress/**"
+
+'📔Storybook':
+  - "**/.storybook/**"
+  - "**/*.stories.js"
+
+'🧪Test':
+- "**/*.spec.js"
+- "**/*.spec.ts"
+
+# You can add new label for everything you want. enjoy

@@ -82,7 +82,7 @@ const Scanner = props => {
                 <p className={clsx(
                     "text-2xl",
                     "text-center",
-                    "mb-10",
+                    "mt-10 mx-5",
                 )}>
                     {accessMsg}
                 </p>
