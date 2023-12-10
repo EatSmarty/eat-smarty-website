@@ -19,7 +19,10 @@ export default function Navigation() {
             "relative",
         )}>
             <ul className={clsx(
-                "w-full h-20",
+                "rounded-tl-xl",
+                "rounded-tr-xl",
+                "ml-10 mr-10",
+                "w-11/12 h-20",
                 "flex justify-around items-center",
                 "shadow-2xl",
                 "navigation-bottom",
