@@ -6,7 +6,7 @@ settings:
 
 dependencies:
   country-flag-icons:
-    specifier: ^1.5.7
+    specifier: ^1.5.9
     version: 1.5.9
   next:
     specifier: ^13.5.6
@@ -24,7 +24,7 @@ dependencies:
     specifier: ^0.4.1
     version: 0.4.1(react-dom@18.2.0)(react@18.2.0)
   react-icons:
-    specifier: ^4.10.1
+    specifier: ^4.12.0
     version: 4.12.0(react@18.2.0)
 
 devDependencies:
@@ -53,28 +53,28 @@ devDependencies:
     specifier: 18.2.14
     version: 18.2.14
   '@types/react-collapse':
-    specifier: ^5.0.1
+    specifier: ^5.0.4
     version: 5.0.4
   '@types/react-dom':
     specifier: 18.2.6
     version: 18.2.6
   '@typescript-eslint/eslint-plugin':
-    specifier: ^5.13.0
+    specifier: ^5.62.0
     version: 5.62.0(@typescript-eslint/parser@5.62.0)(eslint@8.56.0)(typescript@5.1.6)
   '@typescript-eslint/parser':
-    specifier: ^5.0.0
+    specifier: ^5.62.0
     version: 5.62.0(eslint@8.56.0)(typescript@5.1.6)
   autoprefixer:
-    specifier: ^10.4.15
+    specifier: ^10.4.16
     version: 10.4.16(postcss@8.4.32)
   chromatic:
-    specifier: ^7.1.0
+    specifier: ^7.6.0
     version: 7.6.0
   clsx:
     specifier: ^2.0.0
     version: 2.0.0
   cypress:
-    specifier: ^13.1.0
+    specifier: ^13.6.1
     version: 13.6.1
   eslint:
     specifier: 8.56.0
@@ -86,25 +86,25 @@ devDependencies:
     specifier: 15.0.0
     version: 15.0.0(eslint-plugin-import@2.29.1)(eslint@8.56.0)
   eslint-config-airbnb-typescript:
-    specifier: ^17.0.0
+    specifier: ^17.1.0
     version: 17.1.0(@typescript-eslint/eslint-plugin@5.62.0)(@typescript-eslint/parser@5.62.0)(eslint-plugin-import@2.29.1)(eslint@8.56.0)
   eslint-config-next:
     specifier: 14.0.4
     version: 14.0.4(eslint@8.56.0)(typescript@5.1.6)
   eslint-plugin-storybook:
-    specifier: ^0.6.13
+    specifier: ^0.6.15
     version: 0.6.15(eslint@8.56.0)(typescript@5.1.6)
   eslint-plugin-tailwindcss:
     specifier: ^3.13.0
     version: 3.13.0(tailwindcss@3.3.6)
   postcss:
-    specifier: ^8.4.28
+    specifier: ^8.4.32
     version: 8.4.32
   storybook:
     specifier: ^7.6.5
     version: 7.6.5
   tailwindcss:
-    specifier: ^3.3.3
+    specifier: ^3.3.6
     version: 3.3.6
   typescript:
     specifier: 5.1.6
