@@ -1,15 +1,12 @@
 'use client';
 
-import clsx from 'clsx';
-import AdditiveList from './additivesList';
+import additives from '@/lib/additives.json';
+import FilterdSearch from './filterdSearch';
 
-export default function Page() {
+export default function Page({ param }) {
   return (
-    <main className={clsx(
-      'main-content',
-    )}
-    >
-      <AdditiveList />
+    <main>
+      <FilterdSearch additives={additives} />
     </main>
   );
 }

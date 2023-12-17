@@ -21,7 +21,7 @@ export function SourceImage({
   return (
     <div className="mr-2">
       <Image
-        src={`./${source}.png`}
+        src={`/${source}.png`}
         width={20}
         height={20}
         alt={`${source} icon`}

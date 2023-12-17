@@ -13,6 +13,7 @@
     "chromatic": "npx chromatic --project-token=chpt_58f0a6ec8d571f5"
   },
   "dependencies": {
+    "@nextui-org/accordion": "^2.0.28",
     "country-flag-icons": "^1.5.9",
     "next": "^14.0.4",
     "quagga": "^0.12.1",

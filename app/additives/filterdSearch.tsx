@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
 import Search from '@/components/additives/search';
-import clsx from 'clsx';
 import Searchinput from '@/components/additives/searchinput';
+import clsx from 'clsx';
+import React, { useState } from 'react';
 
 export default function FilterdSearch({ additives }) {
   const [searchField, setSearchField] = useState('');
@@ -10,16 +10,16 @@ export default function FilterdSearch({ additives }) {
     (additive: { name: string; eNumber: string; }) => (
       additive.name.toLowerCase()
         .includes(searchField.toLowerCase())
-        || additive.eNumber.toLowerCase()
-          .includes(searchField.toLowerCase())
+      || additive.eNumber.toLowerCase()
+        .includes(searchField.toLowerCase())
     ),
   );
 
   const handleChange = (e:
-  {
-    target:
-    { value: React.SetStateAction<string>; };
-  }) => {
+    {
+      target:
+      { value: React.SetStateAction<string>; };
+    }) => {
     setSearchField(e.target.value);
   };
 
@@ -31,7 +31,6 @@ export default function FilterdSearch({ additives }) {
 
   return (
     <div className={clsx(
-      // "w-full",
       'my-20 flex flex-col items-center justify-center',
     )}
     >
