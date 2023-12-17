@@ -1,36 +1,21 @@
 {
-    "extends": [
-        "airbnb-typescript/base",
-        "plugin:@typescript-eslint/recommended",
-        "plugin:storybook/recommended",
-        "plugin:jest/recommended"
+    "plugins": [
+        "tailwindcss"
     ],
-    "parserOptions": {
-        "parser": "@babel/eslint-parser",
-        "requireConfigFile": false,
-        "project": "./tsconfig.json"
-    },
+    "extends": [
+        "plugin:tailwindcss/recommended",
+        "airbnb",
+        "airbnb-typescript",
+        "next/core-web-vitals"
+    ],
     "ignorePatterns": [
         "**/dist/*",
         "**/build/*",
         "**/coverage/*",
-        "**/phalcon/*",
         "**/storybook-static/*",
-        "github/*",
-        "**/vendor/*.js",
-        "**/node_modules/*",
-        "**/jest.config.js",
-        "**/jest.setup.js"
+        "**/node_modules/*"
     ],
     "rules": {
-        "indent": "off",
-        "react/jsx-filename-extension": [
-            0
-        ],
-        "@typescript-eslint/indent": [
-            "off",
-            2
-        ],
         "max-len": [
             "error",
             {
@@ -46,7 +31,7 @@
         ],
         "max-lines": [
             "error",
-            250
+            200
         ],
         "max-classes-per-file": [
             "error",
@@ -65,11 +50,7 @@
             "error",
             "never"
         ],
-        "quotes": "off",
-        "@typescript-eslint/quotes": [
-            "error",
-            "double"
-        ],
+        "@typescript-eslint/no-explicit-any": "error",
         "curly": [
             "error",
             "all"
@@ -94,10 +75,18 @@
             }
         ],
         "no-unused-vars": "off",
-        "@typescript-eslint/no-unused-vars": "error",
+        "@typescript-eslint/no-unused-vars": [
+            "error",
+            {
+                "argsIgnorePattern": "^_",
+                "varsIgnorePattern": "^_",
+                "caughtErrorsIgnorePattern": "^_"
+            }
+        ],
         "import/no-extraneous-dependencies": [
             0
         ],
+        "import/prefer-default-export": "off",
         "no-multiple-empty-lines": [
             "error",
             {
@@ -106,44 +95,39 @@
                 "maxEOF": 0
             }
         ],
-        "import/extensions": "off"
+        "import/extensions": "off",
+        "no-restricted-syntax": [
+            "error",
+            "ForInStatement",
+            "LabeledStatement",
+            "WithStatement"
+        ], // Overrides Airbnb configuration and enable no-restricted-syntax
+        "@typescript-eslint/naming-convention": [
+            "warn",
+            {
+                "selector": "variable",
+                "format": [
+                    "camelCase"
+                ]
+            }
+        ],
+        "@typescript-eslint/consistent-type-imports": "error"
     },
-    "plugins": [
-        "@typescript-eslint",
-        "import",
-        "jest"
-    ],
     "overrides": [
         {
             "files": [
-                "example/path/to/override/src/**/*.js"
+                "**/*.ts",
+                "**/*.tsx"
             ],
-            "rules": {}
+            "parserOptions": {
+                "project": "./tsconfig.json"
+            }
         }
     ],
     "root": true,
     "env": {
         "es6": true,
         "browser": true,
-        "node": true,
-        "mocha": true,
-        "serviceworker": true,
-        "jest": true
-    },
-    "settings": {
-        "vue": {
-            "version": "3"
-        },
-        "import/resolver": {
-            "node": {
-                "extensions": [
-                    ".js",
-                    ".jsx",
-                    ".ts",
-                    ".tsx"
-                ]
-            },
-            "typescript": true
-        }
+        "node": true
     }
 }

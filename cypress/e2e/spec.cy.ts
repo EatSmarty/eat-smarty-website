@@ -1,5 +1,5 @@
 describe("Route Navigation To Home Page", () => {
-  // eslint-disable-next-line jest/expect-expect
+  // eslint-disable-next-line
   it("Should navigate to different routes", () => {
     // Visit the initial page (e.g., your application"s home page)
     // cy.visit("http://localhost:3000/");
@@ -14,7 +14,7 @@ describe("Route Navigation To Home Page", () => {
 });
 
 describe("Route Navigation To Additives Page", () => {
-  // eslint-disable-next-line jest/expect-expect
+  // eslint-disable-next-line
   it("Should navigate to different routes", () => {
     // Visit the initial page (e.g., your application"s additives page)
     cy.customVisit("https://halalvar.vercel.app/additives");
@@ -28,7 +28,7 @@ describe("Route Navigation To Additives Page", () => {
 });
 
 describe("Route Navigation To Scan Page", () => {
-  // eslint-disable-next-line jest/expect-expect
+  // eslint-disable-next-line
   it("Should navigate to different routes", () => {
     // Visit the initial page (e.g., your application"s scan page)
     cy.customVisit("https://halalvar.vercel.app/scan");
@@ -42,7 +42,7 @@ describe("Route Navigation To Scan Page", () => {
 });
 
 describe("Route Navigation To Setting Page", () => {
-  // eslint-disable-next-line jest/expect-expect
+  // eslint-disable-next-line
   it("Should navigate to different routes", () => {
     // Visit the initial page (e.g., your application"s setting page)
     cy.customVisit("https://halalvar.vercel.app/setting");
