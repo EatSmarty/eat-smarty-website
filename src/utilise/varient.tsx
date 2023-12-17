@@ -14,4 +14,10 @@ const keywords = [
   'open source',
 ];
 
-export default { title, brandName, keywords };
+const myVarient = {
+  title,
+  brandName,
+  keywords,
+};
+
+export default myVarient;

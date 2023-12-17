@@ -1,17 +1,16 @@
 /* eslint-disable max-len */
-import React from 'react';
-import clsx from 'clsx';
 import Ishalal from '@/components/additives/ishalal';
+import ProductJson from '@/lib/Product.json';
+import clsx from 'clsx';
+import { FaAllergies } from 'react-icons/fa';
 import { LuVegan } from 'react-icons/lu';
 import { MdPregnantWoman } from 'react-icons/md';
-import { FaAllergies } from 'react-icons/fa';
 import { TbMoodSick } from 'react-icons/tb';
-import ProductJson from '@/lib/Product.json';
 import Badgecheck from './badgecheck';
+import ImageContainer from './imagecontainer';
 import Nutrition from './nutrition';
 import Productdecscription from './productdecscription';
 import Producttitle from './producttitle';
-import ImageContainer from './imagecontainer';
 
 interface ContainerInterface {
   // code: number | null;
@@ -19,19 +18,17 @@ interface ContainerInterface {
   // name: string;
   // isHalal: boolean | null;
   // source: string;
-  danger: string | number
+  // danger: string | number
   params: { id: number }
 }
 
 export default function Container({ params }: ContainerInterface) {
-  const MainProduct = ProductJson.filter(
+  const mainProduct = ProductJson.filter(
     (product: { id: number; }) => (
       product.id
     ),
-  );
-
-  const mainProduct = MainProduct.filter((mainItem) => (
-    mainItem.id == params.id
+  ).filter((mainItem) => (
+    mainItem.id === params.id
   ));
 
   const currentProduct = mainProduct[0];
@@ -79,7 +76,7 @@ export default function Container({ params }: ContainerInterface) {
                 <Ishalal
                   isHalal={currentProduct?.isHalal}
                 />
-                                  )}
+              )}
               isTrue={currentProduct?.isHalal}
             />
             <Badgecheck

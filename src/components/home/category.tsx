@@ -1,11 +1,10 @@
 import clsx from 'clsx';
 import Image from 'next/image';
 
-export default function Category({ }) {
+export default function Category() {
   return (
     <div>
       <section className={clsx(
-        'category',
         'mx-5 mt-14',
       )}
       >

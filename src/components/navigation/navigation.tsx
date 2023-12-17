@@ -29,40 +29,40 @@ export default function Navigation() {
         'navigation-bottom',
       )}
       >
-        <li className={`list ${router === '/' ? 'active' : ''}`}>
+        <li className={`${router === '/' ? 'active' : ''}`}>
           <Link href="/">
             <span className="icon">
-              {router == '/' ? <AiOutlineHome color="#fff" /> : <AiOutlineHome color="#000" />}
+              {router === '/' ? <AiOutlineHome color="#fff" /> : <AiOutlineHome color="#000" />}
             </span>
             <span className="nav-text">Home</span>
           </Link>
           <div className={`${router === '/' ? 'indicator' : ''}`} />
           <div className={`${router === '/' ? 'shadow-indicator' : ''}`} />
         </li>
-        <li className={`list ${router === '/additives' ? 'active' : ''}`}>
+        <li className={`${router === '/additives' ? 'active' : ''}`}>
           <Link href="/additives">
             <span className="icon">
-              {router == '/additives' ? <AiOutlineUnorderedList color="#fff" /> : <AiOutlineUnorderedList color="#000" />}
+              {router === '/additives' ? <AiOutlineUnorderedList color="#fff" /> : <AiOutlineUnorderedList color="#000" />}
             </span>
             <span className="nav-text">Additives</span>
           </Link>
           <div className={`${router === '/additives' ? 'indicator1' : ''}`} />
           <div className={`${router === '/additives' ? 'shadow-indicator' : ''}`} />
         </li>
-        <li className={`list ${router === '/scan' ? 'active' : ''}`}>
+        <li className={`${router === '/scan' ? 'active' : ''}`}>
           <Link href="/scan">
             <span className="icon">
-              {router == '/scan' ? <AiOutlineScan color="#fff" /> : <AiOutlineScan color="#000" />}
+              {router === '/scan' ? <AiOutlineScan color="#fff" /> : <AiOutlineScan color="#000" />}
             </span>
             <span className="nav-text">Scan</span>
           </Link>
           <div className={`${router === '/scan' ? 'indicator2' : ''}`} />
           <div className={`${router === '/scan' ? 'shadow-indicator' : ''}`} />
         </li>
-        <li className={`list ${router === '/setting' ? 'active' : ''}`}>
+        <li className={`${router === '/setting' ? 'active' : ''}`}>
           <Link href="/setting">
             <span className="icon">
-              {router == '/setting' ? <AiOutlineSetting color="#fff" /> : <AiOutlineSetting color="#000" />}
+              {router === '/setting' ? <AiOutlineSetting color="#fff" /> : <AiOutlineSetting color="#000" />}
 
             </span>
             <span className="nav-text">Setting</span>

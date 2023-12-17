@@ -1,11 +1,11 @@
 import clsx from 'clsx';
 import Link from 'next/link';
-import Source from './source';
+import { SourceImage } from './source';
 import Ishalal from './ishalal';
 import Gauge from './gauge';
 
 interface AdditivesInterface {
-  code: number | null;
+  // code: number | null;
   enumber: string;
   name: string;
   isHalal: boolean | null;
@@ -13,11 +13,13 @@ interface AdditivesInterface {
   danger: string | number
 }
 
-export default function AdditiveCart(
-  {
-    isHalal, enumber, name, source, danger,
-  }: AdditivesInterface,
-) {
+export default function AdditiveCart({
+  isHalal,
+  enumber,
+  name,
+  source,
+  danger,
+}: AdditivesInterface) {
   return (
     <Link
       href={`/additives/${enumber}`}
@@ -29,9 +31,10 @@ export default function AdditiveCart(
         'hover:shadow-lg',
         'w-40',
         'md:h-48',
-        `${isHalal == true ? 'bg-green-100' : undefined
-          || isHalal == false ? 'bg-red-100' : undefined
-            || isHalal == null ? 'bg-orange-100' : undefined}`,
+
+        // `${isHalal === true ? 'bg-green-100' : undefined
+        //   || isHalal === false ? 'bg-red-100' : undefined
+        //     || isHalal === null ? 'bg-orange-100' : undefined}`,
       )}
     >
       <p>
@@ -51,7 +54,7 @@ export default function AdditiveCart(
           'mt-3',
         )}
         >
-          <Source source={source} />
+          <SourceImage source={source} />
           <Ishalal isHalal={isHalal} />
         </div>
       </div>

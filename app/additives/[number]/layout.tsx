@@ -17,7 +17,7 @@ export default function DashboardLayout({
           <Link href="/additives" className="fixed -left-7 top-3 z-20">
             <MdArrowBackIos size={25} />
           </Link>
-        ) : <></>}
+        ) : null}
       {children}
     </>
   );

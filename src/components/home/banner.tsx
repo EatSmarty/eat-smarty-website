@@ -1,10 +1,9 @@
 import clsx from 'clsx';
 import varient from '@/utilise/varient';
 
-export default function Banner({ }) {
+export default function Banner() {
   return (
     <section className={clsx(
-      'banner',
       'text-5xl',
       'mb-5',
     )}
@@ -18,7 +17,6 @@ export default function Banner({ }) {
             'title',
             'text-[#0069FE]',
             'mr-2 font-bold',
-            'fancy',
           )}
           >
             {varient.title}

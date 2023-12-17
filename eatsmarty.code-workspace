@@ -5,6 +5,6 @@
 		}
 	],
 	"settings": {
-		"files.autoSave": "onFocusChange"
+		"files.autoSave": "afterDelay",
 	}
 }

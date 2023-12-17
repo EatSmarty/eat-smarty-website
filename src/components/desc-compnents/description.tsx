@@ -3,7 +3,6 @@ import clsx from 'clsx';
 export default function Description() {
   return (
     <div className={clsx(
-      'desc',
       'my-5',
       'text-left',
     )}
@@ -16,8 +15,7 @@ export default function Description() {
         description
       </span>
       <span className={clsx(
-        'desc',
-        'text- text-xl',
+        'text-xl',
       )}
       >
         Naturally occurring orange/yellow colour,

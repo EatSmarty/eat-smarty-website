@@ -1,8 +1,8 @@
 'use client';
 
+import product from '@/lib/Product.json';
 import { redirect } from 'next/navigation';
 import React, { useState } from 'react';
-import product from '@/lib/Product.json';
 import Searchinput from '../additives/searchinput';
 
 export default function Searchbarcode() {
@@ -18,10 +18,7 @@ export default function Searchbarcode() {
 
   const findIndex = product.findIndex((index) => index.barcode === searchField);
   const findCode = product.some((item) => item.barcode === searchField);
-  const handleKeyDown = (e) => {
-    if (e.key === 'Enter') {
-    }
-  };
+  const handleKeyDown = () => { };
 
   return (
     <>

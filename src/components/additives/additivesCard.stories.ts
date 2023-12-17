@@ -16,7 +16,7 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const HalalCard: Story = {
+export const halalCard: Story = {
   args: {
     code: 100,
     enumber: 'E100',
@@ -27,7 +27,7 @@ export const HalalCard: Story = {
   },
 };
 
-export const HaramCard: Story = {
+export const haramCard: Story = {
   args: {
     code: 102,
     enumber: 'E102',
@@ -38,7 +38,7 @@ export const HaramCard: Story = {
   },
 };
 
-export const MushboohCard: Story = {
+export const mushboohCard: Story = {
   args: {
     code: 101,
     enumber: 'E101',

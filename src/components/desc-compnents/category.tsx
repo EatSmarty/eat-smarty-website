@@ -15,7 +15,7 @@ export default function Category() {
         Category
       </span>
       <span className={clsx(
-        'text- text-xl',
+        'text-xl',
       )}
       >
         Colours

@@ -14,11 +14,11 @@ export default function DashboardLayout({
   return (
     <>
       {router === '/setting/faq'
-            || router === '/setting/contactus' ? (
-              <Link href="/setting" className="fixed -left-7 top-3 z-20">
-                <MdArrowBackIos size={25} className={clsx('mx-10')} />
-              </Link>
-        ) : <></>}
+        || router === '/setting/contactus' ? (
+          <Link href="/setting" className="fixed -left-7 top-3 z-20">
+            <MdArrowBackIos size={25} className={clsx('mx-10')} />
+          </Link>
+        ) : null}
       {children}
     </>
   );
