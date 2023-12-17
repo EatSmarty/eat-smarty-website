@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 
 interface ProductProps {
-    params: { id: number }
+  params: { id: number }
 }
 
 export default function Product({ params }: ProductProps) {
-    return (
-        <>{params.id}</>
-    );
+  return (
+    <>{params.id}</>
+  );
 }

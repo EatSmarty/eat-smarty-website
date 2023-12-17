@@ -1,20 +1,18 @@
-import React from "react";
-import Ishalal from "../additives/ishalal";
-import clsx from "clsx";
+import React from 'react';
+import clsx from 'clsx';
+import Ishalal from '../additives/ishalal';
 
 export default function Scanned() {
-
-    return (
-        <>
-            <div className={clsx(
-                "pt-20",
-                "text-center text-2xl text-green-600",
-                "font-bold",
-                "flex justify-center",
-            )}>
-                <p>Scanned</p>
-                <Ishalal isHalal={true} />
-            </div>
-        </>
-    );
+  return (
+    <div className={clsx(
+      'pt-20',
+      'text-center text-2xl text-green-600',
+      'font-bold',
+      'flex justify-center',
+    )}
+    >
+      <p>Scanned</p>
+      <Ishalal isHalal />
+    </div>
+  );
 }
