@@ -1,0 +1,51 @@
+name: ⏰🤖 Update dependencies
+
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+  # Cron job every Monday at 9 AM
+  schedule:
+    - cron: "0 9 * * 1"
+
+jobs:
+  update:
+    strategy:
+      matrix:
+        node-version: [20.x]
+
+    name: 🩺 Minor
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🎺 Prepare - Check out Git repository
+        uses: actions/checkout@v3
+
+      - name: 🎺 Prepare - PNPM Setup
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8.12.1
+
+      - name: 🎺 Prepare - Set up Node.js v20
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          cache: 'pnpm'
+
+      - name: 🆙 Update dependencies - root
+        run: pnpm --recursive update
+
+      - name: 🗨️ Create Pull Request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          commit-message: "chore/LPPT-0000 (npm) 🤖 update dependencies"
+          title: chore/LPPT-0000 (npm) 🤖 update dependencies
+          body: |
+            Dependencies automatically updated!
+            - [x] Dependencies updated
+            - [x] Tests passed
+            - [ ] Review
+            Please review the changes and merge this Pull Request if it looks good.
+          branch: chore/LPPT-0000-npm-update-dependencies
+          delete-branch: true
+          # team-reviewers: developers
+          branch-suffix: timestamp
