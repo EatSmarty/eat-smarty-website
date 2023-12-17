@@ -3,7 +3,9 @@ import AdditiveCart from '@/components/additives/additivesCard';
 
 export default function Search({ filteredAdditives }) {
   const filtered = filteredAdditives?.map((additive) => (
-    <div>
+    <div
+      key={additive.id}
+    >
       <AdditiveCart
         key={additive.id}
         isHalal={additive.isHalal}

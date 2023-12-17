@@ -38,7 +38,6 @@ export default function Features() {
             />
           </svg>
           <p className={clsx(
-            'desc-feature',
             'font-bold text-gray-500',
             'text-center',
           )}
@@ -81,9 +80,8 @@ export default function Features() {
             />
           </svg>
           <p className={clsx(
-            'desc-feature',
             'font-bold text-gray-500',
-            'w-34 mt-5 text-center',
+            'mt-5 text-center',
           )}
           >
             Independent Database
@@ -131,9 +129,7 @@ export default function Features() {
             />
           </svg>
           <p className={clsx(
-            'desc-feature',
             'font-bold text-gray-500',
-            'w-34',
             'mt-5 text-center',
           )}
           >
@@ -171,9 +167,7 @@ export default function Features() {
             />
           </svg>
           <p className={clsx(
-            'desc-feature',
             'font-bold text-gray-500',
-            'w-34',
             'mt-5 text-center',
           )}
           >

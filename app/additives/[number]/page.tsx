@@ -30,6 +30,11 @@ const page: FC<PageProps> = ({ params }) => {
     notFound();
   }
 
+  const myEnumber = currentEnumber[0];
+  const isHalal = myEnumber?.isHalal === true;
+  const isHaram = myEnumber?.isHalal === false;
+  const isMusbouh = myEnumber?.isHalal === null;
+
   return (
     <>
       {currentUrl ? (
@@ -38,9 +43,9 @@ const page: FC<PageProps> = ({ params }) => {
             'flex justify-center',
             'text-xl',
             'my-12',
-            `${currentEnumber[0]?.isHalal == true ? 'bg-green-100' : undefined
-                            || currentEnumber[0]?.isHalal == false ? 'bg-red-100' : undefined
-                                || currentEnumber[0]?.isHalal == null ? 'bg-orange-100' : undefined}`,
+            isHalal && 'bg-green-100',
+            isHaram && 'bg-red-100',
+            isMusbouh && 'bg-orange-100',
           )}
           >
             <p className={clsx(

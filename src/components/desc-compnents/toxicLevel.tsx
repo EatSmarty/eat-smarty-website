@@ -4,7 +4,6 @@ import GaugeChart from 'react-gauge-chart';
 export default function ToxicLevel() {
   return (
     <div className={clsx(
-      'desc',
       'my-5',
       'text-left',
     )}
@@ -23,7 +22,6 @@ export default function ToxicLevel() {
       )}
       >
         <div className={clsx(
-          'desc',
           'text-xl',
           'w-1/2',
           'flex items-center justify-center',

@@ -17,8 +17,7 @@ export default function About() {
         <Link
           href="/setting/faq"
           className={clsx(
-            'setting-item contact-us',
-            'itmes-center flex justify-between',
+            'flex items-center justify-between',
             'w-full',
             'mt-3 py-3',
             'cursor-pointer',
@@ -43,8 +42,7 @@ export default function About() {
         <Link
           href="/setting/contactus"
           className={clsx(
-            'setting-item contact-us',
-            'itmes-center flex justify-between',
+            'flex items-center justify-between',
             'w-full',
             'mt-3 py-3',
             'cursor-pointer',

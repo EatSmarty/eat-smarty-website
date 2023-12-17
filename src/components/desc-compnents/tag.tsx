@@ -3,7 +3,6 @@ import clsx from 'clsx';
 export default function Tag() {
   return (
     <div className={clsx(
-      'tag',
       'text-xs',
     )}
     >

@@ -53,7 +53,6 @@ function Faq() {
   return (
     <Accordion
       className={clsx(
-        'accordion',
         'outline-none',
       )}
       isCompact
@@ -101,7 +100,6 @@ function Faq() {
       {faqData.map((index) => (
         <AccordionItem
           className={clsx(
-            'accordion-item',
             'text-left text-xl',
             'm-3 p-2',
             'bg-blue-500',
@@ -113,9 +111,12 @@ function Faq() {
           aria-label={index.title}
           title={index.title}
         >
-          <p className="desc text-base">{index.desc}</p>
+          <p
+            className="text-base"
+          >
+            {index.desc}
+          </p>
         </AccordionItem>
-
       ))}
 
     </Accordion>

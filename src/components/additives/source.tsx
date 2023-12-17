@@ -13,24 +13,24 @@ export default function Source({ source }: SourceInterface) {
     )}
     >
       {
-                // plant cond
-                source
-                    == 'plant'
-                    || 'pig'
-                    || 'chemistry'
-                    || 'synthetic'
-                    || 'insec'
-                    || 'alcohol'
-                  ? (
-                    <Image
-                      src={`./${source}.png`}
-                      width={20}
-                      height={20}
-                      alt={`${source} icon`}
-                    />
-                  )
-                  : undefined
-            }
+        // plant cond
+        source
+          === 'plant'
+          || 'pig'
+          || 'chemistry'
+          || 'synthetic'
+          || 'insec'
+          || 'alcohol'
+          ? (
+            <Image
+              src={`./${source}.png`}
+              width={20}
+              height={20}
+              alt={`${source} icon`}
+            />
+          )
+          : undefined
+      }
     </div>
   );
 }

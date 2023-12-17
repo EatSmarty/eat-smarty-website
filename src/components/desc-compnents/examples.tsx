@@ -3,7 +3,6 @@ import clsx from 'clsx';
 export default function Examples() {
   return (
     <div className={clsx(
-      'example',
       'mb-5',
       'text-left',
     )}

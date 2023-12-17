@@ -16,25 +16,25 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const HeaderHome: Story = {
+export const headerHome: Story = {
   args: {
     title: 'Home',
   },
 };
 
-export const HeaderAdditives: Story = {
+export const headerAdditives: Story = {
   args: {
     title: 'Additives',
   },
 };
 
-export const HeaderScan: Story = {
+export const headerScan: Story = {
   args: {
     title: 'Scan',
   },
 };
 
-export const HeaderSetting: Story = {
+export const headerSetting: Story = {
   args: {
     title: 'Setting',
   },

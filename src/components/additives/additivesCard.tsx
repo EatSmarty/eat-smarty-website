@@ -30,8 +30,8 @@ export default function AdditiveCart(
         'w-40',
         'md:h-48',
         `${isHalal == true ? 'bg-green-100' : undefined
-        || isHalal == false ? 'bg-red-100' : undefined
-          || isHalal == null ? 'bg-orange-100' : undefined}`,
+          || isHalal == false ? 'bg-red-100' : undefined
+            || isHalal == null ? 'bg-orange-100' : undefined}`,
       )}
     >
       <p>

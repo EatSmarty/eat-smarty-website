@@ -63,8 +63,8 @@ export default function Header() {
           width={35}
           height={35}
           alt="logo"
+          data-test="logo"
           className={clsx(
-            'logo',
             'ml-5 mr-1',
           )}
         />

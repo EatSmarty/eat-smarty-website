@@ -74,7 +74,7 @@ function Scanner(props) {
 
     // eslint-disable-next-line @typescript-eslint/no-use-before-define
     Quagga.onDetected(detected);
-  }, []);
+  });
 
   const detected = (result) => {
     onDetected(result.codeResult.code);

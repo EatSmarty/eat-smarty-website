@@ -32,10 +32,7 @@ export default function Category({ }) {
               'overlay',
             )}
             >
-              <div className={clsx(
-                'text',
-              )}
-              >
+              <div className={clsx()}>
                 Fruit
               </div>
             </div>
@@ -59,10 +56,7 @@ export default function Category({ }) {
               'overlay',
             )}
             >
-              <div className={clsx(
-                'text',
-              )}
-              >
+              <div>
                 Drink
               </div>
             </div>
@@ -86,10 +80,7 @@ export default function Category({ }) {
               'overlay',
             )}
             >
-              <div className={clsx(
-                'text',
-              )}
-              >
+              <div>
                 Vegetabls
               </div>
             </div>
@@ -113,10 +104,7 @@ export default function Category({ }) {
               'overlay',
             )}
             >
-              <div className={clsx(
-                'text',
-              )}
-              >
+              <div>
                 Bread
               </div>
             </div>
@@ -140,10 +128,7 @@ export default function Category({ }) {
               'overlay',
             )}
             >
-              <div className={clsx(
-                'text',
-              )}
-              >
+              <div>
                 FreshFood
               </div>
             </div>
@@ -167,10 +152,7 @@ export default function Category({ }) {
               'overlay',
             )}
             >
-              <div className={clsx(
-                'text',
-              )}
-              >
+              <div>
                 Ice-cream
               </div>
             </div>

@@ -3,7 +3,6 @@ import clsx from 'clsx';
 export default function Category() {
   return (
     <div className={clsx(
-      'desc',
       'my-5',
       'text-left',
     )}
@@ -16,7 +15,6 @@ export default function Category() {
         Category
       </span>
       <span className={clsx(
-        'desc',
         'text- text-xl',
       )}
       >

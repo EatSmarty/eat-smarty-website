@@ -15,7 +15,7 @@ export default function Page({ params }: ProductPageProps) {
     ),
   );
 
-  const indexProduct = MainProduct.filter((index) => index.id == params.id);
+  const indexProduct = MainProduct.filter((index) => index.id === params.id);
 
   const currentUrl = indexProduct.some((testId) => testId.id);
 

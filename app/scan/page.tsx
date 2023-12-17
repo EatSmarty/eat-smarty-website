@@ -28,6 +28,7 @@ export default function Page() {
         {camera && <Scanner onDetected={onDetected} />}
       </div>
       <button
+        type="button"
         className="button-tap-camera"
         onClick={() => setCamera(!camera)}
       >

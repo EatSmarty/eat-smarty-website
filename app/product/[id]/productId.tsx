@@ -5,7 +5,5 @@ interface ProductProps {
 }
 
 export default function Product({ params }: ProductProps) {
-  return (
-    <>{params.id}</>
-  );
+  return ({ params.id });
 }

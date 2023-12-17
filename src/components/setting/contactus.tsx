@@ -3,7 +3,7 @@ import clsx from 'clsx';
 export default function Contactus() {
   return (
     <section className={clsx(
-      'justefy-center flex flex-col items-center',
+      'flex flex-col items-center justify-center',
       'text-2xl',
       'mt-32',
     )}
@@ -11,7 +11,7 @@ export default function Contactus() {
       <p className={clsx(
         'title',
         'mb-10',
-        'text-bold text-[#0069FE]',
+        'font-bold text-[#0069FE]',
       )}
       >
         Contact Us

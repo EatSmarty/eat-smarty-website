@@ -1,6 +1,5 @@
 'use client';
 
-import clsx from 'clsx';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { MdArrowBackIos } from 'react-icons/md';
@@ -13,10 +12,10 @@ export default function DashboardLayout({
   const router = usePathname();
   return (
     <>
-      {router == `${router}`
+      {router === `${router}`
         ? (
           <Link href="/additives" className="fixed -left-7 top-3 z-20">
-            <MdArrowBackIos size={25} className={clsx('mx-10')} />
+            <MdArrowBackIos size={25} />
           </Link>
         ) : <></>}
       {children}

@@ -17,7 +17,7 @@ export default function Searchbarcode() {
   };
 
   const findIndex = product.findIndex((index) => index.barcode === searchField);
-  const findCode = product.some((item) => item.barcode == searchField);
+  const findCode = product.some((item) => item.barcode === searchField);
   const handleKeyDown = (e) => {
     if (e.key === 'Enter') {
     }
