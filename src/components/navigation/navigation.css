@@ -10,101 +10,10 @@ ul li{
     height: 50px;
     z-index: 1;
 }
-ul li .icon{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 75px;
-    font-size: 1.5em;
-    transform: translateY(10px);
-    transition: .5s;
-    color: #222327;
-    z-index: 1;
-}
 ul li.active .icon{
     display: flex;
     justify-content: center;
     align-items: center;
     transform: translateY(-15px);
     margin-bottom: 4px;
-}
-ul li:nth-child(1) .nav-text{
-    padding-left: 1px;
-}
-ul li:nth-child(2) .nav-text{
-    padding-left: -5px;
-}
-ul li:nth-child(3) .nav-text{
-    padding-left: 5px;
-}
-ul li .nav-text{
-    position: relative;
-    left: 5px;
-    color: #222327;
-    font-weight: 400;
-    font-size: 0.75em;
-    letter-spacing: 0.06em;
-    transition: .5s;
-    opacity: 0;
-    transform: translateY(20px);
-}
-ul li.active .nav-text{
-    opacity: 1;
-    transform: translateY(-2px);
-}
-.indicator{
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    top: -60%;
-    background-color: #0069FE;
-    border-radius: 30px;
-    /* box-shadow: 0px 2px 1px 3px rgba(0, 0, 0, 0.09); */
-    transition: 0.2s;
-}
-.shadow-indicator{
-    position: absolute;
-    width: 60px;
-    height: 28px;
-    top: 0%;
-    left: -5px;
-    background: rgba(214, 208, 208, 0.3);
-    /* background: rgb(94, 49, 49); */
-    z-index: 10;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    /* border-top-right-radius: 20px; */
-    z-index: -10;
-}
-
-.indicator1{
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    top: -60%;
-    background-color: #0069FE;
-    border-radius: 30px;
-    /* box-shadow: 0px 2px 1px 4px rgba(0, 0, 0, 0.09); */
-    transition: 0.2s;
-}
-.indicator2{
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    top: -60%;
-    /* box-shadow: 0px 2px 1px 4px rgba(0, 0, 0, 0.09); */
-    background-color: #0069FE;
-    border-radius: 30px;
-    transition: 0.2s;
-}
-.indicator3{
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    top: -60%;
-    /* box-shadow: 0px 2px 1px 4px rgba(0, 0, 0, 0.09); */
-    background-color: #0069FE;
-    border-radius: 30px;
-    transition: 0.2s;
 }

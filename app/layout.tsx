@@ -1,16 +1,17 @@
-import type { Metadata } from 'next';
-import { Mulish } from 'next/font/google';
-import './globals.css';
+import Header from '@/components/header/header';
 import Navigation from '@/components/navigation/navigation';
 import varient from '@/utilise/varient';
 import clsx from 'clsx';
-import Header from '@/components/header/header';
+import type { Metadata } from 'next';
+import { Mulish } from 'next/font/google';
+import './globals.css';
 
 const mulish = Mulish({
   subsets: ['latin'],
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('http://localhost:3000'),
   title: {
     default: `${varient.title}`,
     template: `%s | ${varient.title}`,

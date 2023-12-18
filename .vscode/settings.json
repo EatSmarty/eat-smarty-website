@@ -24,15 +24,10 @@
     // optional
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-        "source.formatDocument": true,
-        // add missing imports on save
-        "source.addMissingImports": true,
-        // remove unused imports on save
-        "source.organizeImports": true,
-        // fix all errors on save
-        "source.fixAll": true,
-        // fix all instead of just fix eslint
-        // "source.fixAll.eslint": true
+        "source.formatDocument": "explicit",
+        "source.addMissingImports": "explicit",
+        "source.organizeImports": "explicit",
+        "source.fixAll": "explicit"
     },
     // required to format on save
     "editor.formatOnSaveMode": "file",
