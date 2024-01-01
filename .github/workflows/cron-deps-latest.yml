@@ -37,8 +37,8 @@ jobs:
       - name: 🗨️ Create Pull Request
         uses: peter-evans/create-pull-request@v5
         with:
-          commit-message: "chore/LPPT-0000 (npm) 🤖 update dependencies to the latest version"
-          title: chore/LPPT-0000 (npm) 🤖 update dependencies to the latest version
+          commit-message: "chore/ES-0000 (npm) 🤖 update dependencies to the latest version"
+          title: chore/ES-0000 (npm) 🤖 update dependencies to the latest version
           body: |
             Dependencies automatically updated to the latest version!
             Ignoring ranges specified
@@ -46,7 +46,7 @@ jobs:
             - [x] Tests passed
             - [ ] Review
             Please review the changes and merge this Pull Request if it looks good.
-          branch: chore/LPPT-0000-npm-update-dependencies-latest
+          branch: chore/ES-0000-npm-update-dependencies-latest
           delete-branch: true
           # team-reviewers: developers
           branch-suffix: timestamp
