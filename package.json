@@ -47,7 +47,7 @@
     "eslint-plugin-storybook": "^0.6.15",
     "eslint-plugin-tailwindcss": "^3.14.1",
     "pnpm": "^8.15.1",
-    "postcss": "^8.4.33",
+    "postcss": "^8.4.34",
     "storybook": "^7.6.12",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.3.3"
