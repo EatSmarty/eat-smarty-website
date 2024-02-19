@@ -34,7 +34,7 @@
     "@types/react-collapse": "^5.0.4",
     "@types/react-dom": "^18.2.19",
     "@typescript-eslint/eslint-plugin": "^7.0.1",
-    "@typescript-eslint/parser": "^7.0.1",
+    "@typescript-eslint/parser": "^7.0.2",
     "autoprefixer": "^10.4.17",
     "chromatic": "^10.9.4",
     "clsx": "^2.1.0",
