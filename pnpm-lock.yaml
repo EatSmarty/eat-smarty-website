@@ -38,8 +38,8 @@ devDependencies:
     specifier: ^8.0.6
     version: 8.0.6
   '@storybook/addon-links':
-    specifier: ^8.0.6
-    version: 8.0.6(react@18.2.0)
+    specifier: ^8.0.8
+    version: 8.0.8(react@18.2.0)
   '@storybook/blocks':
     specifier: ^8.0.6
     version: 8.0.6(@types/react@18.2.75)(react-dom@18.2.0)(react@18.2.0)
@@ -2658,8 +2658,8 @@ packages:
       - vitest
     dev: true
 
-  /@storybook/addon-links@8.0.6(react@18.2.0):
-    resolution: {integrity: sha512-1UBNhQdwm17fXmuUKIsgvT6YenMbaGIYdr/9ApKmIMTKKO+emQ7APlsTbvasutcOkCd57rC1KZRfAHQpgU9wDQ==}
+  /@storybook/addon-links@8.0.8(react@18.2.0):
+    resolution: {integrity: sha512-iRI/W9I6fOom5zfZvsu53gfJtuhBSMmhgI/u5uZbAbfEoNL5D1PqpDXD4ygM8Vvlx90AZNZ2W5slEe7gCZOMyA==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
     peerDependenciesMeta:
