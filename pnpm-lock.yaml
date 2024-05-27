@@ -77,8 +77,8 @@ devDependencies:
     specifier: ^2.1.1
     version: 2.1.1
   cypress:
-    specifier: ^13.9.0
-    version: 13.9.0
+    specifier: ^13.10.0
+    version: 13.10.0
   eslint:
     specifier: ^9.3.0
     version: 9.3.0
@@ -5922,8 +5922,8 @@ packages:
       uniq: 1.0.1
     dev: false
 
-  /cypress@13.9.0:
-    resolution: {integrity: sha512-atNjmYfHsvTuCaxTxLZr9xGoHz53LLui3266WWxXJHY7+N6OdwJdg/feEa3T+buez9dmUXHT1izCOklqG82uCQ==}
+  /cypress@13.10.0:
+    resolution: {integrity: sha512-tOhwRlurVOQbMduX+KonoMeQILs2cwR3yHGGENoFvvSoLUBHmJ8b9/n21gFSDqjlOJ+SRVcwuh+fG/JDsHsT6Q==}
     engines: {node: ^16.0.0 || ^18.0.0 || >=20.0.0}
     hasBin: true
     requiresBuild: true
