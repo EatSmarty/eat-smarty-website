@@ -10,19 +10,17 @@
         "src": "0.jpg",
         "rating": 4,
         "what": "Halal",
-        "nutrition": [
-            {
-                "energy": 100,
-                "proteins": 1,
-                "carbohydrate": 1,
-                "sugars": 1,
-                "fat": 1,
-                "fibre": 1,
-                "sodium": 1,
-                "salt": 0,
-                "Saturates": 0
-            }
-        ],
+        "nutrition": {
+            "energy": 100,
+            "proteins": 1,
+            "carbohydrate": 1,
+            "sugars": 1,
+            "fat": 1,
+            "fibre": 1,
+            "sodium": 1,
+            "salt": 0,
+            "Saturates": 0
+        },
         "ingradient": [
             "Curcumin",
             "E 100(ii)",

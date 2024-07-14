@@ -1,33 +1,24 @@
+import type { IApproval } from './i-approval';
+import type { ICertificates } from './i-certificates';
+
 export interface IAdditive {
   id: number;
   code: number;
   eNumber: string;
   name: string;
+  description?: string;
   category?: string;
   danger?: number;
   source?: string;
   otherNames?: string[];
-  certificates?: {
-    isHalal?: boolean;
-    isVegan?: boolean;
-    isVegetrian?: boolean;
-    isKosher?: boolean;
-    isJecfa?: boolean;
-    isPregnant?: boolean;
-    isChildren?: boolean;
-    isAllergey?: boolean;
-    isCarcinogenic?: boolean;
-  }
+  certificates?: ICertificates;
   origin?: string;
-  usage?: string;
-  products?: string;
-  sideEffect?: string;
-  restrictions?: string;
-  approval?: {
-    usa?: boolean;
-    eur?: boolean;
-    australia?: boolean;
-  };
-  exampleUse?: string;
-  description?: string;
+  info?: {
+    usage?: string;
+    products?: string;
+    sideEffect?: string;
+    restrictions?: string;
+    exampleUse?: string;
+  }
+  approval?: IApproval;
 }
