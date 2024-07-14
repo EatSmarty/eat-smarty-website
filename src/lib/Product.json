@@ -23,6 +23,11 @@
                 "Saturates": 0
             }
         ],
+        "ingradient": [
+            "E100",
+            "E200",
+            "E300"
+        ],
         "isHalal": true,
         "isVegan": true,
         "isVegetrian": true,

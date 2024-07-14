@@ -15,6 +15,27 @@ export async function GET(
       additive.eNumber.toLowerCase() === additiveId.toLowerCase()
     ),
   );
+
+  if (selectedAdditive.length === 0) {
+    return Response.json({
+      okay: false,
+      error: 'Additive not found!',
+    }, {
+      status: 404,
+    });
+  }
+
+  if (selectedAdditive.length > 1) {
+    // TODO: log this error to the server and notify the admin
+
+    return Response.json({
+      okay: false,
+      error: 'Multiple additives found! Please contact the administrator!',
+    }, {
+      status: 501,
+    });
+  }
+
   const sampleResponse: IApiResponse = {
     okay: true,
     result: {
