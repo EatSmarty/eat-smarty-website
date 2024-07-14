@@ -35,7 +35,7 @@ export default function Container({ params }: ContainerInterface) {
 
   return (
     <div className={clsx(
-      'w-full max-w-[1280px]',
+      'w-full max-w-screen-xl',
       'px-10 md:px-10',
       'mx-auto',
       'border-b',

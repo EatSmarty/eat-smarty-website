@@ -12,7 +12,7 @@ export default function Features() {
       <div className={clsx(
         'flex items-stretch justify-center',
         'rounded',
-        'h-40 w-40',
+        'size-40',
         'shadow',
         'my-5',
       )}
@@ -28,7 +28,7 @@ export default function Features() {
             viewBox="0 0 24 24"
             stroke="currentColor"
             className={clsx(
-              'h-10 w-10',
+              'size-10',
               'duration-200 hover:text-[#0069FE]',
               'text-gray-500',
             )}
@@ -49,7 +49,7 @@ export default function Features() {
       <div className={clsx(
         'flex items-stretch justify-center',
         'rounded',
-        'h-40 w-40',
+        'size-40',
         'shadow',
         'm-5',
       )}
@@ -65,7 +65,7 @@ export default function Features() {
             viewBox="0 0 24 24"
             stroke="currentColor"
             className={clsx(
-              'h-10 w-10',
+              'size-10',
               'duration-200 hover:text-[#0069FE]',
               'text-gray-500',
             )}
@@ -91,7 +91,7 @@ export default function Features() {
       <div className={clsx(
         'flex items-stretch justify-center',
         'rounded',
-        'h-40 w-40',
+        'size-40',
         'shadow',
         'm-5',
       )}
@@ -107,7 +107,7 @@ export default function Features() {
             viewBox="0 0 24 24"
             stroke="currentColor"
             className={clsx(
-              'h-10 w-10',
+              'size-10',
               'duration-200 hover:text-[#0069FE]',
               'text-gray-500',
             )}
@@ -140,7 +140,7 @@ export default function Features() {
       <div className={clsx(
         'flex items-stretch justify-center',
         'rounded',
-        'h-40 w-40',
+        'size-40',
         'shadow',
         'm-5',
       )}
@@ -156,7 +156,7 @@ export default function Features() {
             viewBox="0 0 24 24"
             stroke="currentColor"
             className={clsx(
-              'h-10 w-10',
+              'size-10',
               'duration-200 hover:text-[#0069FE]',
               'text-gray-500',
             )}

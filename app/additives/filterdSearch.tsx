@@ -15,11 +15,10 @@ export default function FilterdSearch({ additives }) {
     ),
   );
 
-  const handleChange = (e:
-    {
-      target:
-      { value: React.SetStateAction<string>; };
-    }) => {
+  const handleChange = (e: {
+    target:
+    { value: React.SetStateAction<string>; };
+  }) => {
     setSearchField(e.target.value);
   };
 

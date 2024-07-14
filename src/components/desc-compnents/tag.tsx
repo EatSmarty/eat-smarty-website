@@ -11,7 +11,7 @@ export default function Tag() {
         'inline-block',
         'bg-[#4ade80]',
         'rounded-full',
-        'text-[#fff]',
+        'text-white',
       )}
       >
         E-100
@@ -21,7 +21,7 @@ export default function Tag() {
         'inline-block',
         'bg-[#4ade80]',
         'rounded-full',
-        'text-[#fff]',
+        'text-white',
       )}
       >
         Curcumin
@@ -31,7 +31,7 @@ export default function Tag() {
         'inline-block',
         'bg-[#4ade80]',
         'rounded-full',
-        'text-[#fff]',
+        'text-white',
       )}
       >
         Turmeric
@@ -41,7 +41,7 @@ export default function Tag() {
         'inline-block',
         'bg-[#4ade80]',
         'rounded-full',
-        'text-[#fff]',
+        'text-white',
       )}
       >
         Turmeric extract
@@ -51,7 +51,7 @@ export default function Tag() {
         'inline-block',
         'bg-[#4ade80]',
         'rounded-full',
-        'text-[#fff]',
+        'text-white',
       )}
       >
         Curcumin powder

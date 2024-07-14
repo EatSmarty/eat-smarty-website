@@ -26,7 +26,7 @@ export default function Contactus() {
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
-          className="wave h-10 w-10 text-yellow-400"
+          className="wave size-10 text-yellow-400"
         >
           <path d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967
                     8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0
@@ -50,7 +50,7 @@ export default function Contactus() {
         <a
           className={clsx(
             'bg-[#0069FE]',
-            'text-[#fff]',
+            'text-white',
             'rounded',
             'mb-5  p-1.5',
           )}
