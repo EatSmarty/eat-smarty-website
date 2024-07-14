@@ -7,7 +7,7 @@ export async function GET(
   { params }: { params: { id: string } },
 ) {
   const additiveId = params.id;
-  const additiveList: IAdditive[] = additivesList;
+  const additiveList: IAdditive[] = additivesList as IAdditive[];
 
   // filter the additiveList by id
   const selectedAdditive = additiveList.filter(

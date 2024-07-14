@@ -18,7 +18,6 @@ type Story = StoryObj<typeof meta>;
 
 export const halalCard: Story = {
   args: {
-    code: 100,
     enumber: 'E100',
     name: 'Curcumin',
     isHalal: true,
@@ -29,7 +28,6 @@ export const halalCard: Story = {
 
 export const haramCard: Story = {
   args: {
-    code: 102,
     enumber: 'E102',
     name: 'Tartrazine',
     isHalal: false,
@@ -40,7 +38,6 @@ export const haramCard: Story = {
 
 export const mushboohCard: Story = {
   args: {
-    code: 101,
     enumber: 'E101',
     name: 'Riboflavin',
     isHalal: null,

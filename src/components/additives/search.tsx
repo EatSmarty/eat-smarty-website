@@ -1,5 +1,5 @@
-import clsx from 'clsx';
 import AdditiveCart from '@/components/additives/additivesCard';
+import clsx from 'clsx';
 
 export default function Search({ filteredAdditives }) {
   const filtered = filteredAdditives?.map((additive) => (
@@ -13,7 +13,6 @@ export default function Search({ filteredAdditives }) {
         name={additive.name}
         source={additive.source}
         danger={additive.danger}
-        code={additive.code}
       />
     </div>
   ));

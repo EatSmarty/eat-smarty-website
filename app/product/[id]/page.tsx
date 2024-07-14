@@ -1,7 +1,6 @@
-import React from 'react';
 import Container from '@/components/products/container';
-import clsx from 'clsx';
 import ProductJson from '@/lib/Product.json';
+import clsx from 'clsx';
 import { notFound } from 'next/navigation';
 
 interface ProductPageProps {
@@ -28,7 +27,7 @@ export default function Page({ params }: ProductPageProps) {
       'flex justify-center',
     )}
     >
-      <Container params={params} danger={5} />
+      <Container params={params} />
     </div>
   );
 }
