@@ -7,17 +7,19 @@ export interface IAdditive {
   danger?: number;
   source?: string;
   otherNames?: string[];
-  isHalal?: boolean;
-  isVegan?: boolean;
-  isVegetrian?: boolean;
-  isKosher?: boolean;
-  isJecfa?: boolean;
-  isPregnant?: boolean;
-  isChildren?: boolean;
-  isAllergey?: boolean;
-  isCarcinogenic?: boolean;
+  certificates?: {
+    isHalal?: boolean;
+    isVegan?: boolean;
+    isVegetrian?: boolean;
+    isKosher?: boolean;
+    isJecfa?: boolean;
+    isPregnant?: boolean;
+    isChildren?: boolean;
+    isAllergey?: boolean;
+    isCarcinogenic?: boolean;
+  }
   origin?: string;
-  function?: string;
+  usage?: string;
   products?: string;
   sideEffect?: string;
   restrictions?: string;
