@@ -26,13 +26,17 @@
             "E 100(ii)",
             "Vitamin B2"
         ],
-        "isHalal": true,
-        "isVegan": true,
-        "isVegetrian": true,
+        "consume": {
+            "isHalal": true,
+            "isHaram": false,
+            "isMushbooh": false,
+            "isVegan": true,
+            "isVegetrian": true,
+            "isChildren": true,
+            "isPregnant": false
+        },
         "isKosher": true,
         "isJecfa": true,
-        "isPregnant": false,
-        "isChildren": true,
         "isAllergey": false,
         "isCarcinogenic": false
     },

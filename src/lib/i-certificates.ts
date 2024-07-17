@@ -1,5 +1,4 @@
 export interface ICertificates {
-  isHalal?: boolean;
   isVegan?: boolean;
   isVegetrian?: boolean;
   isKosher?: boolean;
