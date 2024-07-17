@@ -1,7 +1,7 @@
 'use client';
 
 import additives from '@/lib/additives.json';
-import FilterdSearch from './filterdSearch';
+import FilterdSearch from './filterd-search';
 
 export default function Page() {
   return (
