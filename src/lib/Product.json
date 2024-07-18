@@ -19,14 +19,14 @@
             "fibre": 1,
             "sodium": 1,
             "salt": 0,
-            "Saturates": 0
+            "saturates": 0
         },
         "ingradient": [
             "Curcumin",
             "E 100(ii)",
             "Vitamin B2"
         ],
-        "consume": {
+        "certificates": {
             "isHalal": true,
             "isHaram": false,
             "isMushbooh": false,
@@ -60,7 +60,7 @@
                 "fibre": 2,
                 "sodium": 1,
                 "salt": 0,
-                "Saturates": 0
+                "saturates": 0
             }
         ],
         "isHalal": false,
@@ -93,7 +93,7 @@
                 "fibre": 2,
                 "sodium": 1,
                 "salt": 0,
-                "Saturates": 0
+                "saturates": 0
             }
         ],
         "isHalal": null,
