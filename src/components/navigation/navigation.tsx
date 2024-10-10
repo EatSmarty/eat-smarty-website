@@ -18,7 +18,7 @@ export default function Navigation() {
       'w-full max-w-[1280px]',
       'bg-[#F3F0FF]',
       'shadow',
-      'fixed bottom-0'
+      'fixed bottom-0 '
     )}
     >
       <ul className={clsx(
