@@ -35,7 +35,9 @@ export default function Header() {
 
   return (
     <header className={clsx(
-      'h-[50px] w-full fixed',
+      'h-[50px]',
+      'w-full max-w-[1280px]',
+      'fixed top-0',
       'md:h-[50px]',
       'px-5 md:px-10',
       'bg-[#F3F0FF]',

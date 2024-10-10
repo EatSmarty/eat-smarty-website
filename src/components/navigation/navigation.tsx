@@ -15,7 +15,7 @@ export default function Navigation() {
   return (
     <nav className={clsx(
       'flex items-center justify-center',
-      'w-full',
+      'w-full max-w-[1280px]',
       'bg-[#F3F0FF]',
       'shadow',
       'fixed bottom-0'
