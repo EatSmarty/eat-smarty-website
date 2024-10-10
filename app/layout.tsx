@@ -1,5 +1,6 @@
 import Header from '@/components/header/header';
 import Navigation from '@/components/navigation/navigation';
+import Wrapper from '@/components/wrapper';
 import varient from '@/utilise/varient';
 import clsx from 'clsx';
 import type { Metadata } from 'next';
@@ -60,18 +61,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={clsx(
-        'flex items-center justify-center',
-      )}
-      >
-        <div className={clsx(
-          `${mulish.className}`,
-          'w-full',
-        )}
-        >
+        `${mulish.className}`,
+      )}>
+        <Wrapper>
           <Header />
           {children}
           <Navigation />
-        </div>
+        </Wrapper>
       </body>
     </html>
   );

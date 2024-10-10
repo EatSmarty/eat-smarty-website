@@ -1,31 +1,23 @@
 'use client';
 
-import clsx from 'clsx';
-import Features from '@/components/home/features';
-import CopyRight from '@/components/home/copyright';
-import Slogan from '@/components/home/slogan';
 import Banner from '@/components/home/banner';
+import Features from '@/components/home/features';
 import Searchbarcode from '@/components/home/searchbarcode';
+import Slogan from '@/components/home/slogan';
+import clsx from 'clsx';
 
 export default function Page() {
   return (
     <main className={clsx(
-      'min-h-screen',
+      // 'min-h-screen',
       'flex flex-col items-center justify-between',
-      'my-16',
+      'p-5'
     )}
     >
       <Banner />
       <Slogan />
-      <span className={clsx(
-        'w-full md:w-1/2',
-        'px-3',
-      )}
-      >
-        <Searchbarcode />
-      </span>
+      <Searchbarcode />
       <Features />
-      <CopyRight />
     </main>
   );
 }

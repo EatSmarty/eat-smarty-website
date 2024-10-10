@@ -1,10 +1,10 @@
 'use client';
 
-import Image from 'next/image';
 import clsx from 'clsx';
+import Image from 'next/image';
+import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { IoIosArrowBack } from 'react-icons/io';
-import Link from 'next/link';
 
 export default function Header() {
   const router = usePathname();
@@ -35,7 +35,7 @@ export default function Header() {
 
   return (
     <header className={clsx(
-      'h-[50px] w-full',
+      'h-[50px] w-full sticky',
       'md:h-[50px]',
       'px-5 md:px-10',
       'bg-white',
@@ -44,7 +44,6 @@ export default function Header() {
       'z-20',
       'top-0',
       'shadow',
-      'fixed',
     )}
     >
       <div className={clsx(
