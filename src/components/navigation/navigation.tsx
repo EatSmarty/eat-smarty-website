@@ -15,13 +15,10 @@ export default function Navigation() {
   return (
     <nav className={clsx(
       'flex items-center justify-center',
-      'relative',
       'w-full',
-      'sticky bottom-0',
       'bg-[#F3F0FF]',
-      'shadow'
-      // 'rounded-tl-xl',
-      // 'rounded-tr-xl',
+      'shadow',
+      'fixed bottom-0'
     )}
     >
       <ul className={clsx(

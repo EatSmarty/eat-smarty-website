@@ -11,7 +11,7 @@ export default function Wrapper({ children, className }: wrapperProps) {
         <div className={clsx(
             "w-full max-w-[1280px]",
             " flex justify-between flex-col min-h-screen",
-            "mx-auto",
+            "mx-auto py-20",
             `${className}` || ""
         )}>
             {children}

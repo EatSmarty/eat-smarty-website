@@ -35,12 +35,10 @@ export default function Header() {
 
   return (
     <header className={clsx(
-      'h-[50px] w-full sticky',
+      'h-[50px] w-full fixed',
       'md:h-[50px]',
       'px-5 md:px-10',
       'bg-[#F3F0FF]',
-      // 'rounded-bl-xl',
-      // 'rounded-br-xl',
       'font-bold',
       'flex items-center justify-between md:justify-around',
       'z-20',
