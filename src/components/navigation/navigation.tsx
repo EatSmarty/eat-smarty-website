@@ -19,14 +19,14 @@ export default function Navigation() {
       'w-full',
       'sticky bottom-0',
       'bg-[#F3F0FF]',
-      'rounded-tl-xl',
-      'rounded-tr-xl',
+      'shadow'
+      // 'rounded-tl-xl',
+      // 'rounded-tr-xl',
     )}
     >
       <ul className={clsx(
         'h-14 w-full',
         'flex items-center justify-around',
-        'shadow-2xl',
       )}
       >
         <li>
@@ -38,7 +38,7 @@ export default function Navigation() {
               'mt-4',
             )}
             >
-              <AiOutlineHome color="#000" size="25px" />
+              <AiOutlineHome color="#5F33E1" size="25px" />
             </span>
           </Link>
           <span className={clsx(
@@ -67,14 +67,6 @@ export default function Navigation() {
               <AiOutlineScan color="#fff" size="25px" />
             </span>
           </Link>
-          {/* <span className={clsx(
-            'absolute left-[5px] top-0',
-            'h-7 w-14',
-            'bg-[#F9F9F9]',
-            'rounded-b-full',
-            '-z-10',
-          )}
-          /> */}
         </li>
         <li>
           <Link href="/additives">
@@ -85,7 +77,7 @@ export default function Navigation() {
               'mt-4',
             )}
             >
-              <AiOutlineUnorderedList color="#000" size="25px" />
+              <AiOutlineUnorderedList color="#5F33E1" size="25px" />
             </span>
           </Link>
           <span className={clsx(

@@ -62,8 +62,30 @@ export default function RootLayout({
     <html lang="en">
       <body className={clsx(
         `${mulish.className}`,
+
       )}>
-        <Wrapper>
+        <Wrapper className={clsx(
+          'bg-[#F3F0FF]',
+          '-z-20',
+          'relative',
+          'overflow-hidden'
+        )}>
+          <span className={clsx(
+            'w-60 h-60 rounded-full',
+            'bg-[#FEEEB7]',
+            'absolute',
+            '-z-10',
+            '-right-10 top-24',
+            'blur-3xl'
+          )}></span>
+          <span className={clsx(
+            'w-40 h-40 rounded-full',
+            'bg-[#5f33e157]',
+            'absolute',
+            '-z-10',
+            '-left-10 bottom-60',
+            'blur-3xl'
+          )}></span>
           <Header />
           {children}
           <Navigation />

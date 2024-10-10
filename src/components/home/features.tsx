@@ -29,7 +29,7 @@ export default function Features() {
             stroke="currentColor"
             className={clsx(
               'size-10',
-              'duration-200 hover:text-[#0069FE]',
+              'duration-200 hover:text-[#5F33E1]',
               'text-gray-500',
             )}
           >
@@ -66,7 +66,7 @@ export default function Features() {
             stroke="currentColor"
             className={clsx(
               'size-10',
-              'duration-200 hover:text-[#0069FE]',
+              'duration-200 hover:text-[#5F33E1]',
               'text-gray-500',
             )}
           >
@@ -108,7 +108,7 @@ export default function Features() {
             stroke="currentColor"
             className={clsx(
               'size-10',
-              'duration-200 hover:text-[#0069FE]',
+              'duration-200 hover:text-[#5F33E1]',
               'text-gray-500',
             )}
           >
@@ -157,7 +157,7 @@ export default function Features() {
             stroke="currentColor"
             className={clsx(
               'size-10',
-              'duration-200 hover:text-[#0069FE]',
+              'duration-200 hover:text-[#5F33E1]',
               'text-gray-500',
             )}
           >

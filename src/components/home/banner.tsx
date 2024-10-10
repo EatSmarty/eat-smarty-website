@@ -1,5 +1,5 @@
-import clsx from 'clsx';
 import varient from '@/utilise/varient';
+import clsx from 'clsx';
 
 export default function Banner() {
   return (
@@ -15,7 +15,7 @@ export default function Banner() {
         >
           <span className={clsx(
             'title',
-            'text-[#0069FE]',
+            'text-[#5F33E1]',
             'mr-2 font-bold',
           )}
           >
