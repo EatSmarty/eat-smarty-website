@@ -8,10 +8,9 @@ import clsx from 'clsx';
 export default function Page() {
   return (
     <main className={clsx(
-      'flex flex-col items-center justify-between',
+      'flex flex-col items-center',
     )}
     >
-
       <Banner />
       <Slogan />
       {/* <Searchbarcode /> */}
