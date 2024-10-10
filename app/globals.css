@@ -330,7 +330,7 @@ input:checked + .slider:before {
     width: 80%;
   }
   .list-container{
-    width: 350px;
+    width: 400px;
   }
 }
 .halal{

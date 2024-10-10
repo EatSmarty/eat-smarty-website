@@ -30,11 +30,11 @@ export default function FilterdSearch({ additives }) {
 
   return (
     <div className={clsx(
-      'my-20 flex flex-col items-center justify-center',
+      'my-10 flex flex-col items-center justify-center',
     )}
     >
       <div className={clsx(
-        'w-[900px] px-3',
+        'w-full px-3',
       )}
       >
         <Searchinput

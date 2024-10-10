@@ -1,8 +1,7 @@
 import clsx from 'clsx';
 import Link from 'next/link';
-import { SourceImage } from './source';
 import Ishalal from './ishalal';
-import Gauge from './gauge';
+import { SourceImage } from './source';
 
 interface AdditivesInterface {
   // code: number | null;
@@ -31,6 +30,7 @@ export default function AdditiveCart({
         'hover:shadow-lg',
         'w-40',
         'md:h-48',
+        'shadow rounded-full bg-[#F3F0FF] md:rounded',
 
         // `${isHalal === true ? 'bg-green-100' : undefined
         //   || isHalal === false ? 'bg-red-100' : undefined
@@ -40,7 +40,9 @@ export default function AdditiveCart({
       <p>
         {enumber}
       </p>
-      <p>
+      <p className={clsx(
+        'overflow-hidden'
+      )}>
         {name}
       </p>
       <div className={clsx(
@@ -48,7 +50,7 @@ export default function AdditiveCart({
         'flex flex-col items-center justify-center',
       )}
       >
-        <Gauge danger={danger} />
+        {/* <Gauge danger={danger} /> */}
         <div className={clsx(
           'flex items-center justify-center',
           'mt-3',
