@@ -20,4 +20,11 @@ const myVarient = {
   keywords,
 };
 
+const colors = {
+  "primary-color": "#5F33E1",
+  'white-bg': '#FFFFFF',
+  'black-bg': '#000000',
+  'second-color': '#F3F0FF',
+}
+
 export default myVarient;

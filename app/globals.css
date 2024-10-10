@@ -90,17 +90,6 @@ body {
   height: 200px;
 }
 
-.navigation-bottom{
-  height: 50px;
-  /* max-width: 758px; */
-  background-color: #fff;
-  z-index: 2;
-  position: fixed;
-  bottom: 0;
-  padding: 0 10px;
-  box-shadow: 0px -4px 20px 2px rgba(0,0,0,0.05);
-}
-
 .history-item{
   background-color: rgb(var(--element-color-rgb));
 }
