@@ -7,8 +7,8 @@ export default function Searchinput({ handleChange, placeholder, keyDown }) {
       className={clsx(
         'flex items-center justify-start',
         'w-full',
-        'bg-blue-400',
-        'rounded',
+        'bg-[#b3a1fa]',
+        'rounded-full',
         'py-2',
       )}
       htmlFor="search-input"

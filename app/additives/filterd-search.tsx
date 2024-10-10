@@ -34,7 +34,7 @@ export default function FilterdSearch({ additives }) {
     )}
     >
       <div className={clsx(
-        'w-full px-3 md:w-3/5',
+        'w-[900px] px-3',
       )}
       >
         <Searchinput
