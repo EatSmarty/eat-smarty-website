@@ -1,10 +1,9 @@
 import clsx from 'clsx';
-import React from 'react';
 
 interface BadgeChekcProps {
   truthyOption: JSX.Element
   title: string
-  isTrue: boolean | null
+  isTrue: boolean | null | undefined
 }
 
 export default function Badgecheck(
