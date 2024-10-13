@@ -4,19 +4,16 @@ export default function Additivesexample({ exampleUse }) {
   return (
     <div className={clsx(
       'my-5',
+      'flex flex-col'
     )}
     >
       <h4 className={clsx(
         'text-l text-gray-500',
-        'mx-2'
       )}
       >
         usage
       </h4>
-      <p className={clsx(
-        'ml-2',
-      )}
-      >
+      <p>
         {exampleUse}
       </p>
     </div>

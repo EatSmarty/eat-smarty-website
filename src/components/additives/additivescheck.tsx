@@ -1,5 +1,4 @@
 import clsx from 'clsx';
-import React from 'react';
 
 export default function Additivescheck({ allergy, halal }) {
   return (
@@ -10,12 +9,12 @@ export default function Additivescheck({ allergy, halal }) {
       <div className={clsx(
         'mx-1 my-5 p-1',
         'flex items-center',
-        'bg-red-500',
+        // 'bg-red-500',
         'rounded',
       )}
       >
         <h4 className={clsx(
-          'text-white',
+          'text-gray-500',
         )}
         >
           Allergy
@@ -30,12 +29,12 @@ export default function Additivescheck({ allergy, halal }) {
       <div className={clsx(
         'mx-1 my-5 p-1',
         'flex items-center',
-        'bg-red-500',
+        // 'bg-red-500',
         'rounded',
       )}
       >
         <h4 className={clsx(
-          'text-white',
+          'text-gray-500',
         )}
         >
           Halal
