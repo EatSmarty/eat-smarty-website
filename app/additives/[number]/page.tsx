@@ -34,28 +34,35 @@ const page: FC<PageProps> = ({ params }) => {
   }
 
   const myEnumber = currentEnumber[0];
+
   const isHalal = myEnumber?.isHalal === true;
   const isHaram = myEnumber?.isHalal === false;
   const isMusbouh = myEnumber?.isHalal === null;
 
   return (
-    <>
+    <div className={clsx(
+      'flex justify-center flex-col'
+    )}>
       <div className={clsx(
-        'flex justify-center',
-        'text-xl',
-        'my-12',
-        isHalal && 'bg-green-100',
-        isHaram && 'bg-red-100',
-        isMusbouh && 'bg-orange-100',
+        'flex justify-center items-center w-full',
+        'text-l',
       )}
       >
         <p className={clsx(
-          'mx-2',
+          'px-2 py-1',
+          'text-center',
+          'rounded-full',
+          'font-semibold',
+          isHalal && 'bg-green-100',
+          isHaram && 'bg-red-100',
+          isMusbouh && 'bg-orange-100',
+          isHalal && 'text-green-500',
+          isHaram && 'text-red-500',
+          isMusbouh && 'text-orange-500',
         )}
         >
           {params.number}
         </p>
-        <div>-</div>
         <h3 className={clsx(
           'mx-2',
         )}
@@ -71,6 +78,7 @@ const page: FC<PageProps> = ({ params }) => {
         <Additivessource
           origin={currentEnumber[0]?.source}
           category={currentEnumber[0]?.category}
+          source={currentEnumber[0]?.source}
         />
         <Additivesothername
           othername={currentEnumber[0]?.otherNames}
@@ -91,7 +99,7 @@ const page: FC<PageProps> = ({ params }) => {
         />
         <Approval />
       </div>
-    </>
+    </div>
   );
 };
 

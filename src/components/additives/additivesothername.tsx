@@ -1,5 +1,4 @@
 import clsx from 'clsx';
-import React from 'react';
 
 export default function Additivesothername({ othername }) {
   return (
@@ -8,14 +7,9 @@ export default function Additivesothername({ othername }) {
       'flex items-center',
     )}
     >
-      <h4 className={clsx(
-        'text-xl text-slate-500',
-      )}
-      >
-        other name |
-      </h4>
       <p className={clsx(
         'mx-2',
+        'text-sm text-gray-500'
       )}
       >
         {othername}

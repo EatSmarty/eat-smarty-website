@@ -1,16 +1,19 @@
 'use client';
 
 import clsx from 'clsx';
-import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { IoIosArrowBack } from 'react-icons/io';
 
+
 export default function Header() {
-  const router = usePathname();
+  const currentRoute = usePathname();
+  const checkRoute = currentRoute.includes("additives/E");
+  const paramsEnumber = currentRoute.slice(11)
+
 
   let mainRoute;
-  switch (router) {
+  switch (currentRoute) {
     case '/':
       mainRoute = 'Home';
       break;
@@ -52,32 +55,24 @@ export default function Header() {
         'flex items-center justify-center',
       )}
       >
-        {router === '/setting/[]'
-          || router === '/additives/[]'
+        {checkRoute
           ? (
-            <Link href="/setting">
-              <IoIosArrowBack size={30} />
+            <Link href="/additives/">
+              <IoIosArrowBack size={25} />
             </Link>
-          ) : ''}
-        <Image
-          src="https://github.com/EatSmarty/eat-smarty-website/blob/main/public/cardiogram.png?raw=true"
-          width={35}
-          height={35}
-          alt="logo"
-          data-test="logo"
-          className={clsx(
-            'ml-5 mr-1',
-          )}
-        />
+          ) : null}
+
         <h1 className={clsx(
           'ml-1 text-xl font-bold',
         )}
         >
-          Eatsmarty
+          {
+            checkRoute
+              ? paramsEnumber
+              : <p>Eatsmarty</p>
+          }
         </h1>
       </div>
-      <span />
-      <span />
       <div>
         <h1 className={clsx(
           'ml-2 text-xl font-bold',
@@ -89,3 +84,4 @@ export default function Header() {
     </header>
   );
 }
+

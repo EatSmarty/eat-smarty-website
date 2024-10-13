@@ -1,26 +1,24 @@
 import clsx from 'clsx';
-import React from 'react';
+import { SourceImage } from './source';
 
-export default function Additivessource({ origin, category }) {
+export default function Additivessource({ origin, category, source }) {
   return (
     <div className={clsx(
       'flex items-center',
       'mt-5',
       'text-2xl',
-      'text-slate-500',
     )}
     >
-      <p>
+      <p className={clsx(
+        "mx-2"
+      )}>
         {origin}
-        {' '}
-        origin
       </p>
+      <SourceImage source={source} />
       <span className={clsx(
         'mx-2',
       )}
       >
-        {' '}
-        -
       </span>
       <p>
         {category}
