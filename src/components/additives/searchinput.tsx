@@ -21,6 +21,7 @@ export default function Searchinput({ handleChange, placeholder, keyDown }) {
           'search-input',
           'text-white',
           'placeholder:text-white',
+          'w-full'
         )}
         placeholder={placeholder}
         onChange={handleChange}
