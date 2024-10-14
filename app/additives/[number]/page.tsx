@@ -41,7 +41,7 @@ const page: FC<PageProps> = ({ params }) => {
 
   return (
     <div className={clsx(
-      'flex justify-center flex-col'
+      'flex flex-col justify-center'
     )}>
       <div className={clsx(
         'flex justify-center items-center w-full',
@@ -71,10 +71,11 @@ const page: FC<PageProps> = ({ params }) => {
         </h3>
       </div>
       <div className={clsx(
-        'flex flex-col items-center justify-center',
+        'flex flex-col justify-center items-center text-center',
         'm-5',
       )}
       >
+
         <Additivessource
           origin={currentEnumber[0]?.source}
           category={currentEnumber[0]?.category}
