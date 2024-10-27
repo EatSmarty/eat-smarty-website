@@ -23,14 +23,11 @@ export default function AdditiveCart({
     <Link
       href={`/additives/${enumber}`}
       className={clsx(
-        'list-container',
-        'flex flex-col items-center justify-between',
-        'rounded',
+        'flex items-center justify-between',
+        'w-full',
         'px-7 py-2',
         'hover:shadow-lg',
-        'w-40',
-        'md:h-48',
-        'shadow rounded-full bg-[#F3F0FF] md:rounded',
+        'shadow rounded-full md:rounded',
 
         // `${isHalal === true ? 'bg-green-100' : undefined
         //   || isHalal === false ? 'bg-red-100' : undefined

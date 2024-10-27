@@ -1,5 +1,6 @@
 'use client';
 
+import Colors from '@/utilise/varient';
 import clsx from 'clsx';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -16,7 +17,7 @@ export default function Navigation() {
     <nav className={clsx(
       'flex items-center justify-center',
       'w-full max-w-[1280px]',
-      'bg-[#F3F0FF]',
+      'bg-[#fff]',
       'shadow',
       'fixed bottom-0 '
     )}
@@ -35,12 +36,12 @@ export default function Navigation() {
               'mt-4',
             )}
             >
-              <AiOutlineHome color="#5F33E1" size="25px" />
+              <AiOutlineHome color={Colors.colors['primary-color']} size="25px" />
             </span>
           </Link>
           <span className={clsx(
             'h-1 w-7',
-            'bg-[#5F33E1]',
+            `bg-[#18DAA3]`,
             'drop-shadow-[0_0_14px_rgba(122,0,230,0.25)]',
             'relative z-10',
             'flex items-center justify-center',
@@ -57,11 +58,11 @@ export default function Navigation() {
               'flex items-center justify-center',
               'z-10',
               'size-[47px]',
-              'bg-[#5F33E1]',
+              'bg-[#E2F6F1]',
               'rounded-full',
             )}
             >
-              <AiOutlineScan color="#fff" size="25px" />
+              <AiOutlineScan color={Colors.colors['primary-color']} size="25px" />
             </span>
           </Link>
         </li>
@@ -74,12 +75,12 @@ export default function Navigation() {
               'mt-4',
             )}
             >
-              <AiOutlineUnorderedList color="#5F33E1" size="25px" />
+              <AiOutlineUnorderedList color={Colors.colors['primary-color']} size="25px" />
             </span>
           </Link>
           <span className={clsx(
             'h-1 w-7',
-            'bg-[#5F33E1]',
+            'bg-[#18DAA3]',
             'drop-shadow-[0_0_14px_rgba(122,0,230,0.25)]',
             'relative z-10',
             'flex items-center justify-center',

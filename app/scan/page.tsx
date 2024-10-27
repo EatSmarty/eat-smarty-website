@@ -1,18 +1,19 @@
 'use client';
 
-import { useState } from 'react';
-import clsx from 'clsx';
 import Scanner from '@/components/scan/Scanner';
+import clsx from 'clsx';
+import { useState } from 'react';
 import { BsUpcScan } from 'react-icons/bs';
 import './camera.css';
 
 export default function Page() {
   const [camera, setCamera] = useState(false);
-  const [result, setResult] = useState(null);
+  const [result, setResult] = useState(undefined);
 
   // eslint-disable-next-line @typescript-eslint/no-shadow
   const onDetected = (result) => {
     setResult(result);
+    console.log(result);
   };
   return (
     <div className={clsx(
@@ -36,10 +37,10 @@ export default function Page() {
         <p className={clsx(
           'font-bold',
           'text-2xl',
-          'mb-10',
+          'mb-10 text-red-800',
         )}
         >
-          {result || 'TapToScan'}
+          {result}
         </p>
       </button>
     </div>

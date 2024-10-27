@@ -43,7 +43,7 @@ export default function Header() {
       'fixed top-0',
       'md:h-[50px]',
       'px-5 md:px-10',
-      'bg-[#F3F0FF]',
+      'bg-[#fff] text-[#18DAA3]',
       'font-bold',
       'flex items-center justify-between md:justify-around',
       'z-20',
