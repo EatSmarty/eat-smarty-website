@@ -21,10 +21,10 @@ const myVarient = {
 };
 
 const colors = {
-  "primary-color": "#5F33E1",
+  'primary-color': '#18DAA3',
   'white-bg': '#FFFFFF',
   'black-bg': '#000000',
-  'second-color': '#F3F0FF',
+  'secondary-color': '#E2F6F1',
 }
 
-export default myVarient;
+export default { myVarient, colors };
