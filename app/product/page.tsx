@@ -1,7 +1,7 @@
+import Category from "@/components/home/category";
 
 export default function page({ params }) {
   return (
-    // <ProductPage params={params} />
-    <div>product</div>
+    <Category />
   );
 }

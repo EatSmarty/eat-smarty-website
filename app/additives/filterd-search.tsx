@@ -30,7 +30,7 @@ export default function FilterdSearch({ additives }) {
 
   return (
     <div className={clsx(
-      'my-10 flex flex-col items-center justify-center',
+      'flex flex-col items-center justify-center',
     )}
     >
       <div className={clsx(
