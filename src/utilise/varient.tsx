@@ -22,9 +22,11 @@ const myVarient = {
 
 const colors = {
   'primary-color': '#18DAA3',
+  'secondary-color': '#E2F6F1',
+  'white-text': '#FFFFFF',
+  'black-text': '#000000',
   'white-bg': '#FFFFFF',
   'black-bg': '#000000',
-  'secondary-color': '#E2F6F1',
 }
 
 export default { myVarient, colors };
