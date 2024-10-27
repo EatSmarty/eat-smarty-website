@@ -1,7 +1,4 @@
-<p align="center">
-    <img src="https://github.com/Halalvar/halalvar/blob/main/public/cardiogram.png?raw=true"
-        height="130">
-</p>
+![Screenshot 2024-10-25 085201](https://github.com/user-attachments/assets/c0da684e-b94f-4cf9-b78e-dc73c24a8586)
 
 # [🌐Eatsmarty](https://eatsmarty.com)
 
