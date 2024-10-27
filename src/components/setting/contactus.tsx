@@ -1,3 +1,4 @@
+import Color from '@/utilise/varient';
 import clsx from 'clsx';
 
 export default function Contactus() {
@@ -5,13 +6,13 @@ export default function Contactus() {
     <section className={clsx(
       'flex flex-col items-center justify-center',
       'text-2xl',
-      'mt-32',
     )}
     >
       <p className={clsx(
         'title',
         'mb-10',
-        'font-bold text-[#0069FE]',
+        'font-bold',
+        `text-[${Color.colors['primary-color']}]`
       )}
       >
         Contact Us
@@ -49,7 +50,7 @@ export default function Contactus() {
         </p>
         <a
           className={clsx(
-            'bg-[#0069FE]',
+            `bg-[${Color.colors['primary-color']}]`,
             'text-white',
             'rounded',
             'mb-5  p-1.5',

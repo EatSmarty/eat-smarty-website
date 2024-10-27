@@ -1,4 +1,4 @@
-import React from 'react';
+import Colors from '@/utilise/varient';
 import { Accordion, AccordionItem } from '@nextui-org/accordion';
 import clsx from 'clsx';
 
@@ -102,17 +102,17 @@ function Faq() {
           className={clsx(
             'text-left text-xl',
             'm-3 p-2',
-            'bg-blue-500',
+            `bg-[${Colors.colors['secondary-color']}]`,
             'rounded',
             'border-none',
-            'text-white',
+            'text-[#38373f] font-semibold'
           )}
           key={index.id}
           aria-label={index.title}
           title={index.title}
         >
           <p
-            className="text-base"
+            className="text-base font-medium"
           >
             {index.desc}
           </p>

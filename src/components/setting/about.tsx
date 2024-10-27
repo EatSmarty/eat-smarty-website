@@ -1,3 +1,4 @@
+import Colors from '@/utilise/varient';
 import clsx from 'clsx';
 import Link from 'next/link';
 import { MdArrowForwardIos } from 'react-icons/md';
@@ -6,7 +7,6 @@ export default function About() {
   return (
     <section className={clsx(
       'about',
-      'mt-28',
       'text-2xl',
     )}
     >
@@ -21,8 +21,8 @@ export default function About() {
             'w-full',
             'mt-3 py-3',
             'cursor-pointer',
-            'rounded',
-            ' bg-blue-500',
+            'rounded-full',
+            `bg-[${Colors.colors['primary-color']}]`,
           )}
         >
           <div className={clsx(
@@ -46,8 +46,8 @@ export default function About() {
             'w-full',
             'mt-3 py-3',
             'cursor-pointer',
-            'rounded',
-            'bg-blue-500',
+            'rounded-full',
+            `bg-[${Colors.colors['primary-color']}]`,
           )}
         >
           <div className={clsx(
