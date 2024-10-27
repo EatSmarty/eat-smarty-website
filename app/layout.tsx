@@ -1,7 +1,7 @@
 import Header from '@/components/header/header';
 import Navigation from '@/components/navigation/navigation';
 import Wrapper from '@/components/wrapper';
-import varient from '@/utilise/varient';
+import Varient from '@/utilise/varient';
 import clsx from 'clsx';
 import type { Metadata } from 'next';
 import { Mulish } from 'next/font/google';
@@ -14,18 +14,18 @@ const mulish = Mulish({
 export const metadata: Metadata = {
   metadataBase: new URL('http://localhost:3000'),
   title: {
-    default: `${varient.title}`,
-    template: `%s | ${varient.title}`,
+    default: `${Varient.myVarient.title}`,
+    template: `%s | ${Varient.myVarient.title}`,
   },
   description: 'ensuring your dietary preferences are met'
     + 'with absolute ease and confidence',
-  keywords: `${varient.keywords}`,
+  keywords: `${Varient.myVarient.keywords}`,
   openGraph: {
-    title: `${varient.title}`,
+    title: `${Varient.myVarient.title}`,
     description: 'We specialize in seamlessly identifying halal food for you'
       + 'by simply scanning the products barcode',
     url: 'https://eatsmarty.com/',
-    siteName: `${varient.brandName}`,
+    siteName: `${Varient.myVarient.brandName}`,
     images: [
       {
         url: '',
@@ -71,18 +71,10 @@ export default function RootLayout({
         )}>
           <span className={clsx(
             'w-60 h-60 rounded-full',
-            'bg-[#FEEEB7]',
+            'bg-[#E2F6F1]',
             'absolute',
             'z-0',
             '-right-10 top-24',
-            'blur-3xl'
-          )}></span>
-          <span className={clsx(
-            'w-40 h-40 rounded-full',
-            'bg-[#5f33e157]',
-            'absolute',
-            'z-0',
-            '-left-10 bottom-60',
             'blur-3xl'
           )}></span>
           <div className={clsx(

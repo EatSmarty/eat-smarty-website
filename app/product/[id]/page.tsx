@@ -8,13 +8,12 @@ interface ProductPageProps {
 }
 
 export default function Page({ params }: ProductPageProps) {
-  const mainProduct = ProductJson.filter(
+
+  const indexProduct = ProductJson.filter(
     (product: { id: number; }) => (
-      product.id
+      product.id == params.id
     ),
   );
-
-  const indexProduct = mainProduct.filter((index) => index.id === params.id);
 
   const currentUrl = indexProduct.some((testId) => testId.id);
 
