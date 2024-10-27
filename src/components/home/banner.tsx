@@ -15,11 +15,11 @@ export default function Banner() {
         >
           <span className={clsx(
             'title',
-            'text-[#5F33E1]',
+            `text-[${varient.colors['primary-color']}]`,
             'mr-2 font-bold',
           )}
           >
-            {varient.title}
+            {varient.myVarient.title}
           </span>
           <span className={clsx(
             'sub-title',
