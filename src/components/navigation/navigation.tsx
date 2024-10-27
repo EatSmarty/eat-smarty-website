@@ -6,7 +6,9 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import {
   AiOutlineHome,
+  AiOutlineProduct,
   AiOutlineScan,
+  AiOutlineSetting,
   AiOutlineUnorderedList
 } from 'react-icons/ai';
 import './navigation.css';
@@ -41,7 +43,7 @@ export default function Navigation() {
           </Link>
           <span className={clsx(
             'h-1 w-7',
-            `bg-[#18DAA3]`,
+            `bg-[${Colors.colors['primary-color']}]`,
             'drop-shadow-[0_0_14px_rgba(122,0,230,0.25)]',
             'relative z-10',
             'flex items-center justify-center',
@@ -52,17 +54,41 @@ export default function Navigation() {
           />
         </li>
         <li>
+          <Link href="/product">
+            <span className={clsx(
+              'relative',
+              'flex items-center justify-center',
+              'z-10',
+              'mt-4',
+            )}
+            >
+              <AiOutlineProduct color={Colors.colors['primary-color']} size="25px" />
+            </span>
+          </Link>
+          <span className={clsx(
+            'h-1 w-7',
+            `bg-[${Colors.colors['primary-color']}]`,
+            'drop-shadow-[0_0_14px_rgba(122,0,230,0.25)]',
+            'relative z-10',
+            'flex items-center justify-center',
+            '-top-10 left-3',
+            'rounded-b',
+            `${router === '/product' ? 'opacity-100' : 'opacity-0'}`,
+          )}
+          />
+        </li>
+        <li>
           <Link href="/scan">
             <span className={clsx(
               'relative bottom-5 right-[0.5px]',
               'flex items-center justify-center',
               'z-10',
               'size-[47px]',
-              'bg-[#E2F6F1]',
+              `bg-[${Colors.colors['primary-color']}]`,
               'rounded-full',
             )}
             >
-              <AiOutlineScan color={Colors.colors['primary-color']} size="25px" />
+              <AiOutlineScan color={Colors.colors['white-text']} size="25px" />
             </span>
           </Link>
         </li>
@@ -90,15 +116,30 @@ export default function Navigation() {
           )}
           />
         </li>
-        {/* <li>
+        <li>
           <Link href="/setting">
-            <span className="icon">
-              {<AiOutlineSetting color="#000" />}
-
+            <span className={clsx(
+              'relative',
+              'flex items-center justify-center',
+              'z-10',
+              'mt-4',
+            )}
+            >
+              <AiOutlineSetting color={Colors.colors['primary-color']} size="25px" />
             </span>
-            <span className="nav-text">Setting</span>
           </Link>
-        </li> */}
+          <span className={clsx(
+            'h-1 w-7',
+            `bg-[#18DAA3]`,
+            'drop-shadow-[0_0_14px_rgba(122,0,230,0.25)]',
+            'relative z-10',
+            'flex items-center justify-center',
+            '-top-10 left-3',
+            'rounded-b',
+            `${router === '/setting' ? 'opacity-100' : 'opacity-0'}`,
+          )}
+          />
+        </li>
       </ul>
     </nav>
   );
