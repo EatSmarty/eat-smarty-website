@@ -68,7 +68,6 @@ export default function Container({ params }: ContainerInterface) {
           'my-10',
         )}
         >
-          {filterCategory[0].category}
           <Producttitle name={currentProduct?.title} />
           <div className={clsx(
             'flex items-center',
