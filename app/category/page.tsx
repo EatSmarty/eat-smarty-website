@@ -7,8 +7,7 @@ export default function Page() {
     return (
         <main className={clsx(
             'flex flex-col items-center',
-        )}
-        >
+        )}>
             <Category />
         </main>
     );
