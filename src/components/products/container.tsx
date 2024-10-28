@@ -1,7 +1,10 @@
+'use client'
+
 /* eslint-disable max-len */
 import Ishalal from '@/components/additives/ishalal';
 import ProductJson from '@/lib/Product.json';
 import clsx from 'clsx';
+import { notFound, usePathname } from 'next/navigation';
 import { FaAllergies } from 'react-icons/fa';
 import { LuVegan } from 'react-icons/lu';
 import { MdPregnantWoman } from 'react-icons/md';
@@ -11,6 +14,7 @@ import ImageContainer from './imagecontainer';
 import Nutrition from './nutrition';
 import Productdecscription from './productdecscription';
 import Producttitle from './producttitle';
+
 
 interface ContainerInterface {
   // code: number | null;
@@ -23,6 +27,8 @@ interface ContainerInterface {
 }
 
 export default function Container({ params }: ContainerInterface) {
+  const pathName = usePathname();
+  const paramsCategory = pathName.slice(10, -2);
   const mainProduct = ProductJson.filter(
     (product: { id: number; }) => (
       product.id
@@ -30,6 +36,17 @@ export default function Container({ params }: ContainerInterface) {
   ).filter((mainItem) => (
     mainItem.id === params.id
   ));
+
+
+  const filterCategory = ProductJson.filter(
+    product => product.category == paramsCategory
+  );
+
+  const currentUrl = filterCategory.some((testCat) => testCat.category);
+
+  if (!currentUrl) {
+    notFound();
+  }
 
   const currentProduct = mainProduct[0];
 
@@ -51,6 +68,7 @@ export default function Container({ params }: ContainerInterface) {
           'my-10',
         )}
         >
+          {filterCategory[0].category}
           <Producttitle name={currentProduct?.title} />
           <div className={clsx(
             'flex items-center',
