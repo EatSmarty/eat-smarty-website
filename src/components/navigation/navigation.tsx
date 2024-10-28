@@ -54,7 +54,7 @@ export default function Navigation() {
           />
         </li>
         <li>
-          <Link href="/product">
+          <Link href="/category">
             <span className={clsx(
               'relative',
               'flex items-center justify-center',
@@ -73,7 +73,7 @@ export default function Navigation() {
             'flex items-center justify-center',
             '-top-10 left-3',
             'rounded-b',
-            `${router === '/product' ? 'opacity-100' : 'opacity-0'}`,
+            `${router === '/category' ? 'opacity-100' : 'opacity-0'}`,
           )}
           />
         </li>
