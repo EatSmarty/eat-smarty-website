@@ -24,7 +24,7 @@ const colors = {
   'primary-color': '#18DAA3',
   'secondary-color': '#E2F6F1',
   'white-text': '#FFFFFF',
-  'black-text': '#000000',
+  'black-text': '#222629',
   'white-bg': '#FFFFFF',
   'black-bg': '#000000',
 }
