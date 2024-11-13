@@ -6,6 +6,8 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { IoIosArrowBack } from 'react-icons/io';
 
+
+
 export default function Header() {
   const pathname = usePathname();
   const checkRoute = pathname.includes("additives/E");
@@ -59,7 +61,8 @@ export default function Header() {
 
         {pathname.includes('/additives/E') ||
           pathname === '/setting/faq' ||
-          pathname === '/setting/contactus'
+          pathname === '/setting/contactus' ||
+          pathname.includes('/category/')
           ? (
             <Link href={previousPathname}>
               <IoIosArrowBack color={Color.colors['primary-color']} size={25} />

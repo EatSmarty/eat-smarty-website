@@ -13,7 +13,7 @@ import Badgecheck from './badgecheck';
 import ImageContainer from './imagecontainer';
 import Nutrition from './nutrition';
 import Productdecscription from './productdecscription';
-import Producttitle from './producttitle';
+import Producttitle from './productListItem';
 
 
 interface ContainerInterface {

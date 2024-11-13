@@ -1,3 +1,4 @@
+import Producttitle from '@/components/products/productListItem';
 import ProductJson from '@/lib/Product.json';
 import clsx from 'clsx';
 import { notFound } from 'next/navigation';
@@ -13,6 +14,7 @@ export default function Page({ params }: CategoryPageProps) {
     );
 
     const currentUrl = indexCategory.some(testCat => testCat.category);
+    // console.log(indexCategory);
 
     if (!currentUrl) {
         notFound();
@@ -23,7 +25,7 @@ export default function Page({ params }: CategoryPageProps) {
             'flex justify-center',
         )}
         >
-            {params.cat}
+            <Producttitle name={indexCategory[0].title} />
         </div>
     );
 }

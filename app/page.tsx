@@ -13,7 +13,6 @@ export default function Page() {
     >
       <Banner />
       <Slogan />
-      {/* <Searchbarcode /> */}
       <Features />
     </main>
   );
