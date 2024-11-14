@@ -1,7 +1,9 @@
 'use client';
 
 import Scanner from '@/components/scan/Scanner';
+import Product from '@/lib/Product.json';
 import clsx from 'clsx';
+import { redirect } from "next/navigation";
 import { useState } from 'react';
 import { BsUpcScan } from 'react-icons/bs';
 import './camera.css';
@@ -10,11 +12,16 @@ export default function Page() {
   const [camera, setCamera] = useState(false);
   const [result, setResult] = useState(undefined);
 
+  const barcode = Product.map(code => code.barcode)
   // eslint-disable-next-line @typescript-eslint/no-shadow
   const onDetected = (result) => {
     setResult(result);
     console.log(result);
   };
+
+  console.log(barcode);
+
+
   return (
     <div className={clsx(
       'min-h-screen',
@@ -40,7 +47,7 @@ export default function Page() {
           'mb-10 text-red-800',
         )}
         >
-          {result}
+          {barcode.includes(`${result}`) ? redirect('/home') : 'not found'}
         </p>
       </button>
     </div>
