@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "barcode": "AB12345678910",
+        "barcode": "10000003",
         "imgproduct": "@/assets/products/cocacola.jpg",
         "title": "CocaCola",
         "category": "drink",
