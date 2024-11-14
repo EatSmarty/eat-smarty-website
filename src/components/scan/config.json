@@ -3,27 +3,27 @@
         "type": "LiveStream",
         "constraints": {
             "width": {
-                "min": 450
+                "min": 1280
             },
             "height": {
-                "min": 300
+                "min": 720
             },
-            "facingMode": "environment",
             "aspectRatio": {
                 "min": 1,
-                "max": 2
-            }
+                "max": 100
+            },
+            "facingMode": "environment"
         }
     },
     "locator": {
         "patchSize": "medium",
-        "halfSample": true
+        "halfSample": false
     },
-    "numOfWorkers": 2,
+    "numOfWorkers": 4,
     "frequency": 10,
     "decoder": {
         "readers": [
-            "ean_reader"
+            "code_128_reader"
         ]
     },
     "locate": true
