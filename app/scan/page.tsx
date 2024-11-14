@@ -1,7 +1,7 @@
 'use client';
 
 import Scanner from '@/components/scan/Scanner';
-import Product from '@/lib/Product.json';
+import Products from '@/lib/Product.json';
 import clsx from 'clsx';
 import { redirect } from "next/navigation";
 import { useState } from 'react';
@@ -12,14 +12,17 @@ export default function Page() {
   const [camera, setCamera] = useState(false);
   const [result, setResult] = useState(undefined);
 
-  const barcode = Product.map(code => code.barcode)
+  const barcode = Products.map(code => code.barcode)
   // eslint-disable-next-line @typescript-eslint/no-shadow
   const onDetected = (result) => {
     setResult(result);
     console.log(result);
   };
 
-  console.log(barcode);
+  const mainProduct = Products.filter(product => product.barcode === result)
+
+
+  // console.log(mainProduct[0].id);
 
 
   return (
@@ -47,7 +50,7 @@ export default function Page() {
           'mb-10 text-red-800',
         )}
         >
-          {barcode.includes(`${result}`) ? redirect('/home') : 'not found'}
+          {barcode.includes(`${result}`) ? redirect(`/category/${mainProduct[0].category}${mainProduct[0].id}`) : 'not found'}
         </p>
       </button>
     </div>
