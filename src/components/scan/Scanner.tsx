@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
-import React, { useEffect, useState } from 'react';
-import Quagga from 'quagga';
 import clsx from 'clsx';
+import Quagga from 'quagga';
+import { useEffect, useState } from 'react';
 import { TbLockAccessOff } from 'react-icons/tb';
 import config from './config.json';
 
@@ -9,17 +9,25 @@ function Scanner(props) {
   const { onDetected } = props;
   const [accessMsg, setAccessMsg] = useState('');
   useEffect(() => {
-    Quagga.init(config, (err) => {
-      if (err) {
-        console.log(err, 'error msg');
-        setAccessMsg('Please allow Eatsmarty to access camera!');
-      } else {
-        Quagga.start();
-      }
-      return () => {
-        Quagga.stop();
-      };
-    });
+    Quagga.init({
+      ...config,
+      inputStream: {
+        type: 'LiveStream',
+        constraints: {
+          facingMode: 'environment', // To use the rear camera on mobile devices
+          width: { ideal: 1920 }, // Set the width to a high value (e.g., 1920px)
+          height: { ideal: 1080 }, // Set the height to a high value (e.g., 1080px)
+        },
+      },
+    },
+      (err) => {
+        if (err) {
+          console.log(err, 'error msg');
+          setAccessMsg('Please allow Eatsmarty to access camera!');
+        } else {
+          Quagga.start();
+        }
+      });
 
     // detecting boxes on stream
     Quagga.onProcessed((result) => {
