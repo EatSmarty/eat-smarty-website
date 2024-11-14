@@ -23,10 +23,7 @@
     "frequency": 10,
     "decoder": {
         "readers": [
-            "code_128_reader",
-            "ean_reader",
-            "ean_13_reader",
-            "upc_reader"
+            "code_128_reader"
         ]
     },
     "locate": true
