@@ -14,10 +14,11 @@ function Scanner(props) {
       inputStream: {
         type: 'LiveStream',
         constraints: {
+          ...config.inputStream.constraints,
           facingMode: 'environment', // To use the rear camera on mobile devices
           width: { ideal: 1920 }, // Set the width to a high value (e.g., 1920px)
           height: { ideal: 1080 }, // Set the height to a high value (e.g., 1080px)
-          aadvanced: [{ focusMode: "continous" }]
+          advanced: [{ focusMode: "continous" }]
         },
       },
     },
