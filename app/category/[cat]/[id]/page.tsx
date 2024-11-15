@@ -5,28 +5,24 @@ import ProductJson from '@/lib/Product.json';
 import clsx from 'clsx';
 import { notFound, usePathname } from 'next/navigation';
 
-
 interface ProductPageProps {
   params: { id: number }
 }
 
 export default function Page({ params }: ProductPageProps) {
   const pathName = usePathname();
-  const paramsCategory = pathName.slice(10, -2);
-  const paramId = pathName.slice(-1);
-  // const indexProduct = ProductJson.filter(
-  //   (product: { id: number; }) => (
-  //     product.id == params.id
-  //   ),
-  // );
+  const paramId = params.id
 
+  function getLength(id) {
+    return id.length
+  }
 
+  const idLength = getLength(paramId)
+  const paramsCategory = pathName.slice(10, -(idLength + 1));
 
   const filterCategory = ProductJson.filter(
     product => product.category === paramsCategory
   );
-
-
 
   const categoryIDs = filterCategory.map(catId => catId.id);
   const checkId = categoryIDs.some((catId) => catId === +paramId);

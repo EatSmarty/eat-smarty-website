@@ -4,7 +4,7 @@
 import Ishalal from '@/components/additives/ishalal';
 import ProductJson from '@/lib/Product.json';
 import clsx from 'clsx';
-import { notFound, usePathname } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import { FaAllergies } from 'react-icons/fa';
 import { LuVegan } from 'react-icons/lu';
 import { MdPregnantWoman } from 'react-icons/md';
@@ -13,7 +13,6 @@ import Badgecheck from './badgecheck';
 import ImageContainer from './imagecontainer';
 import Nutrition from './nutrition';
 import Productdecscription from './productdecscription';
-import Producttitle from './productListItem';
 
 
 interface ContainerInterface {
@@ -29,6 +28,7 @@ interface ContainerInterface {
 export default function Container({ params }: ContainerInterface) {
   const pathName = usePathname();
   const paramsCategory = pathName.slice(10, -2);
+  const paramsCategoryID = pathName.slice(-1);
   const mainProduct = ProductJson.filter(
     (product: { id: number; }) => (
       product.id
@@ -44,11 +44,9 @@ export default function Container({ params }: ContainerInterface) {
 
   const currentUrl = filterCategory.some((testCat) => testCat.category);
 
-  if (!currentUrl) {
-    notFound();
-  }
 
   const currentProduct = mainProduct[0];
+  // console.log(currentProduct)
 
   return (
     <div className={clsx(
@@ -68,7 +66,6 @@ export default function Container({ params }: ContainerInterface) {
           'my-10',
         )}
         >
-          <Producttitle name={currentProduct?.title} />
           <div className={clsx(
             'flex items-center',
             'text-xl',
@@ -80,7 +77,9 @@ export default function Container({ params }: ContainerInterface) {
             >
               {currentProduct?.source}
             </span>
-            <span>origin</span>
+            <span>
+              {currentProduct?.title}
+            </span>
           </div>
           <div className={clsx(
             'md:flex',

@@ -1,8 +1,7 @@
 interface CategoryProps {
-    params: { id: number }
+    params: { cat: string }
 }
 
 export default function Category({ params }: CategoryProps) {
-    const paramsid = params.id;
-    return ({ paramsid });
+    return (params);
 }

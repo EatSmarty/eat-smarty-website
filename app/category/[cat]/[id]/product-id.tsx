@@ -2,7 +2,7 @@ interface ProductProps {
   params: { id: number }
 }
 
-export default function Product({ params }: ProductProps) {
+export default function ProductId({ params }: ProductProps) {
   const paramsid = params.id;
   return ({ paramsid });
 }
