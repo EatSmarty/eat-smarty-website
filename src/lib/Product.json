@@ -42,7 +42,7 @@
     },
     {
         "id": 2,
-        "barcode": "AC12345678910",
+        "barcode": "FIB0829G",
         "title": "CocaCola Zero",
         "category": "canned",
         "source": "plant",
@@ -75,7 +75,7 @@
     },
     {
         "id": 3,
-        "barcode": "AC12345678910",
+        "barcode": "DR2039",
         "title": "CocaCola Zero",
         "category": "fastfood",
         "source": "plant",
@@ -108,7 +108,7 @@
     },
     {
         "id": 4,
-        "barcode": "AC12345678910",
+        "barcode": "X000MK5QAX",
         "title": "CocaCola Zero",
         "category": "canned",
         "source": "plant",
@@ -141,7 +141,7 @@
     },
     {
         "id": 5,
-        "barcode": "AC12345678910",
+        "barcode": "490116232652317794",
         "title": "CocaCola Zero",
         "category": "canned",
         "source": "plant",
