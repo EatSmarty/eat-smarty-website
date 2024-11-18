@@ -6,6 +6,7 @@ import ProductJson from '@/lib/Product.json';
 import clsx from 'clsx';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
+import { useEffect, useState } from 'react';
 import { FaAllergies } from 'react-icons/fa';
 import { LuVegan } from 'react-icons/lu';
 import { MdPregnantWoman } from 'react-icons/md';
@@ -25,7 +26,7 @@ interface ContainerInterface {
   params: { id: number }
 }
 
-export default function Container({ params }: ContainerInterface) {
+export default async function Container({ params }: ContainerInterface) {
 
   const pathName = usePathname();
   const paramsCategory = pathName.slice(10, -2);
@@ -34,12 +35,24 @@ export default function Container({ params }: ContainerInterface) {
       product.id == params.id
     ));
 
-
+  // const productApi = await fetch('https://eatsmarty.vercel.app/api/products')
+  // const product = await productApi.json();
 
 
   // const testApi = products.filter(pro => pro);
-  // console.log(products.result);
 
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+
+  }, []);
+
+  const productFetch = await fetch('https://eatsmarty.vercel.app/api/products')
+    .then((response) => response.json())
+    .then((data) => {
+      return data.result.productList
+    });
 
 
   const filterCategory = ProductJson.filter(
@@ -50,10 +63,9 @@ export default function Container({ params }: ContainerInterface) {
 
 
   const currentProduct = mainProduct[0];
-  console.log(
-    currentProduct.imgproduct
-  )
-  // console.log(currentProduct)
+  const checkProduct = productFetch.filter(product =>
+    product.id === currentProduct.id
+  );
 
   return (
     <div className={clsx(

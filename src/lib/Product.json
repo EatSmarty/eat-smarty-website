@@ -2,7 +2,7 @@
     {
         "id": 1,
         "barcode": "10000003",
-        "imgproduct": "/assets/products/cocacola.jpg",
+        "imgproduct": "products/cocacola.jpg",
         "title": "CocaCola",
         "category": "drink",
         "source": "plant",
@@ -43,7 +43,7 @@
     {
         "id": 2,
         "barcode": "FIB0829G",
-        "imgproduct": "api/products/sweetcorn.jpg",
+        "imgproduct": "products/sweetcorn.jpg",
         "title": "Sweetcorn",
         "category": "canned",
         "source": "plant",
