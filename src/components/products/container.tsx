@@ -4,16 +4,16 @@
 import Ishalal from '@/components/additives/ishalal';
 import ProductJson from '@/lib/Product.json';
 import clsx from 'clsx';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { FaAllergies } from 'react-icons/fa';
 import { LuVegan } from 'react-icons/lu';
 import { MdPregnantWoman } from 'react-icons/md';
 import { TbMoodSick } from 'react-icons/tb';
+import coc from '../../../public/products/cocacola.jpg';
 import Badgecheck from './badgecheck';
-import ImageContainer from './imagecontainer';
 import Nutrition from './nutrition';
 import Productdecscription from './productdecscription';
-
 
 interface ContainerInterface {
   // code: number | null;
@@ -26,16 +26,20 @@ interface ContainerInterface {
 }
 
 export default function Container({ params }: ContainerInterface) {
+
   const pathName = usePathname();
   const paramsCategory = pathName.slice(10, -2);
-  const paramsCategoryID = pathName.slice(-1);
   const mainProduct = ProductJson.filter(
     (product: { id: number; }) => (
-      product.id
-    ),
-  ).filter((mainItem) => (
-    mainItem.id === params.id
-  ));
+      product.id == params.id
+    ));
+
+
+
+
+  // const testApi = products.filter(pro => pro);
+  // console.log(products.result);
+
 
 
   const filterCategory = ProductJson.filter(
@@ -46,6 +50,9 @@ export default function Container({ params }: ContainerInterface) {
 
 
   const currentProduct = mainProduct[0];
+  console.log(
+    currentProduct.imgproduct
+  )
   // console.log(currentProduct)
 
   return (
@@ -61,7 +68,16 @@ export default function Container({ params }: ContainerInterface) {
         'my-5',
       )}
       >
-        <ImageContainer />
+        <Image
+          className={clsx(
+            'rounded',
+            'shadow',
+          )}
+          src={coc}
+          height={200}
+          width={200}
+          alt="products"
+        />
         <div className={clsx(
           'my-10',
         )}

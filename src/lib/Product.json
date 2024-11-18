@@ -2,7 +2,7 @@
     {
         "id": 1,
         "barcode": "10000003",
-        "imgproduct": "@/assets/products/cocacola.jpg",
+        "imgproduct": "/assets/products/cocacola.jpg",
         "title": "CocaCola",
         "category": "drink",
         "source": "plant",
@@ -43,11 +43,12 @@
     {
         "id": 2,
         "barcode": "FIB0829G",
-        "title": "CocaCola Zero",
+        "imgproduct": "api/products/sweetcorn.jpg",
+        "title": "Sweetcorn",
         "category": "canned",
         "source": "plant",
         "description": "",
-        "src": "1.jpg",
+        "src": "sweetcorn.jpg",
         "rating": 4,
         "what": "Haram",
         "nutrition": [

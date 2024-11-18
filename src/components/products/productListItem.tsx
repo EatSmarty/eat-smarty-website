@@ -1,7 +1,7 @@
-import productImage from '@/assets/products/cocacola.jpg';
 import Colors from '@/utilise/varient';
 import clsx from 'clsx';
 import Image from 'next/image';
+import productImage from '../../../public/products/cocacola.jpg';
 
 interface ProductListitemProps {
   name: string
