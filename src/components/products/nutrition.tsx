@@ -1,5 +1,4 @@
 import clsx from 'clsx';
-import React from 'react';
 import TableRow from './tablerow';
 
 interface NutritionProps {
@@ -38,15 +37,15 @@ export default function Nutrition({
         Nutrition Facts
       </h2>
       <hr />
-      <TableRow title="Energy" value={energy} />
-      <TableRow title="Proteins" value={proteins} />
-      <TableRow title="Carbohydrate" value={carbohydrate} />
-      <TableRow title="Sugars" value={sugars} />
-      <TableRow title="Fat" value={fat} />
-      <TableRow title="Fibre" value={fibre} />
-      <TableRow title="Sodium" value={sodium} />
-      <TableRow title="Salt" value={salt} />
-      <TableRow title="Saturates" value={saturates} />
+      <TableRow title="Energy" value={energy} children={"KJ"} />
+      <TableRow title="Proteins" value={proteins} children={"gr"} />
+      <TableRow title="Carbohydrate" value={carbohydrate} children={"gr"} />
+      <TableRow title="Sugars" value={sugars} children={"gr"} />
+      <TableRow title="Fat" value={fat} children={"gr"} />
+      <TableRow title="Fibre" value={fibre} children={"gr"} />
+      <TableRow title="Sodium" value={sodium} children={"gr"} />
+      <TableRow title="Salt" value={salt} children={"gr"} />
+      <TableRow title="Saturates" value={saturates} children={"gr"} />
     </div>
   );
 }

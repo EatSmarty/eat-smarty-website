@@ -4,14 +4,11 @@
 import Ishalal from '@/components/additives/ishalal';
 import ProductJson from '@/lib/Product.json';
 import clsx from 'clsx';
-import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import { useEffect, useState } from 'react';
 import { FaAllergies } from 'react-icons/fa';
 import { LuVegan } from 'react-icons/lu';
 import { MdPregnantWoman } from 'react-icons/md';
 import { TbMoodSick } from 'react-icons/tb';
-import coc from '../../../public/products/cocacola.jpg';
 import Badgecheck from './badgecheck';
 import Nutrition from './nutrition';
 import Productdecscription from './productdecscription';
@@ -26,7 +23,7 @@ interface ContainerInterface {
   params: { id: number }
 }
 
-export default async function Container({ params }: ContainerInterface) {
+export default function Container({ params }: ContainerInterface) {
 
   const pathName = usePathname();
   const paramsCategory = pathName.slice(10, -2);
@@ -35,24 +32,7 @@ export default async function Container({ params }: ContainerInterface) {
       product.id == params.id
     ));
 
-  // const productApi = await fetch('https://eatsmarty.vercel.app/api/products')
-  // const product = await productApi.json();
 
-
-  // const testApi = products.filter(pro => pro);
-
-  const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-
-  }, []);
-
-  const productFetch = await fetch('https://eatsmarty.vercel.app/api/products')
-    .then((response) => response.json())
-    .then((data) => {
-      return data.result.productList
-    });
 
 
   const filterCategory = ProductJson.filter(
@@ -63,37 +43,27 @@ export default async function Container({ params }: ContainerInterface) {
 
 
   const currentProduct = mainProduct[0];
-  const checkProduct = productFetch.filter(product =>
-    product.id === currentProduct.id
-  );
+  // const checkProduct = productFetch.filter(product =>
+  //   product.id === currentProduct.id
+  // );
 
+  console.log(currentProduct.nutrition)
   return (
     <div className={clsx(
       'w-full max-w-screen-xl',
       'px-10 md:px-10',
       'mx-auto',
-      'border-b',
       'flex items-center',
     )}
     >
-      <div className={clsx(
-        'my-5',
-      )}
-      >
-        <Image
-          className={clsx(
-            'rounded',
-            'shadow',
-          )}
-          src={coc}
-          height={200}
-          width={200}
-          alt="products"
-        />
+      <div>
         <div className={clsx(
-          'my-10',
+          'my-2',
         )}
         >
+          <h2 className={clsx(
+            "text-4xl"
+          )}>{currentProduct?.title}</h2>
           <div className={clsx(
             'flex items-center',
             'text-xl',
@@ -118,20 +88,20 @@ export default async function Container({ params }: ContainerInterface) {
               title={currentProduct?.what}
               truthyOption={(
                 <Ishalal
-                  isHalal={currentProduct?.isHalal}
+                  isHalal={currentProduct.certificates?.isHalal}
                 />
               )}
-              isTrue={currentProduct?.isHalal}
+              isTrue={currentProduct.certificates?.isHalal}
             />
             <Badgecheck
               title="Vegan"
               truthyOption={<LuVegan size={25} />}
-              isTrue={currentProduct?.isVegan}
+              isTrue={currentProduct.certificates?.isVegan}
             />
             <Badgecheck
               title="Vegeterian"
               truthyOption={<LuVegan size={25} />}
-              isTrue={currentProduct?.isVegetrian}
+              isTrue={currentProduct.certificates?.isVegetrian}
             />
             <Badgecheck
               title="Carcinogenic"
@@ -141,24 +111,24 @@ export default async function Container({ params }: ContainerInterface) {
             <Badgecheck
               title="Pregnant"
               truthyOption={<MdPregnantWoman size={30} />}
-              isTrue={currentProduct?.isPregnant}
+              isTrue={currentProduct.certificates?.isPregnant}
             />
             <Badgecheck
               title="Allergey"
               truthyOption={<FaAllergies size={25} />}
-              isTrue={currentProduct?.isAllergey}
+              isTrue={currentProduct.isAllergey}
             />
           </div>
           <Nutrition
-            energy={currentProduct?.nutrition[0].energy}
-            proteins={currentProduct?.nutrition[0].proteins}
-            carbohydrate={currentProduct?.nutrition[0].carbohydrate}
-            sugars={currentProduct?.nutrition[0].sugars}
-            fat={currentProduct?.nutrition[0].fat}
-            fibre={currentProduct?.nutrition[0].fibre}
-            sodium={currentProduct?.nutrition[0].sodium}
-            salt={currentProduct?.nutrition[0].salt}
-            saturates={currentProduct?.nutrition[0].Saturates}
+            energy={currentProduct?.nutrition.energy}
+            proteins={currentProduct?.nutrition.proteins}
+            carbohydrate={currentProduct?.nutrition.carbohydrate}
+            sugars={currentProduct?.nutrition.sugars}
+            fat={currentProduct?.nutrition.fat}
+            fibre={currentProduct?.nutrition.fibre}
+            sodium={currentProduct?.nutrition.sodium}
+            salt={currentProduct?.nutrition.salt}
+            saturates={currentProduct?.nutrition.saturates}
           />
           <Productdecscription />
         </div>

@@ -1,12 +1,12 @@
 import clsx from 'clsx';
-import React from 'react';
 
 interface TableProps {
   title: string,
   value: string | number | null
+  children: string | null | undefined
 }
 
-export default function TableRow({ title, value }: TableProps) {
+export default function TableRow({ title, value, children }: TableProps) {
   return (
     <div className={clsx(
       'flex justify-between',
@@ -24,6 +24,7 @@ export default function TableRow({ title, value }: TableProps) {
       </h3>
       <p className={clsx()}>
         {value}
+        {children}
       </p>
     </div>
   );
