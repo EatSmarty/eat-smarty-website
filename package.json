@@ -47,7 +47,7 @@
     "eslint-config-airbnb-typescript": "^18.0.0",
     "eslint-config-next": "^14.2.5",
     "eslint-plugin-storybook": "^0.8.0",
-    "eslint-plugin-tailwindcss": "^3.17.4",
+    "eslint-plugin-tailwindcss": "^3.17.5",
     "pnpm": "^9.7.0",
     "postcss": "^8.4.41",
     "storybook": "^8.2.9",
