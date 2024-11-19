@@ -45,7 +45,7 @@ export default function Page() {
           'mb-10 text-red-800',
         )}
         >
-          {barcode.includes(`${result}`) ? redirect(`/category/${mainProduct[0].category}/${mainProduct[0].id}`) : 'not found'}
+          {barcode.includes(`${result}`) ? redirect(`/category/${mainProduct[0].category}/${mainProduct[0].id}`) : 'scan barcode'}
         </p>
       </button>
     </div>
