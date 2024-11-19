@@ -51,19 +51,17 @@
         "src": "sweetcorn.jpg",
         "rating": 4,
         "what": "Haram",
-        "nutrition": [
-            {
-                "energy": 100,
-                "proteins": 2,
-                "carbohydrate": 2,
-                "sugars": 2,
-                "fat": 2,
-                "fibre": 2,
-                "sodium": 1,
-                "salt": 0,
-                "saturates": 0
-            }
-        ],
+        "nutrition": {
+            "energy": 100,
+            "proteins": 2,
+            "carbohydrate": 2,
+            "sugars": 2,
+            "fat": 2,
+            "fibre": 2,
+            "sodium": 1,
+            "salt": 0,
+            "saturates": 0
+        },
         "isHalal": false,
         "isVegan": false,
         "isVegetrian": true,
@@ -84,19 +82,17 @@
         "src": "1.jpg",
         "rating": 4,
         "what": "Mashbooh",
-        "nutrition": [
-            {
-                "energy": 100,
-                "proteins": 2,
-                "carbohydrate": 2,
-                "sugars": 2,
-                "fat": 2,
-                "fibre": 2,
-                "sodium": 1,
-                "salt": 0,
-                "saturates": 0
-            }
-        ],
+        "nutrition": {
+            "energy": 100,
+            "proteins": 2,
+            "carbohydrate": 2,
+            "sugars": 2,
+            "fat": 2,
+            "fibre": 2,
+            "sodium": 1,
+            "salt": 0,
+            "saturates": 0
+        },
         "isHalal": null,
         "isVegan": true,
         "isVegetrian": true,
@@ -117,19 +113,17 @@
         "src": "1.jpg",
         "rating": 4,
         "what": "Haram",
-        "nutrition": [
-            {
-                "energy": 100,
-                "proteins": 2,
-                "carbohydrate": 2,
-                "sugars": 2,
-                "fat": 2,
-                "fibre": 2,
-                "sodium": 1,
-                "salt": 0,
-                "saturates": 0
-            }
-        ],
+        "nutrition": {
+            "energy": 100,
+            "proteins": 2,
+            "carbohydrate": 2,
+            "sugars": 2,
+            "fat": 2,
+            "fibre": 2,
+            "sodium": 1,
+            "salt": 0,
+            "saturates": 0
+        },
         "isHalal": false,
         "isVegan": false,
         "isVegetrian": true,
@@ -150,19 +144,17 @@
         "src": "1.jpg",
         "rating": 4,
         "what": "Haram",
-        "nutrition": [
-            {
-                "energy": 100,
-                "proteins": 2,
-                "carbohydrate": 2,
-                "sugars": 2,
-                "fat": 2,
-                "fibre": 2,
-                "sodium": 1,
-                "salt": 0,
-                "saturates": 0
-            }
-        ],
+        "nutrition": {
+            "energy": 100,
+            "proteins": 2,
+            "carbohydrate": 2,
+            "sugars": 2,
+            "fat": 2,
+            "fibre": 2,
+            "sodium": 1,
+            "salt": 0,
+            "saturates": 0
+        },
         "isHalal": false,
         "isVegan": false,
         "isVegetrian": true,
@@ -183,19 +175,17 @@
         "src": "1.jpg",
         "rating": 4,
         "what": "Haram",
-        "nutrition": [
-            {
-                "energy": 100,
-                "proteins": 2,
-                "carbohydrate": 2,
-                "sugars": 2,
-                "fat": 2,
-                "fibre": 2,
-                "sodium": 1,
-                "salt": 0,
-                "saturates": 0
-            }
-        ],
+        "nutrition": {
+            "energy": 100,
+            "proteins": 2,
+            "carbohydrate": 2,
+            "sugars": 2,
+            "fat": 2,
+            "fibre": 2,
+            "sodium": 1,
+            "salt": 0,
+            "saturates": 0
+        },
         "isHalal": false,
         "isVegan": false,
         "isVegetrian": true,
@@ -216,19 +206,17 @@
         "src": "1.jpg",
         "rating": 4,
         "what": "Haram",
-        "nutrition": [
-            {
-                "energy": 100,
-                "proteins": 2,
-                "carbohydrate": 2,
-                "sugars": 2,
-                "fat": 2,
-                "fibre": 2,
-                "sodium": 1,
-                "salt": 0,
-                "saturates": 0
-            }
-        ],
+        "nutrition": {
+            "energy": 100,
+            "proteins": 2,
+            "carbohydrate": 2,
+            "sugars": 2,
+            "fat": 2,
+            "fibre": 2,
+            "sodium": 1,
+            "salt": 0,
+            "saturates": 0
+        },
         "isHalal": false,
         "isVegan": false,
         "isVegetrian": true,
@@ -249,19 +237,17 @@
         "src": "1.jpg",
         "rating": 4,
         "what": "Haram",
-        "nutrition": [
-            {
-                "energy": 100,
-                "proteins": 2,
-                "carbohydrate": 2,
-                "sugars": 2,
-                "fat": 2,
-                "fibre": 2,
-                "sodium": 1,
-                "salt": 0,
-                "saturates": 0
-            }
-        ],
+        "nutrition": {
+            "energy": 100,
+            "proteins": 2,
+            "carbohydrate": 2,
+            "sugars": 2,
+            "fat": 2,
+            "fibre": 2,
+            "sodium": 1,
+            "salt": 0,
+            "saturates": 0
+        },
         "isHalal": false,
         "isVegan": false,
         "isVegetrian": true,
@@ -282,19 +268,17 @@
         "src": "1.jpg",
         "rating": 4,
         "what": "Haram",
-        "nutrition": [
-            {
-                "energy": 100,
-                "proteins": 2,
-                "carbohydrate": 2,
-                "sugars": 2,
-                "fat": 2,
-                "fibre": 2,
-                "sodium": 1,
-                "salt": 0,
-                "saturates": 0
-            }
-        ],
+        "nutrition": {
+            "energy": 100,
+            "proteins": 2,
+            "carbohydrate": 2,
+            "sugars": 2,
+            "fat": 2,
+            "fibre": 2,
+            "sodium": 1,
+            "salt": 0,
+            "saturates": 0
+        },
         "isHalal": false,
         "isVegan": false,
         "isVegetrian": true,
@@ -315,19 +299,17 @@
         "src": "1.jpg",
         "rating": 4,
         "what": "Haram",
-        "nutrition": [
-            {
-                "energy": 100,
-                "proteins": 2,
-                "carbohydrate": 2,
-                "sugars": 2,
-                "fat": 2,
-                "fibre": 2,
-                "sodium": 1,
-                "salt": 0,
-                "saturates": 0
-            }
-        ],
+        "nutrition": {
+            "energy": 100,
+            "proteins": 2,
+            "carbohydrate": 2,
+            "sugars": 2,
+            "fat": 2,
+            "fibre": 2,
+            "sodium": 1,
+            "salt": 0,
+            "saturates": 0
+        },
         "isHalal": false,
         "isVegan": false,
         "isVegetrian": true,

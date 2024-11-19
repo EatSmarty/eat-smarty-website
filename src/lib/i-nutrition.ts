@@ -1,11 +1,11 @@
 export interface INutrition {
-  energy: number;
-  proteins: number;
-  carbohydrate: number;
-  sugars: number;
-  fat: number;
-  fibre: number;
-  sodium: number;
-  salt: number;
-  saturates: number;
-}
+  energy: string | number | null;
+  proteins: string | number | null;
+  carbohydrate: string | number | null;
+  sugars: string | number | null;
+  fat: string | number | null;
+  fibre: string | number | null;
+  sodium: string | number | null;
+  salt: string | number | null;
+  saturates: string | number | null;
+}[]

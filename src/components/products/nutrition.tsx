@@ -11,7 +11,7 @@ interface NutritionProps {
   sodium: string | number | null;
   salt: string | number | null;
   saturates: string | number | null;
-}
+}[];
 
 export default function Nutrition({
   energy,

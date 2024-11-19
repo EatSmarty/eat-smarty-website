@@ -20,7 +20,6 @@ export default function Page() {
   };
 
   const mainProduct = Products.filter(product => product.barcode === result)
-
   return (
     <div className={clsx(
       'min-h-screen',
