@@ -75,9 +75,6 @@ export default function Container({ params }: ContainerInterface) {
             >
               {currentProduct?.source}
             </span>
-            <span>
-              {currentProduct?.title}
-            </span>
           </div>
           <div className={clsx(
             'md:flex',
