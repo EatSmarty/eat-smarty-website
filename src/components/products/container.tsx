@@ -46,8 +46,6 @@ export default function Container({ params }: ContainerInterface) {
   // const checkProduct = productFetch.filter(product =>
   //   product.id === currentProduct.id
   // );
-
-  console.log(currentProduct.nutrition)
   return (
     <div className={clsx(
       'w-full max-w-screen-xl',
