@@ -1,5 +1,3 @@
-![Screenshot 2024-10-25 085201](https://github.com/user-attachments/assets/c0da684e-b94f-4cf9-b78e-dc73c24a8586)
-
 # [🌐Eatsmarty](https://eatsmarty.com)
 
 ## 💻Tech Stack
@@ -37,3 +35,6 @@ $ npm run dev
 ## Version
 ![version](https://img.shields.io/badge/version-0.1.0-blue)
 
+![Screenshot 2024-11-23 194345](https://github.com/user-attachments/assets/74622f78-0749-49e4-9af1-3524f87cef9b)
+
+![Screenshot 2024-11-23 194333](https://github.com/user-attachments/assets/145c72eb-f54d-40a1-8d1b-c20873fa4c5a)
