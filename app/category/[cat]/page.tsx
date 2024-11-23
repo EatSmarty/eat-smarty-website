@@ -14,7 +14,7 @@ export default function Page({ params }: CategoryPageProps) {
     );
 
     const currentUrl = indexCategory.some(testCat => testCat.category);
-    // console.log(indexCategory);
+    const listOfProduct = indexCategory.map(name => name.title);
 
     if (!currentUrl) {
         notFound();
@@ -22,10 +22,14 @@ export default function Page({ params }: CategoryPageProps) {
 
     return (
         <div className={clsx(
-            'flex justify-center',
+            'flex justify-center items-center flex-col',
+            'mx-5 gap-5',
         )}
         >
-            <Producttitle name={indexCategory[0].title} />
+            {listOfProduct.map((title, index) =>
+                <Producttitle name={title} key={index} />
+
+            )}
         </div>
     );
 }
