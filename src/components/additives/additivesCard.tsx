@@ -24,10 +24,10 @@ export default function AdditiveCart({
       href={`/additives/${enumber}`}
       className={clsx(
         'flex items-center justify-between',
-        'w-full',
+        ' max-w-96',
         'px-7 py-2',
         'hover:shadow-lg',
-        'shadow rounded-full md:rounded',
+        'shadow rounded-full',
 
         // `${isHalal === true ? 'bg-green-100' : undefined
         //   || isHalal === false ? 'bg-red-100' : undefined

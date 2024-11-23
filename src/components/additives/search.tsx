@@ -20,7 +20,7 @@ export default function Search({ filteredAdditives }) {
   return (
     <div className={clsx(
       'additives-list',
-      'grid grid-cols-5 gap-7',
+      'grid grid-cols-2 gap-7',
       'mb-20 mt-10',
     )}
     >
