@@ -22,13 +22,12 @@ export default function Page() {
   const mainProduct = Products.filter(product => product.barcode === result)
   return (
     <div className={clsx(
-      'min-h-screen',
-      'flex flex-col items-center justify-center',
+      'flex justify-center items-center flex-col',
     )}
     >
       <div className={clsx(
         'flex items-center justify-center',
-        'rounded',
+        // 'rounded',
       )}
       >
         {camera && <Scanner onDetected={onDetected} />}
@@ -42,7 +41,7 @@ export default function Page() {
         <p className={clsx(
           'font-bold',
           'text-2xl',
-          'mb-10 text-red-800',
+          'text-red-800',
         )}
         >
           {barcode.includes(`${result}`) ? redirect(`/category/${mainProduct[0].category}/${mainProduct[0].id}`) : 'scan barcode'}

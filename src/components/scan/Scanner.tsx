@@ -99,7 +99,6 @@ function Scanner(props) {
         <p className={clsx(
           'text-2xl',
           'text-center',
-          ' mt-10',
         )}
         >
           {accessMsg}
