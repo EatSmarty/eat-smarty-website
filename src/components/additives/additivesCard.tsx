@@ -24,8 +24,8 @@ export default function AdditiveCart({
       href={`/additives/${enumber}`}
       className={clsx(
         'flex items-center justify-between',
-        ' max-w-96',
-        'px-7 py-2',
+        'w-full gap-10',
+        'px-5 py-2',
         'hover:shadow-lg',
         'shadow rounded-full',
 
@@ -38,7 +38,7 @@ export default function AdditiveCart({
         {enumber}
       </p>
       <p className={clsx(
-        'overflow-hidden'
+        "w-36"
       )}>
         {name}
       </p>
