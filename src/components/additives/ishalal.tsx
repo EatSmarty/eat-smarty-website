@@ -8,8 +8,8 @@ export default function Ishalal({ isHalal }) {
     return (
       <Image
         src={ok}
-        width={30}
-        height={30}
+        width={32}
+        height={32}
         alt="halal"
       />
     );
@@ -19,8 +19,8 @@ export default function Ishalal({ isHalal }) {
     return (
       <Image
         src={cancle}
-        width={30}
-        height={30}
+        width={32}
+        height={32}
         alt="haram"
       />
     );
@@ -30,8 +30,8 @@ export default function Ishalal({ isHalal }) {
     return (
       <Image
         src={mushbooh}
-        width={30}
-        height={30}
+        width={32}
+        height={32}
         alt="mushbooh"
       />
     );
