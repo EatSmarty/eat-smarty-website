@@ -440,5 +440,45 @@
         "isJecfa": true,
         "isAllergey": false,
         "isCarcinogenic": true
+    },
+    {
+        "id": 12,
+        "barcode": "3274080005003",
+        "title": "Eau de source - Cristaline - 1,5L",
+        "category": "drink",
+        "source": "natural",
+        "description": "",
+        "src": "1.jpg",
+        "rating": 4,
+        "what": "Halal",
+        "nutrition": {
+            "energy": 100,
+            "proteins": 2,
+            "carbohydrate": 2,
+            "sugars": 2,
+            "fat": 2,
+            "fibre": 2,
+            "sodium": 1,
+            "salt": 0,
+            "saturates": 0
+        },
+        "ingradient": [
+            "Curcumin",
+            "E 100(ii)",
+            "Vitamin B2"
+        ],
+        "certificates": {
+            "isHalal": true,
+            "isHaram": false,
+            "isMushbooh": false,
+            "isVegan": true,
+            "isVegetrian": true,
+            "isChildren": true,
+            "isPregnant": false
+        },
+        "isKosher": true,
+        "isJecfa": true,
+        "isAllergey": false,
+        "isCarcinogenic": true
     }
 ]
