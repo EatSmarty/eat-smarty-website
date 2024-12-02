@@ -103,8 +103,8 @@ importers:
         specifier: ^3.17.4
         version: 3.17.4(tailwindcss@3.4.10)
       pnpm:
-        specifier: ^9.7.0
-        version: 9.7.0
+        specifier: ^9.14.4
+        version: 9.14.4
       postcss:
         specifier: ^8.4.41
         version: 8.4.41
@@ -4743,8 +4743,8 @@ packages:
     resolution: {integrity: sha512-2Rb3vm+EXble/sMXNSu6eoBx8e79gKqhNq9F5ZWW6ERNCTE/Q0wQNne5541tE5vKjfM8hpNCYL+LGc1YTfI0dg==}
     engines: {node: '>=6'}
 
-  pnpm@9.7.0:
-    resolution: {integrity: sha512-3AlDAVa0J/Xs/HmIiJnhw50taQ8AS+cOBSMLcssXPZaDlYdUXQlCm1WsPEKcgBtNw8DgAvZTgwpCD6LdTjz5zw==}
+  pnpm@9.14.4:
+    resolution: {integrity: sha512-yBgLP75OS8oCyUI0cXiWtVKXQKbLrfGfp4JUJwQD6i8n1OHUagig9WyJtj3I6/0+5TMm2nICc3lOYgD88NGEqw==}
     engines: {node: '>=18.12'}
     hasBin: true
 
@@ -11435,7 +11435,7 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
-  pnpm@9.7.0: {}
+  pnpm@9.14.4: {}
 
   polished@4.3.1:
     dependencies:
