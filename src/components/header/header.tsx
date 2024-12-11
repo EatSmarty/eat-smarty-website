@@ -20,6 +20,9 @@ export default function Header() {
     case '/':
       mainRoute = 'Home';
       break;
+    case '/category':
+      mainRoute = 'Category';
+      break;
     case '/additives':
       mainRoute = 'Additives';
       break;
