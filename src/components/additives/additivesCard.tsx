@@ -47,7 +47,6 @@ export default function AdditiveCart({
         'flex flex-col items-center justify-center',
       )}
       >
-        {/* <Gauge danger={danger} /> */}
         <div className={clsx(
           'flex items-center justify-center',
           'mt-3',
