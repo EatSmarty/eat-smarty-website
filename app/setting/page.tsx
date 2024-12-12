@@ -2,6 +2,7 @@
 
 import About from '@/components/setting/about';
 import clsx from 'clsx';
+import Script from 'next/script';
 
 export default function Page() {
   return (
@@ -13,6 +14,16 @@ export default function Page() {
       >
         <div>
           <About />
+          <iframe data-tally-src="https://tally.so/embed/wzWQEa?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="463" title="Feedback form"></iframe>
+          <Script
+            id="tally-js"
+            src="https://tally.so/widgets/embed.js"
+            onLoad={() => {
+              // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+              // @ts-expect-error
+              Tally.loadEmbeds();
+            }}
+          />
         </div>
       </main>
     </div>
