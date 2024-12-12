@@ -2,7 +2,7 @@ import Header from '@/components/header/header';
 import Navigation from '@/components/navigation/navigation';
 import Wrapper from '@/components/wrapper';
 import Varient from '@/utilise/varient';
-import { GoogleAnalytics } from '@next/third-parties/google'
+// import { GoogleAnalytics } from '@next/third-parties/google'
 import clsx from 'clsx';
 import type { Metadata } from 'next';
 import { Mulish } from 'next/font/google';
@@ -61,7 +61,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <GoogleAnalytics gaId={'G-42FHPSWW8S'} />
+      {/* <GoogleAnalytics gaId={'G-42FHPSWW8S'} /> */}
       <body className={clsx(
         `${mulish.className}`,
         'bg-[#eee]'
