@@ -1408,7 +1408,7 @@
         "description": "Colouring agent (red)"
     },
     {
-        "id": 44,
+        "id": 46,
         "code": 180,
         "eNumber": "E180",
         "name": "Lithol rubine BK",
@@ -1439,7 +1439,7 @@
         "description": "Colouring agent (red)"
     },
     {
-        "id": 45,
+        "id": 47,
         "code": 182,
         "eNumber": "E182",
         "name": "Lithol rubine BK",
